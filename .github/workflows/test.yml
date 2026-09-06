@@ -23,17 +23,21 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-          pip install pytest
+          python3 -m pip install -r requirements.txt
+          python3 -m pip install pytest
+      
+      - name: Check environment
+        run: |
+          python3 -c "import requests, yaml, PyPDF2, pdfplumber, ebooklib, bs4; print('All dependencies OK')"
       
       - name: Run parser tests
         run: |
-          python src/parser.py
+          python3 src/parser.py
       
       - name: Run unit tests
         run: |
-          python -m unittest discover tests/ -v
+          python3 -m unittest discover tests/ -v
       
       - name: Verify dataset
         run: |
-          python -c "from src.evaluator import BenchmarkEvaluator; e = BenchmarkEvaluator('dataset/mkultra_benchmark.jsonl'); print(f'Loaded {len(e.dataset)} questions')"
+          python3 -c "from src.evaluator import BenchmarkEvaluator; e = BenchmarkEvaluator('dataset/mkultra_benchmark.jsonl'); print(f'Loaded {len(e.dataset)} questions')"
