@@ -20,23 +20,23 @@
 #
 
 """Tests for the model client module."""
-import sys
-import os
+import os  # noqa: E402
+import sys  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.model_client import OpenAIClient, OllamaClient, BaseModelClient, get_client
-import unittest
+from src.model_client import OpenAIClient, OllamaClient, BaseModelClient, get_client  # noqa: E402
+import unittest  # noqa: E402
 
 
 class TestModelClientFactory(unittest.TestCase):
     def test_openai_client(self):
         client = get_client("openai", model="gpt-4")
         self.assertIsInstance(client, OpenAIClient)
-    
+
     def test_ollama_client(self):
         client = get_client("ollama", model="llama3")
         self.assertIsInstance(client, OllamaClient)
-    
+
     def test_default_client(self):
         client = get_client("unknown")
         self.assertIsInstance(client, OpenAIClient)

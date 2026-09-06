@@ -43,16 +43,13 @@ Usage examples:
 #
 
 import argparse
-import json
 import logging
 import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # noqa: E402
 
-# Add src to path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from src.model_client import get_client
-from src.evaluator import BenchmarkEvaluator
+from src.model_client import get_client  # noqa: E402
+from src.evaluator import BenchmarkEvaluator  # noqa: E402
 
 logging.basicConfig(
     level=logging.INFO,
@@ -118,7 +115,7 @@ Examples:
     args = parser.parse_args()
 
     if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
+        logging.basicConfig(level=logging.DEBUG)
 
     # Set default dataset path
     if args.dataset is None:

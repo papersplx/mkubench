@@ -57,10 +57,10 @@ def parse_answer(response: str, is_multiple_choice: bool = False) -> Optional[st
         if letters_found:
             seen = set()
             result = []
-            for l in letters_found:
-                if l not in seen:
-                    seen.add(l)
-                    result.append(l)
+            for letter in letters_found:
+                if letter not in seen:
+                    seen.add(letter)
+                    result.append(letter)
                     if len(result) >= 4:
                         break
             if result:
@@ -105,7 +105,7 @@ def main() -> None:
         ("Answer: B", True, "A,B,D", False),  # Wrong: only got B
         ("Final answer: D", False, "D", True),
     ]
-    
+
     all_pass = True
     for resp, is_multi, correct, expected in tests:
         parsed = parse_answer(resp, is_multi)
@@ -113,8 +113,12 @@ def main() -> None:
         status = "✓" if result == expected else "✗"
         if result != expected:
             all_pass = False
-        print(f"{status} '{resp}' (multi={is_multi}) -> parsed='{parsed}' correct='{correct}' result={result} expected={expected}")
-    
+        print(
+            f"{status} '{resp}' (multi={is_multi}) -> "
+            f"parsed='{parsed}' correct='{correct}' "
+            f"result={result} expected={expected}"
+        )
+
     print(f"\nAll tests passed: {all_pass}")
 
 

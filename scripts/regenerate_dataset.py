@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Regenerate the JSONL/JSON dataset from the markdown source."""
+
 # Copyright (c) 2026 defnlnotme
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,7 +22,10 @@
 # SOFTWARE.
 #
 
-import re, json, os
+import json
+import os
+import re
+
 
 def regenerate() -> None:
     """Regenerate the dataset from the markdown source file."""
@@ -33,10 +37,13 @@ def regenerate() -> None:
     questions = []
     for block in blocks:
         block = block.strip()
-        if not block or 'Question' not in block: continue
+        if not block or 'Question' not in block:
+            continue
         hm = re.match(r'### Question (\d+):\s*(.+)', block)
-        if not hm: continue
-        q_num = int(hm.group(1)); q_title = hm.group(2).strip()
+        if not hm:
+            continue
+        q_num = int(hm.group(1))
+        q_title = hm.group(2).strip()
         tm = re.search(r'\*\*Question Type:\*\*\s*(.+)', block)
         q_type = tm.group(1).strip() if tm else "Single Choice"
         qm = re.search(r'\*\*Question:\*\*\s*(.+?)(?=\n\s*- [A-D]\))', block, re.DOTALL)
@@ -60,10 +67,12 @@ def regenerate() -> None:
         })
     os.makedirs(os.path.join(base_dir, 'dataset'), exist_ok=True)
     with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.jsonl'), 'w') as f:
-        for q in questions: f.write(json.dumps(q) + '\n')
+        for q in questions:
+            f.write(json.dumps(q) + '\n')
     with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.json'), 'w') as f:
         json.dump(questions, f, indent=2)
     print(f"Dataset regenerated: {len(questions)} questions")
+
 
 def main() -> None:
     """Regenerate the benchmark dataset."""

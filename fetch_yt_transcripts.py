@@ -35,7 +35,8 @@ import os
 import re
 import json
 import logging
-from pathlib import Path
+from typing import Optional
+
 
 try:
     from youtube_transcript_api import YouTubeTranscriptApi
@@ -138,7 +139,7 @@ def main() -> None:
             logger.info(f"  Success: {output_path}")
         else:
             results.append({"url": url, "status": "no_transcript"})
-            logger.info(f"  No transcript available")
+            logger.info("  No transcript available")
 
     # Save summary
     summary = {

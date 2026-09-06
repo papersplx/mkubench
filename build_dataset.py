@@ -37,9 +37,7 @@ import os
 import re
 import json
 import zipfile
-import glob
 import logging
-from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 # URL fetching
@@ -138,7 +136,11 @@ def clean_text(text: str) -> str:
     text = re.sub(r'\n{3,}', '\n\n', text)
     text = re.sub(r' {2,}', ' ', text)
     # Remove navigation menus and footer content patterns
-    text = re.sub(r'(Skip to content|Main navigation|Breadcrumb|Footer|Sidebar).*?(?=\n\n|\Z)', '', text, flags=re.DOTALL)
+    text = re.sub(
+        r'(Skip to content|Main navigation|Breadcrumb|Footer|Sidebar)'
+        r'.*?(?=\n\n|\Z)',
+        '', text, flags=re.DOTALL | re.MULTILINE
+    )
     # Remove timestamps
     text = re.sub(r'\(\d+:\d+\)\s*', '', text)
     # Remove page numbers
@@ -205,21 +207,19 @@ def extract_zip_text(filepath: str, base_source: str) -> List[Dict[str, Any]]:
             pdf_files = [f for f in z.namelist() if f.endswith('.pdf')]
             for pdf_file in pdf_files:
                 try:
-                    with z.open(pdf_file) as f:
-                        text = f.read().decode('utf-8', errors='replace')
-                        # Try to extract from PDF bytes
-                        temp_path = f'/tmp/{os.path.basename(pdf_file)}'
-                        with open(temp_path, 'wb') as tf:
-                            tf.write(z.read(pdf_file))
-                        pdf_text = extract_pdf_text(temp_path)
-                        os.remove(temp_path)
-                        if pdf_text:
-                            doc_name = os.path.basename(pdf_file).replace('.pdf', '')
-                            results.append({
-                                'text': pdf_text,
-                                'name': doc_name,
-                                'source': f"{base_source}/{pdf_file}"
-                            })
+                    # Try to extract from PDF bytes
+                    temp_path = f'/tmp/{os.path.basename(pdf_file)}'
+                    with open(temp_path, 'wb') as tf:
+                        tf.write(z.read(pdf_file))
+                    pdf_text = extract_pdf_text(temp_path)
+                    os.remove(temp_path)
+                    if pdf_text:
+                        doc_name = os.path.basename(pdf_file).replace('.pdf', '')
+                        results.append({
+                            'text': pdf_text,
+                            'name': doc_name,
+                            'source': f"{base_source}/{pdf_file}"
+                        })
                 except Exception as e:
                     logger.warning(f"Error extracting {pdf_file} from {filepath}: {e}")
     except Exception as e:

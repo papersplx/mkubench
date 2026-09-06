@@ -25,7 +25,7 @@ MMLU-style evaluation with accuracy scoring.
 
 import json
 import logging
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any
 from datetime import datetime
 
 from src.parser import parse_answer, normalize_answer
@@ -76,12 +76,12 @@ class BenchmarkEvaluator:
     def run_evaluation(self, client, max_questions: int = None, **kwargs) -> Dict[str, Any]:
         """
         Run full evaluation loop.
-        
+
         Args:
             client: A BaseModelClient instance
             max_questions: Limit evaluation to first N questions (for testing)
             **kwargs: Additional kwargs passed to client.generate()
-        
+
         Returns:
             Dictionary with full evaluation results
         """
@@ -124,7 +124,11 @@ class BenchmarkEvaluator:
 
             # Print progress
             status = "✓ CORRECT" if result["is_correct"] else "✗ INCORRECT"
-            print(f"  Q{question['id']}: {status} | Model: {result['parsed_answer']} | Correct: {result['correct_answer']}")
+            print(
+                f"  Q{question['id']}: {status} | "
+                f"Model: {result['parsed_answer']} | "
+                f"Correct: {result['correct_answer']}"
+            )
 
         # Calculate scores
         overall_accuracy = correct / total if total > 0 else 0.0
@@ -182,7 +186,10 @@ Question Type: {q['question_type']}"""
         print("-" * 70)
         for r in summary["results"]:
             status = "✓" if r["is_correct"] else "✗"
-            print(f"  {status} Q{r['id']:>2}: {r['title'][:50]:<50} | Ans: {r['parsed_answer']} | Correct: {r['correct_answer']}")
+            print(
+                f"  {status} Q{r['id']:>2}: {r['title'][:50]:<50} | "
+                f"Ans: {r['parsed_answer']} | Correct: {r['correct_answer']}"
+            )
         print("-" * 70)
 
     def save_results(self, summary: Dict[str, Any], output_path: str) -> None:
@@ -196,5 +203,5 @@ Question Type: {q['question_type']}"""
         detailed_path = output_path.replace(".json", "_detailed.json")
         with open(detailed_path, 'w') as f:
             json.dump(summary, f, indent=2)
-        
+
         logger.info(f"Results saved to {output_path} and {detailed_path}")
