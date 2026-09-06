@@ -1,4 +1,4 @@
-""
+"""MKULTRA Benchmark - Automated LLM Evaluation Pipeline"""
 # Copyright (c) 2026 defnlnotme
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,8 +20,4 @@
 # SOFTWARE.
 #
 
-"MKULTRA Benchmark - Automated LLM Evaluation Pipeline"""
 __version__ = "1.0.0"
-
-
-#
