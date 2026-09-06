@@ -101,9 +101,9 @@ make build-data
 ```
 
 Output is in `dataset/training_data/`:
-- `training_dataset.jsonl` — Combined documents (id, title, text, source, type, metadata)
-- `batches/batch_001.jsonl` through `batch_006.jsonl` — Batched documents for LLM training
-- `dataset_summary.json` — Metadata about the dataset
+- `training_dataset.jsonl` — Combined documents (id, title, content, source, type, metadata)
+- `batches/batch_001.jsonl` through `batch_004.jsonl` — Batched documents for LLM training
+- `dataset_summary.json` — Metadata about the dataset (78 docs: 40 PDFs, 9 EPUBs, 8 TXTs, 21 articles)
 
 Fetch YouTube transcripts:
 ```bash
