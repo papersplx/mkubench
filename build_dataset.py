@@ -258,7 +258,7 @@ def fetch_youtube_transcript(url: str) -> Optional[str]:
         if not video_id:
             return None
         transcript = YouTubeTranscriptApi().fetch(video_id.group(1))
-        text = ' '.join([t['text'] for t in transcript])
+        text = ' '.join([t.text for t in transcript])
         return clean_text(text) if text else None
     except Exception as e:
         logger.info(f"No transcript available for {url}: {e}")
