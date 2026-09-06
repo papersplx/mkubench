@@ -22,15 +22,17 @@
 # SOFTWARE.
 #
 
+import argparse
 import json
 import os
 import re
 
 
-def regenerate() -> None:
+def regenerate(md_path: str = None) -> None:
     """Regenerate the dataset from the markdown source file."""
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    md_path = os.path.join(base_dir, 'dataset', 'mkultra-benchmark.md')
+    if md_path is None:
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        md_path = os.path.join(base_dir, 'dataset', 'mkultra-benchmark.md')
     with open(md_path, 'r') as f:
         content = f.read()
     blocks = content.split('---')
@@ -65,18 +67,26 @@ def regenerate() -> None:
             "correct_answer": correct_answer, "is_multiple_choice": is_multiple,
             "citations": citations, "explanation": explanation, "question_type": q_type
         })
-    os.makedirs(os.path.join(base_dir, 'dataset'), exist_ok=True)
-    with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.jsonl'), 'w') as f:
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_dir = os.path.join(base_dir, 'dataset')
+    os.makedirs(output_dir, exist_ok=True)
+    with open(os.path.join(output_dir, 'mkultra_benchmark.jsonl'), 'w') as f:
         for q in questions:
             f.write(json.dumps(q) + '\n')
-    with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.json'), 'w') as f:
+    with open(os.path.join(output_dir, 'mkultra_benchmark.json'), 'w') as f:
         json.dump(questions, f, indent=2)
     print(f"Dataset regenerated: {len(questions)} questions")
 
 
 def main() -> None:
     """Regenerate the benchmark dataset."""
-    regenerate()
+    parser = argparse.ArgumentParser(
+        description="Regenerate the MKULTRA benchmark dataset from markdown source."
+    )
+    parser.add_argument("--md-path", default=None,
+                        help="Path to mkultra-benchmark.md source file")
+    args = parser.parse_args()
+    regenerate(md_path=args.md_path)
 
 
 if __name__ == "__main__":
