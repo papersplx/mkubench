@@ -1,4 +1,4 @@
-# MKULTRA Continuation Benchmark
+# MKULTRA Benchmark
 
 An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.
 
@@ -73,7 +73,7 @@ Results are saved as JSON files in the `results/` directory:
 ## Architecture
 
 ```
-mkultra-continuation-benchmark.md  (source QA data)
+mkultra-benchmark.md  (source QA data)
     │
     ▼
 dataset/mkultra_benchmark.jsonl    (structured dataset)
@@ -87,7 +87,7 @@ run_benchmark.py                   (main entry point)
 
 ## Adding More Questions
 
-Add questions to `mkultra-continuation-benchmark.md` following the existing format:
+Add questions to `mkultra-benchmark.md` following the existing format:
 ```markdown
 ### Question N: Title
 **Question Type:** Single Choice | Multiple Choice

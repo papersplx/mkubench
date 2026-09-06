@@ -3,7 +3,7 @@
 import re, json, os
 
 def regenerate():
-    md_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'mkultra-continuation-benchmark.md')
+    md_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'mkultra-benchmark.md')
     with open(md_path, 'r') as f:
         content = f.read()
     blocks = content.split('---')
@@ -30,7 +30,7 @@ def regenerate():
         is_multiple = "Multiple Choice" in q_type or "Select ALL" in q_text
         options_formatted = [f"{opt['letter']}) {opt['text']}" for opt in options]
         questions.append({
-            "id": q_num, "category": "mkultra_continuation", "title": q_title,
+            "id": q_num, "category": "mkultra", "title": q_title,
             "question": q_text, "options": options_formatted, "options_raw": options,
             "correct_answer": correct_answer, "is_multiple_choice": is_multiple,
             "citations": citations, "explanation": explanation, "question_type": q_type

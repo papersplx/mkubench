@@ -1,4 +1,4 @@
-"""MKULTRA Continuation Benchmark - Automated LLM Evaluation Pipeline"""
+"""MKULTRA Benchmark - Automated LLM Evaluation Pipeline"""
 __version__ = "1.0.0"
 
 # Copyright (c) 2026 defnlnotme

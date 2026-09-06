@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Supersecret ORD Program",
     "question": "When the CIA officially claimed to phase out its infamous MK-ULTRA drug-testing program in the 1970s, what supersecret behavioral-control project was it replaced with under the Office of Research and Development (ORD)?",
     "options": [
@@ -36,7 +36,7 @@
   },
   {
     "id": 2,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Nonthermal Bioeffects Safety Standards",
     "question": "Which of the following statements accurately describe the history of the thermal/nonthermal controversy of electromagnetic radiation (EMR) in the United States according to the sources? (Select ALL that apply)",
     "options": [
@@ -71,7 +71,7 @@
   },
   {
     "id": 3,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Pentagon's 1990s Nonlethal EMR Program Revelation",
     "question": "What monumental geopolitical event eventually forced the U.S. military to shift its public stance on nonthermal EMR bioeffects, publicly unveiling a nonlethal weapons program based on those very bioeffects?",
     "options": [
@@ -106,7 +106,7 @@
   },
   {
     "id": 4,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Project Pandora Objectives",
     "question": "Project Pandora was launched by ARPA/DARPA in the late 1960s. What was its primary initial objective?",
     "options": [
@@ -141,7 +141,7 @@
   },
   {
     "id": 5,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Project Pandora's Dual Positions",
     "question": "How did the findings of Project Pandora's director, Richard Cesaro, compare to the official, classified position of the program? (Select ALL that apply)",
     "options": [
@@ -176,7 +176,7 @@
   },
   {
     "id": 6,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Project Monarch Definition",
     "question": "According to the privately published disclosures of investigator Mark Phillips, Project Monarch was:",
     "options": [
@@ -211,7 +211,7 @@
   },
   {
     "id": 7,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Project Monarch's Programming Levels",
     "question": "According to the structural breakdowns of Project Monarch, which of the following are correctly matched to their functional designations? (Select ALL that apply)",
     "options": [
@@ -246,7 +246,7 @@
   },
   {
     "id": 8,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "SATAN Weapon System Acronym",
     "question": "In the literature of covert neuro-weaponry, the above-top-secret worldwide mind-control system \"SATAN\" stands for which of the following?",
     "options": [
@@ -281,7 +281,7 @@
   },
   {
     "id": 9,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "TAMI Acronym",
     "question": "What does the acronym \"TAMI\" stand for, representing the highly sophisticated neural-interfacing system discussed by neuro-hacking whistleblowers?",
     "options": [
@@ -316,7 +316,7 @@
   },
   {
     "id": 10,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "V2K Technology Definition",
     "question": "The military abbreviation \"V2K\" (or Voice-to-Skull/V2S) refers to a technology that:",
     "options": [
@@ -351,7 +351,7 @@
   },
   {
     "id": 11,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Dr. Eldon Byrd's EMR Research",
     "question": "Dr. Eldon Byrd ran the Marine Corps Nonlethal Electromagnetic Weapons Project from 1980 to 1983. Which of the following statements are true about his work according to the sources? (Select ALL that apply)",
     "options": [
@@ -386,7 +386,7 @@
   },
   {
     "id": 12,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Remote Neural Monitoring (RNM)",
     "question": "In his landmark lawsuit against the National Security Agency (Akwei v. NSA, Civil Action 92-0449), John St. Clair Akwei claimed that the NSA utilizes what specific system to track and non-invasively monitor thoughts and audio-visual brain activity wirelessly?",
     "options": [
@@ -421,7 +421,7 @@
   },
   {
     "id": 13,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Dr. Ewen Cameron's Reprogramming Protocols",
     "question": "Dr. Ewen Cameron's CIA-funded brainwashing experiments at McGill University utilized \"psychic driving.\" What did this technique involve?",
     "options": [
@@ -456,7 +456,7 @@
   },
   {
     "id": 14,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Operation Often",
     "question": "Launched in 1969 by the CIA's Office of Research and Development (ORD), Operation Often combined mind-control research with what unconventional domains? (Select ALL that apply)",
     "options": [
@@ -491,7 +491,7 @@
   },
   {
     "id": 15,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Herman Schwan's Role in Safety Standards",
     "question": "Herman Schwan, a Nazi Paperclip scientist brought to the U.S. after WWII, established Herman Schwan safety limits based on which of the following?",
     "options": [
@@ -526,7 +526,7 @@
   },
   {
     "id": 16,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "The Soviet Lida Machine",
     "question": "What was the purpose of the Soviet Lida machine examined by Dr. Ross Adey at the Loma Linda Veterans Hospital?",
     "options": [
@@ -561,7 +561,7 @@
   },
   {
     "id": 17,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "John Norseen's \"Brain Prints\" and \"BioFusion\"",
     "question": "Lockheed Martin neuroscientist John Norseen developed a concept called \"BioFusion.\" What did his theories propose?",
     "options": [
@@ -596,7 +596,7 @@
   },
   {
     "id": 18,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Dennis Kucinich's Space Preservation Act",
     "question": "Why was Congressman Dennis Kucinich's Space Preservation Act of 2001 (House Bill 2977) of massive interest to mind-control researchers? (Select ALL that apply)",
     "options": [
@@ -631,7 +631,7 @@
   },
   {
     "id": 19,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Jose Delgado's Remote Behavior Control",
     "question": "Dr. Jose Delgado, a famous Yale brain researcher, is most well-known in mind-control literature for which of the following achievements?",
     "options": [
@@ -666,7 +666,7 @@
   },
   {
     "id": 20,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Soviet \"Virus 666\"",
     "question": "According to a report delivered by a scientist from the Baumann Technical Institute, what is the alleged mechanism of the Soviet psychotronic \"Virus 666\"?",
     "options": [
@@ -701,7 +701,7 @@
   },
   {
     "id": 21,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Dr. Robert O. Becker's EMR Manhattan Project Theory",
     "question": "Why did Dr. Robert O. Becker, a pioneering bioelectromagnetics scientist and two-time Nobel Prize nominee, believe the U.S. government denied nonthermal EMR bioeffects?",
     "options": [
@@ -736,7 +736,7 @@
   },
   {
     "id": 22,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "The Moscow Signal Embassy Bombardment",
     "question": "Which of the following statements accurately describe the \"Moscow Signal\" incident? (Select ALL that apply)",
     "options": [
@@ -771,7 +771,7 @@
   },
   {
     "id": 23,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "The \"A Treatment\" of Project ARTICHOKE",
     "question": "In the early CIA ARTICHOKE mind-control program, what did the \"A Treatment\" consist of?",
     "options": [
@@ -806,7 +806,7 @@
   },
   {
     "id": 24,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Cathy O'Brien and the National Security Act",
     "question": "Cathy O'Brien, a survivor of the MK-Monarch program, described how her attempts to sue the government for damages were systematically blocked. What specific legal tool was utilized to halt these proceedings?",
     "options": [
@@ -841,7 +841,7 @@
   },
   {
     "id": 25,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "The Finders Cult and the CIA",
     "question": "Which of the following facts are true regarding the \"Finders Cult\" according to the declassified U.S. Customs reports in the sources? (Select ALL that apply)",
     "options": [
@@ -876,7 +876,7 @@
   },
   {
     "id": 26,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Dr. William Sargant's Conversion Methodology",
     "question": "Tavistock-trained psychiatrist Dr. William Sargant, who worked in the CIA's mind-control programs, stated in his book \"Battle for the Mind\" that beliefs can be implanted after:",
     "options": [
@@ -911,7 +911,7 @@
   },
   {
     "id": 27,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Ganzfeld Technique in Parapsychology",
     "question": "In the US and Soviet psychic warfare programs, the \"Ganzfeld Technique\" refers to a process where:",
     "options": [
@@ -946,7 +946,7 @@
   },
   {
     "id": 28,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "John Ginter's \"M.I.N.D.\" Acronym",
     "question": "In a 1967 California court case (Ginter v. CDC), prisoner John Ginter claimed that a San Quentin psychiatrist told him he was being experimented on using a device with what specific acronym?",
     "options": [
@@ -981,7 +981,7 @@
   },
   {
     "id": 29,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "CIA \"No-Touch\" Torture Principles",
     "question": "According to Professor Alfred McCoy's historical analysis of U.S. psychological programs, what are the core principles behind the CIA's \"no-touch\" torture? (Select ALL that apply)",
     "options": [
@@ -1016,7 +1016,7 @@
   },
   {
     "id": 30,
-    "category": "mkultra_continuation",
+    "category": "mkultra",
     "title": "Duma Expert Yuriy Lopatin's Mind-Control Bans",
     "question": "Top Russian scientist and state politician Yuriy Lopatin proposed Duma legislation three times to do what?",
     "options": [
