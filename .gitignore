@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyc
+*.egg-info/
+dist/
+build/
+.results/
+results/
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+src/__pycache__/
