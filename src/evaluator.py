@@ -164,7 +164,7 @@ Question Type: {q['question_type']}"""
 
         return prompt
 
-    def print_summary(self, summary: Dict[str, Any]):
+    def print_summary(self, summary: Dict[str, Any]) -> None:
         """Print a formatted summary of results."""
         print("\n" + "=" * 70)
         print("BENCHMARK RESULTS")
@@ -185,7 +185,7 @@ Question Type: {q['question_type']}"""
             print(f"  {status} Q{r['id']:>2}: {r['title'][:50]:<50} | Ans: {r['parsed_answer']} | Correct: {r['correct_answer']}")
         print("-" * 70)
 
-    def save_results(self, summary: Dict[str, Any], output_path: str):
+    def save_results(self, summary: Dict[str, Any], output_path: str) -> None:
         """Save results to a JSON file."""
         # Remove the full results for the summary file, keep separate
         output = {k: v for k, v in summary.items() if k != "results"}
