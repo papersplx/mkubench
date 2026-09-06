@@ -17,7 +17,7 @@ run-local:
 
 test:
 	python src/parser.py
-	python -c "from src.evaluator import BenchmarkEvaluator; e = BenchmarkEvaluator('dataset/mkultra_benchmark.jsonl'); print(f'Loaded {len(e.dataset)} questions')"
+	python -m unittest discover tests/ -v
 
 build-data:
 	python build_dataset.py
