@@ -1,13 +1,13 @@
 {
-  "total_documents": 112,
+  "total_documents": 78,
   "files": 9,
-  "urls": 20,
+  "urls": 21,
   "types": {
-    "article": 17,
-    "news_article": 2,
-    "pdf": 85,
-    "txt": 8
+    "pdf": 40,
+    "epub": 9,
+    "txt": 8,
+    "article": 21
   },
   "batch_size": 20,
-  "num_batches": 6
+  "num_batches": 4
 }
