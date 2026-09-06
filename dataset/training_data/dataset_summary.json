@@ -1,0 +1,11 @@
+{
+  "total_documents": 113,
+  "files": 93,
+  "urls": 20,
+  "types": {
+    "pdf": 85,
+    "txt": 8,
+    "article": 18,
+    "news_article": 2
+  }
+}
