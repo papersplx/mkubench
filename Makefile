@@ -1,4 +1,4 @@
-.PHONY: test run install clean docs
+.PHONY: test run install clean docs dataset build-data fetch-youtube
 
 install:
 	pip install -r requirements.txt
@@ -18,6 +18,14 @@ run-local:
 test:
 	python src/parser.py
 	python -c "from src.evaluator import BenchmarkEvaluator; e = BenchmarkEvaluator('dataset/mkultra_benchmark.jsonl'); print(f'Loaded {len(e.dataset)} questions')"
+
+build-data:
+	python build_dataset.py
+
+fetch-youtube:
+	python fetch_yt_transcripts.py
+
+dataset: build-data fetch-youtube
 
 clean:
 	rm -rf results/

@@ -1,11 +1,13 @@
 {
-  "total_documents": 113,
-  "files": 93,
+  "total_documents": 112,
+  "files": 9,
   "urls": 20,
   "types": {
+    "article": 17,
+    "news_article": 2,
     "pdf": 85,
-    "txt": 8,
-    "article": 18,
-    "news_article": 2
-  }
+    "txt": 8
+  },
+  "batch_size": 20,
+  "num_batches": 6
 }

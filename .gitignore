@@ -11,3 +11,5 @@ results/
 .idea/
 .vscode/
 src/__pycache__/
+# Large PDFs that cannot be committed to GitHub
+dataset/training/**/*.pdf
