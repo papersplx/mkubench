@@ -9,6 +9,8 @@ An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to eva
 - **Single & Multiple Choice support** - Handles "Select ALL that apply" questions
 - **Configurable** - Command-line driven with sensible defaults
 - **Detailed reporting** - Per-question breakdown + overall accuracy
+- **Training dataset builder** - Extract text from PDFs, EPUBs, TXTs and build LLM training data
+- **YouTube transcript fetching** - Download transcripts for video-based research
 
 ## Quick Start
 
@@ -52,7 +54,22 @@ python run_benchmark.py --client ollama --model llama3 --max-questions 5
 | `--output` | Output directory for results | `results/` |
 | `--verbose` | Enable verbose logging | `False` |
 
-## Dataset Format
+## Makefile Targets
+
+```bash
+make install          # Install dependencies
+make run              # Run benchmark (OpenAI default)
+make run-ollama       # Run against local Ollama
+make run-openai       # Run against OpenAI API
+make run-local        # Run against local vLLM server
+make test             # Run validation tests
+make build-data       # Build training dataset from source files
+make fetch-youtube    # Fetch YouTube transcripts
+make dataset          # Build data AND fetch YouTube transcripts
+make clean            # Clean results directory
+```
+
+## Benchmark Dataset
 
 The benchmark contains **30 questions** in `dataset/mkultra_benchmark.jsonl`:
 - **Single Choice** (17 questions) - Select one correct option
@@ -63,6 +80,52 @@ Each question includes:
 - Correct answer(s)
 - Citations
 - Detailed explanations
+
+## Training Dataset
+
+The training dataset is built from source files in `dataset/training/`:
+- PDFs (extracted via pdfplumber/PyPDF2)
+- EPUBs (extracted via ebooklib)
+- TXT files (direct reading)
+- ZIP files containing PDFs (extracted individually)
+- URLs from `dataset/targeted_links.txt` (filtered to skip shopping/EMF/gadget links)
+
+Build the training dataset:
+```bash
+python build_dataset.py
+```
+
+Or use Make:
+```bash
+make build-data
+```
+
+Output is in `dataset/training_data/`:
+- `training_dataset.jsonl` — Combined documents (id, title, text, source, type, metadata)
+- `batches/batch_001.jsonl` through `batch_006.jsonl` — Batched documents for LLM training
+- `dataset_summary.json` — Metadata about the dataset
+
+Fetch YouTube transcripts:
+```bash
+python fetch_yt_transcripts.py
+```
+
+Or use Make:
+```bash
+make fetch-youtube
+```
+
+## Building from Source
+
+Add questions to `mkultra-benchmark.md` following the existing format, then regenerate:
+```bash
+python scripts/regenerate_dataset.py
+```
+
+Or with make:
+```bash
+python -c "import sys; sys.path.insert(0, 'scripts'); from regenerate_dataset import regenerate; regenerate()"
+```
 
 ## Output
 
@@ -76,34 +139,29 @@ Results are saved as JSON files in the `results/` directory:
 mkultra-benchmark.md  (source QA data)
     │
     ▼
-dataset/mkultra_benchmark.jsonl    (structured dataset)
+scripts/regenerate_dataset.py   (markdown → JSONL converter)
+    │
+    ▼
+dataset/mkultra_benchmark.jsonl (structured benchmark dataset)
     │
     ▼
 run_benchmark.py                   (main entry point)
     ├── src/model_client.py        (model interface: OpenAI/Ollama)
     ├── src/evaluator.py           (MMLU-style evaluation engine)
     └── src/parser.py              (response parsing)
+
+dataset/training/                  (source training files)
+    │
+    ▼
+build_dataset.py                   (training dataset builder)
+    │
+    ▼
+dataset/training_data/             (output training data)
+    ├── training_dataset.jsonl
+    ├── batches/
+    └── dataset_summary.json
 ```
 
-## Adding More Questions
+## License
 
-Add questions to `mkultra-benchmark.md` following the existing format:
-```markdown
-### Question N: Title
-**Question Type:** Single Choice | Multiple Choice
-**Question:** [question text]
-- A) [option]
-- B) [option]
-- C) [option]
-- D) [option]
-**Correct Answer:** [letter(s), comma-separated for multiple]
-**Citations:** [references]
-**Explanation:** [explanation]
-```
-
-Then regenerate the dataset:
-```bash
-python -c "import scripts; scripts.regenerate_dataset()"
-```
-
-Or simply run the benchmark - it will parse the markdown on first run if JSONL is missing.
+MIT License (c) 2026 defnlnotme
