@@ -62,6 +62,7 @@ logger = logging.getLogger(__name__)
 
 
 def setup_logging() -> None:
+    """Configure logging format and level."""
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -118,6 +119,7 @@ def load_video_urls(links_path: str) -> list:
 
 
 def main() -> None:
+    """Fetch YouTube transcripts for benchmark videos."""
     import argparse
     parser = argparse.ArgumentParser(description="Fetch YouTube transcripts for MKULTRA benchmark")
     parser.add_argument("--links-path", default=None, help="Path to targeted_links.txt")

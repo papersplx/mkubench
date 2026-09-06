@@ -99,6 +99,7 @@ DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'd
 
 
 def setup_logging() -> None:
+    """Configure logging format and level."""
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -474,6 +475,7 @@ def build_dataset(
 
 
 def main() -> None:
+    """Build the MKULTRA training dataset."""
     import argparse
     parser = argparse.ArgumentParser(description="Build MKULTRA training dataset")
     parser.add_argument("--training-dir", default=None, help="Path to training files")
