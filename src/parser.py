@@ -92,6 +92,7 @@ def normalize_answer(parsed: Optional[str], correct_answer: str, is_multiple_cho
 
 
 def main() -> None:
+    """Run parser validation tests."""
     tests = [
         ("The answer is B", False, "B", True),
         ("Answer: A,B,D", True, "A,B,D", True),

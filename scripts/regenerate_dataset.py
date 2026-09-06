@@ -24,6 +24,7 @@
 import re, json, os
 
 def regenerate() -> None:
+    """Regenerate the dataset from the markdown source file."""
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     md_path = os.path.join(base_dir, 'dataset', 'mkultra-benchmark.md')
     with open(md_path, 'r') as f:
@@ -65,6 +66,7 @@ def regenerate() -> None:
     print(f"Dataset regenerated: {len(questions)} questions")
 
 def main() -> None:
+    """Regenerate the benchmark dataset."""
     regenerate()
 
 

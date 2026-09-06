@@ -160,6 +160,7 @@ class OllamaClient(BaseModelClient):
         return ""
 
     def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
+        """Generate responses for a list of prompts in batch."""
         results = []
         for i, prompt in enumerate(prompts):
             messages = [{"role": "user", "content": prompt}]

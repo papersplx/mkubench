@@ -62,6 +62,7 @@ logger = logging.getLogger(__name__)
 
 
 def main() -> None:
+    """Run the MKULTRA benchmark against a configured model."""
     parser = argparse.ArgumentParser(
         description="MKULTRA Benchmark - Automated LLM Evaluation",
         formatter_class=argparse.RawDescriptionHelpFormatter,
