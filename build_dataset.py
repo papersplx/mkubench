@@ -219,7 +219,7 @@ def extract_zip_text(filepath: str, base_source: str) -> List[Dict[str, Any]]:
     return results
 
 
-def fetch_url_content(url: str, timeout: int = 30) -> Optional[str]:
+def fetch_url_content(url: str, timeout: int = 10) -> Optional[str]:
     """Fetch content from a URL."""
     if should_skip_url(url):
         logger.info(f"Skipping URL (shopping/gadget): {url}")
@@ -333,7 +333,8 @@ def build_dataset(
     training_dir: str = None,
     links_path: str = None,
     output_dir: str = None,
-    batch_size: int = BATCH_SIZE
+    batch_size: int = BATCH_SIZE,
+    skip_urls: bool = False
 ):
     """Build the complete training dataset."""
     setup_logging()
@@ -376,6 +377,8 @@ def build_dataset(
     for url in urls:
         if should_skip_url(url):
             logger.info(f"Skipping URL (filtered): {url}")
+            continue
+        if skip_urls:
             continue
 
         # Check if YouTube
@@ -477,13 +480,15 @@ def main():
     parser.add_argument("--links-path", default=None, help="Path to targeted_links.txt")
     parser.add_argument("--output-dir", default=None, help="Output directory")
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE, help="Documents per batch")
+    parser.add_argument("--skip-urls", action="store_true", help="Skip URL fetching (rebuild only from local files)")
     args = parser.parse_args()
 
     build_dataset(
         training_dir=args.training_dir,
         links_path=args.links_path,
         output_dir=args.output_dir,
-        batch_size=args.batch_size
+        batch_size=args.batch_size,
+        skip_urls=args.skip_urls
     )
 
 
