@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MKULTRA Continuation Benchmark - Main Runner
+MKULTRA Benchmark - Main Runner
 
 An automated LLM benchmark test modeled after MMLU/MMLU-Pro.
 Run against any local LLM (Ollama, vLLM, LocalAI) or API (OpenAI, Anthropic).
@@ -63,7 +63,7 @@ logger = logging.getLogger(__name__)
 
 def main():
     parser = argparse.ArgumentParser(
-        description="MKULTRA Continuation Benchmark - Automated LLM Evaluation",
+        description="MKULTRA Benchmark - Automated LLM Evaluation",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -155,7 +155,7 @@ Examples:
 
     # Print configuration
     print("\n" + "=" * 70)
-    print("MKULTRA CONTINUATION BENCHMARK")
+    print("MKULTRA BENCHMARK")
     print("=" * 70)
     print(f"Client:        {args.client}")
     print(f"Model:         {args.model}")
