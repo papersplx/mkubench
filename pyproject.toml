@@ -29,3 +29,10 @@ mkultra-bench = "run_benchmark:main"
 build-dataset = "build_dataset:main"
 fetch-youtube = "fetch_yt_transcripts:main"
 regenerate-dataset = "scripts.regenerate_dataset:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = ["-v", "--tb=short"]
