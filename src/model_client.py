@@ -39,12 +39,12 @@ class BaseModelClient(ABC):
     """Abstract base class for model clients."""
 
     @abstractmethod
-    def generate(self, messages: List[Dict[str, str]], **kwargs) -> str:
+    def generate(self, messages: List[Dict[str, str]], **kwargs: Any) -> str:
         """Generate a response from the model."""
         pass
 
     @abstractmethod
-    def batch_generate(self, prompts: List[str], **kwargs) -> List[str]:
+    def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         """Generate responses in batch."""
         pass
 
@@ -55,11 +55,11 @@ class OpenAIClient(BaseModelClient):
     def __init__(
         self,
         model: str = "gpt-4",
-        api_base: str = None,
-        api_key: str = None,
+        api_base: Optional[str] = None,
+        api_key: Optional[str] = None,
         timeout: int = 120,
         max_retries: int = 3,
-        **kwargs
+        **kwargs: Any
     ):
         self.model = model
         self.api_base = api_base or os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
@@ -72,7 +72,7 @@ class OpenAIClient(BaseModelClient):
         if not self.api_base.endswith("/"):
             self.api_base += "/"
 
-    def generate(self, messages: List[Dict[str, str]], **kwargs) -> str:
+    def generate(self, messages: List[Dict[str, str]], **kwargs: Any) -> str:
         """Send messages to the model and return the response text."""
         payload = {
             "model": self.model,
@@ -105,7 +105,7 @@ class OpenAIClient(BaseModelClient):
 
         return ""
 
-    def batch_generate(self, prompts: List[str], **kwargs) -> List[str]:
+    def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         """Generate responses for a list of prompts (sequential with rate limiting)."""
         results = []
         for i, prompt in enumerate(prompts):
@@ -123,12 +123,12 @@ class OpenAIClient(BaseModelClient):
 class OllamaClient(BaseModelClient):
     """Client for Ollama local LLM server."""
 
-    def __init__(self, model: str = "llama3", host: str = "http://localhost:11434", **kwargs):
+    def __init__(self, model: str = "llama3", host: str = "http://localhost:11434", **kwargs: Any):
         self.model = model
         self.host = host.rstrip("/")
         self.kwargs = kwargs
 
-    def generate(self, messages: List[Dict[str, str]], **kwargs) -> str:
+    def generate(self, messages: List[Dict[str, str]], **kwargs: Any) -> str:
         """Send messages to Ollama and return response."""
         payload = {
             "model": self.model,
@@ -159,7 +159,7 @@ class OllamaClient(BaseModelClient):
 
         return ""
 
-    def batch_generate(self, prompts: List[str], **kwargs) -> List[str]:
+    def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         results = []
         for i, prompt in enumerate(prompts):
             messages = [{"role": "user", "content": prompt}]
@@ -173,7 +173,7 @@ class OllamaClient(BaseModelClient):
         return results
 
 
-def get_client(client_type: str = "openai", **kwargs) -> BaseModelClient:
+def get_client(client_type: str = "openai", **kwargs: Any) -> BaseModelClient:
     """Factory function to get the appropriate client."""
     if client_type == "ollama":
         return OllamaClient(**kwargs)
