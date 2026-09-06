@@ -37,3 +37,32 @@ mkultra-benchmark/
 ├── Makefile               # Command shortcuts
 └── README.md              # Documentation
 ```
+
+## v1.1.0 — Bug Fixes, Quality Improvements & Infrastructure
+
+### Fixed
+- Fixed corrupted `fetch_yt_transcripts.py` header (duplicate docstring from build_dataset.py)
+- Fixed `scripts/regenerate_dataset.py` undefined `base_dir` variable causing NameError
+- Fixed `run_benchmark.py` `--save-json` argument bug (was `store_true` with `default=True`, impossible to disable; changed to `--no-save-json` with `store_false`)
+- Made `build_dataset.py` imports defensive (`requests`, `bs4` wrapped in try/except)
+- Added `None` guard in `fetch_url_content` for missing dependencies
+
+### Improved
+- Added `-> None` return type annotations to all public functions across 6 files
+- Added `Optional[str]` type hints for parameters defaulting to `None` in `OpenAIClient.__init__` and `build_dataset()`
+- Added `**kwargs: Any` type annotations to all `**kwargs` parameters in `model_client.py`
+- Added docstrings to all 15+ functions missing documentation
+- Updated `setup.py` with missing `regenerate-dataset` entry point
+- Added `[tool.pytest.ini_options]` to `pyproject.toml`
+- Updated `.github/workflows/test.yml` to use `python3` and added dependency check step
+- Updated `Makefile` with `PYTHON` variable auto-detecting venv Python and `check-env` target
+- Fixed `src/__init__.py`, `scripts/__init__.py`, `tests/__init__.py`, `src/parser.py` license header ordering
+- Added `main()` function wrapper to `src/parser.py` test code
+- Updated `src/model_client.py` type hints for `BaseModelClient`, `OpenAIClient`, `OllamaClient`, and `get_client`
+
+### Verified
+- All 24 unit tests passing
+- `make check-env`, `make test`, `make build-data` all functional
+- Clean working tree, all commits pushed to origin/master
+- Zero functions missing return types or docstrings
+- All source files compile cleanly
