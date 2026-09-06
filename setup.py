@@ -28,6 +28,7 @@ setup(
     license="MIT",
     python_requires=">=3.8",
     packages=find_packages(include=["src*", "scripts*", "tests*"]),
+    py_modules=["run_benchmark", "build_dataset", "fetch_yt_transcripts"],
     entry_points={
         "console_scripts": [
             "mkultra-bench=run_benchmark:main",
