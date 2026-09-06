@@ -15,7 +15,7 @@
   - PDF, EPUB, TXT, ZIP extraction
   - URL fetching with shopping/EMF/gadget filtering
   - Text cleaning (regex-based)
-  - Batched JSONL output (112 documents, 6 batches)
+  - Batched JSONL output (78 documents, 4 batches)
 - YouTube transcript fetcher (`fetch_yt_transcripts.py`)
 - Full test suite (24 unit tests)
 - GitHub Actions CI workflow
@@ -78,3 +78,21 @@ mkultra-benchmark/
 ### Changed
 - `build_dataset.py` output field: `text` → `content` for document content
 - `README.md`: updated dataset description to reflect correct field names and batch count
+
+## v1.1.2 — Code Quality & Infrastructure
+
+### Fixed
+- Updated CHANGELOG v1.0.0 dataset stats from 112 docs/6 batches to 78 docs/4 batches
+- Bumped version from 1.0.0 to 1.1.1 in pyproject.toml, setup.py, and src/__init__.py
+- Updated CI workflow to use pytest instead of unittest
+- Added flake8 linting step to CI pipeline
+
+### Improved
+- Removed all flake8 warnings across the codebase
+- Fixed unused imports, dead code, and ambiguous variable names
+- Split long print statements and fixed f-string issues
+- Added `.flake8` config with max-line-length=120
+- Added `# noqa: E402` comments to test files requiring sys.path manipulation
+- Stripped trailing whitespace from all Python files
+- Rewrote scripts/regenerate_dataset.py with consistent formatting
+
