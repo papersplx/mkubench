@@ -165,7 +165,7 @@ class OllamaClient(BaseModelClient):
             except Exception as e:
                 logger.error(f"Failed on prompt {i}: {e}")
                 results.append("")
-            time.sleep(kwargs.get("delay", 0.5))
+            time.sleep(kwargs.get("delay", 0.1))
         return results
 
 
