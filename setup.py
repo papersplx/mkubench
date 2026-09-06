@@ -33,6 +33,7 @@ setup(
             "mkultra-bench=run_benchmark:main",
             "build-dataset=build_dataset:main",
             "fetch-youtube=fetch_yt_transcripts:main",
+            "regenerate-dataset=scripts.regenerate_dataset:main",
         ],
     },
     extras_require={

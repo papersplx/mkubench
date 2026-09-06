@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+"""
+MKULTRA Benchmark - YouTube Transcript Fetcher
+
+Fetches transcripts from YouTube videos listed in dataset/targeted_links.txt.
+Handles videos without captions gracefully and logs results.
+
+Usage:
+    python fetch_yt_transcripts.py
+    python fetch_yt_transcripts.py --output transcripts/
+"""
+
+#!/usr/bin/env python3
+"""
+MKULTRA Benchmark - Training Dataset Builder
+
+Extracts text from PDFs, EPUBs, TXTs in dataset/training/, fetches URLs from
+dataset/targeted_links.txt (skipping shopping/EMF/gadget links), cleans text,
+and produces properly batched JSONL training data.
+
+Usage:
+    python build_dataset.py
+    python build_dataset.py --output-dir dataset/training_data
+    python build_dataset.py --batch-size 20
+"""
+
 # Copyright (c) 2026 defnlnotme
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -18,18 +44,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-
-#!/usr/bin/env python3
-"""
-MKULTRA Benchmark - YouTube Transcript Fetcher
-
-Fetches transcripts from YouTube videos listed in dataset/targeted_links.txt.
-Handles videos without captions gracefully and logs results.
-
-Usage:
-    python fetch_yt_transcripts.py
-    python fetch_yt_transcripts.py --output transcripts/
-"""
 
 import os
 import re
