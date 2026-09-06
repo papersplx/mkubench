@@ -470,7 +470,7 @@ def build_dataset(
     return documents, summary
 
 
-if __name__ == "__main__":
+def main():
     import argparse
     parser = argparse.ArgumentParser(description="Build MKULTRA training dataset")
     parser.add_argument("--training-dir", default=None, help="Path to training files")
@@ -485,3 +485,7 @@ if __name__ == "__main__":
         output_dir=args.output_dir,
         batch_size=args.batch_size
     )
+
+
+if __name__ == "__main__":
+    main()
