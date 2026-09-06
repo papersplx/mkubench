@@ -59,7 +59,16 @@ class OpenAIClient(BaseModelClient):
         timeout: int = 120,
         max_retries: int = 3,
         **kwargs: Any
-    ):
+    ) -> None:
+        """Initialize the OpenAI-compatible client.
+
+        Args:
+            model: Model name/identifier.
+            api_base: Base URL for the API endpoint.
+            api_key: API key for authentication.
+            timeout: Request timeout in seconds.
+            max_retries: Maximum number of retry attempts.
+        """
         self.model = model
         self.api_base = api_base or os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
         self.api_key = api_key or os.getenv("OPENAI_API_KEY", "dummy-key-for-local")
@@ -120,7 +129,13 @@ class OpenAIClient(BaseModelClient):
 class OllamaClient(BaseModelClient):
     """Client for Ollama local LLM server."""
 
-    def __init__(self, model: str = "llama3", host: str = "http://localhost:11434", **kwargs: Any):
+    def __init__(self, model: str = "llama3", host: str = "http://localhost:11434", **kwargs: Any) -> None:
+        """Initialize the Ollama client.
+
+        Args:
+            model: Model name to use.
+            host: Ollama server host URL.
+        """
         self.model = model
         self.host = host.rstrip("/")
         self.kwargs = kwargs

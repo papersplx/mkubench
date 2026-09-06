@@ -37,7 +37,12 @@ logger = logging.getLogger(__name__)
 class BenchmarkEvaluator:
     """Evaluates model responses against the benchmark dataset."""
 
-    def __init__(self, dataset_path: str):
+    def __init__(self, dataset_path: str) -> None:
+        """Initialize the evaluator with a benchmark dataset.
+
+        Args:
+            dataset_path: Path to the JSONL dataset file.
+        """
         self.dataset = self._load_dataset(dataset_path)
         self.results = []
 
