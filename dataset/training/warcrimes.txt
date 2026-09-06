@@ -1,0 +1,306 @@
+# tactiq.io free youtube transcript
+# No title found
+# https://www.youtube.com/watch/zCc03okTWdY
+00:00:00.000 No text
+00:00:00.500 Why is the United Kingdom making it more difficult to prosecute
+00:00:04.320 war crimes.
+00:00:05.340 In particular, why is the United Kingdom government
+00:00:08.189 seeking to make it more difficult to prosecute
+00:00:11.580 for the war crime of torture?
+00:00:13.980 There is currently a bill before parliament,
+00:00:15.990 the Overseas Operations (Service Personnel and Veterans) Bill.
+00:00:22.350 This proposed legislation does two things.
+00:00:24.610 First is that it makes it more difficult for civil claims
+00:00:27.960 to be brought against those who are accused of war crimes.
+00:00:31.440 But it also makes it more difficult for prosecutions
+00:00:34.230 to be brought.
+00:00:35.250 This video looks at the second of these things
+00:00:37.920 and to try and understand why the government wants
+00:00:40.560 to make it more difficult to prosecute
+00:00:42.690 those accused of war crimes.
+00:00:44.880 The starting point is to look at how English law treats torture.
+00:00:49.080 In 2005 the House of Lords, the predecessor
+00:00:52.830 to the current Supreme Court, had
+00:00:54.780 to consider the extent to which torture
+00:00:57.120 was permissible in English law.
+00:00:59.220 It was held that from its very earliest days
+00:01:02.340 the common law of England has set its face firmly
+00:01:05.700 against the use of torture.
+00:01:08.340 The authorities for this proposition
+00:01:09.990 are some of the greatest names in English legal history
+00:01:13.440 - Fortescue, Coke, Blackstone, Stephen.
+00:01:17.220 But even though the common law set its face firmly
+00:01:20.610 against the use of torture, torture
+00:01:22.590 did take place in England with official sanction
+00:01:25.380 until the middle of the 17th century.
+00:01:27.380 Although the common law banned it
+00:01:29.130 it was permissible under the Royal prerogative.
+00:01:32.160 But this royal power, however, was abolished in 1640.
+00:01:37.320 And by the time of the Act of Union of 1707
+00:01:41.110 it was so firmly established that torture was prohibited
+00:01:44.460 in England that one of the terms on which Scotland
+00:01:47.370 joined the Union was that it had to be
+00:01:49.530 prohibited in Scotland too.
+00:01:51.930 The next point to consider is to see
+00:01:53.610 how international law operates in respect of war crimes
+00:01:57.660 and torture and how that, in turn, feeds into domestic law.
+00:02:01.740 A good deal of the relevant international law
+00:02:04.140 has its origin in the Geneva Convention of 1864.
+00:02:07.470 One of the provisions of the 1864 convention
+00:02:11.008 was to do with wounded and sick combatants.
+00:02:13.650 By 1929 there was a Geneva Convention
+00:02:16.710 in respect of the treatment of prisoners of war generally.
+00:02:19.950 This is the Geneva Convention you'll often
+00:02:22.230 see or hear referred to in war films and literature.
+00:02:25.530 In 1949 four Geneva Conventions were in place.
+00:02:28.410 The third of the 1949 conventions
+00:02:30.900 dealt with the treatment of prisoners of war.
+00:02:33.810 Article 13 provided that they should be treated humanely.
+00:02:37.950 The fourth Geneva Convention had similar provisions
+00:02:40.770 in respect of the protection of civilian persons.
+00:02:44.070 Article 32 explicitly provides that torture is prohibited.
+00:02:48.630 Torture is also prohibited under international law
+00:02:51.180 and other instruments: Article 5 of the Universal Declaration
+00:02:55.680 of Human Rights of 1948, Article 3 of the European Convention
+00:03:00.480 on Human Rights of 1950.
+00:03:02.700 There is even a dedicated treaty of 1984
+00:03:06.420 against torture and other cruel, inhuman, or degrading treatment
+00:03:10.800 or punishment.
+00:03:11.730 But all written laws are just words
+00:03:14.310 on pages without enforcement.
+00:03:16.440 And so in 1998 there came into being
+00:03:19.830 the Rome Statute of the International Criminal Court.
+00:03:23.670 This took effect from 2002.
+00:03:26.400 Under the Rome Statute there are detailed provisions
+00:03:29.190 in respect of genocide, crimes against humanity,
+00:03:32.770 war crimes, crimes of aggression.
+00:03:35.220 Under Article 6, Genocide, A to E provide five examples.
+00:03:39.870 Under Article 7, Crimes Against Humanity, A to K
+00:03:43.620 provide examples.
+00:03:45.390 And on Article 8, War Crimes, Article 2A goes on for pages
+00:03:51.000 giving instances, including Article 8.2(a)(ii) Torture
+00:03:55.260 or Inhuman Treatment.
+00:03:56.730 The Rome Statute was, in turn, transposed into national law
+00:04:00.120 under the International Criminal Court Act of 2001.
+00:04:04.140 Under Section 51 of that act it became explicitly
+00:04:07.350 provided that it was an offence against the law of England
+00:04:10.740 and Wales for a person to commit genocide,
+00:04:13.830 a crime against humanity, or a war crime.
+00:04:16.740 Under Section 50, 'war crime' was defined as a crime
+00:04:20.700 as defined in Article 8.2 of the Rome Statute, those four
+00:04:25.080 pages of examples.
+00:04:27.060 In 2006, the Armed Forces Act at Section 42
+00:04:31.020 provided that a person subject to service law
+00:04:34.020 commits an offence if he or she does
+00:04:36.390 any act which is punishable by law of England and Wales.
+00:04:39.450 In this way the International Criminal Court Act 2001
+00:04:42.990 became directly applicable to our armed forces.
+00:04:46.800 But this was not a novelty.
+00:04:47.970 Previous legislation, such as the Army Act of 1955,
+00:04:51.630 provided that our armed forces had
+00:04:53.940 to follow the criminal law of England and Wales.
+00:04:56.850 The difference the International Criminal Court Act 2001 made
+00:05:01.270 was that an internationally agreed definition of torture
+00:05:04.960 was now part of the law of the land
+00:05:07.600 to be followed by civilians and service personnel alike.
+00:05:11.620 So if that is the law of the land,
+00:05:13.870 what difference does this new proposed legislation make?
+00:05:18.340 Well, the context for this new legislation
+00:05:20.770 is what happened in Iraq in the first decade of this century.
+00:05:24.970 A number of bad things happened.
+00:05:28.240 One of the bad things that happened
+00:05:29.950 was that British soldiers treated Iraqi civilians
+00:05:34.120 in a way which amounted to torture.
+00:05:37.150 This is not a wild accusation.
+00:05:39.253 There has actually been a conviction for a war
+00:05:41.170 crime of a British soldier.
+00:05:42.850 There is a three-volume public inquiry
+00:05:45.670 detailing the maltreatment of Iraqi civilians
+00:05:49.420 by British soldiers.
+00:05:50.950 This is the report of Sir William Gage
+00:05:53.080 into the death of Baha Mousa.
+00:05:55.000 The single, horrific fact, which is
+00:05:56.830 the basis of this three-volume report
+00:05:59.290 is set out in paragraph 1.1.
+00:06:02.020 Baha Mousa, an Iraqi citizen died.
+00:06:05.140 A subsequent post-mortem examination of his body
+00:06:08.020 found that he had sustained 93 different surface injuries.
+00:06:13.930 But for his death, it is possible
+00:06:15.700 that the events with which this inquiry is concerned
+00:06:18.880 would never have seen the light of day.
+00:06:22.300 A judge is quoted at the court martial.
+00:06:24.520 "Some of the soldiers who had abused the detainees
+00:06:27.340 had not been charged with offences
+00:06:29.350 because there is no evidence against them
+00:06:31.900 as a result of a more or less obvious closing of ranks."
+00:06:36.640 One soldier's role in the death constituted
+00:06:39.640 a dreadful catalogue of unjustified and brutal violence
+00:06:43.510 on defenceless detainees.
+00:06:45.550 His own use of violence on them was appalling.
+00:06:48.940 Earlier in this report, I have described him as a bully.
+00:06:51.550 His part in these events demonstrates
+00:06:54.040 him to be a violent bully.
+00:06:56.680 One incident where detainees were maltreated
+00:06:58.990 had an entire chapter devoted to it, the so-called "Free
+00:07:02.080 For All."
+00:07:02.950 That soldier was the only one to be convicted.
+00:07:05.380 But the report also found facts about a number of soldiers
+00:07:10.330 in their maltreatment of detainees.
+00:07:12.980 The judge found, as a conclusion,
+00:07:15.100 there were other incidents of abuse and treatment
+00:07:17.950 of Iraqi civilians by soldiers of the regiment in question.
+00:07:21.460 The Ministry of Defence, in its closing submissions,
+00:07:23.920 accepted with regret that the violent treatment of detainees
+00:07:28.180 was not the only incidents of unacceptable behaviour
+00:07:31.690 by members of that regiment.
+00:07:33.370 But by 2017 the Ministry of Defence dropped the probe
+00:07:37.960 into abuse of British soldiers.
+00:07:40.090 Only one soldier was ever convicted.
+00:07:43.540 And now the government is proposing a bill
+00:07:46.540 to make it even more difficult for prosecutions
+00:07:50.050 to be brought for war crimes and for torture.
+00:07:53.200 The bill does not change fthe substantive law.
+00:07:56.950 Torture and war crimes are still prohibited by the Rome Statute.
+00:08:01.120 They are still prohibited under the International Criminal
+00:08:03.820 Court Act of 2001, and, if by service personnel,
+00:08:07.630 they are still prohibited under the Armed Forces 2006.
+00:08:11.680 In that limited way nothing has changed.
+00:08:14.830 What is to be changed is to make it more procedurally difficult
+00:08:19.180 for prosecutions to be brought.
+00:08:21.580 Clause 1 provides that a prosecutor
+00:08:24.310 must jump over two more hurdles when
+00:08:27.160 considering prosecuting in respect of conduct
+00:08:30.790 overseas by service personnel.
+00:08:32.890 The first of these hurdles is at Section 2, the presumption
+00:08:37.270 against prosecution.
+00:08:39.799 It is to be made exceptional for a relevant prosecutor
+00:08:42.820 to bring proceedings for a relevant offence.
+00:08:45.310 The presumption against prosecution
+00:08:47.080 starts five years after the alleged offence.
+00:08:50.795 This means for any historic offences, such as those which
+00:08:53.170 took place in Iraq or Afghanistan,
+00:08:55.840 will be subject to a presumption against prosecution.
+00:08:59.290 The question becomes what is a relevant offence?
+00:09:01.570 Well, a relevant offence is any criminal offence
+00:09:05.890 other than those which are excluded by Schedule 1.
+00:09:09.740 This means that if an offence is listed in Schedule 1
+00:09:12.490 it is not subject to a presumption
+00:09:14.650 against prosecution.
+00:09:15.790 You will see in Schedule 1 a number
+00:09:17.860 of offences where there will be no presumption
+00:09:20.620 against prosecution.
+00:09:21.700 The argument being that these are
+00:09:23.470 so bad that they should be prosecuted
+00:09:25.840 if there is sufficient evidence and it
+00:09:27.880 is in the public interest.
+00:09:29.410 But you will see at paragraph 13 a reference
+00:09:33.520 to crimes against humanity and war crimes.
+00:09:36.910 You would think that these too should be in Schedule 1.
+00:09:39.970 But if you go down to paragraph 17
+00:09:42.040 you see some very interesting legal drafting.
+00:09:45.060 At paragraph 17 there is a mention of the International
+00:09:48.490 Criminal Court Act of 2001 providing for what
+00:09:51.490 also will be excluded offences.
+00:09:53.870 But if you look carefully at the drafting it is very specific.
+00:09:58.150 Only three specific offences under the Rome Statute
+00:10:01.920 are made excluded offences.
+00:10:04.020 If we look back at the Rome Statute
+00:10:05.990 you will see that these are akin to the other offences listed
+00:10:09.150 in Schedule 1.
+00:10:10.350 But if you look at the other offences page
+00:10:13.380 after page, which are not excluded offences,
+00:10:16.200 this means that in respect of each of these offences
+00:10:19.890 there will be a presumption against prosecution
+00:10:22.860 even if it is otherwise established
+00:10:25.950 there are sufficient facts to normally prosecute.
+00:10:28.620 This includes torture because paragraph 17(a)
+00:10:34.050 has that bracket (g).
+00:10:35.940 This means only one specific offence within Article 7
+00:10:39.840 is cut out of the presumption against prosecution.
+00:10:43.600 All the others are.
+00:10:45.173 You would think a government would
+00:10:46.590 regard all war crimes as akin to the other offences listed
+00:10:49.830 in Schedule 1.
+00:10:51.030 That should be prosecuted in the normal way.
+00:10:54.000 But no, almost all of them are excluded.
+00:10:57.450 This is not an accident.
+00:11:00.030 There has been a consultation exercise for this bill
+00:11:02.430 where the government considered making
+00:11:04.560 torture an excluded offence.
+00:11:06.900 But the government has taken the decision that it should not be,
+00:11:10.410 that there are circumstances where there should
+00:11:13.500 be a presumption against prosecution
+00:11:16.110 when there is otherwise enough evidence of torture taking
+00:11:19.170 place for there to be a prosecution.
+00:11:21.870 In the House of Commons debate on the bill,
+00:11:24.000 the Secretary of State Ben Wallace
+00:11:25.860 was asked why is torture not in Schedule 1?
+00:11:30.660 The Secretary of State replied:
+00:11:32.730 'If you look back in many, many examples of case law
+00:11:35.010 or challenges, often the debate around torture/murder has been
+00:11:40.470 about the excessive use of an action in doing something that
+00:11:44.070 is what a soldier may or may not think is legitimate.'
+00:11:46.830 But he doesn't expand on this debate around torture.
+00:11:50.970 But it is obvious that the government
+00:11:52.950 has taken the deliberate decision
+00:11:55.350 to make it more difficult to prosecute service personnel
+00:11:58.590 when there is otherwise enough evidence of torture to warrant
+00:12:01.540 a prosecution, that there is a debating point here
+00:12:04.950 about what torture is.
+00:12:08.160 This is an unfortunate position for the government to take.
+00:12:12.870 The United Kingdom has long been seen
+00:12:15.600 as one of the upholders of international law.
+00:12:18.970 Indeed, Sir David Maxwell Fyfe, who
+00:12:21.390 went on to become a conservative home secretary and Lord
+00:12:24.030 Chancellor was the advocate who cross-examined Goering
+00:12:28.410 at Nuremberg.
+00:12:29.460 The United Kingdom once took the prosecution of war crimes
+00:12:33.170 seriously.
+00:12:34.230 Now, there are fears, including from former senior service
+00:12:38.640 personnel, that this bill gets it wrong.
+00:12:42.270 Dan Jarvis, an MP and former soldier,
+00:12:45.180 says the bill is damaging to our troops
+00:12:47.550 and our international standing.
+00:12:49.260 Former army chiefs have attacked the UK in this move
+00:12:52.170 to limit torture prosecutions.
+00:12:54.240 It is an international embarrassment,
+00:12:56.310 former military chiefs and senior lawyers have warned.
+00:12:59.580 General Sir Nick Parker, a former commander
+00:13:01.950 of British land forces, said he was particularly
+00:13:04.170 concerned about creating a two-tier justice
+00:13:06.780 system in which troops are treated differently
+00:13:09.780 to civilians.
+00:13:10.950 'We shouldn't be treating our people
+00:13:12.870 as if they have special protection from prosecution.
+00:13:15.630 What we need to do is investigate properly so that
+00:13:18.030 the ones who deserve to be prosecuted are.'
+00:13:21.210 This sentiment is not only from former service personnel.
+00:13:25.200 It is also a sentiment expressed by those
+00:13:27.930 who have actually been at the receiving end of maltreatment
+00:13:30.690 and soldiers.
+00:13:31.950 In making it more difficult for British service personnel
+00:13:36.180 to be prosecuted for war crimes generally
+00:13:39.240 and torture in particular, the government
+00:13:42.180 is providing a solution to a problem
+00:13:44.400 which really is not fair.
+00:13:46.320 It is already highly difficult to bring a prosecution
+00:13:49.530 against current or former service
+00:13:51.630 personnel for war crimes.
+00:13:53.190 There has only been one since the United Kingdom signed up
+00:13:56.670 to the Rome Statute of the International Criminal Court.
+00:14:00.450 There are problems in respect of civil claims.
+00:14:03.300 And there is little in this bill in respect
+00:14:05.340 of attempts by lawyers to bring claims for compensation,
+00:14:08.485 which is not objectionable.
+00:14:09.610 The problem is making it more difficult to actually prosecute
+00:14:13.650 for war crimes and for torture.
+00:14:16.480 With international law in respect
+00:14:18.210 of war crimes and torture it is important
+00:14:20.580 that there is equality.
+00:14:22.350 That it is not seen as victor's justice
+00:14:25.790 that there is one law for one side and not for the other.
+00:14:29.790 This bill, in making it procedurally far more
+00:14:32.370 difficult for any prosecution to be brought when prosecutions
+00:14:35.760 are already hard enough to bring,
+00:14:38.520 is a mistake by this government.
+00:14:42.320 No text 
