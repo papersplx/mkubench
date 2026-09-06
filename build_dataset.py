@@ -42,8 +42,15 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
-import requests
-from bs4 import BeautifulSoup
+# URL fetching
+try:
+    import requests
+except ImportError:
+    requests = None
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
 
 # PDF & EPUB extraction
 try:
@@ -222,6 +229,9 @@ def extract_zip_text(filepath: str, base_source: str) -> List[Dict[str, Any]]:
 
 def fetch_url_content(url: str, timeout: int = 10) -> Optional[str]:
     """Fetch content from a URL."""
+    if requests is None or BeautifulSoup is None:
+        logger.error("requests or BeautifulSoup not available — install beautifulsoup4 and requests")
+        return None
     if should_skip_url(url):
         logger.info(f"Skipping URL (shopping/gadget): {url}")
         return None
