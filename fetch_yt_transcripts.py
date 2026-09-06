@@ -61,7 +61,7 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
-def setup_logging():
+def setup_logging() -> None:
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -117,7 +117,7 @@ def load_video_urls(links_path: str) -> list:
     return videos
 
 
-def main():
+def main() -> None:
     import argparse
     parser = argparse.ArgumentParser(description="Fetch YouTube transcripts for MKULTRA benchmark")
     parser.add_argument("--links-path", default=None, help="Path to targeted_links.txt")

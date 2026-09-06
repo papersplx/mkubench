@@ -98,7 +98,7 @@ BATCH_SIZE = 20
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dataset', 'training_data')
 
 
-def setup_logging():
+def setup_logging() -> None:
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -330,12 +330,12 @@ def load_targeted_links(links_path: str) -> List[str]:
 
 
 def build_dataset(
-    training_dir: str = None,
-    links_path: str = None,
-    output_dir: str = None,
+    training_dir: Optional[str] = None,
+    links_path: Optional[str] = None,
+    output_dir: Optional[str] = None,
     batch_size: int = BATCH_SIZE,
     skip_urls: bool = False
-):
+) -> None:
     """Build the complete training dataset."""
     setup_logging()
 
@@ -473,7 +473,7 @@ def build_dataset(
     return documents, summary
 
 
-def main():
+def main() -> None:
     import argparse
     parser = argparse.ArgumentParser(description="Build MKULTRA training dataset")
     parser.add_argument("--training-dir", default=None, help="Path to training files")

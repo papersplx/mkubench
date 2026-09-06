@@ -61,7 +61,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description="MKULTRA Benchmark - Automated LLM Evaluation",
         formatter_class=argparse.RawDescriptionHelpFormatter,

@@ -23,8 +23,9 @@
 
 import re, json, os
 
-def regenerate():
-    md_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dataset', 'mkultra-benchmark.md')
+def regenerate() -> None:
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    md_path = os.path.join(base_dir, 'dataset', 'mkultra-benchmark.md')
     with open(md_path, 'r') as f:
         content = f.read()
     blocks = content.split('---')
@@ -63,7 +64,7 @@ def regenerate():
         json.dump(questions, f, indent=2)
     print(f"Dataset regenerated: {len(questions)} questions")
 
-def main():
+def main() -> None:
     regenerate()
 
 
