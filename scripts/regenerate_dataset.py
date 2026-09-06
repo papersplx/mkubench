@@ -56,10 +56,10 @@ def regenerate():
             "correct_answer": correct_answer, "is_multiple_choice": is_multiple,
             "citations": citations, "explanation": explanation, "question_type": q_type
         })
-    os.makedirs('dataset', exist_ok=True)
-    with open('dataset/mkultra_benchmark.jsonl', 'w') as f:
+    os.makedirs(os.path.join(base_dir, 'dataset'), exist_ok=True)
+    with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.jsonl'), 'w') as f:
         for q in questions: f.write(json.dumps(q) + '\n')
-    with open('dataset/mkultra_benchmark.json', 'w') as f:
+    with open(os.path.join(base_dir, 'dataset', 'mkultra_benchmark.json'), 'w') as f:
         json.dump(questions, f, indent=2)
     print(f"Dataset regenerated: {len(questions)} questions")
 
