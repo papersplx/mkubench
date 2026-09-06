@@ -66,3 +66,15 @@ mkultra-benchmark/
 - Clean working tree, all commits pushed to origin/master
 - Zero functions missing return types or docstrings
 - All source files compile cleanly
+
+## v1.1.1 — Data Fixes & API Compatibility
+
+### Fixed
+- Fixed YouTube transcript API compatibility: changed `YouTubeTranscriptApi.get_transcript()` to `YouTubeTranscriptApi().fetch()` for youtube-transcript-api v2
+- Rebuilt training dataset with correct `content` field name (was `text`)
+- Updated dataset structure: 78 documents (40 PDFs, 9 EPUBs, 8 TXTs, 21 articles) in 4 batches
+- Cleaned up stale batch_005.jsonl and batch_006.jsonl files
+
+### Changed
+- `build_dataset.py` output field: `text` → `content` for document content
+- `README.md`: updated dataset description to reflect correct field names and batch count
