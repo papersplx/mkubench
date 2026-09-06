@@ -115,7 +115,7 @@ Examples:
     args = parser.parse_args()
 
     if args.verbose:
-        logging.basicConfig(level=logging.DEBUG)
+        logging.getLogger().setLevel(logging.DEBUG)
 
     # Set default dataset path
     if args.dataset is None:

@@ -102,8 +102,6 @@ class OpenAIClient(BaseModelClient):
                 else:
                     raise
 
-        return ""
-
     def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         """Generate responses for a list of prompts (sequential with rate limiting)."""
         results = []
@@ -155,8 +153,6 @@ class OllamaClient(BaseModelClient):
                     time.sleep(2 ** attempt)
                 else:
                     raise
-
-        return ""
 
     def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         """Generate responses for a list of prompts in batch."""

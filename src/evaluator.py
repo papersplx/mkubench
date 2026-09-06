@@ -25,6 +25,7 @@ MMLU-style evaluation with accuracy scoring.
 
 import json
 import logging
+import os
 from typing import List, Dict, Any
 from datetime import datetime
 
@@ -200,7 +201,7 @@ Question Type: {q['question_type']}"""
             json.dump(output, f, indent=2)
 
         # Also save detailed results
-        detailed_path = output_path.replace(".json", "_detailed.json")
+        detailed_path = os.path.splitext(output_path)[0] + "_detailed.json"
         with open(detailed_path, 'w') as f:
             json.dump(summary, f, indent=2)
 
