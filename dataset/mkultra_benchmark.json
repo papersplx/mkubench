@@ -1,0 +1,1052 @@
+[
+  {
+    "id": 1,
+    "category": "mkultra_continuation",
+    "title": "Supersecret ORD Program",
+    "question": "When the CIA officially claimed to phase out its infamous MK-ULTRA drug-testing program in the 1970s, what supersecret behavioral-control project was it replaced with under the Office of Research and Development (ORD)?",
+    "options": [
+      "A) Project CHATTER",
+      "B) A project utilizing the \"Scientific Engineering Institute\" as a cover, headed by Dr. Edwin Land",
+      "C) Project GABRIEL",
+      "D) Project STARGATE"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Project CHATTER"
+      },
+      {
+        "letter": "B",
+        "text": "A project utilizing the \"Scientific Engineering Institute\" as a cover, headed by Dr. Edwin Land"
+      },
+      {
+        "letter": "C",
+        "text": "Project GABRIEL"
+      },
+      {
+        "letter": "D",
+        "text": "Project STARGATE"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[20], [1721-1722]",
+    "explanation": "John Marks' investigative research revealed that the CIA did not end its behavioral control efforts, but rather replaced MK-ULTRA with a full-scale, supersecret behavioral-control program under its Office of Research and Development (ORD). It operated under the cover of the Boston-based \"Scientific Engineering Institute,\" with Polaroid founder Dr. Edwin Land serving as its figurehead.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 2,
+    "category": "mkultra_continuation",
+    "title": "Nonthermal Bioeffects Safety Standards",
+    "question": "Which of the following statements accurately describe the history of the thermal/nonthermal controversy of electromagnetic radiation (EMR) in the United States according to the sources? (Select ALL that apply)",
+    "options": [
+      "A) The U.S. safety standards established in the 1950s by Herman Schwan were based on the premise that EMR has no provable biological or health effects except those caused by heating (thermal effects).",
+      "B) Herman Schwan was a German Nazi Paperclip scientist brought to the U.S. after World War II.",
+      "C) The U.S. government consistently endorsed athermal effects in public literature during the Cold War.",
+      "D) The \"denial of nonthermal bioeffects\" was utilized as a successful cover story to keep advanced U.S. EMR weapons classified."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The U.S. safety standards established in the 1950s by Herman Schwan were based on the premise that EMR has no provable biological or health effects except those caused by heating (thermal effects)."
+      },
+      {
+        "letter": "B",
+        "text": "Herman Schwan was a German Nazi Paperclip scientist brought to the U.S. after World War II."
+      },
+      {
+        "letter": "C",
+        "text": "The U.S. government consistently endorsed athermal effects in public literature during the Cold War."
+      },
+      {
+        "letter": "D",
+        "text": "The \"denial of nonthermal bioeffects\" was utilized as a successful cover story to keep advanced U.S. EMR weapons classified."
+      }
+    ],
+    "correct_answer": "A, B, D",
+    "is_multiple_choice": true,
+    "citations": "[38], [40], [109], [1652], [1673]",
+    "explanation": "Nazi Paperclip scientist Herman Schwan established U.S. safety exposure standards based strictly on EMR heating (thermal) effects. Bioelectromagnetics pioneer Dr. Robert Becker explained that the public denial of EMR's nonthermal biological effects served as the perfect \"cover story\" for conducting a massive, highly classified U.S. EMR weapons program (comparable to the Manhattan Project) in complete secrecy.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 3,
+    "category": "mkultra_continuation",
+    "title": "Pentagon's 1990s Nonlethal EMR Program Revelation",
+    "question": "What monumental geopolitical event eventually forced the U.S. military to shift its public stance on nonthermal EMR bioeffects, publicly unveiling a nonlethal weapons program based on those very bioeffects?",
+    "options": [
+      "A) The signing of the Space Preservation Act of 2001",
+      "B) The 1975 Church Committee hearings",
+      "C) The breakup of the Soviet Union in 1989",
+      "D) The 1994 Advisory Committee on Human Radiation Experiments (ACHRE) report"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The signing of the Space Preservation Act of 2001"
+      },
+      {
+        "letter": "B",
+        "text": "The 1975 Church Committee hearings"
+      },
+      {
+        "letter": "C",
+        "text": "The breakup of the Soviet Union in 1989"
+      },
+      {
+        "letter": "D",
+        "text": "The 1994 Advisory Committee on Human Radiation Experiments (ACHRE) report"
+      }
+    ],
+    "correct_answer": "C",
+    "is_multiple_choice": false,
+    "citations": "[6], [41], [90], [1687]",
+    "explanation": "The breakup of the Soviet Union in 1989 threw Soviet psychotronic programs into chaos and exposed information on Russian mind control. In 1997, the Pentagon flip-flopped on its 50-year stance and publicly admitted to funding \"new\" nonlethal weapons based on nonthermal EMR biological effects.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 4,
+    "category": "mkultra_continuation",
+    "title": "Project Pandora Objectives",
+    "question": "Project Pandora was launched by ARPA/DARPA in the late 1960s. What was its primary initial objective?",
+    "options": [
+      "A) To test the effects of LSD on military officers",
+      "B) To study the biological and behavioral effects of a \"synthetic Moscow signal\" modeled on the microwave bombardment of the U.S. Embassy",
+      "C) To map the entire human genome",
+      "D) To create double-agent couriers using hypnosis"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "To test the effects of LSD on military officers"
+      },
+      {
+        "letter": "B",
+        "text": "To study the biological and behavioral effects of a \"synthetic Moscow signal\" modeled on the microwave bombardment of the U.S. Embassy"
+      },
+      {
+        "letter": "C",
+        "text": "To map the entire human genome"
+      },
+      {
+        "letter": "D",
+        "text": "To create double-agent couriers using hypnosis"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[48], [216], [1916]",
+    "explanation": "Project Pandora was a top-secret multimillion-dollar program initiated after the U.S. government discovered that the Soviets were bombarding the American Embassy in Moscow with a directional microwave beam (beginning in 1953). The program exposed monkeys to a synthetic \"Moscow signal\" to see if microwaves could control the mind.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 5,
+    "category": "mkultra_continuation",
+    "title": "Project Pandora's Dual Positions",
+    "question": "How did the findings of Project Pandora's director, Richard Cesaro, compare to the official, classified position of the program? (Select ALL that apply)",
+    "options": [
+      "A) Richard Cesaro asserted that \"there was no question you can get into the brain with microwaves\" to control the mind.",
+      "B) The official, classified report findings claimed that the Moscow signal was not an effective mind-control weapon and that there were no nonthermal EMR effects.",
+      "C) The Pentagon's Sam Koslov destroyed Pandora documents, claiming lack of storage room.",
+      "D) Both Cesaro and the official reports agreed that EMR weapons were mathematically impossible."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Richard Cesaro asserted that \"there was no question you can get into the brain with microwaves\" to control the mind."
+      },
+      {
+        "letter": "B",
+        "text": "The official, classified report findings claimed that the Moscow signal was not an effective mind-control weapon and that there were no nonthermal EMR effects."
+      },
+      {
+        "letter": "C",
+        "text": "The Pentagon's Sam Koslov destroyed Pandora documents, claiming lack of storage room."
+      },
+      {
+        "letter": "D",
+        "text": "Both Cesaro and the official reports agreed that EMR weapons were mathematically impossible."
+      }
+    ],
+    "correct_answer": "A, B, C",
+    "is_multiple_choice": true,
+    "citations": "[1656], [1814], [2019-2020]",
+    "explanation": "Richard Cesaro (deputy director of ARPA) asserted that EMR could get into the brain to control minds, calling it \"better than any bomb ever built.\" However, official findings minimized these effects to maintain national security and plausibly deniable cover stories. Sam Koslov also destroyed Pandora records, claiming lack of storage room.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 6,
+    "category": "mkultra_continuation",
+    "title": "Project Monarch Definition",
+    "question": "According to the privately published disclosures of investigator Mark Phillips, Project Monarch was:",
+    "options": [
+      "A) A sub-project of Project Bluebird designed to train psychic dolphins",
+      "B) A trauma-based behavior modification program spawned from collected Nazi research, utilizing personality splitting to create undetectable slaves",
+      "C) A Soviet-directed satellite communication network operating at 10 Hz",
+      "D) An unclassified space program meant to map the magnetic field of the Earth"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "A sub-project of Project Bluebird designed to train psychic dolphins"
+      },
+      {
+        "letter": "B",
+        "text": "A trauma-based behavior modification program spawned from collected Nazi research, utilizing personality splitting to create undetectable slaves"
+      },
+      {
+        "letter": "C",
+        "text": "A Soviet-directed satellite communication network operating at 10 Hz"
+      },
+      {
+        "letter": "D",
+        "text": "An unclassified space program meant to map the magnetic field of the Earth"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[630-631], [659]",
+    "explanation": "Phillips claimed Project Monarch was a U.S. Defense Department project begun in the 1960s as a subsection of Operation Artichoke/MKULTRA. It was based on trauma-based mind control from Nazi scientists like Himmler and Mengele, designed to split the personality to create undetectable couriers and slaves.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 7,
+    "category": "mkultra_continuation",
+    "title": "Project Monarch's Programming Levels",
+    "question": "According to the structural breakdowns of Project Monarch, which of the following are correctly matched to their functional designations? (Select ALL that apply)",
+    "options": [
+      "A) Alpha: Base control personality, logic programming, photographic memory, and visual acuity.",
+      "B) Beta: Primitive sex programming, designed to eliminate moral convictions and create \"presidential models.\"",
+      "C) Delta: Terrorism, killer, and suicide programming for Black Ops, where caught agents self-destruct.",
+      "D) Theta: Tele-biometric psychic programming, involving surgical implants or satellite directed energy."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Alpha: Base control personality, logic programming, photographic memory, and visual acuity."
+      },
+      {
+        "letter": "B",
+        "text": "Beta: Primitive sex programming, designed to eliminate moral convictions and create \"presidential models.\""
+      },
+      {
+        "letter": "C",
+        "text": "Delta: Terrorism, killer, and suicide programming for Black Ops, where caught agents self-destruct."
+      },
+      {
+        "letter": "D",
+        "text": "Theta: Tele-biometric psychic programming, involving surgical implants or satellite directed energy."
+      }
+    ],
+    "correct_answer": "A, B, C, D",
+    "is_multiple_choice": true,
+    "citations": "[380-381], [634-638]",
+    "explanation": "Project Monarch documentation outlines these four core levels: Alpha (base/logic/memory), Beta (sexual), Delta (killer/suicide), and Theta (psychic/biotelemetry/satellite).",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 8,
+    "category": "mkultra_continuation",
+    "title": "SATAN Weapon System Acronym",
+    "question": "In the literature of covert neuro-weaponry, the above-top-secret worldwide mind-control system \"SATAN\" stands for which of the following?",
+    "options": [
+      "A) Satellite-Assisted Tactical Action Network",
+      "B) Silent Assassination Through Adaptive Neural Networks (or Silent Assassination Through Amplified Neurons)",
+      "C) Subconscious Interrogation and Tactical Neuralization",
+      "D) Synergistic Athermal Transmitter and Neuro-cloner"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Satellite-Assisted Tactical Action Network"
+      },
+      {
+        "letter": "B",
+        "text": "Silent Assassination Through Adaptive Neural Networks (or Silent Assassination Through Amplified Neurons)"
+      },
+      {
+        "letter": "C",
+        "text": "Subconscious Interrogation and Tactical Neuralization"
+      },
+      {
+        "letter": "D",
+        "text": "Synergistic Athermal Transmitter and Neuro-cloner"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[170], [848], [1470]",
+    "explanation": "Whistleblower Dr. Robert Duncan and other sources identify the SATAN system as \"Silent Assassination Through Adaptive Neural Networks\" or \"Silent Assassination Through Amplified Neurons,\" an automated, scalable operating system used for eugenics and behavioral control of dissidents.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 9,
+    "category": "mkultra_continuation",
+    "title": "TAMI Acronym",
+    "question": "What does the acronym \"TAMI\" stand for, representing the highly sophisticated neural-interfacing system discussed by neuro-hacking whistleblowers?",
+    "options": [
+      "A) Tactical Acoustic Microwave Interferometer",
+      "B) Thought Amplifier and Mind Interface (or Thought And Memory Interface)",
+      "C) Trans-Atmospheric Magnetic Induction",
+      "D) Telepathic Auditory Modulation Instrument"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Tactical Acoustic Microwave Interferometer"
+      },
+      {
+        "letter": "B",
+        "text": "Thought Amplifier and Mind Interface (or Thought And Memory Interface)"
+      },
+      {
+        "letter": "C",
+        "text": "Trans-Atmospheric Magnetic Induction"
+      },
+      {
+        "letter": "D",
+        "text": "Telepathic Auditory Modulation Instrument"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[848], [1469], [1504]",
+    "explanation": "Whistleblowers describe TAMI as a second-generation computer-radar system built on top of the \"MIND\" system, standing for \"Thought Amplifier and Mind Interface\" or \"Thought And Memory Interface.\"",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 10,
+    "category": "mkultra_continuation",
+    "title": "V2K Technology Definition",
+    "question": "The military abbreviation \"V2K\" (or Voice-to-Skull/V2S) refers to a technology that:",
+    "options": [
+      "A) Invasively implants titanium speakers onto the temporal bone of a soldier's skull",
+      "B) Uses modulated radio frequencies or pulsed microwaves to transmit voices directly into a target's internal dialogue, bypassing the ears",
+      "C) Reads and records vocal cord vibrations to reconstruct silent speech",
+      "D) Generates high-intensity acoustic shocks that shatter concrete structures"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Invasively implants titanium speakers onto the temporal bone of a soldier's skull"
+      },
+      {
+        "letter": "B",
+        "text": "Uses modulated radio frequencies or pulsed microwaves to transmit voices directly into a target's internal dialogue, bypassing the ears"
+      },
+      {
+        "letter": "C",
+        "text": "Reads and records vocal cord vibrations to reconstruct silent speech"
+      },
+      {
+        "letter": "D",
+        "text": "Generates high-intensity acoustic shocks that shatter concrete structures"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[13], [126], [171], [1920]",
+    "explanation": "V2K stands for \"Voice-to-Skull,\" a technology that beams voices and thoughts directly into a subject's auditory cortex remotely, using pulsed microwaves (the microwave hearing effect) or radio frequencies.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 11,
+    "category": "mkultra_continuation",
+    "title": "Dr. Eldon Byrd's EMR Research",
+    "question": "Dr. Eldon Byrd ran the Marine Corps Nonlethal Electromagnetic Weapons Project from 1980 to 1983. Which of the following statements are true about his work according to the sources? (Select ALL that apply)",
+    "options": [
+      "A) He successfully demonstrated that magnetic fields can alter animal behavior and entrain human brainwaves remotely.",
+      "B) He grumbled that his program, scheduled for four years, was closed down after two because \"it worked\" and \"went black.\"",
+      "C) He discovered that the thermal/athermal debate was officially over because Allan Frey's microwave auditory clicks were a thermal effect.",
+      "D) He claimed his hardware was tested extensively on civilian populations in the United States before 1983."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "He successfully demonstrated that magnetic fields can alter animal behavior and entrain human brainwaves remotely."
+      },
+      {
+        "letter": "B",
+        "text": "He grumbled that his program, scheduled for four years, was closed down after two because \"it worked\" and \"went black.\""
+      },
+      {
+        "letter": "C",
+        "text": "He discovered that the thermal/athermal debate was officially over because Allan Frey's microwave auditory clicks were a thermal effect."
+      },
+      {
+        "letter": "D",
+        "text": "He claimed his hardware was tested extensively on civilian populations in the United States before 1983."
+      }
+    ],
+    "correct_answer": "A, B, C",
+    "is_multiple_choice": true,
+    "citations": "[110], [123], [1654], [1655]",
+    "explanation": "Dr. Byrd verified that EMR entrained human brainwaves remotely. He stated his project went \"black\" once it worked, and noted that Frey's microwave effect was actually a thermal effect of the brain vibrating the inner ear, rendering the old thermal/athermal controversy obsolete.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 12,
+    "category": "mkultra_continuation",
+    "title": "Remote Neural Monitoring (RNM)",
+    "question": "In his landmark lawsuit against the National Security Agency (Akwei v. NSA, Civil Action 92-0449), John St. Clair Akwei claimed that the NSA utilizes what specific system to track and non-invasively monitor thoughts and audio-visual brain activity wirelessly?",
+    "options": [
+      "A) Project SQUID",
+      "B) Remote Neural Monitoring (RNM) using EMF Brain Stimulation",
+      "C) The Ganzfeld Satellite Array",
+      "D) The LIDA tranquilization transmitter"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Project SQUID"
+      },
+      {
+        "letter": "B",
+        "text": "Remote Neural Monitoring (RNM) using EMF Brain Stimulation"
+      },
+      {
+        "letter": "C",
+        "text": "The Ganzfeld Satellite Array"
+      },
+      {
+        "letter": "D",
+        "text": "The LIDA tranquilization transmitter"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[71-72], [1301]",
+    "explanation": "Akwei's lawsuit detailed the NSA's vast wireless RNM system, which decodes the unique bioelectric resonance frequencies of the brain to monitor a target's visual and auditory thoughts remotely without physical contact.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 13,
+    "category": "mkultra_continuation",
+    "title": "Dr. Ewen Cameron's Reprogramming Protocols",
+    "question": "Dr. Ewen Cameron's CIA-funded brainwashing experiments at McGill University utilized \"psychic driving.\" What did this technique involve?",
+    "options": [
+      "A) Administering continuous injections of sodium pentothal in a sensory-deprivation tank",
+      "B) Forcing patients to listen to pre-recorded messages in a continuous loop for hours or days, often while in a drug-induced sleep or after massive electroshocks",
+      "C) Implanting sub-miniature radio transmitters into the frontal lobe",
+      "D) Conducting seances to contact deceased historical figures"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Administering continuous injections of sodium pentothal in a sensory-deprivation tank"
+      },
+      {
+        "letter": "B",
+        "text": "Forcing patients to listen to pre-recorded messages in a continuous loop for hours or days, often while in a drug-induced sleep or after massive electroshocks"
+      },
+      {
+        "letter": "C",
+        "text": "Implanting sub-miniature radio transmitters into the frontal lobe"
+      },
+      {
+        "letter": "D",
+        "text": "Conducting seances to contact deceased historical figures"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[82], [139], [299-300], [1165]",
+    "explanation": "Cameron's \"psychic driving\" forced patients to listen to looped recorded messages (e.g., \"You killed your mother\" or \"I was bad but now I'm good\") for up to 10-12 hours a day, following \"depatterning\" with massive electroshocks (75 times normal intensity).",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 14,
+    "category": "mkultra_continuation",
+    "title": "Operation Often",
+    "question": "Launched in 1969 by the CIA's Office of Research and Development (ORD), Operation Often combined mind-control research with what unconventional domains? (Select ALL that apply)",
+    "options": [
+      "A) Clinical pharmacology and new chemical compounds",
+      "B) Occultism, black magic, and demonology",
+      "C) Parapsychological and ESP testing of mediums and psychics",
+      "D) Large-scale weather manipulation using atmospheric heaters"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Clinical pharmacology and new chemical compounds"
+      },
+      {
+        "letter": "B",
+        "text": "Occultism, black magic, and demonology"
+      },
+      {
+        "letter": "C",
+        "text": "Parapsychological and ESP testing of mediums and psychics"
+      },
+      {
+        "letter": "D",
+        "text": "Large-scale weather manipulation using atmospheric heaters"
+      }
+    ],
+    "correct_answer": "A, B, C",
+    "is_multiple_choice": true,
+    "citations": "[306-307], [312-313], [1215-1216], [1321-1322]",
+    "explanation": "Operation Often combined chemical and pharmacological behavioral modifiers with esotericism, occultism, black magic, and parapsychology, paving the way for the \"Monarch\" project which merged child abuse with Satanism under government auspices.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 15,
+    "category": "mkultra_continuation",
+    "title": "Herman Schwan's Role in Safety Standards",
+    "question": "Herman Schwan, a Nazi Paperclip scientist brought to the U.S. after WWII, established Herman Schwan safety limits based on which of the following?",
+    "options": [
+      "A) The total rejection of microwave technology",
+      "B) The assertion that EMR only has biological effects caused by heating (thermal), with no proven nonthermal effects",
+      "C) The discovery that EMR can trigger genetic mutations at any power level",
+      "D) The invention of the stimoceiver"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The total rejection of microwave technology"
+      },
+      {
+        "letter": "B",
+        "text": "The assertion that EMR only has biological effects caused by heating (thermal), with no proven nonthermal effects"
+      },
+      {
+        "letter": "C",
+        "text": "The discovery that EMR can trigger genetic mutations at any power level"
+      },
+      {
+        "letter": "D",
+        "text": "The invention of the stimoceiver"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[38], [1057]",
+    "explanation": "Schwan worked on government contracts at the University of Pennsylvania, endorsing the theory that nonthermal or athermal effects of EMR are unproven, which established the base of the U.S. safety standards.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 16,
+    "category": "mkultra_continuation",
+    "title": "The Soviet Lida Machine",
+    "question": "What was the purpose of the Soviet Lida machine examined by Dr. Ross Adey at the Loma Linda Veterans Hospital?",
+    "options": [
+      "A) To detect SQUID signals at a distance of 100 yards",
+      "B) To remotely emit 10-hertz waves to tranquilize animals and humans, significantly enhancing their suggestibility",
+      "C) To inject \"Virus 666\" into Western computer networks",
+      "D) To surgically implant electrodes in a bull's brain stem"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "To detect SQUID signals at a distance of 100 yards"
+      },
+      {
+        "letter": "B",
+        "text": "To remotely emit 10-hertz waves to tranquilize animals and humans, significantly enhancing their suggestibility"
+      },
+      {
+        "letter": "C",
+        "text": "To inject \"Virus 666\" into Western computer networks"
+      },
+      {
+        "letter": "D",
+        "text": "To surgically implant electrodes in a bull's brain stem"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[85], [1355], [2084]",
+    "explanation": "The Lida was a 1950s Soviet \"distant pulse treatment apparatus\" that emitted high-frequency carrier waves pulsed at lower biologic frequencies (around 10 Hz) to tranquilize subjects and increase suggestibility, rumored to be used in Korean War brainwashing.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 17,
+    "category": "mkultra_continuation",
+    "title": "John Norseen's \"Brain Prints\" and \"BioFusion\"",
+    "question": "Lockheed Martin neuroscientist John Norseen developed a concept called \"BioFusion.\" What did his theories propose?",
+    "options": [
+      "A) That each person's thoughts represent a unique electromagnetic \"Brain Print\" that can be deciphered and inverted back into the brain to remotely trigger automatic behavioral responses",
+      "B) That genetic material can be fused with silicon microchips using low-temperature superconductors",
+      "C) That functional MRIs can be used to wirelessly transmit thoughts between two distinct targets",
+      "D) That biological weapons can be delivered via the internet to computer operators"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "That each person's thoughts represent a unique electromagnetic \"Brain Print\" that can be deciphered and inverted back into the brain to remotely trigger automatic behavioral responses"
+      },
+      {
+        "letter": "B",
+        "text": "That genetic material can be fused with silicon microchips using low-temperature superconductors"
+      },
+      {
+        "letter": "C",
+        "text": "That functional MRIs can be used to wirelessly transmit thoughts between two distinct targets"
+      },
+      {
+        "letter": "D",
+        "text": "That biological weapons can be delivered via the internet to computer operators"
+      }
+    ],
+    "correct_answer": "A",
+    "is_multiple_choice": false,
+    "citations": "[196], [1666]",
+    "explanation": "Norseen's research showed that each thought had an energy dispersion pattern (\"brain print\"). Retransmitting the inverted pattern back to the brain remotely would trigger a reaction over which the receiver would be virtually powerless.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 18,
+    "category": "mkultra_continuation",
+    "title": "Dennis Kucinich's Space Preservation Act",
+    "question": "Why was Congressman Dennis Kucinich's Space Preservation Act of 2001 (House Bill 2977) of massive interest to mind-control researchers? (Select ALL that apply)",
+    "options": [
+      "A) The bill originally proposed a global ban on \"psychotronic\" and \"mind control\" weapons in space.",
+      "B) The section relating to \"mind control\" was removed from the bill in Spring 2002 under political pressure.",
+      "C) The bill successfully passed Congress and became international law.",
+      "D) Kucinich's spokesman refused to discuss the mind-control section, stating only that the bill was \"tightened up and redrafted.\""
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The bill originally proposed a global ban on \"psychotronic\" and \"mind control\" weapons in space."
+      },
+      {
+        "letter": "B",
+        "text": "The section relating to \"mind control\" was removed from the bill in Spring 2002 under political pressure."
+      },
+      {
+        "letter": "C",
+        "text": "The bill successfully passed Congress and became international law."
+      },
+      {
+        "letter": "D",
+        "text": "Kucinich's spokesman refused to discuss the mind-control section, stating only that the bill was \"tightened up and redrafted.\""
+      }
+    ],
+    "correct_answer": "A, B, D",
+    "is_multiple_choice": true,
+    "citations": "[59], [1915-1916]",
+    "explanation": "House Bill 2977 explicitly listed psychotronic and mind-control weapons for space bans. The provisions were quietly stripped in redrafts because they were highly controversial, and the bill eventually failed to pass altogether.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 19,
+    "category": "mkultra_continuation",
+    "title": "Jose Delgado's Remote Behavior Control",
+    "question": "Dr. Jose Delgado, a famous Yale brain researcher, is most well-known in mind-control literature for which of the following achievements?",
+    "options": [
+      "A) Inventing the \"date rape\" drug Rohypnol",
+      "B) Stopping a charging bull by sending radio signals to an implanted stimoceiver, and later proving that EMR fields can affect behavior without any brain implants",
+      "C) Developing the \"A Treatment\" for Project Artichoke",
+      "D) Being the primary programmer of Lee Harvey Oswald"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Inventing the \"date rape\" drug Rohypnol"
+      },
+      {
+        "letter": "B",
+        "text": "Stopping a charging bull by sending radio signals to an implanted stimoceiver, and later proving that EMR fields can affect behavior without any brain implants"
+      },
+      {
+        "letter": "C",
+        "text": "Developing the \"A Treatment\" for Project Artichoke"
+      },
+      {
+        "letter": "D",
+        "text": "Being the primary programmer of Lee Harvey Oswald"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[215], [537-538], [1268]",
+    "explanation": "Delgado demonstrated \"electrical brain stimulation\" (ESB) using stimoceivers to control behavior wirelessly. He later advocated for the \"conquering of the human mind\" as a national goal to create a \"psycho-civilized society\" and showed that implants weren't strictly necessary.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 20,
+    "category": "mkultra_continuation",
+    "title": "Soviet \"Virus 666\"",
+    "question": "According to a report delivered by a scientist from the Baumann Technical Institute, what is the alleged mechanism of the Soviet psychotronic \"Virus 666\"?",
+    "options": [
+      "A) It is a biological pathogen genetically engineered to mimic Parkinson's disease.",
+      "B) It displays specific color and number combinations on a computer screen to affect and shut down the bodily functions of the operator, allegedly causing over 50 deaths.",
+      "C) It hacks satellite routers to project holographic images of UFOs.",
+      "D) It releases high-voltage shocks through computer logic boards."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "It is a biological pathogen genetically engineered to mimic Parkinson's disease."
+      },
+      {
+        "letter": "B",
+        "text": "It displays specific color and number combinations on a computer screen to affect and shut down the bodily functions of the operator, allegedly causing over 50 deaths."
+      },
+      {
+        "letter": "C",
+        "text": "It hacks satellite routers to project holographic images of UFOs."
+      },
+      {
+        "letter": "D",
+        "text": "It releases high-voltage shocks through computer logic boards."
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[2059]",
+    "explanation": "The Baumann Institute report detailed \"Virus 666\" as a computer/human virus that utilizes visual, subliminal computer-screen outputs to directly disrupt the biological systems of the target, leading to physical death.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 21,
+    "category": "mkultra_continuation",
+    "title": "Dr. Robert O. Becker's EMR Manhattan Project Theory",
+    "question": "Why did Dr. Robert O. Becker, a pioneering bioelectromagnetics scientist and two-time Nobel Prize nominee, believe the U.S. government denied nonthermal EMR bioeffects?",
+    "options": [
+      "A) Because EMR has no actual biological effects on humans.",
+      "B) Because denying nonthermal effects was the perfect \"cover story\" to conduct a massive, supersecret EMR mind-control weapons program (an \"EMR Manhattan Project\") in complete secrecy.",
+      "C) Because the military wanted to encourage the widespread sale of consumer microwave ovens.",
+      "D) Because the U.S. lacked the mathematical capabilities to build EMR sensors."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Because EMR has no actual biological effects on humans."
+      },
+      {
+        "letter": "B",
+        "text": "Because denying nonthermal effects was the perfect \"cover story\" to conduct a massive, supersecret EMR mind-control weapons program (an \"EMR Manhattan Project\") in complete secrecy."
+      },
+      {
+        "letter": "C",
+        "text": "Because the military wanted to encourage the widespread sale of consumer microwave ovens."
+      },
+      {
+        "letter": "D",
+        "text": "Because the U.S. lacked the mathematical capabilities to build EMR sensors."
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[40], [109], [1780], [2022]",
+    "explanation": "Becker explained in a BBC TV documentary that the most effective cover story for a massive, secret EMR weapons program was to portray the nation as entirely discarding the possibility of any nonthermal bioeffects based on \"its best scientific evidence.\"",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 22,
+    "category": "mkultra_continuation",
+    "title": "The Moscow Signal Embassy Bombardment",
+    "question": "Which of the following statements accurately describe the \"Moscow Signal\" incident? (Select ALL that apply)",
+    "options": [
+      "A) Beginning in 1953, the Soviets bombarded the American Embassy in Moscow with a directional microwave beam.",
+      "B) Five U.S. Presidents kept the microwave bombardment secret from the American public.",
+      "C) The bombardment led to the creation of the U.S. top-secret Project Pandora.",
+      "D) The State Department conducted a secret genetic testing program on its employees returning from Moscow under the cover name \"Moscow Viral Study.\""
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Beginning in 1953, the Soviets bombarded the American Embassy in Moscow with a directional microwave beam."
+      },
+      {
+        "letter": "B",
+        "text": "Five U.S. Presidents kept the microwave bombardment secret from the American public."
+      },
+      {
+        "letter": "C",
+        "text": "The bombardment led to the creation of the U.S. top-secret Project Pandora."
+      },
+      {
+        "letter": "D",
+        "text": "The State Department conducted a secret genetic testing program on its employees returning from Moscow under the cover name \"Moscow Viral Study.\""
+      }
+    ],
+    "correct_answer": "A, B, C, D",
+    "is_multiple_choice": true,
+    "citations": "[48-49], [1553], [1799], [1916]",
+    "explanation": "The Soviets zapped the embassy with 2.5-4.1 GHz microwaves. It was kept top-secret under five presidents, prompted Project Pandora, and led to the \"Moscow Viral Study\" (1966-1969) where employees' cheeks were scraped for genetic damage under the pretense of checking for unusual bacteria.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 23,
+    "category": "mkultra_continuation",
+    "title": "The \"A Treatment\" of Project ARTICHOKE",
+    "question": "In the early CIA ARTICHOKE mind-control program, what did the \"A Treatment\" consist of?",
+    "options": [
+      "A) Sensory deprivation combined with high-frequency acoustic blasts",
+      "B) Injecting a patient with LSD-25 followed by an electroshock convulsion",
+      "C) Administering a heavy dose of a barbiturate (to induce unconsciousness) followed by an injection of a stimulant to create a highly suggestible \"twilight zone\" for interrogation",
+      "D) Forcing the subject to look at a 3D model of a pyramid"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Sensory deprivation combined with high-frequency acoustic blasts"
+      },
+      {
+        "letter": "B",
+        "text": "Injecting a patient with LSD-25 followed by an electroshock convulsion"
+      },
+      {
+        "letter": "C",
+        "text": "Administering a heavy dose of a barbiturate (to induce unconsciousness) followed by an injection of a stimulant to create a highly suggestible \"twilight zone\" for interrogation"
+      },
+      {
+        "letter": "D",
+        "text": "Forcing the subject to look at a 3D model of a pyramid"
+      }
+    ],
+    "correct_answer": "C",
+    "is_multiple_choice": false,
+    "citations": "[1192], [1310]",
+    "explanation": "The \"A Treatment\" was a narcohypnotic technique where the conscious mind was taken offline with a barbiturate (like sodium pentothal) and then stimulated back to semiconsciousness with an amphetamine (like benzedrine), leaving the unconscious mind open for interrogation.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 24,
+    "category": "mkultra_continuation",
+    "title": "Cathy O'Brien and the National Security Act",
+    "question": "Cathy O'Brien, a survivor of the MK-Monarch program, described how her attempts to sue the government for damages were systematically blocked. What specific legal tool was utilized to halt these proceedings?",
+    "options": [
+      "A) The Space Preservation Act of 2001",
+      "B) The National Security Act of 1947",
+      "C) Title 45 of the Code of Federal Regulations",
+      "D) Executive Order EO 12333"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The Space Preservation Act of 2001"
+      },
+      {
+        "letter": "B",
+        "text": "The National Security Act of 1947"
+      },
+      {
+        "letter": "C",
+        "text": "Title 45 of the Code of Federal Regulations"
+      },
+      {
+        "letter": "D",
+        "text": "Executive Order EO 12333"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[282], [357]",
+    "explanation": "Cathy O'Brien's legal cases were permanently blocked and thrown out of court under the \"National Security Act of 1947\" which allows the government to invoke absolute secrecy to protect intelligence sources and methods.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 25,
+    "category": "mkultra_continuation",
+    "title": "The Finders Cult and the CIA",
+    "question": "Which of the following facts are true regarding the \"Finders Cult\" according to the declassified U.S. Customs reports in the sources? (Select ALL that apply)",
+    "options": [
+      "A) The group was caught in Tallahassee by local law enforcement with child pornography and documents detailing international child trafficking.",
+      "B) The U.S. Justice Department ordered all investigations stopped and the files suppressed on \"National Security\" grounds.",
+      "C) Declassified documents and customs reports revealed the Finders cult was used as a domestic and international covert front for the CIA.",
+      "D) The children were released back to the very adult perpetrators who had been arrested."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The group was caught in Tallahassee by local law enforcement with child pornography and documents detailing international child trafficking."
+      },
+      {
+        "letter": "B",
+        "text": "The U.S. Justice Department ordered all investigations stopped and the files suppressed on \"National Security\" grounds."
+      },
+      {
+        "letter": "C",
+        "text": "Declassified documents and customs reports revealed the Finders cult was used as a domestic and international covert front for the CIA."
+      },
+      {
+        "letter": "D",
+        "text": "The children were released back to the very adult perpetrators who had been arrested."
+      }
+    ],
+    "correct_answer": "A, B, C, D",
+    "is_multiple_choice": true,
+    "citations": "[692], [696], [699-700]",
+    "explanation": "Customs reports confirm the Finders were arrested for child abuse, pornography, and trafficking (including ordering children from Hong Kong). The Justice Department scuttled the investigation under the guise of \"National Security,\" transferring the case to the CIA as an \"Internal Security Matter.\"",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 26,
+    "category": "mkultra_continuation",
+    "title": "Dr. William Sargant's Conversion Methodology",
+    "question": "Tavistock-trained psychiatrist Dr. William Sargant, who worked in the CIA's mind-control programs, stated in his book \"Battle for the Mind\" that beliefs can be implanted after:",
+    "options": [
+      "A) The subject is given a high-voltage brain implant",
+      "B) Brain function has been sufficiently disturbed by the deliberate induction of fear, anger, or excitement",
+      "C) The subject is taught to recite intergalactic symbols",
+      "D) The subject is exposed to a 10 Hz alpha-wave generator"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "The subject is given a high-voltage brain implant"
+      },
+      {
+        "letter": "B",
+        "text": "Brain function has been sufficiently disturbed by the deliberate induction of fear, anger, or excitement"
+      },
+      {
+        "letter": "C",
+        "text": "The subject is taught to recite intergalactic symbols"
+      },
+      {
+        "letter": "D",
+        "text": "The subject is exposed to a 10 Hz alpha-wave generator"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[212], [248-249], [304]",
+    "explanation": "Sargant researched how physical and psychological stress could induce suggestibility. He argued that human brain functions resemble those of dogs, and that exciting the mind through fear, anger, or excitement is a prerequisite for erasing old beliefs and installing new ones.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 27,
+    "category": "mkultra_continuation",
+    "title": "Ganzfeld Technique in Parapsychology",
+    "question": "In the US and Soviet psychic warfare programs, the \"Ganzfeld Technique\" refers to a process where:",
+    "options": [
+      "A) A subject is injected with BZ to cause retroactive amnesia",
+      "B) A subject is placed in a mild state of sensory deprivation (using light, sound, and color) to exclude outside distractions during ESP testing",
+      "C) High-power microwaves are pulsed into the occipital lobe to create hallucinations",
+      "D) A computer scans a subject's EEG to match it against a database of 23 wave bands"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "A subject is injected with BZ to cause retroactive amnesia"
+      },
+      {
+        "letter": "B",
+        "text": "A subject is placed in a mild state of sensory deprivation (using light, sound, and color) to exclude outside distractions during ESP testing"
+      },
+      {
+        "letter": "C",
+        "text": "High-power microwaves are pulsed into the occipital lobe to create hallucinations"
+      },
+      {
+        "letter": "D",
+        "text": "A computer scans a subject's EEG to match it against a database of 23 wave bands"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[820]",
+    "explanation": "Ganzfeld (\"whole field\") was designed to isolate the subject from normal sensory inputs, creating a soothing environment to maximize high-alpha brainwave production, which parapsychologists correlated with successful remote viewing and ESP.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 28,
+    "category": "mkultra_continuation",
+    "title": "John Ginter's \"M.I.N.D.\" Acronym",
+    "question": "In a 1967 California court case (Ginter v. CDC), prisoner John Ginter claimed that a San Quentin psychiatrist told him he was being experimented on using a device with what specific acronym?",
+    "options": [
+      "A) S.A.T.A.N.",
+      "B) M.I.N.D.",
+      "C) T.A.M.I.",
+      "D) V2K"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "S.A.T.A.N."
+      },
+      {
+        "letter": "B",
+        "text": "M.I.N.D."
+      },
+      {
+        "letter": "C",
+        "text": "T.A.M.I."
+      },
+      {
+        "letter": "D",
+        "text": "V2K"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[56], [921], [976], [1469], [2054]",
+    "explanation": "Ginter's early claim matched later declassified project descriptions of \"M.I.N.D.\" (Magnetic Integrated Neuron Duplicator or Mentally Integrated Neuron Duplicator), which aimed to classify and wirelessly clone brainwave patterns from one target onto another.",
+    "question_type": "Single Choice"
+  },
+  {
+    "id": 29,
+    "category": "mkultra_continuation",
+    "title": "CIA \"No-Touch\" Torture Principles",
+    "question": "According to Professor Alfred McCoy's historical analysis of U.S. psychological programs, what are the core principles behind the CIA's \"no-touch\" torture? (Select ALL that apply)",
+    "options": [
+      "A) Sensory Disorientation: a total assault on all senses (auditory, visual, tactile, temporal, temperature) to cause complete dependence on the captors.",
+      "B) Self-Inflicted Pain: forcing the victim to stand for days (or maintain stress positions), causing the body to deteriorate under its own weight and making the victim feel responsible for their own suffering.",
+      "C) Systematic physical beatings using specialized cattle prods.",
+      "D) The conversion of physical pain into a feeling of \"guilt\" and \"shame\" to break the subject's ego."
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Sensory Disorientation: a total assault on all senses (auditory, visual, tactile, temporal, temperature) to cause complete dependence on the captors."
+      },
+      {
+        "letter": "B",
+        "text": "Self-Inflicted Pain: forcing the victim to stand for days (or maintain stress positions), causing the body to deteriorate under its own weight and making the victim feel responsible for their own suffering."
+      },
+      {
+        "letter": "C",
+        "text": "Systematic physical beatings using specialized cattle prods."
+      },
+      {
+        "letter": "D",
+        "text": "The conversion of physical pain into a feeling of \"guilt\" and \"shame\" to break the subject's ego."
+      }
+    ],
+    "correct_answer": "A, B, D",
+    "is_multiple_choice": true,
+    "citations": "[1964], [1967], [1980], [1981]",
+    "explanation": "McCoy's \"no-touch\" torture paradigm focuses on breaking the psyche without leaving physical scars, using sensory disorientation (isolation/overload) and self-inflicted pain (stress positions/standing) to force psychological capitulation.",
+    "question_type": "Multiple Choice"
+  },
+  {
+    "id": 30,
+    "category": "mkultra_continuation",
+    "title": "Duma Expert Yuriy Lopatin's Mind-Control Bans",
+    "question": "Top Russian scientist and state politician Yuriy Lopatin proposed Duma legislation three times to do what?",
+    "options": [
+      "A) Annex parts of neighboring countries using psychotronic weapons",
+      "B) Ban the development, sale, and use of illegal mind-control (psychotronic) devices to protect citizens from secret neuro-warfare",
+      "C) Build a new underground biosphere in Siberia",
+      "D) Finance the \"White Brotherhood\" cult"
+    ],
+    "options_raw": [
+      {
+        "letter": "A",
+        "text": "Annex parts of neighboring countries using psychotronic weapons"
+      },
+      {
+        "letter": "B",
+        "text": "Ban the development, sale, and use of illegal mind-control (psychotronic) devices to protect citizens from secret neuro-warfare"
+      },
+      {
+        "letter": "C",
+        "text": "Build a new underground biosphere in Siberia"
+      },
+      {
+        "letter": "D",
+        "text": "Finance the \"White Brotherhood\" cult"
+      }
+    ],
+    "correct_answer": "B",
+    "is_multiple_choice": false,
+    "citations": "[2033], [2057], [2088]",
+    "explanation": "Lopatin, a prominent state expert, acknowledged the existence of mind-control technologies developed since the 1950s and warned of \"psychotronic terror.\" He repeatedly advocated for legislation to ban mind-control devices and establish international arms controls.",
+    "question_type": "Single Choice"
+  }
+]

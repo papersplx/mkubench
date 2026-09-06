@@ -1,0 +1,27 @@
+# Default configuration for MKULTRA Benchmark
+
+benchmark:
+  name: "MKULTRA Continuation"
+  version: "1.0.0"
+  dataset_path: "dataset/mkultra_benchmark.jsonl"
+  num_questions: 30
+
+model:
+  client: "openai"  # openai, ollama
+  model: "gpt-4"
+  api_base: null     # e.g., "http://localhost:8000/v1"
+  api_key: null      # or set OPENAI_API_KEY env var
+  temperature: 0.0
+  max_tokens: 2048
+  timeout: 120
+  delay: 0.1
+
+evaluation:
+  save_results: true
+  output_dir: "results"
+  include_explanation: true
+
+scoring:
+  single_choice_weight: 1.0
+  multiple_choice_weight: 1.0
+  partial_credit: true  # Give credit for identifying all correct letters

@@ -1,0 +1,20 @@
+[project]
+name = "mkultra-benchmark"
+version = "1.0.0"
+description = "Automated LLM benchmark for MKULTRA Continuation evaluation (MMLU-style)"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[project.scripts]
+mkultra-bench = "run_benchmark:main"
