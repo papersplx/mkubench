@@ -77,7 +77,7 @@ def fetch_transcript(video_url: str, language: str = 'en') -> Optional[str]:
         return None
 
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=[language])
+        transcript = YouTubeTranscriptApi().fetch(video_id, languages=[language])
         text = ' '.join([t['text'] for t in transcript])
         return text.strip() if text else None
     except NoTranscriptFound:

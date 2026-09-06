@@ -257,7 +257,7 @@ def fetch_youtube_transcript(url: str) -> Optional[str]:
         video_id = re.search(r'watch\?v=([^&]+)', url)
         if not video_id:
             return None
-        transcript = YouTubeTranscriptApi.get_transcript(video_id.group(1))
+        transcript = YouTubeTranscriptApi().fetch(video_id.group(1))
         text = ' '.join([t['text'] for t in transcript])
         return clean_text(text) if text else None
     except Exception as e:
@@ -302,7 +302,7 @@ def process_file(filepath: str, rel_path: str) -> Optional[Dict[str, Any]]:
             results.append({
                 'id': f"doc_{hash(zd['source']) & 0xFFFFFFFF:08d}",
                 'title': zd['name'],
-                'text': clean_text(zd['text']),
+                'content': clean_text(zd['text']),
                 'source': zd['source'],
                 'type': 'pdf',
                 'metadata': {'category': 'mkultra_benchmark', 'topic': 'mind_control_research'}
@@ -321,7 +321,7 @@ def process_file(filepath: str, rel_path: str) -> Optional[Dict[str, Any]]:
     return {
         'id': f"doc_{hash(source) & 0xFFFFFFFF:08d}",
         'title': title[:200],
-        'text': clean_text(text),
+        'content': clean_text(text),
         'source': source,
         'type': doc_type,
         'metadata': {'category': 'mkultra_benchmark', 'topic': 'mind_control_research'}
@@ -399,7 +399,7 @@ def build_dataset(
                 documents.append({
                     'id': f"doc_{hash(url) & 0xFFFFFFFF:08d}",
                     'title': f"YouTube: {url.split('v=')[-1][:50]}",
-                    'text': text,
+                    'content': text,
                     'source': url,
                     'type': 'youtube_transcript',
                     'metadata': {'category': 'mkultra_benchmark', 'topic': 'mind_control_research'}
@@ -420,7 +420,7 @@ def build_dataset(
             documents.append({
                 'id': f"doc_{hash(url) & 0xFFFFFFFF:08d}",
                 'title': f"Article: {url[:80]}",
-                'text': text,
+                'content': text,
                 'source': url,
                 'type': 'article',
                 'metadata': {'category': 'mkultra_benchmark', 'topic': 'mind_control_research'}
@@ -433,7 +433,7 @@ def build_dataset(
     logger.info(f"Total documents: {len(documents)} (fetched {fetched_count} URLs)")
 
     # Remove documents with very short content
-    documents = [d for d in documents if len(d['text']) > 50]
+    documents = [d for d in documents if len(d['content']) > 50]
 
     # Sort by title for consistency
     documents.sort(key=lambda d: d['title'].lower())
