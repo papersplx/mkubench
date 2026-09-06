@@ -109,8 +109,8 @@ Examples:
     # Output configuration
     parser.add_argument("--output", type=str, default="results",
                         help="Output directory for results (default: results/)")
-    parser.add_argument("--save-json", action="store_true", default=True,
-                        help="Save results as JSON (default: True)")
+    parser.add_argument("--no-save-json", action="store_false", dest="save_json", default=True,
+                        help="Do not save results as JSON (default: True)")
     parser.add_argument("--verbose", action="store_true",
                         help="Enable verbose logging")
 
