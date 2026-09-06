@@ -1,6 +1,6 @@
 .PHONY: test run install clean docs dataset build-data fetch-youtube check-env
 
-PYTHON ?= python
+PYTHON := $(shell if [ -x /var/home/fra/.venv/bin/python ] && /var/home/fra/.venv/bin/python -c "import requests, yaml, PyPDF2, pdfplumber, ebooklib, bs4" 2>/dev/null; then echo /var/home/fra/.venv/bin/python; else command -v python3 || command -v python; fi)
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
