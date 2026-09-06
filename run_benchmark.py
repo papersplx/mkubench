@@ -46,6 +46,7 @@ import argparse
 import logging
 import os
 import sys
+import yaml  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # noqa: E402
 
 from src.model_client import get_client  # noqa: E402
@@ -111,6 +112,34 @@ Examples:
                         help="Skip saving results as JSON file (default: enabled)")
     parser.add_argument("--verbose", action="store_true",
                         help="Enable verbose logging")
+    parser.add_argument("--config", type=str, default=None,
+                        help="Path to YAML config file (default: configs/default_config.yaml)")
+
+    # Load config file for defaults
+    config = {}
+    config_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "configs", "default_config.yaml"
+    )
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f) or {}
+
+    # Set config defaults before parsing so CLI args override them
+    model_cfg = config.get("model", {})
+    bench_cfg = config.get("benchmark", {})
+    parser.set_defaults(
+        client=model_cfg.get("client", "openai"),
+        model=model_cfg.get("model", "gpt-4"),
+        api_base=model_cfg.get("api_base"),
+        api_key=model_cfg.get("api_key"),
+        dataset=bench_cfg.get("dataset_path"),
+        max_tokens=model_cfg.get("max_tokens"),
+        temperature=model_cfg.get("temperature", 0.0),
+        delay=model_cfg.get("delay", 0.1),
+        timeout=model_cfg.get("timeout", 120),
+    )
+    # max-questions has no config default (None = all)
 
     args = parser.parse_args()
 
