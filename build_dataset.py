@@ -216,7 +216,7 @@ def extract_zip_text(filepath: str, base_source: str) -> List[Dict[str, Any]]:
                     if pdf_text:
                         doc_name = os.path.basename(pdf_file).replace('.pdf', '')
                         results.append({
-                            'text': pdf_text,
+                            'content': pdf_text,
                             'name': doc_name,
                             'source': f"{base_source}/{pdf_file}"
                         })
@@ -290,19 +290,13 @@ def process_file(filepath: str, rel_path: str) -> Optional[Dict[str, Any]]:
         zip_docs = extract_zip_text(filepath, rel_path)
         if not zip_docs:
             return None
-        # Process the first document from the zip as the primary
-        first = zip_docs[0]
-        text = first['text']
-        title = first['name']
-        doc_type = "pdf"
-        source = first['source']
         # Add remaining docs from zip as separate entries
         results = []
         for zd in zip_docs:
             results.append({
                 'id': f"doc_{hash(zd['source']) & 0xFFFFFFFF:08d}",
                 'title': zd['name'],
-                'content': clean_text(zd['text']),
+                'content': clean_text(zd['content']),
                 'source': zd['source'],
                 'type': 'pdf',
                 'metadata': {'category': 'mkultra_benchmark', 'topic': 'mind_control_research'}
