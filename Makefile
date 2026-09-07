@@ -36,4 +36,20 @@ clean:
 	rm -rf results/
 
 docs:
-	cat README.md
+	@echo "MKULTRA Benchmark Documentation"
+	@echo ""
+	@echo "Available targets:"
+	@echo "  install      - Install dependencies"
+	@echo "  run          - Run benchmark (OpenAI default)"
+	@echo "  run-ollama   - Run against local Ollama"
+	@echo "  run-openai   - Run against OpenAI API"
+	@echo "  run-local    - Run against local vLLM server"
+	@echo "  test         - Run validation tests"
+	@echo "  check-env    - Verify all dependencies"
+	@echo "  build-data   - Build training dataset"
+	@echo "  fetch-youtube  - Fetch YouTube transcripts"
+	@echo "  dataset      - Build data AND fetch YouTube"
+	@echo "  clean        - Clean results directory"
+
+help:
+	@$(MAKE) docs
