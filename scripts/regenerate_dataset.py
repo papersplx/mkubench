@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Regenerate the JSONL/JSON dataset from the markdown source."""
+"""Regenerate the JSONL/JSON dataset from the markdown source.
+
+Parses mkultra-benchmark.md and produces the structured benchmark
+JSONL and JSON datasets used by the evaluator.
+"""
 
 # Copyright (c) 2026 defnlnotme
 #

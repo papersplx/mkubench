@@ -52,6 +52,9 @@ python run_benchmark.py --client ollama --model llama3 --max-questions 5
 | `--temperature` | Sampling temperature | `0.0` |
 | `--max-tokens` | Max tokens per response | `2048` |
 | `--output` | Output directory for results | `results/` |
+| `--delay` | Delay between API calls in seconds | `0.1` |
+| `--config` | Path to YAML config file | `configs/default_config.yaml` |
+| `--no-save-json` | Skip saving results as JSON file | `False` |
 | `--verbose` | Enable verbose logging | `False` |
 
 ## Makefile Targets
@@ -63,17 +66,19 @@ make run-ollama       # Run against local Ollama
 make run-openai       # Run against OpenAI API
 make run-local        # Run against local vLLM server
 make test             # Run validation tests
-make build-data       # Build training dataset from source files
-make fetch-youtube    # Fetch YouTube transcripts
-make dataset          # Build data AND fetch YouTube transcripts
-make clean            # Clean results directory
+make check-env       # Verify all dependencies are installed
+make build-data      # Build training dataset from source files
+make fetch-youtube   # Fetch YouTube transcripts
+make dataset         # Build data AND fetch YouTube transcripts
+make clean           # Clean results directory
+make docs            # Display documentation
 ```
 
 ## Benchmark Dataset
 
 The benchmark contains **30 questions** in `dataset/mkultra_benchmark.jsonl`:
-- **Single Choice** (17 questions) - Select one correct option
-- **Multiple Choice** (13 questions) - Select ALL correct options
+- **Single Choice** (21 questions) - Select one correct option
+- **Multiple Choice** (9 questions) - Select ALL correct options
 
 Each question includes:
 - Question text with formatted options
