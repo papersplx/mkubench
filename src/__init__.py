@@ -21,3 +21,6 @@
 #
 
 __version__ = "1.1.4"
+
+from src.model_client import OpenAIClient, OllamaClient, BaseModelClient, get_client  # noqa: F401
+from src.evaluator import BenchmarkEvaluator  # noqa: F401
