@@ -13,6 +13,7 @@
 - Fixed .flake8 to exclude *.toml files
 - Removed unused `yt-dlp` dependency from requirements.txt and pyproject.toml
 - Added main class exports to `src/__init__.py`
+- Added `pre-commit` configuration with black, flake8, mypy, and standard hooks
 
 ### Verified
 - All 85 tests passing
