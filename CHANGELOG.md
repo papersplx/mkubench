@@ -9,6 +9,8 @@
 - Fixed `build_dataset.py` internal naming: `extract_zip_text` now returns `'content'` key instead of `'text'` for consistency with rest of codebase
 - Improved `Makefile` `docs` target with comprehensive target listing
 - Added `help` Makefile target
+- Added pytest-cov coverage configuration to pyproject.toml
+- Fixed .flake8 to exclude *.toml files
 
 ### Verified
 - All 85 tests passing
