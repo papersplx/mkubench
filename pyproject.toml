@@ -33,10 +33,23 @@ build-dataset = "build_dataset:main"
 fetch-youtube = "fetch_yt_transcripts:main"
 regenerate-dataset = "scripts.regenerate_dataset:main"
 
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__",
+    "if typing.TYPE_CHECKING",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = ["-v", "--tb=short"]
+addopts = ["-v", "--tb=short", "--cov=src", "--cov-report=term-missing"]
 
