@@ -23,7 +23,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="mkultra-benchmark",
-    version="1.1.1",
+    version="1.1.3",
     description="Automated LLM benchmark for MKULTRA evaluation (MMLU-style)",
     license="MIT",
     python_requires=">=3.8",

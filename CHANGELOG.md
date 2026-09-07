@@ -79,6 +79,30 @@ mkultra-benchmark/
 - `build_dataset.py` output field: `text` → `content` for document content
 - `README.md`: updated dataset description to reflect correct field names and batch count
 
+## v1.1.3 — Test Coverage & Documentation
+
+### Added
+- Comprehensive test suite expansion: 24 → 85 tests
+- Added mock-based tests for `OpenAIClient.generate()`, `batch_generate()`
+- Added mock-based tests for `OllamaClient.generate()`, `batch_generate()`
+- Added tests for `OpenAIClient` and `OllamaClient` initialization and attributes
+- Added tests for `get_client()` factory with kwargs
+- Added tests for `evaluate_single()`, `_build_prompt()`, `save_results()`
+- Added tests for `run_evaluation()` with mock clients and edge cases
+- Added tests for `_load_dataset()` with temporary files
+- Added parser edge cases: parentheses, equals signs, whitespace, case handling
+- Added `TestMain` test class for `parse_answer.main()` validation
+- Added missing CLI args to README table (`--delay`, `--config`, `--no-save-json`)
+- Added `check-env` and `docs` targets to Makefile documentation
+- Fixed dataset statistics in README (21 single choice, 9 multiple choice)
+- Added module docstring to `scripts/regenerate_dataset.py`
+- Added `transcripts/` and `.coverage` to `.gitignore`
+
+### Verified
+- All 85 unit tests passing
+- `make check-env`, `make test`, `make build-data` all functional
+- flake8 clean across the entire codebase
+
 ## v1.1.2 — Code Quality & Infrastructure
 
 ### Fixed
