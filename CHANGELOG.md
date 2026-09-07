@@ -11,6 +11,8 @@
 - Added `help` Makefile target
 - Added pytest-cov coverage configuration to pyproject.toml
 - Fixed .flake8 to exclude *.toml files
+- Removed unused `yt-dlp` dependency from requirements.txt and pyproject.toml
+- Added main class exports to `src/__init__.py`
 
 ### Verified
 - All 85 tests passing
