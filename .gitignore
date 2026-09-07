@@ -17,5 +17,5 @@ transcripts/
 src/__pycache__/
 
 # Large PDFs that cannot be committed to GitHub
-dataset/training/**/*.pdf
+dataset/raw/
 coverage.xml
