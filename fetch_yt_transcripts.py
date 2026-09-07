@@ -10,7 +10,7 @@ Usage:
     python fetch_yt_transcripts.py --output transcripts/
 """
 
-# Copyright (c) 2026 defnlnotme
+# Copyright (c) 2026 competitiveNN
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

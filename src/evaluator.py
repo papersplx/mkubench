@@ -2,7 +2,7 @@
 Evaluation engine - scores model performance against the benchmark dataset.
 MMLU-style evaluation with accuracy scoring.
 """
-# Copyright (c) 2026 defnlnotme
+# Copyright (c) 2026 competitiveNN
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

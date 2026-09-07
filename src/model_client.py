@@ -2,7 +2,7 @@
 Model client module - supports any OpenAI-compatible API or local LLM server.
 Supports: Ollama, vLLM, LocalAI, OpenAI, Anthropic (via compatible endpoints)
 """
-# Copyright (c) 2026 defnlnotme
+# Copyright (c) 2026 competitiveNN
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
