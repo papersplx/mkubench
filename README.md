@@ -10,7 +10,6 @@ An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to eva
 - **Configurable** - Command-line driven with sensible defaults
 - **Detailed reporting** - Per-question breakdown + overall accuracy
 - **Training dataset builder** - Extract text from PDFs, EPUBs, TXTs and build LLM training data
-- **YouTube transcript fetching** - Download transcripts for video-based research
 
 ## Quick Start
 
@@ -68,8 +67,6 @@ make run-local        # Run against local vLLM server
 make test             # Run validation tests
 make check-env       # Verify all dependencies are installed
 make build-data      # Build training dataset from source files
-make fetch-youtube   # Fetch YouTube transcripts
-make dataset         # Build data AND fetch YouTube transcripts
 make clean           # Clean results directory
 make docs            # Display documentation
 ```
@@ -107,18 +104,8 @@ make build-data
 
 Output is in `dataset/training_data/`:
 - `training_dataset.jsonl` — Combined documents (id, title, content, source, type, metadata)
-- `batches/batch_001.jsonl` through `batch_004.jsonl` — Batched documents for LLM training
-- `dataset_summary.json` — Metadata about the dataset (78 docs: 40 PDFs, 9 EPUBs, 8 TXTs, 21 articles)
-
-Fetch YouTube transcripts:
-```bash
-python fetch_yt_transcripts.py
-```
-
-Or use Make:
-```bash
-make fetch-youtube
-```
+- `batches/batch_001.jsonl` through `batch_005.jsonl` — Batched documents for LLM training
+- `dataset_summary.json` — Metadata about the dataset (93 docs: 40 PDFs, 9 EPUBs, 8 TXTs, 21 articles, 15 YouTube transcripts)
 
 ## Building from Source
 
@@ -169,4 +156,4 @@ dataset/training_data/             (output training data)
 
 ## License
 
-MIT License (c) 2026 defnlnotme
+MIT License (c) 2026 competitiveNN

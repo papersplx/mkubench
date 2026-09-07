@@ -1,13 +1,19 @@
 {
-  "total_documents": 78,
+  "total_documents": 93,
   "files": 9,
-  "urls": 21,
+  "urls": 15,
   "types": {
-    "pdf": 40,
+    "article": 21,
     "epub": 9,
+    "pdf": 40,
     "txt": 8,
-    "article": 21
+    "youtube_transcript": 15
   },
   "batch_size": 20,
-  "num_batches": 4
+  "num_batches": 5,
+  "youtube_transcripts": {
+    "fetched": 11,
+    "unavailable": 4,
+    "total_urls": 15
+  }
 }

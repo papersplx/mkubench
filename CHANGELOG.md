@@ -101,7 +101,7 @@
 ## v1.0.0 — Initial Release
 
 ### Added
-- MIT license (c) 2026 defnlnotme
+- MIT license (c) 2026 competitiveNN
 - Automated LLM benchmark pipeline (MMLU-style)
 - 30-question benchmark dataset (`dataset/mkultra_benchmark.jsonl`)
 - Model clients: OpenAI, Ollama (vLLM/LocalAI compatible)
