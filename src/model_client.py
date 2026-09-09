@@ -101,15 +101,30 @@ class OpenAIClient(BaseModelClient):
                     },
                     timeout=self.timeout,
                 )
+                if response.status_code == 429:
+                    # Rate limited - parse retry time or default to 60s
+                    import re
+                    error_msg = response.text
+                    retry_match = re.search(r"retry in ([\d.]+)s", error_msg)
+                    wait_time = float(retry_match.group(1)) + 2 if retry_match else 60
+                    logger.warning(f"Rate limited, waiting {wait_time:.0f}s...")
+                    time.sleep(wait_time)
+                    continue
                 response.raise_for_status()
                 data = response.json()
-                return data["choices"][0]["message"]["content"].strip()
+                # Handle models that return reasoning_content instead of content (e.g., muse-glimmer-30b)
+                choice = data["choices"][0]["message"]
+                content = choice.get("content")
+                if content is None:
+                    content = choice.get("reasoning_content", "")
+                return content.strip()
             except requests.exceptions.RequestException as e:
                 logger.warning(f"API call attempt {attempt + 1} failed: {e}")
                 if attempt < self.max_retries - 1:
                     time.sleep(2 ** attempt)
                 else:
                     raise
+        return ""
 
     def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
         """Generate responses for a list of prompts (sequential with rate limiting)."""
@@ -190,5 +205,110 @@ def get_client(client_type: str = "openai", **kwargs: Any) -> BaseModelClient:
         return OllamaClient(**kwargs)
     elif client_type == "openai":
         return OpenAIClient(**kwargs)
+    elif client_type == "gemini":
+        return GeminiClient(**kwargs)
     else:
         return OpenAIClient(**kwargs)
+
+
+class GeminiClient(BaseModelClient):
+    """Client for Google Gemini API (native generateContent endpoint)."""
+
+    def __init__(
+        self,
+        model: str = "gemini-2.5-flash",
+        api_key: Optional[str] = None,
+        timeout: int = 120,
+        max_retries: int = 5,
+        **kwargs: Any
+    ) -> None:
+        """Initialize the Gemini client.
+
+        Args:
+            model: Model name/identifier.
+            api_key: Gemini API key (or set GEMINI_API_KEY env var).
+            timeout: Request timeout in seconds.
+            max_retries: Maximum number of retry attempts.
+        """
+        self.model = model
+        self.api_key = api_key or os.getenv("GEMINI_API_KEY", "")
+        self.timeout = timeout
+        self.max_retries = max_retries
+        self.kwargs = kwargs
+
+    def generate(self, messages: List[Dict[str, str]], **kwargs: Any) -> str:
+        """Send messages to Gemini and return response text."""
+        # Convert OpenAI-style messages to Gemini format
+        contents = []
+        for msg in messages:
+            role = msg["role"]
+            if role == "system":
+                # Gemini doesn't have system role, prepend to first user message
+                continue
+            elif role == "user":
+                contents.append({
+                    "role": "user",
+                    "parts": [{"text": msg["content"]}]
+                })
+            elif role == "assistant":
+                contents.append({
+                    "role": "model",
+                    "parts": [{"text": msg["content"]}]
+                })
+
+        payload = {
+            "contents": contents,
+            "generationConfig": {
+                "temperature": kwargs.get("temperature", 0.0),
+                "maxOutputTokens": kwargs.get("max_tokens", 2048),
+                "topP": kwargs.get("top_p", 1.0),
+            }
+        }
+
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+
+        for attempt in range(self.max_retries):
+            try:
+                response = requests.post(
+                    url,
+                    json=payload,
+                    headers={"Content-Type": "application/json"},
+                    timeout=self.timeout,
+                )
+                if response.status_code == 429:
+                    # Rate limited - wait and retry
+                    retry_after = 60
+                    logger.warning(f"Rate limited, waiting {retry_after}s...")
+                    time.sleep(retry_after)
+                    continue
+                response.raise_for_status()
+                data = response.json()
+                # Extract text from response
+                candidates = data.get("candidates", [])
+                if candidates:
+                    parts = candidates[0].get("content", {}).get("parts", [])
+                    if parts:
+                        return parts[0].get("text", "").strip()
+                return ""
+            except requests.exceptions.RequestException as e:
+                logger.warning(f"Gemini API call attempt {attempt + 1} failed: {e}")
+                if attempt < self.max_retries - 1:
+                    time.sleep(2 ** attempt)
+                else:
+                    raise
+        return ""
+
+    def batch_generate(self, prompts: List[str], **kwargs: Any) -> List[str]:
+        """Generate responses for a list of prompts (sequential with rate limiting)."""
+        results = []
+        for i, prompt in enumerate(prompts):
+            messages = [{"role": "user", "content": prompt}]
+            try:
+                resp = self.generate(messages, **kwargs)
+                results.append(resp)
+            except Exception as e:
+                logger.error(f"Failed on prompt {i}: {e}")
+                results.append("")
+            # Rate limit: 20 requests per minute = 3 second delay
+            time.sleep(kwargs.get("delay", 3.0))
+        return results

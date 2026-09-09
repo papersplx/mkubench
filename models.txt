@@ -1,0 +1,15 @@
+deepseek-ai/deepseek-coder-6.7b-instruct           | nvidia-nim       | -            | -            | -        | 131,072    | Y      | N
+deepseek-ai/deepseek-v4-flash-0731                 | nvidia-nim       | 2026-07-31   | 40.8         | 1580     | 131,072    | Y      | N
+deepseek-ai/deepseek-v4-pro-0813                   | nvidia-nim       | 2026-08-13   | 42.1         | -        | 131,072    | Y      | N
+google/gemma-4-31b-it                              | nvidia-nim       | 2026-03      | 22.2         | -        | -          | N      | N
+ibm/granite-3.0-3b-a800m-instruct                  | nvidia-nim       | -            | -            | -        | 131,072    | N      | N
+ibm/granite-3.0-8b-instruct                        | nvidia-nim       | -            | -            | -        | 131,072    | N      | N
+meta/llama2-70b                                    | nvidia-nim       | -            | -            | -        | -          | N      | N
+meta/muse-glimmer-30b                              | nvidia-nim       | 2026-08-10   | 24.4         | -        | -          | N      | N
+minimaxai/minimax-m3                               | nvidia-nim       | 2026-06-01   | 35.7         | 1487     | -          | N      | N
+moonshotai/kimi-k2.6                               | nvidia-nim       | 2026-04      | 35.8         | 1509     | -          | Y      | N
+moonshotai/kimi-k3                                 | nvidia-nim       | 2026-07-16   | 50.2         | 1674     | -          | N      | N
+nvidia/nemotron-3-super-120b-a12b                  | nvidia-nim       | 2026-03      | 18.6         | -        | 262,144    | Y      | N
+nvidia/nemotron-3-ultra-550b-a55b                  | nvidia-nim       | 2026-06      | 29.3         | -        | 1,000,000  | Y      | N
+nvidia/nemotron-3.5-lightning-30b-a3b              | nvidia-nim       | 2026-08-11   | 16.4         | -        | -          | Y      | N
+poolside/laguna-xs-2.1                             | nvidia-nim       | 2026-07      | -            | -        | -          | N      | N
