@@ -18,16 +18,16 @@ def parse_answer(response: str, is_multiple_choice: bool = False) -> Optional[st
 
     response_clean = response.strip()
 
-    # Strategy 1: Explicit answer patterns
+    # Strategy 1: Explicit answer patterns (most reliable)
     patterns = [
-        r'[Aa]nswer\s*[:=]\s*([A-D](?:[,\s]*[A-D])*)',
-        r'(?:The\s+)?(?:correct\s+)?answer\s+[is:]\s*([A-D](?:[,\s]*[A-D])*)',
-        r'(?:I|My)\s+(?:would\s+)?(?:answer|choose|select)\s+([A-D](?:[,\s]*[A-D])*)',
-        r'(?:The|My)\s+answer\s+(?:is|was|will\s+be)\s+([A-D](?:[,\s]*[A-D])*)',
+        r'(?:The\s+)?(?:correct\s+)?answer\s+(?:is\s+)?[:=]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'(?:I|My)\s+(?:would\s+)?(?:answer|choose|select)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'(?:The|My)\s+answer\s+(?:is|was|will\s+be)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'[Aa]nswer\s*[:=]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
         r'\(([A-D](?:[,\s]*[A-D])*)\)\s*(?:is|are)\s*(?:the|my|correct)\s+answer',
-        r'correct\s+option\s+[is:]\s*([A-D](?:[,\s]*[A-D])*)',
-        r'selected?\s+option\s*[=:]\s*([A-D](?:[,\s]*[A-D])*)',
-        r'final\s+answer\s*[=:]\s*([A-D](?:[,\s]*[A-D])*)',
+        r'correct\s+option\s+[is:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'selected?\s+option\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'final\s+answer\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']*',
     ]
 
     for pattern in patterns:
@@ -35,21 +35,39 @@ def parse_answer(response: str, is_multiple_choice: bool = False) -> Optional[st
         if match:
             return match.group(1).replace(" ", "").replace(",", ",").upper()
 
-    # Strategy 2: Look for standalone letters at end of response (most common)
+    # Strategy 2: Look for "Therefore, the answer is X" or similar conclusion patterns
+    conclusion_patterns = [
+        r'[Tt]herefore[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'[Ss]o[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'[Ii]\s+(?:would\s+)?(?:choose|select|answer)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'[Tt]he\s+answer\s+is\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+    ]
+    
+    for pattern in conclusion_patterns:
+        match = re.search(pattern, response_clean)
+        if match:
+            return match.group(1).replace(" ", "").replace(",", ",").upper()
+
+    # Strategy 3: Look for standalone letters at end of response (but not part of A), B), C), D))
     # Models often just say "B" or "A, B, D" at the end
     single_match = re.search(r'[A-D](?:\s*,\s*[A-D])*\s*$', response_clean)
     if single_match:
-        return single_match.group(0).replace(" ", "").upper()
+        # Make sure it's not part of "A)" or "B)"
+        match_text = single_match.group(0)
+        start_pos = single_match.start()
+        if start_pos > 0 and response_clean[start_pos-1] == '(':
+            pass  # Skip if preceded by (
+        else:
+            return match_text.replace(" ", "").upper()
 
-    # Strategy 3: Check if the response ends with a single letter
+    # Strategy 4: Check if the response ends with a single letter (not part of A), B), etc.)
     end_letter = re.search(r'[A-D]\s*$', response_clean)
     if end_letter:
-        return end_letter.group(0).upper()
-
-    # Strategy 4: Look for "Answer: A)" format
-    letter_in_context = re.search(r'([A-D])\)\s', response_clean)
-    if letter_in_context:
-        return letter_in_context.group(1).upper()
+        pos = end_letter.start()
+        if pos > 0 and response_clean[pos-1] == '(':
+            pass  # Skip if preceded by (
+        else:
+            return end_letter.group(0).upper()
 
     # Strategy 5: For multiple choice, extract all letters from response
     if is_multiple_choice:

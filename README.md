@@ -42,7 +42,7 @@ python run_benchmark.py --client ollama --model llama3 --max-questions 5
 
 | Argument | Description | Default |
 |----------|-------------|---------|
-| `--client` | Model client type (`openai`, `ollama`) | `openai` |
+| `--client` | Model client type (`openai`, `ollama`, `gemini`) | `openai` |
 | `--model` | Model name/identifier | `gpt-4` |
 | `--api-base` | API base URL (for local/compatible servers) | `None` |
 | `--api-key` | API key (or use `OPENAI_API_KEY` env var) | `None` |
@@ -138,11 +138,11 @@ dataset/mkultra_benchmark.jsonl (structured benchmark dataset)
     │
     ▼
 run_benchmark.py                   (main entry point)
-    ├── src/model_client.py        (model interface: OpenAI/Ollama)
+    ├── src/model_client.py        (model interface: OpenAI/Ollama/Gemini)
     ├── src/evaluator.py           (MMLU-style evaluation engine)
     └── src/parser.py              (response parsing)
 
-dataset/training/                  (source training files)
+dataset/raw/                       (source training files - gitignored)
     │
     ▼
 build_dataset.py                   (training dataset builder)
@@ -153,6 +153,22 @@ dataset/training_data/             (output training data)
     ├── batches/
     └── dataset_summary.json
 ```
+
+## Benchmark Results
+
+| Model | Overall Accuracy | Single Choice | Multiple Choice | Provider |
+|-------|-----------------|---------------|-----------------|----------|
+| gemini-3.5-flash-lite | 76.7% (23/30) | 85.7% (18/21) | 55.6% (5/9) | Google |
+| nvidia/nemotron-3-super-120b-a12b | 76.7% (23/30) | 90.5% (19/21) | 44.4% (4/9) | NVIDIA |
+| gemini-3.8-flash | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | Google |
+| gemma-4-31b-it | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | Google |
+| meta/muse-glimmer-30b | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | NVIDIA |
+| nvidia/nemotron-3.5-lightning-30b-a3b | 66.7% (20/30) | 85.7% (18/21) | 22.2% (2/9) | NVIDIA |
+| Gemini 2.5 Flash | 10.0% (3/30) | 14.3% (3/21) | 0.0% (0/9) | Google |
+| minimaxai/minimax-m3 | 6.7% (2/30) | 4.8% (1/21) | 11.1% (1/9) | NVIDIA |
+| moonshotai/kimi-k3 | 0.0% (0/30) | 0.0% (0/21) | 0.0% (0/9) | NVIDIA |
+
+See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details, histogram, and unavailable models.
 
 ## License
 

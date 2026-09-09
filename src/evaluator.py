@@ -96,6 +96,8 @@ class BenchmarkEvaluator:
 
         total = len(questions)
         correct = 0
+        weighted_correct = 0.0
+        weighted_total = 0.0
         multiple_correct = 0
         multiple_total = 0
         single_correct = 0
@@ -116,8 +118,13 @@ class BenchmarkEvaluator:
             result = self.evaluate_single(question, response)
             self.results.append(result)
 
+            # Get weight (default to 1 if not specified)
+            weight = question.get("weight", 1.0)
+            weighted_total += weight
+
             if result["is_correct"]:
                 correct += 1
+                weighted_correct += weight
                 if result["is_multiple_choice"]:
                     multiple_correct += 1
                 else:
@@ -138,6 +145,7 @@ class BenchmarkEvaluator:
 
         # Calculate scores
         overall_accuracy = correct / total if total > 0 else 0.0
+        weighted_accuracy = weighted_correct / weighted_total if weighted_total > 0 else 0.0
         single_accuracy = single_correct / single_total if single_total > 0 else 0.0
         multiple_accuracy = multiple_correct / multiple_total if multiple_total > 0 else 0.0
 
@@ -146,6 +154,8 @@ class BenchmarkEvaluator:
             "correct": correct,
             "incorrect": total - correct,
             "overall_accuracy": round(overall_accuracy * 100, 2),
+            "weighted_accuracy": round(weighted_accuracy * 100, 2),
+            "weighted_score": f"{weighted_correct:.1f}/{weighted_total:.1f}",
             "single_choice_accuracy": round(single_accuracy * 100, 2),
             "multiple_choice_accuracy": round(multiple_accuracy * 100, 2),
             "single_choice_score": f"{single_correct}/{single_total}",
@@ -183,6 +193,8 @@ Question Type: {q['question_type']}"""
         print(f"Correct:            {summary['correct']}")
         print(f"Incorrect:          {summary['incorrect']}")
         print(f"Overall Accuracy:   {summary['overall_accuracy']}%")
+        if "weighted_accuracy" in summary:
+            print(f"Weighted Accuracy:  {summary['weighted_accuracy']}% ({summary['weighted_score']})")
         print(f"Single Choice:      {summary['single_choice_accuracy']}% ({summary['single_choice_score']})")
         print(f"Multiple Choice:    {summary['multiple_choice_accuracy']}% ({summary['multiple_choice_score']})")
         print("=" * 70)

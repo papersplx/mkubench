@@ -82,7 +82,7 @@ Examples:
 
     # Model configuration
     parser.add_argument("--client", type=str, default="openai",
-                        choices=["openai", "ollama"],
+                        choices=["openai", "ollama", "gemini"],
                         help="Model client type (default: openai)")
     parser.add_argument("--model", type=str, default="gpt-4",
                         help="Model name/identifier (default: gpt-4)")
