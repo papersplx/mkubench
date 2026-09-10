@@ -47,7 +47,7 @@ python run_benchmark.py --client ollama --model llama3 --max-questions 5
 | `--api-base` | API base URL (for local/compatible servers) | `None` |
 | `--api-key` | API key (or use `OPENAI_API_KEY` env var) | `None` |
 | `--dataset` | Path to dataset JSONL file | `dataset/mkultra_benchmark.jsonl` |
-| `--max-questions` | Limit to first N questions | `All (30)` |
+| `--max-questions` | Limit to first N questions | `All (40)` |
 | `--temperature` | Sampling temperature | `0.0` |
 | `--max-tokens` | Max tokens per response | `2048` |
 | `--output` | Output directory for results | `results/` |
@@ -73,9 +73,11 @@ make docs            # Display documentation
 
 ## Benchmark Dataset
 
-The benchmark contains **30 questions** in `dataset/mkultra_benchmark.jsonl`:
-- **Single Choice** (21 questions) - Select one correct option
-- **Multiple Choice** (9 questions) - Select ALL correct options
+The benchmark contains **40 questions** in `dataset/mkultra_benchmark.jsonl`:
+- **Single Choice** (30 questions) - Select one correct option
+- **Multiple Choice** (10 questions) - Select ALL correct options
+
+Questions have weights: 1.0 for user-added (Q31-Q40) and 0.5 for original (Q1-Q30).
 
 Each question includes:
 - Question text with formatted options
@@ -85,7 +87,7 @@ Each question includes:
 
 ## Training Dataset
 
-The training dataset is built from source files in `dataset/training/`:
+The training dataset is built from source files in `dataset/raw/` (gitignored):
 - PDFs (extracted via pdfplumber/PyPDF2)
 - EPUBs (extracted via ebooklib)
 - TXT files (direct reading)
@@ -102,7 +104,7 @@ Or use Make:
 make build-data
 ```
 
-Output is in `dataset/training_data/`:
+Output is in `dataset/training_data/` (gitignored):
 - `training_dataset.jsonl` — Combined documents (id, title, content, source, type, metadata)
 - `batches/batch_001.jsonl` through `batch_005.jsonl` — Batched documents for LLM training
 - `dataset_summary.json` — Metadata about the dataset (93 docs: 40 PDFs, 9 EPUBs, 8 TXTs, 21 articles, 15 YouTube transcripts)
@@ -156,19 +158,19 @@ dataset/training_data/             (output training data)
 
 ## Benchmark Results
 
-| Model | Overall Accuracy | Single Choice | Multiple Choice | Provider |
-|-------|-----------------|---------------|-----------------|----------|
-| gemini-3.5-flash-lite | 76.7% (23/30) | 85.7% (18/21) | 55.6% (5/9) | Google |
-| nvidia/nemotron-3-super-120b-a12b | 76.7% (23/30) | 90.5% (19/21) | 44.4% (4/9) | NVIDIA |
-| gemini-3.8-flash | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | Google |
-| gemma-4-31b-it | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | Google |
-| meta/muse-glimmer-30b | 70.0% (21/30) | 85.7% (18/21) | 33.3% (3/9) | NVIDIA |
-| nvidia/nemotron-3.5-lightning-30b-a3b | 66.7% (20/30) | 85.7% (18/21) | 22.2% (2/9) | NVIDIA |
-| Gemini 2.5 Flash | 10.0% (3/30) | 14.3% (3/21) | 0.0% (0/9) | Google |
-| minimaxai/minimax-m3 | 6.7% (2/30) | 4.8% (1/21) | 11.1% (1/9) | NVIDIA |
-| moonshotai/kimi-k3 | 0.0% (0/30) | 0.0% (0/21) | 0.0% (0/9) | NVIDIA |
+| Model | Overall Accuracy | Weighted Accuracy | Provider |
+|-------|-----------------|-------------------|----------|
+| gemini-3.5-flash-lite | 70.0% (28/40) | 66.0% | Google |
+| nvidia/nemotron-3.5-lightning-30b-a3b | 65.0% (26/40) | 62.0% | NVIDIA |
+| meta/muse-glimmer-30b | 62.5% (25/40) | 56.0% | NVIDIA |
+| gemma-4-31b-it | 60.0% (24/40) | 56.0% | Google |
+| nvidia/nemotron-3-super-120b-a12b | 52.5% (21/40) | 46.0% | NVIDIA |
+| gemini-3.8-flash | 2.5% (1/40) | 2.0% | Google (rate-limited) |
+| moonshotai/kimi-k3 | 5.0% (2/40) | 4.0% | NVIDIA (rate-limited) |
 
-See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details, histogram, and unavailable models.
+**Note:** gemini-3.8-flash and kimi-k3 were heavily rate-limited (429 errors) and results are incomplete.
+
+See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details, histogram, and comparison with previous 30-question results.
 
 ## License
 
