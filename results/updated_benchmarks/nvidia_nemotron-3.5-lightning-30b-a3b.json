@@ -1,0 +1,7 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "total_questions": 40,
+  "correct": 26,
+  "overall_accuracy": 65.0,
+  "weighted_accuracy": 62.0
+}
