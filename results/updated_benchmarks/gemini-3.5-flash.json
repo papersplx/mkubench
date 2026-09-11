@@ -1,13 +1,13 @@
 {
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-3.5-flash",
   "provider": "google",
   "total_questions": 40,
-  "correct": 26,
+  "correct": 28,
   "failures": 0,
-  "overall_accuracy": 65.0,
-  "weighted_accuracy": 58.0,
-  "weighted_score": "14.5/25.0",
-  "timestamp": "2026-09-10T14:14:40.339556",
+  "overall_accuracy": 70.0,
+  "weighted_accuracy": 62.0,
+  "weighted_score": "15.5/25.0",
+  "timestamp": "2026-09-10T17:35:25.356989",
   "results": [
     {
       "id": 1,
@@ -17,8 +17,8 @@
     },
     {
       "id": 2,
-      "is_correct": true,
-      "parsed_answer": "A,B,D",
+      "is_correct": false,
+      "parsed_answer": "A,B",
       "weight": 0.5
     },
     {
@@ -89,8 +89,8 @@
     },
     {
       "id": 14,
-      "is_correct": false,
-      "parsed_answer": "B,C",
+      "is_correct": true,
+      "parsed_answer": "A,B,C",
       "weight": 0.5
     },
     {
@@ -137,8 +137,8 @@
     },
     {
       "id": 22,
-      "is_correct": false,
-      "parsed_answer": "A,C",
+      "is_correct": true,
+      "parsed_answer": "A,B,C,D",
       "weight": 0.5
     },
     {
@@ -149,14 +149,14 @@
     },
     {
       "id": 24,
-      "is_correct": false,
-      "parsed_answer": "A",
+      "is_correct": true,
+      "parsed_answer": "B",
       "weight": 0.5
     },
     {
       "id": 25,
       "is_correct": false,
-      "parsed_answer": "A,B,D",
+      "parsed_answer": "A,B,C",
       "weight": 0.5
     },
     {
@@ -174,7 +174,7 @@
     {
       "id": 28,
       "is_correct": false,
-      "parsed_answer": "A",
+      "parsed_answer": "C",
       "weight": 0.5
     },
     {
@@ -203,20 +203,20 @@
     },
     {
       "id": 33,
-      "is_correct": false,
-      "parsed_answer": "B",
+      "is_correct": true,
+      "parsed_answer": "C",
       "weight": 1
     },
     {
       "id": 34,
       "is_correct": false,
-      "parsed_answer": null,
+      "parsed_answer": "B",
       "weight": 1
     },
     {
       "id": 35,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": "B",
       "weight": 1
     },
     {
@@ -233,8 +233,8 @@
     },
     {
       "id": 38,
-      "is_correct": true,
-      "parsed_answer": "A",
+      "is_correct": false,
+      "parsed_answer": "B",
       "weight": 1
     },
     {
@@ -246,7 +246,7 @@
     {
       "id": 40,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": null,
       "weight": 1
     }
   ]
