@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash",
+  "provider": "google",
+  "total_questions": 40,
+  "correct": 0,
+  "failures": 40,
+  "overall_accuracy": 0.0,
+  "weighted_accuracy": 0.0,
+  "weighted_score": "0.0/25.0",
+  "timestamp": "2026-09-11T17:15:52"
+}
