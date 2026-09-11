@@ -2,16 +2,17 @@
   "model": "gemma-4-31b-it",
   "provider": "google",
   "total_questions": 40,
-  "correct": 24,
-  "overall_accuracy": 60.0,
-  "weighted_accuracy": 56.0,
-  "weighted_score": "14.0/25.0",
-  "timestamp": "2026-09-09T23:54:56.425587",
+  "correct": 21,
+  "failures": 6,
+  "overall_accuracy": 52.5,
+  "weighted_accuracy": 50.0,
+  "weighted_score": "12.5/25.0",
+  "timestamp": "2026-09-10T20:04:21.767097",
   "results": [
     {
       "id": 1,
-      "is_correct": false,
-      "parsed_answer": null,
+      "is_correct": true,
+      "parsed_answer": "B",
       "weight": 0.5
     },
     {
@@ -82,8 +83,8 @@
     },
     {
       "id": 13,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
@@ -106,14 +107,14 @@
     },
     {
       "id": 17,
-      "is_correct": true,
-      "parsed_answer": "A",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 18,
-      "is_correct": true,
-      "parsed_answer": "A,B,D",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
@@ -130,20 +131,20 @@
     },
     {
       "id": 21,
-      "is_correct": true,
-      "parsed_answer": "B",
-      "weight": 0.5
-    },
-    {
-      "id": 22,
       "is_correct": false,
       "parsed_answer": null,
       "weight": 0.5
     },
     {
-      "id": 23,
+      "id": 22,
       "is_correct": true,
-      "parsed_answer": "C",
+      "parsed_answer": "A,B,C,D",
+      "weight": 0.5
+    },
+    {
+      "id": 23,
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
@@ -173,7 +174,7 @@
     {
       "id": 28,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": null,
       "weight": 0.5
     },
     {

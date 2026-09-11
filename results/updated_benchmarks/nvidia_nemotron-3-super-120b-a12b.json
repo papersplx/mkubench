@@ -2,16 +2,17 @@
   "model": "nvidia/nemotron-3-super-120b-a12b",
   "provider": "nvidia",
   "total_questions": 40,
-  "correct": 21,
-  "overall_accuracy": 52.5,
-  "weighted_accuracy": 46.0,
-  "weighted_score": "11.5/25.0",
-  "timestamp": "2026-09-10T00:03:39.869595",
+  "correct": 24,
+  "failures": 0,
+  "overall_accuracy": 60.0,
+  "weighted_accuracy": 54.0,
+  "weighted_score": "13.5/25.0",
+  "timestamp": "2026-09-10T20:38:12.293319",
   "results": [
     {
       "id": 1,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
@@ -22,8 +23,8 @@
     },
     {
       "id": 3,
-      "is_correct": false,
-      "parsed_answer": null,
+      "is_correct": true,
+      "parsed_answer": "C",
       "weight": 0.5
     },
     {
@@ -34,8 +35,8 @@
     },
     {
       "id": 5,
-      "is_correct": false,
-      "parsed_answer": "C",
+      "is_correct": true,
+      "parsed_answer": "A,B,C",
       "weight": 0.5
     },
     {
@@ -47,7 +48,7 @@
     {
       "id": 7,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": "D",
       "weight": 0.5
     },
     {
@@ -70,8 +71,8 @@
     },
     {
       "id": 11,
-      "is_correct": true,
-      "parsed_answer": "A,B,C",
+      "is_correct": false,
+      "parsed_answer": "A",
       "weight": 0.5
     },
     {
@@ -89,7 +90,7 @@
     {
       "id": 14,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": "B,C,D",
       "weight": 0.5
     },
     {
@@ -148,14 +149,14 @@
     },
     {
       "id": 24,
-      "is_correct": false,
-      "parsed_answer": "D",
+      "is_correct": true,
+      "parsed_answer": "B",
       "weight": 0.5
     },
     {
       "id": 25,
-      "is_correct": false,
-      "parsed_answer": "A",
+      "is_correct": true,
+      "parsed_answer": "A,D,C,B",
       "weight": 0.5
     },
     {
@@ -173,7 +174,7 @@
     {
       "id": 28,
       "is_correct": false,
-      "parsed_answer": null,
+      "parsed_answer": "C",
       "weight": 0.5
     },
     {
@@ -196,8 +197,8 @@
     },
     {
       "id": 32,
-      "is_correct": false,
-      "parsed_answer": "A",
+      "is_correct": true,
+      "parsed_answer": "B",
       "weight": 1
     },
     {
@@ -209,7 +210,7 @@
     {
       "id": 34,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": "B",
       "weight": 1
     },
     {

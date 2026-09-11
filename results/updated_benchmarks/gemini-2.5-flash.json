@@ -1,24 +1,24 @@
 {
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-2.5-flash",
   "provider": "google",
   "total_questions": 40,
-  "correct": 26,
-  "failures": 0,
-  "overall_accuracy": 65.0,
-  "weighted_accuracy": 58.0,
-  "weighted_score": "14.5/25.0",
-  "timestamp": "2026-09-10T14:14:40.339556",
+  "correct": 8,
+  "failures": 24,
+  "overall_accuracy": 20.0,
+  "weighted_accuracy": 18.0,
+  "weighted_score": "4.5/25.0",
+  "timestamp": "2026-09-10T17:59:12.883832",
   "results": [
     {
       "id": 1,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": "D",
       "weight": 0.5
     },
     {
       "id": 2,
-      "is_correct": true,
-      "parsed_answer": "A,B,D",
+      "is_correct": false,
+      "parsed_answer": "A",
       "weight": 0.5
     },
     {
@@ -36,43 +36,43 @@
     {
       "id": 5,
       "is_correct": false,
-      "parsed_answer": "A,B",
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 6,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 7,
-      "is_correct": true,
-      "parsed_answer": "A,B,C,D",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 8,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 9,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 10,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 11,
       "is_correct": false,
-      "parsed_answer": "A,B",
+      "parsed_answer": "A",
       "weight": 0.5
     },
     {
@@ -89,44 +89,44 @@
     },
     {
       "id": 14,
-      "is_correct": false,
-      "parsed_answer": "B,C",
+      "is_correct": true,
+      "parsed_answer": "A,B,C",
       "weight": 0.5
     },
     {
       "id": 15,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 16,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 17,
-      "is_correct": true,
-      "parsed_answer": "A",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 18,
-      "is_correct": true,
-      "parsed_answer": "A,B,D",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 19,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 20,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
@@ -138,7 +138,7 @@
     {
       "id": 22,
       "is_correct": false,
-      "parsed_answer": "A,C",
+      "parsed_answer": "A,B,C",
       "weight": 0.5
     },
     {
@@ -150,49 +150,49 @@
     {
       "id": 24,
       "is_correct": false,
-      "parsed_answer": "A",
+      "parsed_answer": "D",
       "weight": 0.5
     },
     {
       "id": 25,
       "is_correct": false,
-      "parsed_answer": "A,B,D",
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 26,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 27,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 28,
       "is_correct": false,
-      "parsed_answer": "A",
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 29,
-      "is_correct": true,
-      "parsed_answer": "A,B,D",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 30,
-      "is_correct": true,
-      "parsed_answer": "B",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 0.5
     },
     {
       "id": 31,
       "is_correct": false,
-      "parsed_answer": "A",
+      "parsed_answer": null,
       "weight": 1
     },
     {
@@ -216,25 +216,25 @@
     {
       "id": 35,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": null,
       "weight": 1
     },
     {
       "id": 36,
-      "is_correct": true,
-      "parsed_answer": "C",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 1
     },
     {
       "id": 37,
       "is_correct": false,
-      "parsed_answer": "A",
+      "parsed_answer": null,
       "weight": 1
     },
     {
       "id": 38,
-      "is_correct": true,
-      "parsed_answer": "A",
+      "is_correct": false,
+      "parsed_answer": null,
       "weight": 1
     },
     {
@@ -246,7 +246,7 @@
     {
       "id": 40,
       "is_correct": false,
-      "parsed_answer": "C",
+      "parsed_answer": null,
       "weight": 1
     }
   ]
