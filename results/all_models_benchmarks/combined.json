@@ -1,257 +1,4 @@
 {
-  "kilocode/kilo-auto/free": {
-    "model": "kilo-auto/free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 27,
-    "failures": 0,
-    "overall_accuracy": 67.5,
-    "weighted_accuracy": 64.0,
-    "weighted_score": "16.0/25.0",
-    "timestamp": "2026-09-11T05:21:46.185128",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 1
-      }
-    ]
-  },
   "kilocode/stepfun/step-3.7-flash:free": {
     "model": "stepfun/step-3.7-flash:free",
     "provider": "kilocode",
@@ -3034,5 +2781,3558 @@
         "weight": 1
       }
     ]
+  },
+  "nvidia-nim/deepseek-ai/deepseek-coder-6.7b-instruct": {
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:00:17.188457",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/deepseek-ai/deepseek-v4-flash-0731": {
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 21,
+    "failures": 11,
+    "overall_accuracy": 52.5,
+    "weighted_accuracy": 42.0,
+    "weighted_score": "10.5/25.0",
+    "timestamp": "2026-09-11T20:39:05.465966",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/deepseek-ai/deepseek-v4-pro-0813": {
+    "model": "deepseek-ai/deepseek-v4-pro-0813",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:46:41.400487",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/google/gemma-4-31b-it": {
+    "model": "google/gemma-4-31b-it",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:54:17.349237",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/ibm/granite-3.0-3b-a800m-instruct": {
+    "model": "ibm/granite-3.0-3b-a800m-instruct",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:54:22.909086",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/ibm/granite-3.0-8b-instruct": {
+    "model": "ibm/granite-3.0-8b-instruct",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:54:28.409381",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/meta/llama2-70b": {
+    "model": "meta/llama2-70b",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T20:54:33.916360",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/meta/muse-glimmer-30b": {
+    "model": "meta/muse-glimmer-30b",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 25,
+    "failures": 0,
+    "overall_accuracy": 62.5,
+    "weighted_accuracy": 58.0,
+    "weighted_score": "14.5/25.0",
+    "timestamp": "2026-09-11T21:06:30.582117",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/minimaxai/minimax-m3": {
+    "model": "minimaxai/minimax-m3",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T21:07:06.495085",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/moonshotai/kimi-k2.6": {
+    "model": "moonshotai/kimi-k2.6",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T21:07:12.028139",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/moonshotai/kimi-k3": {
+    "model": "moonshotai/kimi-k3",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 40,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.0/25.0",
+    "timestamp": "2026-09-11T21:08:48.114526",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  "nvidia-nim/nvidia/nemotron-3-super-120b-a12b": {
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 23,
+    "failures": 0,
+    "overall_accuracy": 57.5,
+    "weighted_accuracy": 52.0,
+    "weighted_score": "13.0/25.0",
+    "timestamp": "2026-09-11T21:21:01.334421",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,D,B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,D,C,B",
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 1
+      }
+    ]
+  },
+  "google-ai-studio/gemini-flash-lite-latest": {
+    "model": "gemini-flash-lite-latest",
+    "provider": "google-ai-studio",
+    "total_questions": 40,
+    "correct": 26,
+    "failures": 0,
+    "overall_accuracy": 65.0,
+    "weighted_accuracy": 58.0,
+    "weighted_score": "14.5/25.0",
+    "timestamp": "2026-09-11T20:27:41.493546",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      }
+    ]
+  },
+  "google-ai-studio/gemini-3.5-flash-lite": {
+    "model": "gemini-3.5-flash-lite",
+    "provider": "google-ai-studio",
+    "total_questions": 40,
+    "correct": 26,
+    "failures": 0,
+    "overall_accuracy": 65.0,
+    "weighted_accuracy": 60.0,
+    "weighted_score": "15.0/25.0",
+    "timestamp": "2026-09-11T20:39:28.214599",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.5
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.5
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,C",
+        "weight": 0.5
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.5
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.5
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.5
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.5
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.5
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.5
+      },
+      {
+        "id": 31,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      }
+    ]
+  },
+  "kilocode/cohere/north-mini-code:free": {
+    "model": "cohere/north-mini-code:free",
+    "provider": "kilocode",
+    "total_questions": 40,
+    "correct": 23,
+    "failures": 0,
+    "overall_accuracy": 57.5,
+    "weighted_accuracy": 54.0,
+    "weighted_score": "13.5/25.0",
+    "timestamp": "2026-09-11T18:45:53"
   }
 }

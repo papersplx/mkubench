@@ -158,38 +158,31 @@ dataset/training_data/             (output training data)
 
 ## Benchmark Results
 
-### Via KiloCode API (12 models)
+### Top Models (26 models tested)
 
-| Model | Overall | Weighted | Provider |
-|-------|---------|----------|----------|
-| nvidia/nemotron-3-ultra-550b-a55b:free | 77.5% (31/40) | 70.0% | NVIDIA |
-| stepfun/step-3.7-flash:free | 70.0% (28/40) | 66.0% | StepFun |
-| poolside/laguna-s-2.1:free | 67.5% (27/40) | 66.0% | Poolside |
-| inclusionai/ling-3.0-flash-vl:free | 67.5% (27/40) | 66.0% | InclusionAI |
-| kilo-auto/free | 67.5% (27/40) | 64.0% | KiloCode |
-| nex-agi/nex-n2.5-mini:free | 67.5% (27/40) | 62.0% | NexAGI |
-| inclusionai/ling-3.0-flash-sante:free | 65.0% (26/40) | 60.0% | InclusionAI |
-| inclusionai/ling-3.0-flash-fin:free | 62.5% (25/40) | 60.0% | InclusionAI |
-| nex-agi/nex-n2.5-pro:free | 62.5% (25/40) | 56.0% | NexAGI |
-| dots-studio/dots-3-note-preview:free | 60.0% (24/40) | 54.0% | Dots Studio |
-| nvidia/nemotron-3.5-lightning:free | 55.0% (22/40) | 52.0% | NVIDIA |
-| liquid/lfm-2.5-2.6b:free | 47.5% (19/40) | 46.0% | Liquid |
+| Model | Provider | Weighted | Overall |
+|-------|----------|----------|---------|
+| nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode/NVIDIA | **70.0%** | 77.5% |
+| stepfun/step-3.7-flash:free | KiloCode/StepFun | 66.0% | 70.0% |
+| poolside/laguna-s-2.1:free | KiloCode/Poolside | 66.0% | 67.5% |
+| inclusionai/ling-3.0-flash-vl:free | KiloCode/InclusionAI | 66.0% | 67.5% |
+| gemini-3.5-flash-lite | Google AI Studio | 60.0% | 65.0% |
+| nex-agi/nex-n2.5-mini:free | KiloCode/NexAGI | 62.0% | 67.5% |
+| inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 60.0% | 65.0% |
+| inclusionai/ling-3.0-flash-fin:free | KiloCode/InclusionAI | 60.0% | 62.5% |
+| meta/muse-glimmer-30b | NVIDIA NIM | 58.0% | 62.5% |
+| gemini-flash-lite-latest | Google AI Studio | 58.0% | 65.0% |
+| cohere/north-mini-code:free | KiloCode/Cohere | 54.0% | 57.5% |
+| nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 56.0% | 62.5% |
+| dots-studio/dots-3-note-preview:free | KiloCode/Dots Studio | 54.0% | 60.0% |
+| nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 52.0% | 55.0% |
+| nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 52.0% | 57.5% |
+| liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 46.0% | 47.5% |
+| deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 42.0% | 52.5% |
 
-### Via Google AI Studio (9 models)
+Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models), **NVIDIA NIM** (3 models)
 
-| Model | Overall | Weighted | Status |
-|-------|---------|----------|--------|
-| gemini-3.1-flash-lite | 75.0% (30/40) | 68.0% | ✓ |
-| nvidia/nemotron-3.5-lightning-30b-a3b | 70.0% (28/40) | 68.0% | ✓ |
-| gemini-3.5-flash | 70.0% (28/40) | 62.0% | ✓ |
-| nvidia/nemotron-3-super-120b-a12b | 60.0% (24/40) | 54.0% | ✓ |
-| gemma-4-26b-a4b-it | 57.5% (23/40) | 56.0% | ✓ |
-| gemma-4-31b-it | 52.5% (21/40) | 50.0% | ✓ |
-| gemini-3.8-flash | 57.5% (23/40) | 48.0% | ⚠ Rate limited |
-| meta/muse-glimmer-30b | 52.5% (21/40) | 48.0% | ⚠ Rate limited |
-| gemini-2.5-flash | 20.0% (8/40) | 18.0% | ⚠ Rate limited |
-
-See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
+Models that failed (404/timeout/rate-limited) are excluded from this table. See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
 
 ## License
 

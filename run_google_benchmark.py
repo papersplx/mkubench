@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Run NVIDIA models that haven't been fully benchmarked yet.
-Supports resuming from partial results.
+Run benchmarks for Google AI Studio models with incremental progress saving.
 """
 import os, sys, json, requests, time
 from datetime import datetime
@@ -14,70 +13,26 @@ with open('/var/home/fra/dev/mkubench/dataset/mkultra_benchmark.jsonl') as f:
         if line.strip():
             questions.append(json.loads(line))
 
+GOOGLE_KEYS = [os.getenv('GEMINI_API_KEY'), os.getenv('GEMINI_API_KEY_2'), os.getenv('GEMINI_API_KEY_3'), os.getenv('GEMINI_API_KEY_4'), os.getenv('GEMINI_API_KEY_5')]
+GOOGLE_KEYS = [k for k in GOOGLE_KEYS if k]
+
+api_base = 'https://generativelanguage.googleapis.com/v1beta/openai'
 output_dir = '/var/home/fra/dev/mkubench/results/all_models_benchmarks'
 os.makedirs(output_dir, exist_ok=True)
 combined_file = os.path.join(output_dir, 'combined.json')
 
-with open(combined_file) as f:
-    all_results = json.load(f)
+model_names = ['gemini-3.5-flash-lite', 'google/gemma-4-31b-it']
 
-NVIDIA_KEYS = [os.getenv('NVIDIA_API_KEY'), os.getenv('NVIDIA_API_KEY_2'), os.getenv('NVIDIA_API_KEY_3')]
-NVIDIA_KEYS = [k for k in NVIDIA_KEYS if k]
-
-# Models that might work on NVIDIA endpoint
-candidates = [
-    'nvidia/nemotron-3.5-lightning-30b-a3b',
-    'meta/muse-glimmer-30b',
-    'nvidia/nemotron-3-super-120b-a12b',
-    'nvidia/nemotron-3-ultra-550b-a55b',
-]
-
-api_base = 'https://integrate.api.nvidia.com/v1'
-
-for model_name in candidates:
-    key = f'nvidia-nim/{model_name}'
-    safe_name = model_name.replace('/', '_').replace(':', '_')
-    individual_file = os.path.join(output_dir, f'nvidia-nim_{safe_name}.json')
+for model_name in model_names:
+    print(f'Running: {model_name} (via google-ai-studio)', flush=True)
+    results, correct, failures = [], 0, 0
+    wcorrect, wtotal = 0.0, 0.0
+    key_idx = 0
     
-    # Check if already fully completed
-    if key in all_results:
-        existing = all_results[key]
-        if existing.get('failures', 0) < 5:
-            print(f'Skipping {model_name} (already completed with {existing["failures"]} failures)', flush=True)
-            continue
-    
-    # Resume from partial results if available
-    start_idx = 0
-    if os.path.exists(individual_file):
-        with open(individual_file) as f:
-            partial = json.load(f)
-        start_idx = len(partial.get('results', []))
-        if start_idx >= len(questions):
-            print(f'Skipping {model_name} (already fully tested)', flush=True)
-            all_results[key] = partial
-            continue
-        print(f'Resuming {model_name} from Q{start_idx+1}', flush=True)
-        results = partial.get('results', [])
-        correct = sum(1 for r in results if r['is_correct'])
-        failures = sum(1 for r in results if r['parsed_answer'] is None)
-        wcorrect = sum(r['weight'] for r in results if r['is_correct'])
-        wtotal = sum(r['weight'] for r in results)
-    else:
-        print(f'Starting {model_name}', flush=True)
-        results = []
-        correct = 0
-        failures = 0
-        wcorrect = 0.0
-        wtotal = 0.0
-    
-    print(f'\n{model_name}: starting from Q{start_idx+1}', flush=True)
-    key_idx = start_idx // 5
-    api_key = NVIDIA_KEYS[key_idx % len(NVIDIA_KEYS)]
-    
-    for i in range(start_idx, len(questions)):
-        q = questions[i]
-        key_idx = i // 5
-        api_key = NVIDIA_KEYS[key_idx % len(NVIDIA_KEYS)]
+    for i, q in enumerate(questions):
+        if i > 0 and i % 2 == 0:
+            key_idx += 1
+        api_key = GOOGLE_KEYS[key_idx % len(GOOGLE_KEYS)]
         
         prompt = f'''Question: {q['question']}
 
@@ -107,12 +62,12 @@ Answer with just the letter(s).'''
                 failures += 1
             elif r.status_code == 429:
                 print(f'  Q{i+1}: 429', flush=True)
-                time.sleep(5)
+                time.sleep(10)
                 failures += 1
             else:
                 print(f'  Q{i+1}: {r.status_code}', flush=True)
                 failures += 1
-        except:
+        except Exception as e:
             print(f'  Q{i+1}: timeout', flush=True)
             failures += 1
         
@@ -122,7 +77,7 @@ Answer with just the letter(s).'''
         if response is None:
             results.append({'id': q['id'], 'is_correct': False, 'parsed_answer': None, 'weight': weight})
             if failures >= 2:
-                print(f'  [Early termination]', flush=True)
+                print(f'  [Early termination: model unavailable]', flush=True)
                 break
         else:
             parsed = parse_answer(response, q['is_multiple_choice'])
@@ -136,16 +91,24 @@ Answer with just the letter(s).'''
         
         # Save incremental progress
         summary = {
-            'model': model_name, 'provider': 'nvidia-nim',
-            'total_questions': len(questions), 'correct': correct, 'failures': failures,
+            'model': model_name,
+            'provider': 'google-ai-studio',
+            'total_questions': len(questions),
+            'correct': correct,
+            'failures': failures,
             'overall_accuracy': round(correct / len(questions) * 100, 1),
             'weighted_accuracy': round(wcorrect / wtotal * 100 if wtotal > 0 else 0, 1),
             'weighted_score': f'{wcorrect:.1f}/{wtotal:.1f}',
-            'timestamp': datetime.now().isoformat(), 'results': results,
+            'timestamp': datetime.now().isoformat(),
+            'results': results,
         }
-        with open(individual_file, 'w') as f:
+        safe_name = model_name.replace('/', '_').replace(':', '_')
+        outfile = os.path.join(output_dir, f'google-ai-studio_{safe_name}.json')
+        with open(outfile, 'w') as f:
             json.dump(summary, f, indent=2)
-        all_results[key] = summary
+        with open(combined_file) as f:
+            all_results = json.load(f)
+        all_results[f'google-ai-studio/{model_name}'] = summary
         with open(combined_file, 'w') as f:
             json.dump(all_results, f, indent=2, default=str)
     
@@ -160,7 +123,26 @@ Answer with just the letter(s).'''
     total = len(questions)
     overall = correct / total * 100
     weighted = wcorrect / wtotal * 100 if wtotal > 0 else 0
+    
+    summary = {
+        'model': model_name,
+        'provider': 'google-ai-studio',
+        'total_questions': total,
+        'correct': correct,
+        'failures': failures,
+        'overall_accuracy': round(overall, 1),
+        'weighted_accuracy': round(weighted, 1),
+        'weighted_score': f'{wcorrect:.1f}/{wtotal:.1f}',
+        'timestamp': datetime.now().isoformat(),
+        'results': results,
+    }
+    safe_name = model_name.replace('/', '_').replace(':', '_')
+    outfile = os.path.join(output_dir, f'google-ai-studio_{safe_name}.json')
+    with open(outfile, 'w') as f:
+        json.dump(summary, f, indent=2)
+    
     print(f'  Overall: {overall:.1f}% | Weighted: {weighted:.1f}% | Failures: {failures}', flush=True)
-    print(flush=True)
+    print(f'  Saved!', flush=True)
+    print()
 
-print('All NVIDIA models done!', flush=True)
+print('Google models done!', flush=True)
