@@ -158,22 +158,38 @@ dataset/training_data/             (output training data)
 
 ## Benchmark Results
 
-| Model | Overall Accuracy | Weighted Accuracy | Failures | Provider |
-|-------|-----------------|-------------------|----------|----------|
-| gemini-3.1-flash-lite | 75.0% (30/40) | 68.0% | 0 | Google |
-| nvidia/nemotron-3.5-lightning-30b-a3b | 70.0% (28/40) | 68.0% | 0 | NVIDIA |
-| gemini-3.5-flash | 70.0% (28/40) | 62.0% | 0 | Google |
-| nvidia/nemotron-3-super-120b-a12b | 60.0% (24/40) | 54.0% | 0 | NVIDIA |
-| gemma-4-26b-a4b-it | 57.5% (23/40) | 56.0% | 0 | Google |
-| gemma-4-31b-it | 52.5% (21/40) | 50.0% | 6 | Google |
-| gemini-3.8-flash | 57.5% (23/40) | 48.0% | 16 | Google |
-| meta/muse-glimmer-30b | 52.5% (21/40) | 48.0% | 11 | NVIDIA |
-| gemini-2.5-flash | 20.0% (8/40) | 18.0% | 24 | Google |
+### Via KiloCode API (12 models)
 
-**Note:** gemini-3.8-flash, muse-glimmer-30b, and gemini-2.5-flash were rate-limited (429 errors), results incomplete.
-moonshotai/kimi-k3 and poolside/laguna-xs-2.1 not completed due to rate limits.
+| Model | Overall | Weighted | Provider |
+|-------|---------|----------|----------|
+| nvidia/nemotron-3-ultra-550b-a55b:free | 77.5% (31/40) | 70.0% | NVIDIA |
+| stepfun/step-3.7-flash:free | 70.0% (28/40) | 66.0% | StepFun |
+| poolside/laguna-s-2.1:free | 67.5% (27/40) | 66.0% | Poolside |
+| inclusionai/ling-3.0-flash-vl:free | 67.5% (27/40) | 66.0% | InclusionAI |
+| kilo-auto/free | 67.5% (27/40) | 64.0% | KiloCode |
+| nex-agi/nex-n2.5-mini:free | 67.5% (27/40) | 62.0% | NexAGI |
+| inclusionai/ling-3.0-flash-sante:free | 65.0% (26/40) | 60.0% | InclusionAI |
+| inclusionai/ling-3.0-flash-fin:free | 62.5% (25/40) | 60.0% | InclusionAI |
+| nex-agi/nex-n2.5-pro:free | 62.5% (25/40) | 56.0% | NexAGI |
+| dots-studio/dots-3-note-preview:free | 60.0% (24/40) | 54.0% | Dots Studio |
+| nvidia/nemotron-3.5-lightning:free | 55.0% (22/40) | 52.0% | NVIDIA |
+| liquid/lfm-2.5-2.6b:free | 47.5% (19/40) | 46.0% | Liquid |
 
-See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details, histogram, and comparison.
+### Via Google AI Studio (9 models)
+
+| Model | Overall | Weighted | Status |
+|-------|---------|----------|--------|
+| gemini-3.1-flash-lite | 75.0% (30/40) | 68.0% | ✓ |
+| nvidia/nemotron-3.5-lightning-30b-a3b | 70.0% (28/40) | 68.0% | ✓ |
+| gemini-3.5-flash | 70.0% (28/40) | 62.0% | ✓ |
+| nvidia/nemotron-3-super-120b-a12b | 60.0% (24/40) | 54.0% | ✓ |
+| gemma-4-26b-a4b-it | 57.5% (23/40) | 56.0% | ✓ |
+| gemma-4-31b-it | 52.5% (21/40) | 50.0% | ✓ |
+| gemini-3.8-flash | 57.5% (23/40) | 48.0% | ⚠ Rate limited |
+| meta/muse-glimmer-30b | 52.5% (21/40) | 48.0% | ⚠ Rate limited |
+| gemini-2.5-flash | 20.0% (8/40) | 18.0% | ⚠ Rate limited |
+
+See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
 
 ## License
 
