@@ -1,0 +1,11 @@
+{
+  "model": "cohere/north-mini-code:free",
+  "provider": "kilocode",
+  "total_questions": 40,
+  "correct": 23,
+  "failures": 0,
+  "overall_accuracy": 57.5,
+  "weighted_accuracy": 54.0,
+  "weighted_score": "13.5/25.0",
+  "timestamp": "2026-09-11T18:45:53"
+}

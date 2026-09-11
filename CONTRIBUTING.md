@@ -12,6 +12,24 @@ We welcome benchmark results from additional models! If you run the benchmark ag
 2. An entry in the results table in `BENCHMARK_RESULTS.md`
 3. The model name, provider, and any relevant configuration details
 
+#### Running Multi-Model Benchmarks
+
+To test multiple models at once, use the batch runner:
+
+```bash
+# Run all available models from models.txt
+python run_all_models_benchmark.py
+
+# Run specific provider benchmarks
+python run_google_benchmark.py    # Google AI Studio models
+python run_nvidia_remaining.py    # NVIDIA NIM remaining models
+```
+
+Results are saved incrementally to `results/all_models_benchmarks/combined.json`.
+Models listed in `models.txt` are benchmarked using `PROVIDER_BASE_URL` and provider API keys from environment variables.
+
+** PRs for additional model benchmarks are accepted and encouraged! **
+
 ### Code Contributions
 
 1. Fork the repository

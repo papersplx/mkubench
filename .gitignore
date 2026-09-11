@@ -19,3 +19,7 @@ src/__pycache__/
 # Large PDFs that cannot be committed to GitHub
 dataset/raw/
 coverage.xml
+*.log
+results_nvidia/
+results_nvidia2/
+run_remaining_benchmark.py
