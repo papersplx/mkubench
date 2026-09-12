@@ -1,447 +1,194 @@
-{
-  "kilocode/stepfun/step-3.7-flash:free": {
-    "model": "stepfun/step-3.7-flash:free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 28,
-    "failures": 0,
-    "overall_accuracy": 70.0,
-    "weighted_accuracy": 66.0,
-    "weighted_score": "16.5/25.0",
-    "timestamp": "2026-09-11T05:29:59.165656",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 1
-      }
-    ]
-  },
-  "kilocode/poolside/laguna-s-2.1:free": {
+[
+  {
     "model": "poolside/laguna-s-2.1:free",
     "provider": "kilocode",
     "total_questions": 40,
     "correct": 27,
     "failures": 0,
     "overall_accuracy": 67.5,
-    "weighted_accuracy": 66.0,
-    "weighted_score": "16.5/25.0",
+    "weighted_accuracy": 64.3,
+    "weighted_score": "11.250/17.500",
     "timestamp": "2026-09-11T06:00:09.843660",
     "results": [
       {
         "id": 1,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": "A,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": true,
         "parsed_answer": "A,B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": "A,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": "B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": "A,B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": "A,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": "A,B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -505,955 +252,196 @@
       }
     ]
   },
-  "kilocode/nvidia/nemotron-3-ultra-550b-a55b:free": {
-    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 31,
-    "failures": 0,
-    "overall_accuracy": 77.5,
-    "weighted_accuracy": 70.0,
-    "weighted_score": "17.5/25.0",
-    "timestamp": "2026-09-11T07:11:33.440904",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": true,
-        "parsed_answer": "A,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": true,
-        "parsed_answer": "A,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": false,
-        "parsed_answer": "A,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 1
-      }
-    ]
-  },
-  "kilocode/dots-studio/dots-3-note-preview:free": {
-    "model": "dots-studio/dots-3-note-preview:free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 24,
-    "failures": 0,
-    "overall_accuracy": 60.0,
-    "weighted_accuracy": 54.0,
-    "weighted_score": "13.5/25.0",
-    "timestamp": "2026-09-11T07:20:46.351869",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      }
-    ]
-  },
-  "kilocode/nex-agi/nex-n2.5-pro:free": {
-    "model": "nex-agi/nex-n2.5-pro:free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 25,
-    "failures": 0,
-    "overall_accuracy": 62.5,
-    "weighted_accuracy": 56.0,
-    "weighted_score": "14.0/25.0",
-    "timestamp": "2026-09-11T07:45:24.790082",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      }
-    ]
-  },
-  "kilocode/inclusionai/ling-3.0-flash-vl:free": {
+  {
     "model": "inclusionai/ling-3.0-flash-vl:free",
     "provider": "kilocode",
     "total_questions": 40,
     "correct": 27,
     "failures": 0,
     "overall_accuracy": 67.5,
-    "weighted_accuracy": 66.0,
-    "weighted_score": "16.5/25.0",
+    "weighted_accuracy": 64.3,
+    "weighted_score": "11.250/17.500",
     "timestamp": "2026-09-11T07:49:22.807654",
     "results": [
       {
         "id": 1,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": "D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": "A,B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": "D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": "A,B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": "B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -1517,201 +505,201 @@
       }
     ]
   },
-  "kilocode/nex-agi/nex-n2.5-mini:free": {
-    "model": "nex-agi/nex-n2.5-mini:free",
+  {
+    "model": "stepfun/step-3.7-flash:free",
     "provider": "kilocode",
     "total_questions": 40,
-    "correct": 27,
+    "correct": 28,
     "failures": 0,
-    "overall_accuracy": 67.5,
-    "weighted_accuracy": 62.0,
-    "weighted_score": "15.5/25.0",
-    "timestamp": "2026-09-11T07:54:03.862308",
+    "overall_accuracy": 70.0,
+    "weighted_accuracy": 61.4,
+    "weighted_score": "10.750/17.500",
+    "timestamp": "2026-09-11T05:29:59.165656",
     "results": [
       {
         "id": 1,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 2,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
       },
       {
         "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
+        "parsed_answer": "A,B",
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
+        "parsed_answer": null,
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
-        "is_correct": false,
-        "parsed_answer": "B",
+        "is_correct": true,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
@@ -1722,14 +710,14 @@
       },
       {
         "id": 33,
-        "is_correct": false,
-        "parsed_answer": "A",
+        "is_correct": true,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
         "id": 34,
         "is_correct": false,
-        "parsed_answer": null,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
@@ -1752,8 +740,8 @@
       },
       {
         "id": 38,
-        "is_correct": true,
-        "parsed_answer": "A",
+        "is_correct": false,
+        "parsed_answer": "B",
         "weight": 1
       },
       {
@@ -1765,206 +753,206 @@
       {
         "id": 40,
         "is_correct": false,
-        "parsed_answer": "A",
+        "parsed_answer": "A,B,C,D",
         "weight": 1
       }
     ]
   },
-  "kilocode/inclusionai/ling-3.0-flash-sante:free": {
-    "model": "inclusionai/ling-3.0-flash-sante:free",
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
     "provider": "kilocode",
     "total_questions": 40,
-    "correct": 26,
+    "correct": 31,
     "failures": 0,
-    "overall_accuracy": 65.0,
-    "weighted_accuracy": 60.0,
-    "weighted_score": "15.0/25.0",
-    "timestamp": "2026-09-11T07:59:19.491363",
+    "overall_accuracy": 77.5,
+    "weighted_accuracy": 61.4,
+    "weighted_score": "10.750/17.500",
+    "timestamp": "2026-09-11T07:11:33.440904",
     "results": [
       {
         "id": 1,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C",
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
+        "parsed_answer": "A,B",
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C",
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": "A,B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
+        "parsed_answer": "C",
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
-        "is_correct": true,
-        "parsed_answer": "C",
+        "is_correct": false,
+        "parsed_answer": "A",
         "weight": 1
       },
       {
@@ -1982,13 +970,13 @@
       {
         "id": 34,
         "is_correct": false,
-        "parsed_answer": null,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
         "id": 35,
         "is_correct": false,
-        "parsed_answer": null,
+        "parsed_answer": "B",
         "weight": 1
       },
       {
@@ -1999,8 +987,8 @@
       },
       {
         "id": 37,
-        "is_correct": false,
-        "parsed_answer": null,
+        "is_correct": true,
+        "parsed_answer": "D",
         "weight": 1
       },
       {
@@ -2023,196 +1011,196 @@
       }
     ]
   },
-  "kilocode/inclusionai/ling-3.0-flash-fin:free": {
+  {
     "model": "inclusionai/ling-3.0-flash-fin:free",
     "provider": "kilocode",
     "total_questions": 40,
     "correct": 25,
     "failures": 0,
     "overall_accuracy": 62.5,
-    "weighted_accuracy": 60.0,
-    "weighted_score": "15.0/25.0",
+    "weighted_accuracy": 57.1,
+    "weighted_score": "10.000/17.500",
     "timestamp": "2026-09-11T08:03:15.494360",
     "results": [
       {
         "id": 1,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": "A,B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "A,B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -2276,201 +1264,454 @@
       }
     ]
   },
-  "kilocode/liquid/lfm-2.5-2.6b:free": {
-    "model": "liquid/lfm-2.5-2.6b:free",
+  {
+    "model": "nex-agi/nex-n2.5-mini:free",
     "provider": "kilocode",
     "total_questions": 40,
-    "correct": 19,
+    "correct": 27,
     "failures": 0,
-    "overall_accuracy": 47.5,
-    "weighted_accuracy": 46.0,
-    "weighted_score": "11.5/25.0",
-    "timestamp": "2026-09-11T08:13:13.027032",
+    "overall_accuracy": 67.5,
+    "weighted_accuracy": 55.7,
+    "weighted_score": "9.750/17.500",
+    "timestamp": "2026-09-11T07:54:03.862308",
     "results": [
       {
         "id": 1,
         "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
+        "parsed_answer": null,
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 3,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 8,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 15,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": true,
         "parsed_answer": "A",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
+        "parsed_answer": "D",
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
       },
       {
         "id": 25,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
+        "parsed_answer": "C",
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
         "is_correct": false,
         "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "inclusionai/ling-3.0-flash-sante:free",
+    "provider": "kilocode",
+    "total_questions": 40,
+    "correct": 26,
+    "failures": 0,
+    "overall_accuracy": 65.0,
+    "weighted_accuracy": 54.3,
+    "weighted_score": "9.500/17.500",
+    "timestamp": "2026-09-11T07:59:19.491363",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": true,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
@@ -2488,13 +1729,519 @@
       {
         "id": 34,
         "is_correct": false,
-        "parsed_answer": "B",
+        "parsed_answer": null,
         "weight": 1
       },
       {
         "id": 35,
         "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
         "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "gemini-3.5-flash-lite",
+    "provider": "google-ai-studio",
+    "total_questions": 40,
+    "correct": 26,
+    "failures": 0,
+    "overall_accuracy": 65.0,
+    "weighted_accuracy": 54.3,
+    "weighted_score": "9.500/17.500",
+    "timestamp": "2026-09-11T20:39:28.214599",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,C",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "meta/muse-glimmer-30b",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 25,
+    "failures": 0,
+    "overall_accuracy": 62.5,
+    "weighted_accuracy": 52.9,
+    "weighted_score": "9.250/17.500",
+    "timestamp": "2026-09-11T21:06:30.582117",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "C",
         "weight": 1
       },
       {
@@ -2523,202 +2270,708 @@
       },
       {
         "id": 40,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "gemini-flash-lite-latest",
+    "provider": "google-ai-studio",
+    "total_questions": 40,
+    "correct": 26,
+    "failures": 0,
+    "overall_accuracy": 65.0,
+    "weighted_accuracy": 50.0,
+    "weighted_score": "8.750/17.500",
+    "timestamp": "2026-09-11T20:27:41.493546",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A,B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "nex-agi/nex-n2.5-pro:free",
+    "provider": "kilocode",
+    "total_questions": 40,
+    "correct": 25,
+    "failures": 0,
+    "overall_accuracy": 62.5,
+    "weighted_accuracy": 48.6,
+    "weighted_score": "8.500/17.500",
+    "timestamp": "2026-09-11T07:45:24.790082",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
         "is_correct": false,
         "parsed_answer": "A",
         "weight": 1
       }
     ]
   },
-  "kilocode/nvidia/nemotron-3.5-lightning:free": {
+  {
     "model": "nvidia/nemotron-3.5-lightning:free",
     "provider": "kilocode",
     "total_questions": 40,
     "correct": 22,
     "failures": 0,
     "overall_accuracy": 55.0,
-    "weighted_accuracy": 52.0,
-    "weighted_score": "13.0/25.0",
+    "weighted_accuracy": 48.6,
+    "weighted_score": "8.500/17.500",
     "timestamp": "2026-09-11T09:07:13.160814",
     "results": [
       {
         "id": 1,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": true,
         "parsed_answer": "A,B,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": "A,B,C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": true,
         "parsed_answer": "C",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": true,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": "A,B,C,D",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": true,
         "parsed_answer": "B",
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -2782,7 +3035,1019 @@
       }
     ]
   },
-  "nvidia-nim/deepseek-ai/deepseek-coder-6.7b-instruct": {
+  {
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "kilocode",
+    "total_questions": 40,
+    "correct": 24,
+    "failures": 0,
+    "overall_accuracy": 60.0,
+    "weighted_accuracy": 47.1,
+    "weighted_score": "8.250/17.500",
+    "timestamp": "2026-09-11T07:20:46.351869",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 23,
+    "failures": 0,
+    "overall_accuracy": 57.5,
+    "weighted_accuracy": 45.7,
+    "weighted_score": "8.000/17.500",
+    "timestamp": "2026-09-11T21:21:01.334421",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,D,B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": true,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": true,
+        "parsed_answer": "A,D,C,B",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "liquid/lfm-2.5-2.6b:free",
+    "provider": "kilocode",
+    "total_questions": 40,
+    "correct": 19,
+    "failures": 0,
+    "overall_accuracy": 47.5,
+    "weighted_accuracy": 44.3,
+    "weighted_score": "7.750/17.500",
+    "timestamp": "2026-09-11T08:13:13.027032",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "A,B",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": "C",
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": "B",
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": true,
+        "parsed_answer": "D",
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": "A",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "provider": "nvidia-nim",
+    "total_questions": 40,
+    "correct": 21,
+    "failures": 11,
+    "overall_accuracy": 52.5,
+    "weighted_accuracy": 30.0,
+    "weighted_score": "5.250/17.500",
+    "timestamp": "2026-09-11T20:39:05.465966",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": "A,B,C,D",
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": "B,C",
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": true,
+        "parsed_answer": "A",
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": true,
+        "parsed_answer": "C",
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": "D",
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": true,
+        "parsed_answer": "A,B,D",
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": true,
+        "parsed_answer": "B",
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  {
     "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -2790,188 +4055,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:00:17.188457",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -3035,260 +4300,26 @@
       }
     ]
   },
-  "nvidia-nim/deepseek-ai/deepseek-v4-flash-0731": {
-    "model": "deepseek-ai/deepseek-v4-flash-0731",
-    "provider": "nvidia-nim",
+  {
+    "model": "google/gemma-4-31b-it",
+    "provider": "google-ai-studio",
     "total_questions": 40,
-    "correct": 21,
-    "failures": 11,
-    "overall_accuracy": 52.5,
-    "weighted_accuracy": 42.0,
-    "weighted_score": "10.5/25.0",
-    "timestamp": "2026-09-11T20:39:05.465966",
+    "correct": 0,
+    "failures": 1,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.000/17.500",
+    "timestamp": "2026-09-11T20:39:28.462577",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
+        "weight": 0.25
       }
     ]
   },
-  "nvidia-nim/deepseek-ai/deepseek-v4-pro-0813": {
+  {
     "model": "deepseek-ai/deepseek-v4-pro-0813",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -3296,188 +4327,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:46:41.400487",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -3541,7 +4572,7 @@
       }
     ]
   },
-  "nvidia-nim/google/gemma-4-31b-it": {
+  {
     "model": "google/gemma-4-31b-it",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -3549,188 +4580,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:54:17.349237",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -3794,7 +4825,7 @@
       }
     ]
   },
-  "nvidia-nim/ibm/granite-3.0-3b-a800m-instruct": {
+  {
     "model": "ibm/granite-3.0-3b-a800m-instruct",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -3802,188 +4833,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:54:22.909086",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -4047,7 +5078,7 @@
       }
     ]
   },
-  "nvidia-nim/ibm/granite-3.0-8b-instruct": {
+  {
     "model": "ibm/granite-3.0-8b-instruct",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -4055,188 +5086,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:54:28.409381",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -4300,7 +5331,7 @@
       }
     ]
   },
-  "nvidia-nim/meta/llama2-70b": {
+  {
     "model": "meta/llama2-70b",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -4308,188 +5339,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T20:54:33.916360",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -4553,260 +5584,7 @@
       }
     ]
   },
-  "nvidia-nim/meta/muse-glimmer-30b": {
-    "model": "meta/muse-glimmer-30b",
-    "provider": "nvidia-nim",
-    "total_questions": 40,
-    "correct": 25,
-    "failures": 0,
-    "overall_accuracy": 62.5,
-    "weighted_accuracy": 58.0,
-    "weighted_score": "14.5/25.0",
-    "timestamp": "2026-09-11T21:06:30.582117",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": false,
-        "parsed_answer": "A,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 1
-      }
-    ]
-  },
-  "nvidia-nim/minimaxai/minimax-m3": {
+  {
     "model": "minimaxai/minimax-m3",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -4814,188 +5592,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T21:07:06.495085",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -5059,7 +5837,7 @@
       }
     ]
   },
-  "nvidia-nim/moonshotai/kimi-k2.6": {
+  {
     "model": "moonshotai/kimi-k2.6",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -5067,188 +5845,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T21:07:12.028139",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -5312,7 +6090,260 @@
       }
     ]
   },
-  "nvidia-nim/moonshotai/kimi-k3": {
+  {
+    "model": "gemini-3.8-flash",
+    "provider": "google-ai-studio",
+    "total_questions": 40,
+    "correct": 0,
+    "failures": 2,
+    "overall_accuracy": 0.0,
+    "weighted_accuracy": 0.0,
+    "weighted_score": "0.000/17.500",
+    "timestamp": "2026-09-11T21:08:41.733530",
+    "results": [
+      {
+        "id": 1,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 2,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 3,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 4,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 5,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 6,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 7,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 8,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 9,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 10,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 11,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 12,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 13,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 14,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 15,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 16,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 17,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 18,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 19,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 20,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 21,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 22,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 23,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 24,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 25,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 26,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 27,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 28,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 29,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 30,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 0.25
+      },
+      {
+        "id": 31,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 32,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 33,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 34,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 35,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 36,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 37,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 38,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 39,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      },
+      {
+        "id": 40,
+        "is_correct": false,
+        "parsed_answer": null,
+        "weight": 1
+      }
+    ]
+  },
+  {
     "model": "moonshotai/kimi-k3",
     "provider": "nvidia-nim",
     "total_questions": 40,
@@ -5320,188 +6351,188 @@
     "failures": 40,
     "overall_accuracy": 0.0,
     "weighted_accuracy": 0.0,
-    "weighted_score": "0.0/25.0",
+    "weighted_score": "0.000/17.500",
     "timestamp": "2026-09-11T21:08:48.114526",
     "results": [
       {
         "id": 1,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 2,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 3,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 4,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 5,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 6,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 7,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 8,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 9,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 10,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 11,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 12,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 13,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 14,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 15,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 16,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 17,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 18,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 19,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 20,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 21,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 22,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 23,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 24,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 25,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 26,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 27,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 28,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 29,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 30,
         "is_correct": false,
         "parsed_answer": null,
-        "weight": 0.5
+        "weight": 0.25
       },
       {
         "id": 31,
@@ -5564,775 +6595,5 @@
         "weight": 1
       }
     ]
-  },
-  "nvidia-nim/nvidia/nemotron-3-super-120b-a12b": {
-    "model": "nvidia/nemotron-3-super-120b-a12b",
-    "provider": "nvidia-nim",
-    "total_questions": 40,
-    "correct": 23,
-    "failures": 0,
-    "overall_accuracy": 57.5,
-    "weighted_accuracy": 52.0,
-    "weighted_score": "13.0/25.0",
-    "timestamp": "2026-09-11T21:21:01.334421",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,D,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,D,C,B",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "D",
-        "weight": 1
-      }
-    ]
-  },
-  "google-ai-studio/gemini-flash-lite-latest": {
-    "model": "gemini-flash-lite-latest",
-    "provider": "google-ai-studio",
-    "total_questions": 40,
-    "correct": 26,
-    "failures": 0,
-    "overall_accuracy": 65.0,
-    "weighted_accuracy": 58.0,
-    "weighted_score": "14.5/25.0",
-    "timestamp": "2026-09-11T20:27:41.493546",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": false,
-        "parsed_answer": "A,B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      }
-    ]
-  },
-  "google-ai-studio/gemini-3.5-flash-lite": {
-    "model": "gemini-3.5-flash-lite",
-    "provider": "google-ai-studio",
-    "total_questions": 40,
-    "correct": 26,
-    "failures": 0,
-    "overall_accuracy": 65.0,
-    "weighted_accuracy": 60.0,
-    "weighted_score": "15.0/25.0",
-    "timestamp": "2026-09-11T20:39:28.214599",
-    "results": [
-      {
-        "id": 1,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 2,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 3,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 4,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 5,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 6,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 7,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 8,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 9,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 10,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 11,
-        "is_correct": false,
-        "parsed_answer": "A,B",
-        "weight": 0.5
-      },
-      {
-        "id": 12,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 13,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 14,
-        "is_correct": false,
-        "parsed_answer": "B,C",
-        "weight": 0.5
-      },
-      {
-        "id": 15,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 16,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 17,
-        "is_correct": true,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 18,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 19,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 20,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 21,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 22,
-        "is_correct": false,
-        "parsed_answer": "A,C",
-        "weight": 0.5
-      },
-      {
-        "id": 23,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 0.5
-      },
-      {
-        "id": 24,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 25,
-        "is_correct": true,
-        "parsed_answer": "A,B,C,D",
-        "weight": 0.5
-      },
-      {
-        "id": 26,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 27,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 0.5
-      },
-      {
-        "id": 28,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 0.5
-      },
-      {
-        "id": 29,
-        "is_correct": true,
-        "parsed_answer": "A,B,D",
-        "weight": 0.5
-      },
-      {
-        "id": 30,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 0.5
-      },
-      {
-        "id": 31,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 32,
-        "is_correct": true,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 33,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 34,
-        "is_correct": false,
-        "parsed_answer": null,
-        "weight": 1
-      },
-      {
-        "id": 35,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 36,
-        "is_correct": true,
-        "parsed_answer": "C",
-        "weight": 1
-      },
-      {
-        "id": 37,
-        "is_correct": false,
-        "parsed_answer": "A",
-        "weight": 1
-      },
-      {
-        "id": 38,
-        "is_correct": false,
-        "parsed_answer": "B",
-        "weight": 1
-      },
-      {
-        "id": 39,
-        "is_correct": true,
-        "parsed_answer": "D",
-        "weight": 1
-      },
-      {
-        "id": 40,
-        "is_correct": false,
-        "parsed_answer": "C",
-        "weight": 1
-      }
-    ]
-  },
-  "kilocode/cohere/north-mini-code:free": {
-    "model": "cohere/north-mini-code:free",
-    "provider": "kilocode",
-    "total_questions": 40,
-    "correct": 23,
-    "failures": 0,
-    "overall_accuracy": 57.5,
-    "weighted_accuracy": 54.0,
-    "weighted_score": "13.5/25.0",
-    "timestamp": "2026-09-11T18:45:53"
   }
-}
+]
