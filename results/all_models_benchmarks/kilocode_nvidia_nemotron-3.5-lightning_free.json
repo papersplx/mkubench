@@ -5,189 +5,189 @@
   "correct": 22,
   "failures": 0,
   "overall_accuracy": 55.0,
-  "weighted_accuracy": 52.0,
-  "weighted_score": "13.0/25.0",
+  "weighted_accuracy": 48.6,
+  "weighted_score": "8.500/17.500",
   "timestamp": "2026-09-11T09:07:13.160814",
   "results": [
     {
       "id": 1,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 2,
       "is_correct": false,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 3,
       "is_correct": true,
       "parsed_answer": "C",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 4,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 5,
       "is_correct": false,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 6,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 7,
       "is_correct": true,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 8,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 9,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 10,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 11,
       "is_correct": false,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 12,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 13,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 14,
       "is_correct": false,
       "parsed_answer": "C",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 15,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 16,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 17,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 18,
       "is_correct": true,
       "parsed_answer": "A,B,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 19,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 20,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 21,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 22,
       "is_correct": false,
       "parsed_answer": "A,B,C",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 23,
       "is_correct": true,
       "parsed_answer": "C",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 24,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 25,
       "is_correct": true,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 26,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 27,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 28,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 29,
       "is_correct": false,
       "parsed_answer": "A,B,C,D",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 30,
       "is_correct": true,
       "parsed_answer": "B",
-      "weight": 0.5
+      "weight": 0.25
     },
     {
       "id": 31,

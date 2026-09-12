@@ -6,14 +6,14 @@
   "failures": 1,
   "overall_accuracy": 0.0,
   "weighted_accuracy": 0.0,
-  "weighted_score": "0.0/0.5",
+  "weighted_score": "0.000/17.500",
   "timestamp": "2026-09-11T20:39:28.462577",
   "results": [
     {
       "id": 1,
       "is_correct": false,
       "parsed_answer": null,
-      "weight": 0.5
+      "weight": 0.25
     }
   ]
 }
