@@ -160,25 +160,25 @@ dataset/training_data/             (output training data)
 
 ### Top Models (26 models tested)
 
-| Model | Provider | Weighted | Overall |
-|-------|----------|----------|---------|
-| poolside/laguna-s-2.1:free | KiloCode/Poolside | **62.3%** | 67.5% |
-| inclusionai/ling-3.0-flash-vl:free | KiloCode/InclusionAI | **62.3%** | 67.5% |
-| stepfun/step-3.7-flash:free | KiloCode/StepFun | 56.2% | 70.0% |
-| inclusionai/ling-3.0-flash-fin:free | KiloCode/InclusionAI | 53.8% | 62.5% |
-| nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode/NVIDIA | 51.5% | 77.5% |
-| nex-agi/nex-n2.5-mini:free | KiloCode/NexAGI | 48.5% | 67.5% |
-| gemini-3.5-flash-lite | Google AI Studio | 47.7% | 65.0% |
-| inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 47.7% | 65.0% |
-| meta/muse-glimmer-30b | NVIDIA NIM | 46.9% | 62.5% |
-| gemini-flash-lite-latest | Google AI Studio | 40.8% | 65.0% |
-| liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% | 47.5% |
-| nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% | 62.5% |
-| nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% | 55.0% |
-| dots-studio/dots-3-note-preview:free | KiloCode/Dots Studio | 39.2% | 60.0% |
-| nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 38.5% | 57.5% |
-| cohere/north-mini-code:free | KiloCode/Cohere | 38.5% | 57.5% |
-| deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 16.2% | 52.5% |
+| Model | Provider | Weighted |
+|-------|----------|----------|
+| poolside/laguna-s-2.1:free | KiloCode/Poolside | **62.3%** |
+| inclusionai/ling-3.0-flash-vl:free | KiloCode/InclusionAI | **62.3%** |
+| stepfun/step-3.7-flash:free | KiloCode/StepFun | 56.2% |
+| inclusionai/ling-3.0-flash-fin:free | KiloCode/InclusionAI | 53.8% |
+| nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode/NVIDIA | 51.5% |
+| nex-agi/nex-n2.5-mini:free | KiloCode/NexAGI | 48.5% |
+| gemini-3.5-flash-lite | Google AI Studio | 47.7% |
+| inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 47.7% |
+| meta/muse-glimmer-30b | NVIDIA NIM | 46.9% |
+| gemini-flash-lite-latest | Google AI Studio | 40.8% |
+| liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% |
+| nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% |
+| nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% |
+| dots-studio/dots-3-note-preview:free | KiloCode/Dots Studio | 39.2% |
+| nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 38.5% |
+| cohere/north-mini-code:free | KiloCode/Cohere | 38.5% |
+| deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 16.2% |
 
 Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models), **NVIDIA NIM** (3 models)
 
