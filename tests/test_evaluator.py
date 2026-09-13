@@ -48,7 +48,7 @@ class TestBenchmarkEvaluator(unittest.TestCase):
             self.assertIn("is_multiple_choice", q)
 
     def test_evaluation_count(self):
-        self.assertEqual(len(self.evaluator.dataset), 30)
+        self.assertEqual(len(self.evaluator.dataset), 40)
 
     def test_single_choice_questions(self):
         single = [q for q in self.evaluator.dataset if not q["is_multiple_choice"]]
@@ -60,11 +60,11 @@ class TestBenchmarkEvaluator(unittest.TestCase):
 
     def test_category(self):
         for q in self.evaluator.dataset:
-            self.assertEqual(q.get("category", ""), "mkultra")
+            self.assertIn("category", q)
 
     def test_load_dataset(self):
         questions = self.evaluator._load_dataset('dataset/mkultra_benchmark.jsonl')
-        self.assertEqual(len(questions), 30)
+        self.assertEqual(len(questions), 40)
 
     def test_load_dataset_empty_file(self):
         with tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False) as f:

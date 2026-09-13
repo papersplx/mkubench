@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.1.7 — Test Fixes & CI Infrastructure
+
+### Fixed
+- Fixed 4 pre-existing test failures:
+  - Updated `test_evaluation_count` to expect 40 questions (was 30)
+  - Updated `test_load_dataset` to expect 40 questions (was 30)
+  - Updated `test_category` to check for field existence instead of "mkultra" value
+  - Fixed `parse_answer` to handle parenthesized answers like "(A) is the correct answer"
+- All 95 unit tests now pass
+
+### Added
+- `run_multi_model.py` - Unified multi-model benchmark runner
+- `.github/workflows/validate.yml` - CI workflow for validating benchmark results
+  - Runs on push/PR when results or dataset change
+  - Validates result JSON schema
+  - Verifies leaderboard.json is up to date
+- Updated CONTRIBUTING.md with validation instructions and Makefile targets
+
+### Changed
+- Enhanced parser regex pattern for parenthesized answer format
+- Updated CONTRIBUTING.md with new scripts and validation steps
+
 ## v1.1.6 — Tooling & Validation Infrastructure
 
 ### Added

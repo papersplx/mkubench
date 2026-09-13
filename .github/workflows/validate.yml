@@ -1,0 +1,47 @@
+name: Validate Results
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'results/all_models_benchmarks/**'
+      - 'dataset/mkultra_benchmark.jsonl'
+      - 'validate_results.py'
+      - 'regenerate_leaderboard.py'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'results/all_models_benchmarks/**'
+      - 'dataset/mkultra_benchmark.jsonl'
+      - 'validate_results.py'
+      - 'regenerate_leaderboard.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      
+      - name: Install dependencies
+        run: |
+          python3 -m pip install -e .
+      
+      - name: Validate benchmark results
+        run: |
+          python3 validate_results.py
+      
+      - name: Regenerate leaderboard
+        run: |
+          python3 regenerate_leaderboard.py
+      
+      - name: Verify leaderboard.json is up to date
+        run: |
+          # Check if leaderboard.json would change (ensures it's committed)
+          python3 regenerate_leaderboard.py
+          git diff --exit-code leaderboard.json || (echo "leaderboard.json is out of date. Run 'python regenerate_leaderboard.py' and commit the changes." && exit 1)

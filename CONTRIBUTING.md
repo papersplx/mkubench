@@ -12,21 +12,56 @@ We welcome benchmark results from additional models! If you run the benchmark ag
 2. An entry in the results table in `BENCHMARK_RESULTS.md`
 3. The model name, provider, and any relevant configuration details
 
-#### Running Multi-Model Benchmarks
+#### Running Benchmarks
 
-To test multiple models at once, use the batch runner:
+To run a benchmark against a single model:
 
 ```bash
-# Run all available models from models.txt
-python run_all_models_benchmark.py
+# Run against local Ollama
+python run_benchmark.py --client ollama --model llama3
 
-# Run specific provider benchmarks
+# Run against OpenAI-compatible API
+python run_benchmark.py --client openai --model gpt-4 --api-key sk-xxxxx
+
+# Run against Google AI Studio
+python run_benchmark.py --client openai --model gemini-3.5-flash-lite \
+    --api-key $GEMINI_API_KEY \
+    --api-base https://generativelanguage.googleapis.com/v1beta/openai
+```
+
+To run multiple models at once:
+
+```bash
+# Run all models from models.txt
+python run_multi_model.py
+
+# Run specific providers
 python run_google_benchmark.py    # Google AI Studio models
 python run_nvidia_remaining.py    # NVIDIA NIM remaining models
 ```
 
-Results are saved incrementally to `results/all_models_benchmarks/combined.json`.
-Models listed in `models.txt` are benchmarked using `PROVIDER_BASE_URL` and provider API keys from environment variables.
+#### Validating and Regenerating Results
+
+After adding new benchmark results, validate and regenerate the leaderboard:
+
+```bash
+# Validate all result JSON files against expected schema
+python validate_results.py
+
+# Regenerate leaderboard.json from results
+python regenerate_leaderboard.py
+
+# Generate visualization
+python visualize_results.py
+```
+
+Or use Make targets:
+
+```bash
+make validate-results          # Validate result files
+make regenerate-leaderboard    # Regenerate leaderboard.json
+make visualize                 # Generate charts
+```
 
 ** PRs for additional model benchmarks are accepted and encouraged! **
 
@@ -54,6 +89,22 @@ To add new benchmark questions:
 - Use type hints for all function signatures
 - Add docstrings to all public functions
 - Run `make lint` before submitting
+
+## Testing
+
+Run the full test suite:
+
+```bash
+make test
+```
+
+Run validation on benchmark results:
+
+```bash
+make validate-results
+```
+
+All tests must pass before submitting a PR.
 
 ## License
 

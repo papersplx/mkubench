@@ -20,11 +20,11 @@ def parse_answer(response: str, is_multiple_choice: bool = False) -> Optional[st
 
     # Strategy 1: Explicit answer patterns (most reliable)
     patterns = [
-        r'(?:The\s+)?(?:correct\s+)?answer\s+(?:is\s+)?[:=]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'(?:The\s+)?(?:correct\s+)?answer\s+(?:is\s+)?[:=]?\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
         r'(?:I|My)\s+(?:would\s+)?(?:answer|choose|select)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
         r'(?:The|My)\s+answer\s+(?:is|was|will\s+be)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'[Aa]nswer\s*[:=]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'\(([A-D](?:[,\s]*[A-D])*)\)\s*(?:is|are)\s*(?:the|my|correct)\s+answer',
+        r'[Aa]nswer\s*[:=]?\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'\(([A-D](?:[,\s]*[A-D])*)\)\s+(?:is|are)\s+(?:the\s+)?(?:my\s+)?(?:correct\s+)?answer',
         r'correct\s+option\s+[is:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
         r'selected?\s+option\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
         r'final\s+answer\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']*',

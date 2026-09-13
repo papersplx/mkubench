@@ -1,11 +1,14 @@
 {
+  "generated_at": "2026-09-13T09:58:53.271876",
   "summary": {
     "total_models_tested": 27,
     "models_with_complete_results": 15,
     "average_weighted_accuracy": 48.2,
     "average_overall_accuracy": 63.5,
     "average_user_generated_accuracy": 41.3,
-    "average_original_accuracy": 70.9
+    "average_original_accuracy": 70.9,
+    "best_model": "poolside/laguna-s-2.1:free",
+    "best_weighted_accuracy": 62.3
   },
   "leaderboard": [
     {
