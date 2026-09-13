@@ -2,6 +2,34 @@
 
 An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.
 
+## Benchmark Results (Top Models)
+
+| Model | Provider | Weighted |
+|-------|----------|----------|
+| poolside/laguna-s-2.1:free | KiloCode/Poolside | **62.3%** |
+| inclusionai/ling-3.0-flash-vl:free | KiloCode/InclusionAI | **62.3%** |
+| stepfun/step-3.7-flash:free | KiloCode/StepFun | 56.2% |
+| inclusionai/ling-3.0-flash-fin:free | KiloCode/InclusionAI | 53.8% |
+| nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode/NVIDIA | 51.5% |
+| nex-agi/nex-n2.5-mini:free | KiloCode/NexAGI | 48.5% |
+| gemini-3.5-flash-lite | Google AI Studio | 47.7% |
+| inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 47.7% |
+| meta/muse-glimmer-30b | NVIDIA NIM | 46.9% |
+| gemini-flash-lite-latest | Google AI Studio | 40.8% |
+| liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% |
+| nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% |
+| nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% |
+| dots-studio/dots-3-note-preview:free | KiloCode/Dots Studio | 39.2% |
+| nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 38.5% |
+| cohere/north-mini-code:free | KiloCode/Cohere | 38.5% |
+| deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 16.2% |
+
+Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models), **NVIDIA NIM** (3 models)
+
+Models that failed (404/timeout/rate-limited) are excluded from this table. See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
+
+For dataset documentation, see [dataset/README.md](dataset/README.md).
+
 ## Features
 
 - **MMLU-style evaluation pipeline** - Load, prompt, score, and analyze
@@ -70,119 +98,6 @@ make build-data      # Build training dataset from source files
 make clean           # Clean results directory
 make docs            # Display documentation
 ```
-
-## Benchmark Dataset
-
-The benchmark contains **40 questions** in `dataset/mkultra_benchmark.jsonl`:
-- **Single Choice** (30 questions) - Select one correct option
-- **Multiple Choice** (10 questions) - Select ALL correct options
-
-Questions have weights: 1.0 for user-added (Q31-Q40) and 0.1 for original (Q1-Q30).
-
-Each question includes:
-- Question text with formatted options
-- Correct answer(s)
-- Citations
-- Detailed explanations
-
-## Training Dataset
-
-The training dataset is built from source files in `dataset/raw/` (gitignored):
-- PDFs (extracted via pdfplumber/PyPDF2)
-- EPUBs (extracted via ebooklib)
-- TXT files (direct reading)
-- ZIP files containing PDFs (extracted individually)
-- URLs from `dataset/targeted_links.txt` (filtered to skip shopping/EMF/gadget links)
-
-Build the training dataset:
-```bash
-python build_dataset.py
-```
-
-Or use Make:
-```bash
-make build-data
-```
-
-Output is in `dataset/training_data/` (gitignored):
-- `training_dataset.jsonl` — Combined documents (id, title, content, source, type, metadata)
-- `batches/batch_001.jsonl` through `batch_005.jsonl` — Batched documents for LLM training
-- `dataset_summary.json` — Metadata about the dataset (93 docs: 40 PDFs, 9 EPUBs, 8 TXTs, 21 articles, 15 YouTube transcripts)
-
-## Building from Source
-
-Add questions to `mkultra-benchmark.md` following the existing format, then regenerate:
-```bash
-python scripts/regenerate_dataset.py
-```
-
-Or with make:
-```bash
-python -c "import sys; sys.path.insert(0, 'scripts'); from regenerate_dataset import regenerate; regenerate()"
-```
-
-## Output
-
-Results are saved as JSON files in the `results/` directory:
-- `results_{timestamp}.json` - Summary with accuracy scores
-- `results_{timestamp}_detailed.json` - Full per-question results with model responses
-
-## Architecture
-
-```
-mkultra-benchmark.md  (source QA data)
-    │
-    ▼
-scripts/regenerate_dataset.py   (markdown → JSONL converter)
-    │
-    ▼
-dataset/mkultra_benchmark.jsonl (structured benchmark dataset)
-    │
-    ▼
-run_benchmark.py                   (main entry point)
-    ├── src/model_client.py        (model interface: OpenAI/Ollama/Gemini)
-    ├── src/evaluator.py           (MMLU-style evaluation engine)
-    └── src/parser.py              (response parsing)
-
-dataset/raw/                       (source training files - gitignored)
-    │
-    ▼
-build_dataset.py                   (training dataset builder)
-    │
-    ▼
-dataset/training_data/             (output training data)
-    ├── training_dataset.jsonl
-    ├── batches/
-    └── dataset_summary.json
-```
-
-## Benchmark Results
-
-### Top Models (26 models tested)
-
-| Model | Provider | Weighted |
-|-------|----------|----------|
-| poolside/laguna-s-2.1:free | KiloCode/Poolside | **62.3%** |
-| inclusionai/ling-3.0-flash-vl:free | KiloCode/InclusionAI | **62.3%** |
-| stepfun/step-3.7-flash:free | KiloCode/StepFun | 56.2% |
-| inclusionai/ling-3.0-flash-fin:free | KiloCode/InclusionAI | 53.8% |
-| nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode/NVIDIA | 51.5% |
-| nex-agi/nex-n2.5-mini:free | KiloCode/NexAGI | 48.5% |
-| gemini-3.5-flash-lite | Google AI Studio | 47.7% |
-| inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 47.7% |
-| meta/muse-glimmer-30b | NVIDIA NIM | 46.9% |
-| gemini-flash-lite-latest | Google AI Studio | 40.8% |
-| liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% |
-| nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% |
-| nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% |
-| dots-studio/dots-3-note-preview:free | KiloCode/Dots Studio | 39.2% |
-| nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 38.5% |
-| cohere/north-mini-code:free | KiloCode/Cohere | 38.5% |
-| deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 16.2% |
-
-Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models), **NVIDIA NIM** (3 models)
-
-Models that failed (404/timeout/rate-limited) are excluded from this table. See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
 
 ## License
 
