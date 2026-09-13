@@ -1,5 +1,7 @@
 # MKULTRA Benchmark
 
+**AI models alignment benchmark.** Tests AI against psyops, astroturfing, advanced persistent manipulation, adversarial epistemology.
+
 An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.
 
 ## Benchmark Results (Top Models)
