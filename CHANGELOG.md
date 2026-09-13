@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.1.5 — Benchmark Results & Documentation Restructuring
+
+### Added
+- Comprehensive benchmark results for 27 models across 3 providers (KiloCode API, Google AI Studio, NVIDIA NIM)
+- Summary statistics including average accuracy on user-generated vs original questions
+- Tracked `leaderboard.json` with full model rankings and breakdowns by question type
+- `dataset/README.md` with dedicated dataset documentation
+- Contributing section in main README
+
+### Changed
+- Restructured README.md: moved benchmark results to top, removed duplicate dataset docs
+- Updated BENCHMARK_RESULTS.md with:
+  - Summary statistics table
+  - Combined leaderboard with Q31-Q40 and Q1-Q30 breakdowns
+  - Performance by provider sections
+  - Key findings about user-generated question difficulty
+- Reweighted questions: Q1-Q30 from 0.5 → 0.25 → 0.1 (final), Q31-Q40 remain at 1.0
+- Recalculated all benchmark results with new weights
+
+### Removed
+- Cleaned up 5 obsolete/untracked benchmark scripts:
+  - `run_all_benchmarks.py`
+  - `run_benchmarks_v2.py`
+  - `run_benchmarks_v3.py`
+  - `run_benchmarks_v4.py`
+  - `run_google_benchmarks.py`
+
+### Key Metrics
+- Average weighted accuracy: 48.2%
+- Average overall accuracy: 63.5%
+- Average accuracy on user-generated questions (Q31-Q40): 41.3%
+- Average accuracy on original questions (Q1-Q30): 70.9%
+
 ## v1.1.4 — Proactive Improvements & CI Hardening
 
 ### Fixed

@@ -99,6 +99,15 @@ make clean           # Clean results directory
 make docs            # Display documentation
 ```
 
+## Contributing
+
+We welcome contributions! If you run this benchmark against additional models, please submit a PR with your results.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
+- Adding benchmark results
+- Adding new questions
+- Code style guidelines
+
 ## License
 
 MIT License (c) 2026 competitiveNN
