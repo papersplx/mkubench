@@ -1,4 +1,4 @@
-.PHONY: test run install clean docs dataset build-data fetch-youtube check-env
+.PHONY: test run install clean docs dataset build-data fetch-youtube check-env regenerate-leaderboard validate-results visualize
 
 PYTHON := $(shell if [ -x /var/home/fra/.venv/bin/python ] && /var/home/fra/.venv/bin/python -c "import requests, yaml, PyPDF2, pdfplumber, ebooklib, bs4" 2>/dev/null; then echo /var/home/fra/.venv/bin/python; else command -v python3 || command -v python; fi)
 
@@ -39,17 +39,29 @@ docs:
 	@echo "MKULTRA Benchmark Documentation"
 	@echo ""
 	@echo "Available targets:"
-	@echo "  install      - Install dependencies"
-	@echo "  run          - Run benchmark (OpenAI default)"
-	@echo "  run-ollama   - Run against local Ollama"
-	@echo "  run-openai   - Run against OpenAI API"
-	@echo "  run-local    - Run against local vLLM server"
-	@echo "  test         - Run validation tests"
-	@echo "  check-env    - Verify all dependencies"
-	@echo "  build-data   - Build training dataset"
-	@echo "  fetch-youtube  - Fetch YouTube transcripts"
-	@echo "  dataset      - Build data AND fetch YouTube"
-	@echo "  clean        - Clean results directory"
+	@echo "  install              - Install dependencies"
+	@echo "  run                  - Run benchmark (OpenAI default)"
+	@echo "  run-ollama           - Run against local Ollama"
+	@echo "  run-openai           - Run against OpenAI API"
+	@echo "  run-local            - Run against local vLLM server"
+	@echo "  test                 - Run validation tests"
+	@echo "  check-env            - Verify all dependencies"
+	@echo "  build-data           - Build training dataset"
+	@echo "  fetch-youtube        - Fetch YouTube transcripts"
+	@echo "  dataset              - Build data AND fetch YouTube"
+	@echo "  clean                - Clean results directory"
+	@echo "  regenerate-leaderboard - Regenerate leaderboard.json from results/"
+	@echo "  validate-results     - Validate benchmark result JSON schema"
+	@echo "  visualize            - Generate score distribution chart"
 
 help:
 	@$(MAKE) docs
+
+regenerate-leaderboard:
+	$(PYTHON) regenerate_leaderboard.py
+
+validate-results:
+	$(PYTHON) validate_results.py
+
+visualize:
+	$(PYTHON) visualize_results.py

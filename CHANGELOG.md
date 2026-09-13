@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.1.6 — Tooling & Validation Infrastructure
+
+### Added
+- `regenerate_leaderboard.py` - Regenerate leaderboard.json from benchmark results
+- `validate_results.py` - Validate benchmark result JSON files against expected schema
+- `visualize_results.py` - Generate text histogram and HTML bar chart from leaderboard
+- `tests/test_validate_results.py` - 10 unit tests for validation functions
+- Makefile targets: `regenerate-leaderboard`, `validate-results`, `visualize`
+- Schema validation handles both complete and legacy (summary-only) result formats
+
+### Changed
+- Updated Makefile with new targets and documentation
+- Enhanced validate_results.py to show warnings for legacy format files instead of failing
+
+### Repository Health
+- 85 → 95 total unit tests
+- All validation scripts functional: regenerate, validate, visualize
+- Clean separation: scripts for generation, validation, and visualization
+
 ## v1.1.5 — Benchmark Results & Documentation Restructuring
 
 ### Added
