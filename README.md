@@ -15,7 +15,7 @@ An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to eva
 | gemini-3.5-flash-lite | Google AI Studio | 47.7% |
 | inclusionai/ling-3.0-flash-sante:free | KiloCode/InclusionAI | 47.7% |
 | meta/muse-glimmer-30b | NVIDIA NIM | 46.9% |
-| gemini-flash-lite-latest | Google AI Studio | 40.8% |
+| gemini-3.5-flash-lite | Google AI Studio | 40.8% |
 | liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% |
 | nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% |
 | nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% |

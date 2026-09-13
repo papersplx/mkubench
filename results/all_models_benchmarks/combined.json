@@ -2783,7 +2783,7 @@
     ]
   },
   {
-    "model": "gemini-flash-lite-latest",
+    "model": "gemini-3.5-flash-lite",
     "provider": "google-ai-studio",
     "total_questions": 40,
     "correct": 26,

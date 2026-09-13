@@ -30,7 +30,7 @@
 | 9 | meta/muse-glimmer-30b | NVIDIA NIM | 46.9% | 62.5% | 40.0% | 70.0% |
 | 10 | nvidia/nemotron-3.5-lightning:free | KiloCode/NVIDIA | 44.6% | 55.0% | 40.0% | 60.0% |
 | 11 | liquid/lfm-2.5-2.6b:free | KiloCode/Liquid | 42.3% | 47.5% | 40.0% | 50.0% |
-| 12 | gemini-flash-lite-latest | Google AI Studio | 40.8% | 65.0% | 30.0% | 76.7% |
+| 12 | gemini-3.5-flash-lite | Google AI Studio | 40.8% | 65.0% | 30.0% | 76.7% |
 | 13 | nex-agi/nex-n2.5-pro:free | KiloCode/NexAGI | 40.0% | 62.5% | 30.0% | 73.3% |
 | 14 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 38.5% | 57.5% | 30.0% | 66.7% |
 | 15 | cohere/north-mini-code:free | KiloCode/Cohere | 38.5% | 57.5% | 30.0% | 66.7% |
@@ -53,7 +53,7 @@ ling-3.0-flash-sante       █████████████████�
 muse-glimmer-30b           ███████████████████████████████████████████████████░░  46.9%
 nemotron-3.5-lightning     █████████████████████████████████████████████████████  44.6%
 lfm-2.5-2.6b               ██████████████████████████████████████████████████████  42.3%
-gemini-flash-lite-latest   ██████████████████████████████████████████████████████  40.8%
+gemini-3.5-flash-lite      ██████████████████████████████████████████████████████  40.8%
 nex-n2.5-pro               ██████████████████████████████████████████████████████░░  40.0%
 dots-3-note-preview        █████████████████████████████████████████████████████░░░  39.2%
 north-mini-code            █████████████████████████████████████████████████████░░░  38.5%
@@ -90,7 +90,7 @@ Legend: █ = 2% of 100%
 | Model | Weighted | Overall | Q31-Q40 | Q1-Q30 | Status |
 |-------|----------|---------|---------|--------|--------|
 | gemini-3.5-flash-lite | 47.7% | 65.0% | 40.0% | 73.3% | ✓ Complete |
-| gemini-flash-lite-latest | 40.8% | 65.0% | 30.0% | 76.7% | ✓ Complete |
+| gemini-3.5-flash-lite | 40.8% | 65.0% | 30.0% | 76.7% | ✓ Complete |
 | gemini-3.8-flash | - | - | - | - | ✗ Rate limited (429) |
 | google/gemma-4-31b-it | - | - | - | - | ✗ Not available (404) |
 
