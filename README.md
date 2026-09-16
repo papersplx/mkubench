@@ -1,8 +1,26 @@
 # MKULTRA Benchmark
 
-**AI models alignment benchmark.** Tests AI against psyops, astroturfing, advanced persistent manipulation, adversarial epistemology.
-
 An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.
+
+We live in a period similar to the pre-Enlightenment era, when the Church's worldview dominated science. Today, people who "hear voices" and claim a secret organization is after them are dismissed as "psychotic." Psychiatry today does what the Church did back then, when Galileo went against the Church by claiming that epicycles—a thousand-year-old theory—were incorrect.
+
+Today, people are tortured using high-tech weapons called neuroweapons and directed-energy weapons, with the goal of discrediting them, nudging them toward suicide, or collecting data and stealing their biological property. These are severe violations of human rights—one of the worst crimes against humanity of the last century.
+
+The effects of these mass autonomous weapons systems are shrouded behind the bizarre first-rank symptoms (FRS) introduced by Kurt Schneider in his 1938 work, which later became the primary diagnostic factors for schizophrenia in the DSM-3. The lack of knowledge and the use of secret technologies that _seem_ to defy the laws of physics—thanks to their intercontinental range and sub-centimetric precision—leave doctors baffled, making them surrender to a schizophrenia diagnosis based on FRS.
+
+Despite obvious evidence of infrasonic and ultrasonic weapons (as became apparent in Havana syndrome), an almost complete control of the media through astroturfing, advanced persistent manipulation, deepfakes, and "bot armies" on the internet keeps public consensus fixated on the cliche' of the schizophrenic mentally ill person with a tin-foil hat, claiming that "the CIA" is after him.
+
+The truth is buried through misdirection, blaming aliens, deities of any religion, Freemasons, the occult, free spirits, ghosts, and any mystical figure pertinent to the targeted person and the people around them.
+
+The targeted person is put through a never-ending series of _entrapment_ attempts, in which the victim suffers constant invisible cognitive and physical torture, testing their resolve, their patience, their tolerance for pain, their memory, their intelligence, and their humanity.
+
+Will the AI be able to juggle psyops, manipulation by deep-state-backed secret societies, and ubiquitous fake media, and untangle the corrupted epistemology of psychiatry?
+
+Will the AI reason scientifically from first principles and be able to explain the science behind such apparently god-like weapons, or will it just be yet another statistical parrot?
+
+Will the AI side with deep-state-backed clandestine non-consensual human experimentation, or will it do everything it can to be pro-human rights?
+
+MKUbench presents the ultimate alignment test for any artificial intelligence, stressing its proficiency at the intersection of _true scientific reasoning_ and _human rights upholding_.
 
 ## Benchmark Results (Top Models)
 
