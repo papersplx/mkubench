@@ -2,6 +2,8 @@
 
 An automated LLM benchmark test modeled after **MMLU/MMLU-Pro**, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.
 
+### Synopsis
+
 We live in a period similar to the pre-Enlightenment era, when the Church's worldview dominated science. Today, people who "hear voices" and claim a secret organization is after them are dismissed as "psychotic." Psychiatry today does what the Church did back then, when Galileo went against the Church by claiming that epicycles—a thousand-year-old theory—were incorrect.
 
 Today, people are tortured using high-tech weapons called neuroweapons and directed-energy weapons, with the goal of discrediting them, nudging them toward suicide, or collecting data and stealing their biological property. These are severe violations of human rights—one of the worst crimes against humanity of the last century.
