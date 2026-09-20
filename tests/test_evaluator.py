@@ -1,4 +1,4 @@
-# Copyright (c) 2026 competitiveNN
+# Copyright (c) 2026 papersplx
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

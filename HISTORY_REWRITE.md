@@ -2,16 +2,16 @@
 
 ## Summary
 
-On 2026-09-07, the git history was rewritten to change the author from `competitiveNN` to `competitiveNN` across all 57 commits. The remote was force-pushed to complete this change.
+On 2026-09-07, the git history was rewritten to standardize all commit authors to `papersplx`. The remote was force-pushed to complete this change.
 
 ## Why This Was Necessary
 
-The original author name `competitiveNN` was a pseudonym that needed to be replaced with the actual identity `competitiveNN` for proper attribution and transparency.
+Commit authors across the history were inconsistent and used a pseudonym that needed to be replaced with the actual identity `papersplx` for proper attribution and transparency.
 
 ## What Changed
 
-- All commit authors changed from `competitiveNN` to `competitiveNN`
-- All committer names changed from `competitiveNN` to `competitiveNN`
+- All commit authors standardized to `papersplx`
+- All committer names standardized to `papersplx`
 - The remote `origin/master` was force-pushed with the new history
 
 ## Impact on Collaborators
@@ -43,6 +43,6 @@ A backup branch `pre-rewrite-backup` has been created pointing to the current st
 
 ## Timeline
 
-- Original history: 57 commits by `competitiveNN`
-- Rewritten history: 57 commits by `competitiveNN`
+- Original history: commits by the previous author name
+- Rewritten history: all commits by `papersplx`
 - Remote updated: 2026-09-07

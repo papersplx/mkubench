@@ -50,6 +50,8 @@ Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models),
 
 Models that failed (404/timeout/rate-limited) are excluded from this table. See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
 
+For an interactive leaderboard, see the [GitHub Pages site](https://papersplx.github.io/mkubench/).
+
 For dataset documentation, see [dataset/README.md](dataset/README.md).
 
 ## Features
@@ -132,4 +134,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
 
 ## License
 
-MIT License (c) 2026 competitiveNN
+MIT License (c) 2026 papersplx
