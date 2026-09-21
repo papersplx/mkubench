@@ -16,6 +16,23 @@
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
+/* Light theme overrides */
+[data-theme="light"] {
+  --bg: #f6f8fa;
+  --card-bg: #ffffff;
+  --border: #d0d7de;
+  --text: #24292f;
+  --heading: #0d1117;
+  --accent: #0969da;
+  --accent-soft: #1f6feb;
+  --green: #1a7f37;
+  --yellow: #9a6700;
+  --red: #cf222e;
+  --muted: #6e7781;
+  --code-bg: #f6f8fa;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +136,63 @@ nav a:hover {
   color: var(--heading);
   margin-bottom: 1rem;
   font-size: 1.4rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.6rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+}
+
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  background: var(--accent-soft);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.theme-toggle:hover {
+  opacity: 0.85;
+}
+
+/* Sortable column headers */
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+th.sortable:hover {
+  color: var(--accent);
+}
+
+th.sortable::after {
+  content: ' ↕';
+  font-size: 0.7rem;
+  color: var(--muted);
 }
 
 .card h3 {
