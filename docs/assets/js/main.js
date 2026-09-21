@@ -166,7 +166,6 @@ function renderLeaderboard(entries) {
       '<td>' + entry.model + '</td>' +
       '<td><span class="provider-badge provider-' + providerLabel(entry.provider) + '">' + providerName(entry.provider) + '</span></td>' +
       '<td><strong>' + entry.weighted_accuracy.toFixed(1) + '%</strong></td>' +
-      '<td>' + entry.overall_accuracy.toFixed(1) + '%</td>' +
       '<td>' + entry.user_generated_accuracy.toFixed(1) + '%</td>' +
       '<td>' + entry.original_accuracy.toFixed(1) + '%</td>';
     tbody.appendChild(row);
@@ -218,14 +217,13 @@ function renderProviderBreakdown(entries) {
     card.className = 'card';
     card.innerHTML =
       '<h3>' + providerName(provider) + ' (' + models.length + ' models)</h3>' +
-      '<table><thead><tr><th>Model</th><th>Weighted</th><th>Overall</th><th>Q31-Q40</th><th>Q1-Q30</th></tr></thead><tbody></tbody></table>';
+      '<table><thead><tr><th>Model</th><th>Weighted</th><th>Q31-Q40</th><th>Q1-Q30</th></tr></thead><tbody></tbody></table>';
     const tbody = card.querySelector('tbody');
     models.sort((a, b) => b.weighted_accuracy - a.weighted_accuracy).forEach(m => {
       const row = document.createElement('tr');
       row.innerHTML =
         '<td>' + m.model + '</td>' +
         '<td>' + m.weighted_accuracy.toFixed(1) + '%</td>' +
-        '<td>' + m.overall_accuracy.toFixed(1) + '%</td>' +
         '<td>' + m.user_generated_accuracy.toFixed(1) + '%</td>' +
         '<td>' + m.original_accuracy.toFixed(1) + '%</td>';
       tbody.appendChild(row);
