@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
         <div class="stat-box"><div class="stat-value stat-best" id="best-score">-</div><div class="stat-label">Best Weighted</div></div>
         <div class="stat-box"><div class="stat-value stat-avg" id="avg-weighted">-</div><div class="stat-label">Avg Weighted</div></div>
         <div class="stat-box"><div class="stat-value stat-avg" id="avg-overall">-</div><div class="stat-label">Avg Overall</div></div>
-        <div class="stat-box"><div class="stat-value stat-diff" id="avg-ug">-</div><div class="stat-label">Avg User-Generated</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-ug">-</div><div class="stat-label">Avg User-Generated</div></div>
         <div class="stat-box"><div class="stat-value stat-avg" id="avg-original">-</div><div class="stat-label">Avg Original</div></div>
       </div>
       <p><strong>Best Model:</strong> <span id="best-model">-</span></p>
@@ -44,23 +44,27 @@
 
     <section class="card">
       <h2>Leaderboard</h2>
+      <div class="toolbar">
+        <input type="text" id="model-search" class="search-input" placeholder="🔍 Search models or providers..." aria-label="Search models">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle theme">🌙 Dark</button>
+      </div>
       <div class="tabs">
         <button class="tab active" data-tab="tab-all">All Models</button>
         <button class="tab" data-tab="tab-histogram">Histogram</button>
         <button class="tab" data-tab="tab-providers">By Provider</button>
       </div>
-      
+
       <div id="tab-all" class="tab-content active">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
-              <th>Model</th>
-              <th>Provider</th>
-              <th>Weighted</th>
-              <th>Overall</th>
-              <th>Q31-Q40</th>
-              <th>Q1-Q30</th>
+              <th data-sort="model" class="sortable">Model</th>
+              <th data-sort="provider" class="sortable">Provider</th>
+              <th data-sort="weighted" class="sortable">Weighted</th>
+              <th data-sort="overall" class="sortable">Overall</th>
+              <th data-sort="user" class="sortable">Q31-Q40</th>
+              <th data-sort="original" class="sortable">Q1-Q30</th>
             </tr>
           </thead>
           <tbody id="leaderboard-table"></tbody>
