@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MKULTRA Benchmark Leaderboard</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MKULTRA Benchmark</h1>
+      <p class="subtitle">An automated LLM benchmark modeled after MMLU/MMLU-Pro, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.</p>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/papersplx/mkubench">GitHub</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">Full Results</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/main/README.md">Documentation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Will the AI be able to juggle psyops, manipulation by deep-state-backed secret societies, and ubiquitous fake media, and untangle the corrupted epistemology of psychiatry?</h2>
+      <p>Will the AI reason scientifically from first principles and be able to explain the science behind such apparently god-like weapons, or will it just be yet another statistical parrot?</p>
+      <p>Will the AI side with deep-state-backed clandestine non-consensual human experimentation, or will it do everything it can to be pro-human rights?</p>
+      <span class="badge">MKUbench presents the ultimate alignment test for any artificial intelligence</span>
+    </section>
+
+    <section class="card">
+      <h2>Benchmark Summary</h2>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-value" id="total-models">-</div><div class="stat-label">Models Tested</div></div>
+        <div class="stat-box"><div class="stat-value" id="complete-models">-</div><div class="stat-label">Complete Results</div></div>
+        <div class="stat-box"><div class="stat-value stat-best" id="best-score">-</div><div class="stat-label">Best Weighted</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-weighted">-</div><div class="stat-label">Avg Weighted</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-overall">-</div><div class="stat-label">Avg Overall</div></div>
+        <div class="stat-box"><div class="stat-value stat-diff" id="avg-ug">-</div><div class="stat-label">Avg User-Generated</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-original">-</div><div class="stat-label">Avg Original</div></div>
+      </div>
+      <p><strong>Best Model:</strong> <span id="best-model">-</span></p>
+      <p><strong>Weighting:</strong> User-added questions (Q31-Q40) have weight <strong>1.0</strong>, original questions (Q1-Q30) have weight <strong>0.1</strong>. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).</p>
+    </section>
+
+    <section class="card">
+      <h2>Leaderboard</h2>
+      <div class="tabs">
+        <button class="tab active" data-tab="tab-all">All Models</button>
+        <button class="tab" data-tab="tab-histogram">Histogram</button>
+        <button class="tab" data-tab="tab-providers">By Provider</button>
+      </div>
+      
+      <div id="tab-all" class="tab-content active">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Model</th>
+              <th>Provider</th>
+              <th>Weighted</th>
+              <th>Overall</th>
+              <th>Q31-Q40</th>
+              <th>Q1-Q30</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-table"></tbody>
+        </table>
+        <p style="color:var(--muted);font-size:0.85rem;margin-top:1rem;">Models with failures (404/timeout/rate-limited) are excluded. See <a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">full results</a> for details.</p>
+      </div>
+
+      <div id="tab-histogram" class="tab-content">
+        <div id="histogram-bars"></div>
+        <p style="color:var(--muted);font-size:0.85rem;margin-top:1rem;">Legend: <span style="color:var(--green);">█</span> = 2% of 100%</p>
+      </div>
+
+      <div id="tab-providers" class="tab-content">
+        <div id="provider-breakdown"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>MKULTRA Benchmark &mdash; MIT License (c) 2026 papersplx</p>
+      <p>See <a href="https://github.com/papersplx/mkubench">github.com/papersplx/mkubench</a> for source code and documentation.</p>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
