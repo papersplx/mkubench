@@ -15,6 +15,11 @@ EXCLUDE_FILES = {
     "dataset/mkultra_benchmark.json",
     "dataset/mkultra_benchmark.jsonl",
     "dataset/mkultra-benchmark.md",
+    "tests/test_branding.py",
+}
+# Skip any file directly under dataset/training_data/ (dataset content)
+EXCLUDE_PREFIXES = {
+    "dataset/training_data/",
 }
 
 
@@ -23,13 +28,20 @@ def _scan_files(root: str):
     for dirpath, dirnames, filenames in os.walk(root):
         # Skip excluded directories
         rel_dir = os.path.relpath(dirpath, root)
+        excluded = False
         for exclude in EXCLUDE_DIRS:
             if rel_dir == exclude or rel_dir.startswith(exclude + os.sep):
-                dirnames[:] = []
+                excluded = True
                 break
+        if excluded:
+            dirnames[:] = []
+            continue
         for fname in filenames:
             rel_path = os.path.join(rel_dir, fname)
             if rel_path in EXCLUDE_FILES:
+                continue
+            # Skip files under excluded prefixes
+            if any(rel_path.startswith(p) for p in EXCLUDE_PREFIXES):
                 continue
             full_path = os.path.join(dirpath, fname)
             # Only scan text files we care about
