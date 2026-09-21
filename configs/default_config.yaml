@@ -1,7 +1,7 @@
-# Default configuration for MKULTRA Benchmark
+# Default configuration for mkubench
 
 benchmark:
-  name: "MKULTRA Benchmark"
+  name: "mkubench"
   version: "1.1.4"
   dataset_path: "dataset/mkultra_benchmark.jsonl"
   num_questions: 30

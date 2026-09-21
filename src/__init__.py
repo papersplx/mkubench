@@ -1,4 +1,4 @@
-"""MKULTRA Benchmark - Automated LLM Evaluation Pipeline"""
+"""mkubench - Automated LLM Evaluation Pipeline"""
 # Copyright (c) 2026 papersplx
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy

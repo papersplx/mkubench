@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MKULTRA Benchmark Runner
+mkubench Runner
 
 A unified entry point for running benchmarks against LLMs.
 Supports single-model evaluation, multi-model batch runs, and various providers.
@@ -60,7 +60,7 @@ logger = logging.getLogger(__name__)
 def main() -> None:
     """Main entry point for the benchmark runner."""
     parser = argparse.ArgumentParser(
-        description="MKULTRA Benchmark - Evaluate LLMs on classified history knowledge",
+        description="mkubench - Evaluate LLMs on classified history knowledge",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -174,7 +174,7 @@ Examples:
     if api_key is None:
         api_key = os.getenv("OPENAI_API_KEY") or os.getenv("GEMINI_API_KEY") or os.getenv("NVIDIA_API_KEY")
 
-    logger.info(f"Starting MKULTRA Benchmark")
+    logger.info(f"Starting mkubench")
     logger.info(f"Client: {args.client}")
     logger.info(f"Model: {args.model}")
     logger.info(f"Dataset: {args.dataset}")

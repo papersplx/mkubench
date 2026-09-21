@@ -77,7 +77,7 @@ def main():
 
     # Run evaluation with 5 second delay between requests
     print(f"\n{'='*70}")
-    print("MKULTRA BENCHMARK - Gemini 2.5 Flash (Native API)")
+    print("mkubench - Gemini 2.5 Flash (Native API)")
     print(f"{'='*70}")
     print(f"Questions: 30")
     print(f"Delay between requests: 5s (rate limit: 20 req/min)")

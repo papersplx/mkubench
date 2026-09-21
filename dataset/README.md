@@ -1,4 +1,4 @@
-# MKULTRA Benchmark Dataset
+# mkubench Dataset
 
 The benchmark contains **40 questions** in `mkultra_benchmark.jsonl`:
 - **Single Choice** (30 questions) - Select one correct option

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MKULTRA Multi-Model Benchmark Runner
+mkubench Multi-Model Benchmark Runner
 
 Run benchmarks against multiple models from models.txt or command-line arguments.
 Results are saved incrementally to results/all_models_benchmarks/.
@@ -236,7 +236,7 @@ def parse_models_txt(path: str) -> list:
 def main():
     """Main entry point for multi-model benchmark runner."""
     parser = argparse.ArgumentParser(
-        description="Run MKULTRA benchmark against multiple models",
+        description="Run mkubench against multiple models",
     )
     parser.add_argument(
         "--models-file",

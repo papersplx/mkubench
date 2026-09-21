@@ -1,4 +1,4 @@
-"""MKULTRA Benchmark - Tests Package"""
+"""mkubench - Tests Package"""
 # Copyright (c) 2026 papersplx
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy

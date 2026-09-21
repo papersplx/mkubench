@@ -36,7 +36,7 @@ clean:
 	rm -rf results/
 
 docs:
-	@echo "MKULTRA Benchmark Documentation"
+	@echo "mkubench Documentation"
 	@echo ""
 	@echo "Available targets:"
 	@echo "  install              - Install dependencies"

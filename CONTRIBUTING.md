@@ -1,4 +1,4 @@
-# Contributing to MKULTRA Benchmark
+# Contributing to mkubench
 
 Thank you for your interest in contributing! This document outlines how to contribute to the project.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MKULTRA Benchmark - Training Dataset Builder
+mkubench - Training Dataset Builder
 
 Extracts text from PDFs, EPUBs, TXTs in dataset/training/, fetches URLs from
 dataset/targeted_links.txt (skipping shopping/EMF/gadget links), cleans text,
@@ -479,9 +479,9 @@ def build_dataset(
 
 
 def main() -> None:
-    """Build the MKULTRA training dataset."""
+    """Build the mkubench training dataset."""
     import argparse
-    parser = argparse.ArgumentParser(description="Build MKULTRA training dataset")
+    parser = argparse.ArgumentParser(description="Build mkubench training dataset")
     parser.add_argument("--training-dir", default=None, help="Path to training files")
     parser.add_argument("--links-path", default=None, help="Path to targeted_links.txt")
     parser.add_argument("--output-dir", default=None, help="Output directory")

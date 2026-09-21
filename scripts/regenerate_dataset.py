@@ -85,10 +85,10 @@ def regenerate(md_path: str = None) -> None:
 def main() -> None:
     """Regenerate the benchmark dataset."""
     parser = argparse.ArgumentParser(
-        description="Regenerate the MKULTRA benchmark dataset from markdown source."
+        description="Regenerate the mkubench dataset from markdown source."
     )
     parser.add_argument("--md-path", default=None,
-                        help="Path to mkultra-benchmark.md source file")
+                        help="Path to mkubench source file")
     args = parser.parse_args()
     regenerate(md_path=args.md_path)
 

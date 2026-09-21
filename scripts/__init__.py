@@ -1,4 +1,4 @@
-"""MKULTRA Benchmark - Scripts and Utilities Package"""
+"""mkubench - Scripts and Utilities Package"""
 # Copyright (c) 2026 papersplx
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy

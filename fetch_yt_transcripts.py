@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MKULTRA Benchmark - YouTube Transcript Fetcher
+mkubench - YouTube Transcript Fetcher
 
 Fetches transcripts from YouTube videos listed in dataset/targeted_links.txt.
 Handles videos without captions gracefully and logs results.
@@ -108,7 +108,7 @@ def load_video_urls(links_path: str) -> list:
 def main() -> None:
     """Fetch YouTube transcripts for benchmark videos."""
     import argparse
-    parser = argparse.ArgumentParser(description="Fetch YouTube transcripts for MKULTRA benchmark")
+    parser = argparse.ArgumentParser(description="Fetch YouTube transcripts for mkubench")
     parser.add_argument("--links-path", default=None, help="Path to targeted_links.txt")
     parser.add_argument("--output", default="transcripts", help="Output directory")
     parser.add_argument("--language", default="en", help="Transcript language")
