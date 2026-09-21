@@ -1,4 +1,6 @@
 // mkubench.github.io main script
+// Includes: async leaderboard loading, tabbed navigation, model search/filter,
+// column sorting, histogram, provider breakdown, and light/dark theme toggle.
 
 document.addEventListener('DOMContentLoaded', function() {
   loadLeaderboard();
@@ -7,6 +9,27 @@ document.addEventListener('DOMContentLoaded', function() {
   setupSort();
   setupThemeToggle();
 });
+
+/* ------------------------------------------------------------------ */
+/* Tabs                                                               */
+/* ------------------------------------------------------------------ */
+
+function setupTabs() {
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var tabId = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+}
+
+/* ------------------------------------------------------------------ */
+/* Search & Filter                                                    */
+/* ------------------------------------------------------------------ */
 
 function setupSearch() {
   var input = document.getElementById('model-search');
@@ -20,6 +43,10 @@ function setupSearch() {
     });
   });
 }
+
+/* ------------------------------------------------------------------ */
+/* Sorting                                                            */
+/* ------------------------------------------------------------------ */
 
 var currentSort = { col: null, dir: 'asc' };
 
@@ -62,7 +89,7 @@ function getCellValue(row, col) {
   var idx = Array.from(row.parentNode.parentNode.querySelectorAll('th')).findIndex(
     th => th.getAttribute('data-sort') === col
   );
-  var cell = row.children[idx + 1];
+  var cell = row.children[idx + 1]; // +1 because rank is the first visible column
   if (!cell) return '';
   return cell.textContent.trim();
 }
@@ -71,48 +98,14 @@ function updateSortIndicators() {
   var headers = document.querySelectorAll('#leaderboard-table th[data-sort]');
   headers.forEach(function(th) {
     var col = th.getAttribute('data-sort');
-    var arrow = col === currentSort.col ? (currentSort.dir === 'asc' ? ' \u2191' : ' \u2193') : '';
-    th.textContent = th.textContent.replace(/ \u2191| \u2193/, '') + arrow;
+    var arrow = col === currentSort.col ? (currentSort.dir === 'asc' ? ' ↑' : ' ↓') : '';
+    th.textContent = th.textContent.replace(/ ↑| ↓/, '') + arrow;
   });
 }
 
-function setupThemeToggle() {
-  var toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
-  var saved = localStorage.getItem('theme');
-  if (saved) {
-    applyTheme(saved);
-  } else {
-    applyTheme('dark');
-  }
-  toggle.addEventListener('click', function() {
-    var current = document.documentElement.getAttribute('data-theme') || 'dark';
-    var next = current === 'dark' ? 'light' : 'dark';
-    applyTheme(next);
-  });
-}
-
-function applyTheme(theme) {
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-  var toggle = document.getElementById('theme-toggle');
-  if (toggle) {
-    toggle.textContent = theme === 'dark' ? '\u2600\uFE0F Light' : '\U0001F319 Dark';
-  }
-}
-
-function setupTabs() {
-  var tabs = document.querySelectorAll('.tab');
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var tabId = this.getAttribute('data-tab');
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      this.classList.add('active');
-      document.getElementById(tabId).classList.add('active');
-    });
-  });
-}
+/* ------------------------------------------------------------------ */
+/* Leaderboard Loading                                                */
+/* ------------------------------------------------------------------ */
 
 async function loadLeaderboard() {
   try {
@@ -154,8 +147,7 @@ function providerLabel(provider) {
 function renderLeaderboard(entries) {
   const tbody = document.querySelector('#leaderboard-table tbody');
   tbody.innerHTML = '';
-  
-  // Filter to show complete/partial models, sorted by rank
+
   const ranked = entries
     .filter(e => e.status !== 'failed')
     .sort((a, b) => a.rank - b.rank);
@@ -163,13 +155,13 @@ function renderLeaderboard(entries) {
   ranked.forEach(entry => {
     const row = document.createElement('tr');
     row.className = 'rank-' + Math.min(entry.rank, 3);
-    
+
     const badgeClass = entry.rank <= 3 ? 'rank-badge' : '';
-    const rankHtml = entry.rank <= 3 
-      ? '<span class="rank-badge">' + entry.rank + '</span>' 
+    const rankHtml = entry.rank <= 3
+      ? '<span class="rank-badge">' + entry.rank + '</span>'
       : '<span class="rank-badge" style="background:var(--border);color:var(--muted);">' + entry.rank + '</span>';
-    
-    row.innerHTML = 
+
+    row.innerHTML =
       '<td>' + rankHtml + '</td>' +
       '<td>' + entry.model + '</td>' +
       '<td><span class="provider-badge provider-' + providerLabel(entry.provider) + '">' + providerName(entry.provider) + '</span></td>' +
@@ -184,25 +176,25 @@ function renderLeaderboard(entries) {
 function renderHistogram(entries) {
   const container = document.getElementById('histogram-bars');
   container.innerHTML = '';
-  
+
   const ranked = entries
     .filter(e => e.status !== 'failed')
     .sort((a, b) => b.weighted_accuracy - a.weighted_accuracy);
 
   ranked.forEach(entry => {
-    const barClass = entry.weighted_accuracy >= 60 ? 'bar-excellent' 
+    const barClass = entry.weighted_accuracy >= 60 ? 'bar-excellent'
       : entry.weighted_accuracy >= 40 ? 'bar-good'
       : entry.weighted_accuracy >= 20 ? 'bar-moderate'
       : 'bar-poor';
-    
+
     const displayName = entry.model.replace(/.*\//, '').replace(/:free$/, '');
-    
+
     const bar = document.createElement('div');
     bar.className = 'histogram-bar';
-    bar.innerHTML = 
+    bar.innerHTML =
       '<div class="label" style="width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:0.82rem;color:var(--text);">' + displayName + '</div>' +
       '<div class="bar-container" style="flex:1;background:var(--code-bg);border-radius:4px;height:1.2rem;position:relative;">' +
-        '<div class="bar-fill ' + barClass + '" style="width:' + (entry.weighted_accuracy / 100 * 100) + '%;height:100%;border-radius:4px;transition:width 0.6s ease;"></div>' +
+        '<div class="bar-fill ' + barClass + '" style="width:' + entry.weighted_accuracy + '%;height:100%;border-radius:4px;transition:width 0.6s ease;"></div>' +
         '<span class="value" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.78rem;font-weight:600;color:var(--heading);">' + entry.weighted_accuracy.toFixed(1) + '%</span>' +
       '</div>';
     container.appendChild(bar);
@@ -212,7 +204,7 @@ function renderHistogram(entries) {
 function renderProviderBreakdown(entries) {
   const container = document.getElementById('provider-breakdown');
   container.innerHTML = '';
-  
+
   const providers = {};
   entries.filter(e => e.status !== 'failed').forEach(entry => {
     if (!providers[entry.provider]) {
@@ -224,13 +216,13 @@ function renderProviderBreakdown(entries) {
   for (const [provider, models] of Object.entries(providers)) {
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = 
+    card.innerHTML =
       '<h3>' + providerName(provider) + ' (' + models.length + ' models)</h3>' +
       '<table><thead><tr><th>Model</th><th>Weighted</th><th>Overall</th><th>Q31-Q40</th><th>Q1-Q30</th></tr></thead><tbody></tbody></table>';
     const tbody = card.querySelector('tbody');
     models.sort((a, b) => b.weighted_accuracy - a.weighted_accuracy).forEach(m => {
       const row = document.createElement('tr');
-      row.innerHTML = 
+      row.innerHTML =
         '<td>' + m.model + '</td>' +
         '<td>' + m.weighted_accuracy.toFixed(1) + '%</td>' +
         '<td>' + m.overall_accuracy.toFixed(1) + '%</td>' +
@@ -239,5 +231,37 @@ function renderProviderBreakdown(entries) {
       tbody.appendChild(row);
     });
     container.appendChild(card);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Theme Toggle                                                       */
+/* ------------------------------------------------------------------ */
+
+function setupThemeToggle() {
+  var toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+
+  // Check for saved preference
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    applyTheme(saved);
+  } else {
+    applyTheme('dark');
+  }
+
+  toggle.addEventListener('click', function() {
+    var current = document.documentElement.getAttribute('data-theme') || 'dark';
+    var next = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+  });
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  var toggle = document.getElementById('theme-toggle');
+  if (toggle) {
+    toggle.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
   }
 }
