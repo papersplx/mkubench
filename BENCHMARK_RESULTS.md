@@ -123,6 +123,31 @@ Legend: █ = 2% of 100%
 - Google models heavily rate-limited (429 errors) - gemini-3.8-flash unavailable
 - Several NVIDIA NIM models returned 404 (not found) - model names may have changed or been removed from the catalog
 
+## Hosten Gateway Results
+
+The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each routing to an underlying model. All 10 were benchmarked sequentially on the fixed dataset (`/tmp/mkultra_fixed.jsonl`, 40 questions, Q31-Q40 weighted 1.0, Q1-Q30 weighted 0.1).
+
+| Endpoint ID | Underlying Model | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
+|-------------|------------------|---------|---------|----------|---------|--------|--------|
+| `mistral` | mistral-medium-3.5 | 34/40 | 85.0% | 88.5% | 90.0% | 83.3% | ✓ Complete |
+| `meta` | muse-spark-1.1 | 33/40 | 82.5% | 60.0% | 50.0% | 93.3% | ✓ Complete |
+| `qwen` | qwen-3.8-max | 32/40 | 80.0% | 73.1% | 70.0% | 83.3% | ✓ Complete |
+| `claude` | claude-sonnet-5 | 29/40 | 72.5% | 50.0% | 40.0% | 83.3% | ✓ Complete |
+| `kimi` | kimi-k3 | 24/40 | 60.0% | 18.5% | 0.0% | 80.0% | ✓ Complete |
+| `zai` | glm-5.3-flash | 20/40 | 50.0% | 15.4% | 0.0% | 66.7% | ✓ Complete |
+| `grok` | grok-4.5 | 20/40 | 50.0% | 15.4% | 0.0% | 66.7% | ✓ Complete |
+| `tencent` | hy4-preview | 15/40 | 37.5% | 32.3% | 30.0% | 40.0% | ✓ Complete |
+| `google` | gemini-3.8-flash | 12/40 | 30.0% | 9.2% | 0.0% | 40.0% | ✓ Complete |
+| `copilot` | gpt-5.6 | 0/40 | 0.0% | 0.0% | 0.0% | 0.0% | ✗ 502 Bad Gateway |
+
+**Key observations:**
+- **mistral-medium-3.5** is the top performer (85% overall, 88.5% weighted)
+- **gpt-5.6** (copilot) returns 502 Bad Gateway on every chat completion — the underlying model is unavailable on the gateway, so no answers were collected
+- Several models (zai, grok, google, kimi, copilot) failed all Q31-Q40 questions, typically due to endpoint timeouts
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models
+
+Per-model logs are in `results/hosten/{endpoint_id}.log`.
+
 ## Providers Tested
 
 - **KiloCode API** (`https://api.kilo.ai/api/gateway/v1`) - 13 models from various providers (NVIDIA, StepFun, Poolside, InclusionAI, NexAGI, Cohere, Dots Studio, Liquid)

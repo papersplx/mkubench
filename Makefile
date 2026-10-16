@@ -60,6 +60,12 @@ help:
 regenerate-leaderboard:
 	$(PYTHON) regenerate_leaderboard.py
 
+aggregate-hosten:
+	$(PYTHON) aggregate_hosten.py
+
+run-hosten:
+	./run_hosten_benchmark.sh
+
 validate-results:
 	$(PYTHON) validate_results.py
 

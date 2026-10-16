@@ -135,6 +135,18 @@ Examples:
         help="Max tokens per response (default: 2048)",
     )
     parser.add_argument(
+        "--timeout",
+        type=int,
+        default=120,
+        help="Request timeout in seconds (default: 120)",
+    )
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=3,
+        help="Max retry attempts per request (default: 3)",
+    )
+    parser.add_argument(
         "--output",
         type=str,
         default="results/",
@@ -186,6 +198,8 @@ Examples:
         model=args.model,
         api_base=args.api_base,
         api_key=api_key,
+        timeout=args.timeout,
+        max_retries=args.max_retries,
     )
 
     # Run evaluation

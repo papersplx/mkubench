@@ -211,9 +211,19 @@ Question Type: {q['question_type']}"""
         print("-" * 70)
 
     def save_results(self, summary: Dict[str, Any], output_path: str) -> None:
-        """Save results to a JSON file."""
+        """Save results to a JSON file.
+
+        If output_path is a directory, write timestamped files inside it.
+        """
         # Remove the full results for the summary file, keep separate
         output = {k: v for k, v in summary.items() if k != "results"}
+
+        if os.path.isdir(output_path):
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            model = summary.get("model", "model")
+            output_path = os.path.join(output_path, f"results_{model}_{timestamp}.json")
+
+        os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
         with open(output_path, 'w') as f:
             json.dump(output, f, indent=2)
 

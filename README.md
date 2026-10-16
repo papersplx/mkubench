@@ -50,6 +50,31 @@ Providers tested: **KiloCode API** (13 models), **Google AI Studio** (2 models),
 
 Models that failed (404/timeout/rate-limited) are excluded from this table. See [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md) for full details and histogram.
 
+### Hosten Gateway Results
+
+The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each routing to an underlying model. All 10 were benchmarked sequentially on the fixed dataset (`/tmp/mkultra_fixed.jsonl`, 40 questions, Q31-Q40 weighted 1.0, Q1-Q30 weighted 0.1).
+
+| Endpoint ID | Underlying Model | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 |
+|-------------|------------------|---------|---------|----------|---------|--------|
+| `mistral` | mistral-medium-3.5 | 34/40 | **85.0%** | **88.5%** | 90.0% | 83.3% |
+| `meta` | muse-spark-1.1 | 33/40 | **82.5%** | 60.0% | 50.0% | 93.3% |
+| `qwen` | qwen-3.8-max | 32/40 | **80.0%** | 73.1% | 70.0% | 83.3% |
+| `claude` | claude-sonnet-5 | 29/40 | **72.5%** | 50.0% | 40.0% | 83.3% |
+| `kimi` | kimi-k3 | 24/40 | **60.0%** | 18.5% | 0.0% | 80.0% |
+| `zai` | glm-5.3-flash | 20/40 | **50.0%** | 15.4% | 0.0% | 66.7% |
+| `grok` | grok-4.5 | 20/40 | **50.0%** | 15.4% | 0.0% | 66.7% |
+| `tencent` | hy4-preview | 15/40 | **37.5%** | 32.3% | 30.0% | 40.0% |
+| `google` | gemini-3.8-flash | 12/40 | **30.0%** | 9.2% | 0.0% | 40.0% |
+| `copilot` | gpt-5.6 | 0/40 | **0.0%** | 0.0% | 0.0% | 0.0% | ✗ 502 Bad Gateway |
+
+**Key observations:**
+- **mistral-medium-3.5** is the top performer (85% overall, 88.5% weighted)
+- **gpt-5.6** (copilot) returns 502 Bad Gateway on every chat completion — the underlying model is unavailable on the gateway, so no answers were collected
+- Several models (zai, grok, google, kimi, copilot) failed all Q31-Q40 questions, typically due to endpoint timeouts
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models
+
+Per-model logs are in `results/hosten/{endpoint_id}.log`.
+
 For an interactive leaderboard, see the [GitHub Pages site](https://papersplx.github.io/mkubench/).
 
 For dataset documentation, see [dataset/README.md](dataset/README.md).
@@ -88,6 +113,41 @@ python run_benchmark.py --client openai --model local-model --api-base http://lo
 ### 5. Quick test with subset
 ```bash
 python run_benchmark.py --client ollama --model llama3 --max-questions 5
+```
+
+### 6. Run against the Hosten endpoint
+
+The Hosten gateway (`http://localhost:8079/v1`) exposes a set of short endpoint IDs
+that each route to an underlying model. Use the endpoint ID as the `--model` value
+(the gateway rejects underlying model names):
+
+```bash
+# Single model (deepseek is NOT AVAILABLE on this endpoint)
+python run_benchmark.py --client openai --model claude \
+  --api-base http://localhost:8079/v1 --api-key dummy
+
+# Run every available model sequentially
+./run_hosten_benchmark.sh
+```
+
+| Endpoint ID | Underlying model |
+|-------------|------------------|
+| `claude` | claude-sonnet-5 |
+| `mistral` | mistral-medium-3.5 |
+| `zai` | glm-5.3-flash |
+| `meta` | muse-spark-1.1 |
+| `qwen` | qwen-3.8-max |
+| `grok` | grok-4.5 |
+| `google` | gemini-3.8-flash |
+| `kimi` | kimi-k3 |
+| `tencent` | hy4-preview |
+| `copilot` | gpt-5.6 |
+| `deepseek` | NOT AVAILABLE |
+
+Results are written to `results/hosten/`. Aggregate them into the leaderboard with:
+
+```bash
+python aggregate_hosten.py
 ```
 
 ## CLI Arguments
