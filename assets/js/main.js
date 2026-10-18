@@ -135,7 +135,8 @@ function providerName(provider) {
   const names = {
     'kilocode': 'KiloCode API',
     'google-ai-studio': 'Google AI Studio',
-    'nvidia-nim': 'NVIDIA NIM'
+    'nvidia-nim': 'NVIDIA NIM',
+    'hosten': 'Hosten Gateway'
   };
   return names[provider] || provider;
 }
