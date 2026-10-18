@@ -45,7 +45,7 @@
 | 24 | gemini-3.8-flash (`google`) | Hosten Gateway | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
 | 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 21/40 | 52.5% | 16.2% | 0.0% | 70.0% | ◐ Partial |
 
-*The 11 models that failed outright (404/timeout/rate-limited) are excluded from this table and listed under Failed models below.*
+*The 12 models without a scoreable full run (11 failed outright: 404/timeout/rate-limited, plus 1 legacy summary-only result) are excluded from this table and listed under Failed models below.*
 
 ## Accuracy Histogram (Weighted)
 
@@ -97,6 +97,7 @@ Excluded from the leaderboard; kept here for reproducibility of the gaps.
 
 | Model | Provider | Reason |
 |---|---|---|
+| cohere/north-mini-code:free | KiloCode API | Legacy summary-only result (no per-question data; old 25.0-point weighting) - not re-scoreable on the current dataset |
 | deepseek-ai/deepseek-coder-6.7b-instruct | NVIDIA NIM | Model not found (404) |
 | deepseek-ai/deepseek-v4-pro-0813 | NVIDIA NIM | API timeouts |
 | google/gemma-4-31b-it | NVIDIA NIM | API timeouts |
