@@ -218,6 +218,10 @@ Examples:
     if not args.no_save_json:
         output_dir = args.output
         os.makedirs(output_dir, exist_ok=True)
+        # Identify the run in the saved filename (results_<model>_<timestamp>.json);
+        # without this the evaluator falls back to "results_model_<timestamp>.json"
+        # for every model, which collides and cannot be aggregated per endpoint.
+        summary.setdefault("model", args.model)
         evaluator.save_results(summary, output_dir)
         logger.info(f"Results saved to {output_dir}")
 

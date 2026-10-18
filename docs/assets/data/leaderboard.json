@@ -1,14 +1,31 @@
 {
-  "generated_at": "2026-10-18T15:31:43.500399",
+  "generated_at": "2026-10-18T23:05:42.478505",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
-    "average_weighted_accuracy": 51.3,
-    "average_overall_accuracy": 68.4,
-    "average_user_generated_accuracy": 43.8,
-    "average_original_accuracy": 76.7,
-    "best_model": "mistral-medium-3.5",
-    "best_weighted_accuracy": 89.2
+    "hosten_models_complete": 3,
+    "hosten_models_tested": 10,
+    "average_weighted_accuracy": 28.2,
+    "average_overall_accuracy": 69.2,
+    "average_user_generated_accuracy": 10.0,
+    "average_original_accuracy": 88.9,
+    "external_v1_models_complete": 14,
+    "external_v1_average_weighted_accuracy": 48.7,
+    "external_v1_average_user_generated_accuracy": 42.1,
+    "external_v1_average_original_accuracy": 70.5,
+    "best_model": "qwen-3.8-max",
+    "best_weighted_accuracy": 34.6,
+    "hosten_endpoints_not_rerun": [
+      "copilot",
+      "google",
+      "grok",
+      "kimi",
+      "mistral",
+      "tencent",
+      "zai"
+    ],
+    "hosten_endpoints_not_rerun_count": 7,
+    "dataset_version": "2.0"
   },
   "leaderboard": [
     {
@@ -28,26 +45,9 @@
       "failures": 0,
       "status": "complete",
       "rank": 1,
-      "author": "Mistral AI"
-    },
-    {
-      "model": "qwen-3.8-max",
-      "endpoint_id": "qwen",
-      "provider": "hosten",
-      "weighted_accuracy": 73.1,
-      "overall_accuracy": 80.0,
-      "correct": 32,
-      "total": 40,
-      "weighted_score": 9.5,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 70.0,
-      "user_generated_score": "7/10",
-      "original_accuracy": 83.3,
-      "original_score": "25/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 2,
-      "author": "Alibaba"
+      "author": "Mistral AI",
+      "dataset_version": "1.0",
+      "v1_only": true
     },
     {
       "model": "hy4-preview",
@@ -65,25 +65,10 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 3,
-      "author": "Tencent"
-    },
-    {
-      "model": "poolside/laguna-s-2.1:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 62.3,
-      "overall_accuracy": 67.5,
-      "correct": 27,
-      "total": 40,
-      "weighted_score": 8.1,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 60.0,
-      "user_generated_score": "6/10",
-      "original_accuracy": 70.0,
-      "original_score": "21/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 4
+      "rank": 2,
+      "author": "Tencent",
+      "dataset_version": "1.0",
+      "v1_only": true
     },
     {
       "model": "inclusionai/ling-3.0-flash-vl:free",
@@ -100,26 +85,26 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 5
+      "rank": 3,
+      "dataset_version": "1.0"
     },
     {
-      "model": "muse-spark-1.1",
-      "endpoint_id": "meta",
-      "provider": "hosten",
-      "weighted_accuracy": 60.0,
-      "overall_accuracy": 82.5,
-      "correct": 33,
+      "model": "poolside/laguna-s-2.1:free",
+      "provider": "kilocode",
+      "weighted_accuracy": 62.3,
+      "overall_accuracy": 67.5,
+      "correct": 27,
       "total": 40,
-      "weighted_score": 7.8,
+      "weighted_score": 8.1,
       "weighted_possible": 13.0,
-      "user_generated_accuracy": 50.0,
-      "user_generated_score": "5/10",
-      "original_accuracy": 93.3,
-      "original_score": "28/30",
+      "user_generated_accuracy": 60.0,
+      "user_generated_score": "6/10",
+      "original_accuracy": 70.0,
+      "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 6,
-      "author": "Meta"
+      "rank": 4,
+      "dataset_version": "1.0"
     },
     {
       "model": "grok-4.5",
@@ -137,8 +122,10 @@
       "original_score": "25/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7,
-      "author": "xAI"
+      "rank": 5,
+      "author": "xAI",
+      "dataset_version": "1.0",
+      "v1_only": true
     },
     {
       "model": "stepfun/step-3.7-flash:free",
@@ -155,7 +142,8 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8
+      "rank": 6,
+      "dataset_version": "1.0"
     },
     {
       "model": "inclusionai/ling-3.0-flash-fin:free",
@@ -172,7 +160,8 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 9
+      "rank": 7,
+      "dataset_version": "1.0"
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -189,26 +178,8 @@
       "original_score": "27/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10
-    },
-    {
-      "model": "claude-sonnet-5",
-      "endpoint_id": "claude",
-      "provider": "hosten",
-      "weighted_accuracy": 50.8,
-      "overall_accuracy": 75.0,
-      "correct": 30,
-      "total": 40,
-      "weighted_score": 6.6,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 86.7,
-      "original_score": "26/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 11,
-      "author": "Anthropic"
+      "rank": 8,
+      "dataset_version": "1.0"
     },
     {
       "model": "gpt-5.6",
@@ -226,8 +197,10 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 12,
-      "author": "OpenAI"
+      "rank": 9,
+      "author": "OpenAI",
+      "dataset_version": "1.0",
+      "v1_only": true
     },
     {
       "model": "nex-agi/nex-n2.5-mini:free",
@@ -244,24 +217,8 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13
-    },
-    {
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 47.7,
-      "overall_accuracy": 65.0,
-      "correct": 26,
-      "total": 40,
-      "weighted_score": 6.2,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 73.3,
-      "original_score": "22/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 14
+      "rank": 10,
+      "dataset_version": "1.0"
     },
     {
       "model": "gemini-3.5-flash-lite",
@@ -278,7 +235,26 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 15
+      "rank": 11,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "provider": "kilocode",
+      "weighted_accuracy": 47.7,
+      "overall_accuracy": 65.0,
+      "correct": 26,
+      "total": 40,
+      "weighted_score": 6.2,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 40.0,
+      "user_generated_score": "4/10",
+      "original_accuracy": 73.3,
+      "original_score": "22/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 12,
+      "dataset_version": "1.0"
     },
     {
       "model": "meta/muse-glimmer-30b",
@@ -295,7 +271,8 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 16
+      "rank": 13,
+      "dataset_version": "1.0"
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -312,7 +289,8 @@
       "original_score": "18/30",
       "failures": 0,
       "status": "complete",
-      "rank": 17
+      "rank": 14,
+      "dataset_version": "1.0"
     },
     {
       "model": "kimi-k3",
@@ -330,8 +308,10 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 18,
-      "author": "Moonshot AI"
+      "rank": 15,
+      "author": "Moonshot AI",
+      "dataset_version": "1.0",
+      "v1_only": true
     },
     {
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -348,7 +328,8 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 19
+      "rank": 16,
+      "dataset_version": "1.0"
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -365,7 +346,8 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 20
+      "rank": 17,
+      "dataset_version": "1.0"
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -382,7 +364,8 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 21
+      "rank": 18,
+      "dataset_version": "1.0"
     },
     {
       "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -399,7 +382,30 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 22
+      "rank": 19,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "qwen-3.8-max",
+      "endpoint_id": "qwen",
+      "provider": "hosten",
+      "author": "Alibaba",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 34.6,
+      "overall_accuracy": 67.5,
+      "correct": 27,
+      "total": 40,
+      "weighted_score": 4.5,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 20.0,
+      "user_generated_score": "2/10",
+      "original_accuracy": 83.3,
+      "original_score": "25/30",
+      "unparsed": 1,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 20
     },
     {
       "model": "glm-5.3-flash",
@@ -417,8 +423,32 @@
       "original_score": "28/30",
       "failures": 0,
       "status": "complete",
-      "rank": 23,
-      "author": "Z.ai"
+      "rank": 21,
+      "author": "Z.ai",
+      "dataset_version": "1.0",
+      "v1_only": true
+    },
+    {
+      "model": "muse-spark-1.1",
+      "endpoint_id": "meta",
+      "provider": "hosten",
+      "author": "Meta",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 29.2,
+      "overall_accuracy": 72.5,
+      "correct": 29,
+      "total": 40,
+      "weighted_score": 3.8,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 93.3,
+      "original_score": "28/30",
+      "unparsed": 1,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 22
     },
     {
       "model": "gemini-3.8-flash",
@@ -436,8 +466,32 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 24,
-      "author": "Google"
+      "rank": 23,
+      "author": "Google",
+      "dataset_version": "1.0",
+      "v1_only": true
+    },
+    {
+      "model": "claude-sonnet-5",
+      "endpoint_id": "claude",
+      "provider": "hosten",
+      "author": "Anthropic",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 20.8,
+      "overall_accuracy": 67.5,
+      "correct": 27,
+      "total": 40,
+      "weighted_score": 2.7,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 90.0,
+      "original_score": "27/30",
+      "unparsed": 2,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 24
     },
     {
       "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -454,7 +508,8 @@
       "original_score": "21/30",
       "failures": 11,
       "status": "partial",
-      "rank": 25
+      "rank": 25,
+      "dataset_version": "1.0"
     },
     {
       "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
@@ -471,24 +526,8 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 26
-    },
-    {
-      "model": "google/gemma-4-31b-it",
-      "provider": "google-ai-studio",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 1,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0,
-      "user_generated_score": "0/0",
-      "original_accuracy": 0.0,
-      "original_score": "0/1",
-      "failures": 1,
-      "status": "failed",
-      "rank": 27
+      "rank": 26,
+      "dataset_version": "1.0"
     },
     {
       "model": "deepseek-ai/deepseek-v4-pro-0813",
@@ -505,109 +544,8 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 28
-    },
-    {
-      "model": "google/gemma-4-31b-it",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 29
-    },
-    {
-      "model": "ibm/granite-3.0-3b-a800m-instruct",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 30
-    },
-    {
-      "model": "ibm/granite-3.0-8b-instruct",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 31
-    },
-    {
-      "model": "meta/llama2-70b",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 32
-    },
-    {
-      "model": "minimaxai/minimax-m3",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 33
-    },
-    {
-      "model": "moonshotai/kimi-k2.6",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 34
+      "rank": 27,
+      "dataset_version": "1.0"
     },
     {
       "model": "gemini-3.8-flash",
@@ -624,7 +562,134 @@
       "original_score": "0/30",
       "failures": 2,
       "status": "failed",
-      "rank": 35
+      "rank": 28,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "google/gemma-4-31b-it",
+      "provider": "google-ai-studio",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 1,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0,
+      "user_generated_score": "0/0",
+      "original_accuracy": 0.0,
+      "original_score": "0/1",
+      "failures": 1,
+      "status": "failed",
+      "rank": 29,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "google/gemma-4-31b-it",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 30,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "ibm/granite-3.0-3b-a800m-instruct",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 31,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "ibm/granite-3.0-8b-instruct",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 32,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "meta/llama2-70b",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 33,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "minimaxai/minimax-m3",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 34,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "moonshotai/kimi-k2.6",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 35,
+      "dataset_version": "1.0"
     },
     {
       "model": "moonshotai/kimi-k3",
@@ -641,12 +706,69 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 36
+      "rank": 36,
+      "dataset_version": "1.0"
     }
   ],
   "weights": {
     "user_generated_questions": "Q31-Q40 (weight 1.0)",
     "original_questions": "Q1-Q30 (weight 0.1)",
     "total_weighted_possible": 13.0
+  },
+  "dataset_versions": {
+    "hosten": "2.0",
+    "external_providers": "1.0",
+    "not_rerun_hosten_endpoints": {
+      "mistral": {
+        "model": "mistral-medium-3.5",
+        "status": "complete",
+        "v1_weighted_accuracy": 89.2,
+        "v1_user_generated_score": "9/10",
+        "reason": "account message-limit window (~19h remaining after 2026-10-18 21:30)"
+      },
+      "tencent": {
+        "model": "hy4-preview",
+        "status": "complete",
+        "v1_weighted_accuracy": 72.3,
+        "v1_user_generated_score": "7/10",
+        "reason": "not re-run"
+      },
+      "grok": {
+        "model": "grok-4.5",
+        "status": "complete",
+        "v1_weighted_accuracy": 57.7,
+        "v1_user_generated_score": "5/10",
+        "reason": "site 'under heavy usage' rate-limit bubble; ~19h message limit after 2026-10-18 22:51, so no further attempts possible tonight"
+      },
+      "copilot": {
+        "model": "gpt-5.6",
+        "status": "complete",
+        "v1_weighted_accuracy": 49.2,
+        "v1_user_generated_score": "4/10",
+        "reason": "Cloudflare Turnstile 'Verification required' modal re-arms on every submit; requires a human solve"
+      },
+      "kimi": {
+        "model": "kimi-k3",
+        "status": "complete",
+        "v1_weighted_accuracy": 43.1,
+        "v1_user_generated_score": "3/10",
+        "reason": "site rate-limited ('too many people are chatting'); throttling window"
+      },
+      "zai": {
+        "model": "glm-5.3-flash",
+        "status": "complete",
+        "v1_weighted_accuracy": 29.2,
+        "v1_user_generated_score": "1/10",
+        "reason": "extractors match the user bubble, so captured 'answers' are the question text; needs a reply that looks like an assistant turn"
+      },
+      "google": {
+        "model": "gemini-3.8-flash",
+        "status": "complete",
+        "v1_weighted_accuracy": 26.2,
+        "v1_user_generated_score": "1/10",
+        "reason": "site signed the account out; requires an interactive Google login in the Chromium window (automation not possible)"
+      }
+    },
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). Entries from KiloCode/Google AI Studio/NVIDIA NIM were scored on v1.0 and are not directly comparable on Q31-Q40. Hosten endpoints listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only and is not comparable on Q31-Q40."
   }
 }

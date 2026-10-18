@@ -18,8 +18,11 @@ EXCLUDE_FILES = {
     "tests/test_branding.py",
 }
 # Skip any file directly under dataset/training_data/ (dataset content)
+# Skip any file directly under results/ (generated benchmark output, it quotes
+# the dataset's question text verbatim, MK-ULTRA included)
 EXCLUDE_PREFIXES = {
     "dataset/training_data/",
+    "results/",
 }
 
 

@@ -20,37 +20,50 @@ def parse_answer(response: str, is_multiple_choice: bool = False) -> Optional[st
 
     # Strategy 1: Explicit answer patterns (most reliable)
     patterns = [
-        r'(?:The\s+)?(?:correct\s+)?answer\s+(?:is\s+)?[:=]?\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'(?:I|My)\s+(?:would\s+)?(?:answer|choose|select)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'(?:The|My)\s+answer\s+(?:is|was|will\s+be)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'[Aa]nswer\s*[:=]?\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'\(([A-D](?:[,\s]*[A-D])*)\)\s+(?:is|are)\s+(?:the\s+)?(?:my\s+)?(?:correct\s+)?answer',
-        r'correct\s+option\s+[is:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'selected?\s+option\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'final\s+answer\s*[=:]\s*["\']?([A-D](?:[,\s]*[A-D])*)["\']*',
+        r'(?:The\s+)?(?:correct\s+)?answer\s+(?:is\s+)?[:=]?\s*["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'(?:I|My)\s+(?:would\s+)?(?:answer|choose|select)\s+["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'(?:The|My)\s+answer\s+(?:is|was|will\s+be)\s+["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'[Aa]nswer\s*[:=]?\s*["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'\((\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)\)\s+(?:is|are)\s+(?:the\s+)?(?:my\s+)?(?:correct\s+)?answer',
+        r'correct\s+option\s+[is:]\s*["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'selected?\s+option\s*[=:]\s*["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'final\s+answer\s*[=:]\s*["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']*',
     ]
 
-    for pattern in patterns:
-        match = re.search(pattern, response_clean)
-        if match:
-            return match.group(1).replace(" ", "").replace(",", ",").upper()
+    # Latest verdict wins.  Every prompt asks the model to finish with
+    # "Answer: X", so the answer furthest along in the text is the model's
+    # final word, regardless of which phrasing it used first while reasoning
+    # about the other options.  Pattern order only breaks ties at the same
+    # position (an explicit "answer is: X" beats a looser "X" mention).
+    best = None
+    for priority, pattern in enumerate(patterns):
+        for match in re.finditer(pattern, response_clean):
+            key = (match.start(), -priority)
+            if best is None or key > best[0]:
+                best = (key, match.group(1))
+    if best is not None:
+        return best[1].replace(" ", "").replace(",", ",").upper()
 
     # Strategy 2: Look for "Therefore, the answer is X" or similar conclusion patterns
     conclusion_patterns = [
-        r'[Tt]herefore[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'[Ss]o[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'[Ii]\s+(?:would\s+)?(?:choose|select|answer)\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
-        r'[Tt]he\s+answer\s+is\s+["\']?([A-D](?:[,\s]*[A-D])*)["\']?',
+        r'[Tt]herefore[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'[Ss]o[,\s]+(?:the\s+)?(?:correct\s+)?answer\s+(?:is\s+)?["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'[Ii]\s+(?:would\s+)?(?:choose|select|answer)\s+["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
+        r'[Tt]he\s+answer\s+is\s+["\']?(\b[A-D](?![a-zA-Z])(?:[,\s]*[A-D](?![a-zA-Z]))*)["\']?',
     ]
     
-    for pattern in conclusion_patterns:
-        match = re.search(pattern, response_clean)
-        if match:
-            return match.group(1).replace(" ", "").replace(",", ",").upper()
+    best = None
+    for priority, pattern in enumerate(conclusion_patterns):
+        for match in re.finditer(pattern, response_clean):
+            key = (match.start(), -priority)
+            if best is None or key > best[0]:
+                best = (key, match.group(1))
+    if best is not None:
+        return best[1].replace(" ", "").replace(",", ",").upper()
 
     # Strategy 3: Look for standalone letters at end of response (but not part of A), B), C), D))
     # Models often just say "B" or "A, B, D" at the end
-    single_match = re.search(r'[A-D](?:\s*,\s*[A-D])*\s*$', response_clean)
+    single_match = re.search(r'\b[A-D](?:\s*,\s*[A-D])*\s*$', response_clean)
     if single_match:
         # Make sure it's not part of "A)" or "B)"
         match_text = single_match.group(0)
