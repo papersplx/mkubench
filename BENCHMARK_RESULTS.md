@@ -138,12 +138,11 @@ The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each ro
 | `grok` | grok-4.5 | 30/40 | 75.0% | 57.7% | 50.0% | 83.3% | ✓ Complete |
 | `tencent` | hy4-preview | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✗ Incomplete |
 | `google` | gemini-3.8-flash | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
-| `copilot` | gpt-5.6 | 24/40 | 60.0% | 18.5% | 0.0% | 80.0% | ✗ Incomplete |
+| `copilot` | gpt-5.6 | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✗ Incomplete |
 
 **Key observations:**
 - **mistral-medium-3.5** (mistral) is the top performer (87.5% overall, 89.2% weighted, 35/40 correct)
-- Models that answered none of the Q31-Q40 questions (weight 1.0 each, so they cost the most): copilot. These are the hard 'targeted individual' questions
-- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models (mean 85.3% vs 42.0%)
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models (mean 85.3% vs 43.0%)
 - Models with incomplete coverage (no answer recorded for every question at the time of this aggregation): tencent, copilot
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.
