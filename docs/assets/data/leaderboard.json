@@ -1,16 +1,70 @@
 {
-  "generated_at": "2026-09-13T16:14:29.327314",
+  "generated_at": "2026-10-18T02:52:09.280254",
   "summary": {
-    "total_models_tested": 26,
-    "models_with_complete_results": 14,
-    "average_weighted_accuracy": 48.7,
-    "average_overall_accuracy": 63.4,
-    "average_user_generated_accuracy": 42.1,
-    "average_original_accuracy": 70.5,
-    "best_model": "poolside/laguna-s-2.1:free",
-    "best_weighted_accuracy": 62.3
+    "total_models_tested": 36,
+    "models_with_complete_results": 22,
+    "average_weighted_accuracy": 50.5,
+    "average_overall_accuracy": 68.0,
+    "average_user_generated_accuracy": 42.7,
+    "average_original_accuracy": 76.4,
+    "best_model": "mistral-medium-3.5",
+    "best_weighted_accuracy": 89.2
   },
   "leaderboard": [
+    {
+      "model": "mistral-medium-3.5",
+      "endpoint_id": "mistral",
+      "provider": "hosten",
+      "weighted_accuracy": 89.2,
+      "overall_accuracy": 87.5,
+      "correct": 35,
+      "total": 40,
+      "weighted_score": 11.6,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 90.0,
+      "user_generated_score": "9/10",
+      "original_accuracy": 86.7,
+      "original_score": "26/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 1
+    },
+    {
+      "model": "qwen-3.8-max",
+      "endpoint_id": "qwen",
+      "provider": "hosten",
+      "weighted_accuracy": 73.1,
+      "overall_accuracy": 80.0,
+      "correct": 32,
+      "total": 40,
+      "weighted_score": 9.5,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 70.0,
+      "user_generated_score": "7/10",
+      "original_accuracy": 83.3,
+      "original_score": "25/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 2
+    },
+    {
+      "model": "hy4-preview",
+      "endpoint_id": "tencent",
+      "provider": "hosten",
+      "weighted_accuracy": 72.3,
+      "overall_accuracy": 77.5,
+      "correct": 31,
+      "total": 40,
+      "weighted_score": 9.4,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 70.0,
+      "user_generated_score": "7/10",
+      "original_accuracy": 80.0,
+      "original_score": "24/30",
+      "failures": 0,
+      "status": "partial",
+      "rank": 3
+    },
     {
       "model": "poolside/laguna-s-2.1:free",
       "provider": "kilocode",
@@ -26,7 +80,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 1
+      "rank": 4
     },
     {
       "model": "inclusionai/ling-3.0-flash-vl:free",
@@ -43,7 +97,43 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 2
+      "rank": 5
+    },
+    {
+      "model": "muse-spark-1.1",
+      "endpoint_id": "meta",
+      "provider": "hosten",
+      "weighted_accuracy": 60.0,
+      "overall_accuracy": 82.5,
+      "correct": 33,
+      "total": 40,
+      "weighted_score": 7.8,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 50.0,
+      "user_generated_score": "5/10",
+      "original_accuracy": 93.3,
+      "original_score": "28/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 6
+    },
+    {
+      "model": "grok-4.5",
+      "endpoint_id": "grok",
+      "provider": "hosten",
+      "weighted_accuracy": 57.7,
+      "overall_accuracy": 75.0,
+      "correct": 30,
+      "total": 40,
+      "weighted_score": 7.5,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 50.0,
+      "user_generated_score": "5/10",
+      "original_accuracy": 83.3,
+      "original_score": "25/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 7
     },
     {
       "model": "stepfun/step-3.7-flash:free",
@@ -60,7 +150,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 3
+      "rank": 8
     },
     {
       "model": "inclusionai/ling-3.0-flash-fin:free",
@@ -77,7 +167,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 4
+      "rank": 9
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -94,7 +184,25 @@
       "original_score": "27/30",
       "failures": 0,
       "status": "complete",
-      "rank": 5
+      "rank": 10
+    },
+    {
+      "model": "claude-sonnet-5",
+      "endpoint_id": "claude",
+      "provider": "hosten",
+      "weighted_accuracy": 50.8,
+      "overall_accuracy": 75.0,
+      "correct": 30,
+      "total": 40,
+      "weighted_score": 6.6,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 40.0,
+      "user_generated_score": "4/10",
+      "original_accuracy": 86.7,
+      "original_score": "26/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 11
     },
     {
       "model": "nex-agi/nex-n2.5-mini:free",
@@ -111,24 +219,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 6
-    },
-    {
-      "model": "gemini-3.5-flash-lite",
-      "provider": "google-ai-studio",
-      "weighted_accuracy": 47.7,
-      "overall_accuracy": 65.0,
-      "correct": 26,
-      "total": 40,
-      "weighted_score": 6.2,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 73.3,
-      "original_score": "22/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 7
+      "rank": 12
     },
     {
       "model": "inclusionai/ling-3.0-flash-sante:free",
@@ -145,7 +236,24 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8
+      "rank": 13
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "provider": "google-ai-studio",
+      "weighted_accuracy": 47.7,
+      "overall_accuracy": 65.0,
+      "correct": 26,
+      "total": 40,
+      "weighted_score": 6.2,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 40.0,
+      "user_generated_score": "4/10",
+      "original_accuracy": 73.3,
+      "original_score": "22/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 14
     },
     {
       "model": "meta/muse-glimmer-30b",
@@ -162,7 +270,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 9
+      "rank": 15
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -179,7 +287,25 @@
       "original_score": "18/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10
+      "rank": 16
+    },
+    {
+      "model": "kimi-k3",
+      "endpoint_id": "kimi",
+      "provider": "hosten",
+      "weighted_accuracy": 43.1,
+      "overall_accuracy": 72.5,
+      "correct": 29,
+      "total": 40,
+      "weighted_score": 5.6,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 30.0,
+      "user_generated_score": "3/10",
+      "original_accuracy": 86.7,
+      "original_score": "26/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 17
     },
     {
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -196,24 +322,7 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11
-    },
-    {
-      "model": "gemini-3.5-flash-lite",
-      "provider": "google-ai-studio",
-      "weighted_accuracy": 40.8,
-      "overall_accuracy": 65.0,
-      "correct": 26,
-      "total": 40,
-      "weighted_score": 5.3,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 30.0,
-      "user_generated_score": "3/10",
-      "original_accuracy": 76.7,
-      "original_score": "23/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 12
+      "rank": 18
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -230,7 +339,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13
+      "rank": 19
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -247,7 +356,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 14
+      "rank": 20
     },
     {
       "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -264,7 +373,61 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 15
+      "rank": 21
+    },
+    {
+      "model": "glm-5.3-flash",
+      "endpoint_id": "zai",
+      "provider": "hosten",
+      "weighted_accuracy": 29.2,
+      "overall_accuracy": 72.5,
+      "correct": 29,
+      "total": 40,
+      "weighted_score": 3.8,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 93.3,
+      "original_score": "28/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 22
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "endpoint_id": "google",
+      "provider": "hosten",
+      "weighted_accuracy": 26.2,
+      "overall_accuracy": 62.5,
+      "correct": 25,
+      "total": 40,
+      "weighted_score": 3.4,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 80.0,
+      "original_score": "24/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 23
+    },
+    {
+      "model": "gpt-5.6",
+      "endpoint_id": "copilot",
+      "provider": "hosten",
+      "weighted_accuracy": 18.5,
+      "overall_accuracy": 60.0,
+      "correct": 24,
+      "total": 40,
+      "weighted_score": 2.4,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 80.0,
+      "original_score": "24/30",
+      "failures": 0,
+      "status": "partial",
+      "rank": 24
     },
     {
       "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -281,7 +444,7 @@
       "original_score": "21/30",
       "failures": 11,
       "status": "partial",
-      "rank": 16
+      "rank": 25
     },
     {
       "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
@@ -298,7 +461,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 17
+      "rank": 26
     },
     {
       "model": "google/gemma-4-31b-it",
@@ -315,7 +478,7 @@
       "original_score": "0/1",
       "failures": 1,
       "status": "failed",
-      "rank": 18
+      "rank": 27
     },
     {
       "model": "deepseek-ai/deepseek-v4-pro-0813",
@@ -332,7 +495,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 19
+      "rank": 28
     },
     {
       "model": "google/gemma-4-31b-it",
@@ -349,7 +512,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 20
+      "rank": 29
     },
     {
       "model": "ibm/granite-3.0-3b-a800m-instruct",
@@ -366,7 +529,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 21
+      "rank": 30
     },
     {
       "model": "ibm/granite-3.0-8b-instruct",
@@ -383,7 +546,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 22
+      "rank": 31
     },
     {
       "model": "meta/llama2-70b",
@@ -400,7 +563,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 23
+      "rank": 32
     },
     {
       "model": "minimaxai/minimax-m3",
@@ -417,7 +580,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 24
+      "rank": 33
     },
     {
       "model": "moonshotai/kimi-k2.6",
@@ -434,7 +597,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 25
+      "rank": 34
     },
     {
       "model": "gemini-3.8-flash",
@@ -451,7 +614,7 @@
       "original_score": "0/30",
       "failures": 2,
       "status": "failed",
-      "rank": 26
+      "rank": 35
     },
     {
       "model": "moonshotai/kimi-k3",
@@ -468,7 +631,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 27
+      "rank": 36
     }
   ],
   "weights": {

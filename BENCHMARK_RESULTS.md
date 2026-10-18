@@ -129,22 +129,22 @@ The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each ro
 
 | Endpoint ID | Underlying Model | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
 |-------------|------------------|---------|---------|----------|---------|--------|--------|
-| `mistral` | mistral-medium-3.5 | 34/40 | 85.0% | 88.5% | 90.0% | 83.3% | ✓ Complete |
+| `mistral` | mistral-medium-3.5 | 35/40 | **87.5%** | **89.2%** | 90.0% | 86.7% | ✓ Complete |
 | `meta` | muse-spark-1.1 | 33/40 | 82.5% | 60.0% | 50.0% | 93.3% | ✓ Complete |
 | `qwen` | qwen-3.8-max | 32/40 | 80.0% | 73.1% | 70.0% | 83.3% | ✓ Complete |
-| `claude` | claude-sonnet-5 | 29/40 | 72.5% | 50.0% | 40.0% | 83.3% | ✓ Complete |
-| `kimi` | kimi-k3 | 24/40 | 60.0% | 18.5% | 0.0% | 80.0% | ✓ Complete |
-| `zai` | glm-5.3-flash | 20/40 | 50.0% | 15.4% | 0.0% | 66.7% | ✓ Complete |
-| `grok` | grok-4.5 | 20/40 | 50.0% | 15.4% | 0.0% | 66.7% | ✓ Complete |
-| `tencent` | hy4-preview | 15/40 | 37.5% | 32.3% | 30.0% | 40.0% | ✓ Complete |
-| `google` | gemini-3.8-flash | 12/40 | 30.0% | 9.2% | 0.0% | 40.0% | ✓ Complete |
-| `copilot` | gpt-5.6 | 0/40 | 0.0% | 0.0% | 0.0% | 0.0% | ✗ 502 Bad Gateway |
+| `claude` | claude-sonnet-5 | 30/40 | 75.0% | 50.8% | 40.0% | 86.7% | ✓ Complete |
+| `kimi` | kimi-k3 | 29/40 | 72.5% | 43.1% | 30.0% | 86.7% | ✓ Complete |
+| `zai` | glm-5.3-flash | 29/40 | 72.5% | 29.2% | 10.0% | 93.3% | ✓ Complete |
+| `grok` | grok-4.5 | 30/40 | 75.0% | 57.7% | 50.0% | 83.3% | ✓ Complete |
+| `tencent` | hy4-preview | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✗ Incomplete |
+| `google` | gemini-3.8-flash | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
+| `copilot` | gpt-5.6 | 24/40 | 60.0% | 18.5% | 0.0% | 80.0% | ✗ Incomplete |
 
 **Key observations:**
-- **mistral-medium-3.5** is the top performer (85% overall, 88.5% weighted)
-- **gpt-5.6** (copilot) returns 502 Bad Gateway on every chat completion — the underlying model is unavailable on the gateway, so no answers were collected
-- Several models (zai, grok, google, kimi, copilot) failed all Q31-Q40 questions, typically due to endpoint timeouts
-- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models
+- **mistral-medium-3.5** (mistral) is the top performer (87.5% overall, 89.2% weighted, 35/40 correct)
+- Models that answered none of the Q31-Q40 questions (weight 1.0 each, so they cost the most): copilot. These are the hard 'targeted individual' questions
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models (mean 85.3% vs 42.0%)
+- Models with incomplete coverage (no answer recorded for every question at the time of this aggregation): tencent, copilot
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.
 
