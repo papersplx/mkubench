@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T12:39:37.049932",
+  "generated_at": "2026-10-18T15:31:43.500399",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
@@ -27,7 +27,8 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 1
+      "rank": 1,
+      "author": "Mistral AI"
     },
     {
       "model": "qwen-3.8-max",
@@ -45,7 +46,8 @@
       "original_score": "25/30",
       "failures": 0,
       "status": "complete",
-      "rank": 2
+      "rank": 2,
+      "author": "Alibaba"
     },
     {
       "model": "hy4-preview",
@@ -63,7 +65,8 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 3
+      "rank": 3,
+      "author": "Tencent"
     },
     {
       "model": "poolside/laguna-s-2.1:free",
@@ -115,7 +118,8 @@
       "original_score": "28/30",
       "failures": 0,
       "status": "complete",
-      "rank": 6
+      "rank": 6,
+      "author": "Meta"
     },
     {
       "model": "grok-4.5",
@@ -133,7 +137,8 @@
       "original_score": "25/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7
+      "rank": 7,
+      "author": "xAI"
     },
     {
       "model": "stepfun/step-3.7-flash:free",
@@ -202,7 +207,8 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11
+      "rank": 11,
+      "author": "Anthropic"
     },
     {
       "model": "gpt-5.6",
@@ -220,7 +226,8 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 12
+      "rank": 12,
+      "author": "OpenAI"
     },
     {
       "model": "nex-agi/nex-n2.5-mini:free",
@@ -323,7 +330,8 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 18
+      "rank": 18,
+      "author": "Moonshot AI"
     },
     {
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -409,7 +417,8 @@
       "original_score": "28/30",
       "failures": 0,
       "status": "complete",
-      "rank": 23
+      "rank": 23,
+      "author": "Z.ai"
     },
     {
       "model": "gemini-3.8-flash",
@@ -427,7 +436,8 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 24
+      "rank": 24,
+      "author": "Google"
     },
     {
       "model": "deepseek-ai/deepseek-v4-flash-0731",

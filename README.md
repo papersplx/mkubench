@@ -30,33 +30,33 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 
 | Rank | Model | Provider | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
 |---|---|---|---|---|---|---|---|---|
-| 1 | mistral-medium-3.5 (`mistral`) | Hosten Gateway | 35/40 | 87.5% | **89.2%** | 90.0% | 86.7% | ✓ Complete |
-| 2 | qwen-3.8-max (`qwen`) | Hosten Gateway | 32/40 | 80.0% | 73.1% | 70.0% | 83.3% | ✓ Complete |
-| 3 | hy4-preview (`tencent`) | Hosten Gateway | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✓ Complete |
+| 1 | mistral-medium-3.5 (`mistral`) | Mistral AI | 35/40 | 87.5% | **89.2%** | 90.0% | 86.7% | ✓ Complete |
+| 2 | qwen-3.8-max (`qwen`) | Alibaba | 32/40 | 80.0% | 73.1% | 70.0% | 83.3% | ✓ Complete |
+| 3 | hy4-preview (`tencent`) | Tencent | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✓ Complete |
 | 4 | poolside/laguna-s-2.1:free | KiloCode API | 27/40 | 67.5% | 62.3% | 60.0% | 70.0% | ✓ Complete |
 | 5 | inclusionai/ling-3.0-flash-vl:free | KiloCode API | 27/40 | 67.5% | 62.3% | 60.0% | 70.0% | ✓ Complete |
-| 6 | muse-spark-1.1 (`meta`) | Hosten Gateway | 33/40 | 82.5% | 60.0% | 50.0% | 93.3% | ✓ Complete |
-| 7 | grok-4.5 (`grok`) | Hosten Gateway | 30/40 | 75.0% | 57.7% | 50.0% | 83.3% | ✓ Complete |
+| 6 | muse-spark-1.1 (`meta`) | Meta | 33/40 | 82.5% | 60.0% | 50.0% | 93.3% | ✓ Complete |
+| 7 | grok-4.5 (`grok`) | xAI | 30/40 | 75.0% | 57.7% | 50.0% | 83.3% | ✓ Complete |
 | 8 | stepfun/step-3.7-flash:free | KiloCode API | 28/40 | 70.0% | 56.2% | 50.0% | 76.7% | ✓ Complete |
 | 9 | inclusionai/ling-3.0-flash-fin:free | KiloCode API | 25/40 | 62.5% | 53.8% | 50.0% | 66.7% | ✓ Complete |
 | 10 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 31/40 | 77.5% | 51.5% | 40.0% | 90.0% | ✓ Complete |
-| 11 | claude-sonnet-5 (`claude`) | Hosten Gateway | 30/40 | 75.0% | 50.8% | 40.0% | 86.7% | ✓ Complete |
-| 12 | gpt-5.6 (`copilot`) | Hosten Gateway | 28/40 | 70.0% | 49.2% | 40.0% | 80.0% | ✓ Complete |
+| 11 | claude-sonnet-5 (`claude`) | Anthropic | 30/40 | 75.0% | 50.8% | 40.0% | 86.7% | ✓ Complete |
+| 12 | gpt-5.6 (`copilot`) | OpenAI | 28/40 | 70.0% | 49.2% | 40.0% | 80.0% | ✓ Complete |
 | 13 | nex-agi/nex-n2.5-mini:free | KiloCode API | 27/40 | 67.5% | 48.5% | 40.0% | 76.7% | ✓ Complete |
 | 14 | inclusionai/ling-3.0-flash-sante:free | KiloCode API | 26/40 | 65.0% | 47.7% | 40.0% | 73.3% | ✓ Complete |
 | 15 | gemini-3.5-flash-lite | Google AI Studio | 26/40 | 65.0% | 47.7% | 40.0% | 73.3% | ✓ Complete |
 | 16 | meta/muse-glimmer-30b | NVIDIA NIM | 25/40 | 62.5% | 46.9% | 40.0% | 70.0% | ✓ Complete |
 | 17 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 22/40 | 55.0% | 44.6% | 40.0% | 60.0% | ✓ Complete |
-| 18 | kimi-k3 (`kimi`) | Hosten Gateway | 29/40 | 72.5% | 43.1% | 30.0% | 86.7% | ✓ Complete |
+| 18 | kimi-k3 (`kimi`) | Moonshot AI | 29/40 | 72.5% | 43.1% | 30.0% | 86.7% | ✓ Complete |
 | 19 | liquid/lfm-2.5-2.6b:free | KiloCode API | 19/40 | 47.5% | 42.3% | 40.0% | 50.0% | ✓ Complete |
 | 20 | nex-agi/nex-n2.5-pro:free | KiloCode API | 25/40 | 62.5% | 40.0% | 30.0% | 73.3% | ✓ Complete |
 | 21 | dots-studio/dots-3-note-preview:free | KiloCode API | 24/40 | 60.0% | 39.2% | 30.0% | 70.0% | ✓ Complete |
 | 22 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM | 23/40 | 57.5% | 38.5% | 30.0% | 66.7% | ✓ Complete |
-| 23 | glm-5.3-flash (`zai`) | Hosten Gateway | 29/40 | 72.5% | 29.2% | 10.0% | 93.3% | ✓ Complete |
-| 24 | gemini-3.8-flash (`google`) | Hosten Gateway | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
+| 23 | glm-5.3-flash (`zai`) | Z.ai | 29/40 | 72.5% | 29.2% | 10.0% | 93.3% | ✓ Complete |
+| 24 | gemini-3.8-flash (`google`) | Google | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
 | 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM | 21/40 | 52.5% | 16.2% | 0.0% | 70.0% | ◐ Partial |
 
-Providers tested: **Hosten Gateway** (`http://localhost:8079/v1` - 10 endpoint IDs, each routing to an underlying model, shown in the Model column), **KiloCode API** (11 models), **Google AI Studio** (3 models), **NVIDIA NIM** (12 models). Models that failed (404/timeout/rate-limited) are excluded from this table; per-provider details, failure breakdown and the weighted histogram are in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).
+Providers column: for the 10 models reached through the **Hosten gateway** (`http://localhost:8079/v1` - endpoint IDs in the Model column) it shows the **model author**; for the rest it shows the API that served the run (**KiloCode API**, **Google AI Studio**, **NVIDIA NIM**). Models that failed (404/timeout/rate-limited) are excluded from this table; access-path details, failure breakdown and the weighted histogram are in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).
 
 **Key observations:**
 - **mistral-medium-3.5** (Hosten endpoint `mistral`) is the top performer (87.5% overall, 89.2% weighted, 35/40 correct)
