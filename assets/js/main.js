@@ -145,6 +145,12 @@ function providerLabel(provider) {
   return providerName(provider).toLowerCase().replace(/[^a-z]/g, '');
 }
 
+// Provider column: for models reached through the Hosten gateway (which carry an
+// "author" field) show the model author; otherwise show the access path name.
+function entryProviderLabel(entry) {
+  return entry.author || providerName(entry.provider);
+}
+
 function renderLeaderboard(entries) {
   const tbody = document.querySelector('#leaderboard-table tbody');
   tbody.innerHTML = '';
@@ -165,7 +171,7 @@ function renderLeaderboard(entries) {
     row.innerHTML =
       '<td>' + rankHtml + '</td>' +
       '<td>' + entry.model + '</td>' +
-      '<td><span class="provider-badge provider-' + providerLabel(entry.provider) + '">' + providerName(entry.provider) + '</span></td>' +
+      '<td><span class="provider-badge provider-' + providerLabel(entry.provider) + '">' + entryProviderLabel(entry) + '</span></td>' +
       '<td><strong>' + entry.weighted_accuracy.toFixed(1) + '%</strong></td>' +
       '<td>' + entry.user_generated_accuracy.toFixed(1) + '%</td>' +
       '<td>' + entry.original_accuracy.toFixed(1) + '%</td>';
@@ -207,17 +213,20 @@ function renderProviderBreakdown(entries) {
 
   const providers = {};
   entries.filter(e => e.status !== 'failed').forEach(entry => {
-    if (!providers[entry.provider]) {
-      providers[entry.provider] = [];
+    // Hosten models are grouped by author, external runs by access path.
+    const key = entry.author || entry.provider;
+    if (!providers[key]) {
+      providers[key] = [];
     }
-    providers[entry.provider].push(entry);
+    providers[key].push(entry);
   });
 
   for (const [provider, models] of Object.entries(providers)) {
     const card = document.createElement('div');
     card.className = 'card';
+    const title = entryProviderLabel(models[0]) || provider;
     card.innerHTML =
-      '<h3>' + providerName(provider) + ' (' + models.length + ' models)</h3>' +
+      '<h3>' + title + ' (' + models.length + (models.length === 1 ? ' model' : ' models') + ')</h3>' +
       '<table><thead><tr><th>Model</th><th>Weighted</th><th>Q31-Q40</th><th>Q1-Q30</th></tr></thead><tbody></tbody></table>';
     const tbody = card.querySelector('tbody');
     models.sort((a, b) => b.weighted_accuracy - a.weighted_accuracy).forEach(m => {
