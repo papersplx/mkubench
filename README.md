@@ -28,6 +28,8 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 
 40 questions; user-added Q31-Q40 weighted 1.0, original Q1-Q30 weighted 0.1 (13.0 weighted points possible). Both the Hosten gateway endpoints and the external API providers are scored on the same fixed dataset, so they are ranked together in one table:
 
+**Dataset v2.0 (2026-10-18):** the Q31-Q40 distractors were rewritten to remove stylistic tells (caricature options, length/register mismatches) and Q37's self-answering option D was fixed, so the user-generated block now tests reasoning rather than option-craft detection; keys and weights are unchanged. The Hosten rows below are re-run results on dataset v2.0; the external-provider rows (KiloCode / Google AI Studio / NVIDIA NIM) were scored on dataset v1.0 and are marked accordingly in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).
+
 | Rank | Model | Provider | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | mistral-medium-3.5 (`mistral`) | Mistral AI | 35/40 | 87.5% | **89.2%** | 90.0% | 86.7% | ✓ Complete |

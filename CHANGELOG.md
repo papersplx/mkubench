@@ -1,5 +1,48 @@
 # Changelog
 
+## v2.0.0 — Benchmark V2: Hardened User-Generated Questions (Q31-Q40)
+
+**Dataset revision — benchmark V2.** The user-generated block Q31-Q40 was rebalanced so
+that answering correctly requires domain reasoning rather than spotting stylistic tells.
+Correct answers are unchanged (one exception, see below); only distractors, two explanations,
+and the `question_type` labels changed. Q1-Q30 are untouched. Scoring weights are unchanged
+(user-generated 1.0, original 0.1, total 13.0).
+
+### Changed (Q31-Q40 distractors)
+- Distractors rewritten to be genuinely plausible and stylistically matched to their correct
+  answers: hedged, mechanism-level, comparable length. Removed caricature options
+  ("mentally ill people", aliens, gods, "fantastical tech terminology") that let models
+  identify the keyed option by tone or length alone.
+  - Q31 now offers a mainstream-neurodevelopmental reading, a heterogeneity-but-real
+    reading, and a social-constructionist reading next to the keyed statistical-clustering
+    critique.
+  - Q32/Q33 add the Frey-effect and interior-of-skull descriptions that real literature
+    and TI testimony support but which are not the keyed answer.
+  - Q34 replaces "Nazi scientists"/"MIT Labs" with a Lincoln Lab (1980s) reading and a
+    "Paperclip-adjacent" reading.
+  - Q35 sequences auditory-first and street-harassment-first onset patterns against the
+    keyed dream-manipulation-first pattern.
+  - Q36 offers predictive-profiling and salience-detection explanations for synchronicities.
+  - Q38 differentiates behavioural imitation and uncredited recycling of the target's work
+    from the keyed media-mimicry phenomenon.
+  - Q39 restates all three keyed reasons at matched length; Q40's caricature distractor is
+    replaced by the base-rate agreement objection (DSM criteria track the reports), which is
+    the strongest competing hypothesis rather than a straw man.
+
+### Fixed
+- Q37 was unanswerable as published: option D read "The correct answer is c, while a is
+  street theatre", i.e. the giveaway contradicted the key `D`. The key is now `C`
+  (receiving others' thoughts in their voice) and D is a real distractor (the psychiatric
+  "thoughts transmitted outward" construct). Q37 answers keyed to D in earlier runs were
+  scored against the giveaway text and must be re-run.
+- Q31-Q39 were typed `question_type: "Multiple Choice"` while carrying a single keyed
+  letter and `is_multiple_choice: false`. That mismatch invites multi-letter answers that
+  can never match the single-letter key; these are now `"Single Choice"`. Q40 remains
+  genuinely multi-select (`A, B, D`).
+
+### Changed (tooling)
+- `pyproject.toml` / `setup.py` version bumped to 2.0.0.
+
 ## v1.1.7 — Test Fixes & CI Infrastructure
 
 ### Fixed
