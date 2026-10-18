@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T08:39:19.296147",
+  "generated_at": "2026-10-18T12:09:26.437216",
   "summary": {
     "total_models_tested": 36,
-    "models_with_complete_results": 22,
-    "average_weighted_accuracy": 50.5,
+    "models_with_complete_results": 23,
+    "average_weighted_accuracy": 50.4,
     "average_overall_accuracy": 68.0,
-    "average_user_generated_accuracy": 42.7,
-    "average_original_accuracy": 76.4,
+    "average_user_generated_accuracy": 42.6,
+    "average_original_accuracy": 76.5,
     "best_model": "mistral-medium-3.5",
     "best_weighted_accuracy": 89.2
   },
@@ -205,6 +205,24 @@
       "rank": 11
     },
     {
+      "model": "gpt-5.6",
+      "endpoint_id": "copilot",
+      "provider": "hosten",
+      "weighted_accuracy": 49.2,
+      "overall_accuracy": 70.0,
+      "correct": 28,
+      "total": 40,
+      "weighted_score": 6.4,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 40.0,
+      "user_generated_score": "4/10",
+      "original_accuracy": 80.0,
+      "original_score": "24/30",
+      "failures": 0,
+      "status": "complete",
+      "rank": 12
+    },
+    {
       "model": "nex-agi/nex-n2.5-mini:free",
       "provider": "kilocode",
       "weighted_accuracy": 48.5,
@@ -219,7 +237,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 12
+      "rank": 13
     },
     {
       "model": "inclusionai/ling-3.0-flash-sante:free",
@@ -236,7 +254,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13
+      "rank": 14
     },
     {
       "model": "gemini-3.5-flash-lite",
@@ -253,7 +271,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 14
+      "rank": 15
     },
     {
       "model": "meta/muse-glimmer-30b",
@@ -270,7 +288,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 15
+      "rank": 16
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -287,7 +305,7 @@
       "original_score": "18/30",
       "failures": 0,
       "status": "complete",
-      "rank": 16
+      "rank": 17
     },
     {
       "model": "kimi-k3",
@@ -305,7 +323,7 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 17
+      "rank": 18
     },
     {
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -322,7 +340,7 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 18
+      "rank": 19
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -339,7 +357,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 19
+      "rank": 20
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -356,7 +374,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 20
+      "rank": 21
     },
     {
       "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -373,7 +391,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 21
+      "rank": 22
     },
     {
       "model": "glm-5.3-flash",
@@ -391,7 +409,7 @@
       "original_score": "28/30",
       "failures": 0,
       "status": "complete",
-      "rank": 22
+      "rank": 23
     },
     {
       "model": "gemini-3.8-flash",
@@ -409,24 +427,6 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 23
-    },
-    {
-      "model": "gpt-5.6",
-      "endpoint_id": "copilot",
-      "provider": "hosten",
-      "weighted_accuracy": 26.2,
-      "overall_accuracy": 62.5,
-      "correct": 25,
-      "total": 40,
-      "weighted_score": 3.4,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 10.0,
-      "user_generated_score": "1/10",
-      "original_accuracy": 80.0,
-      "original_score": "24/30",
-      "failures": 0,
-      "status": "partial",
       "rank": 24
     },
     {
