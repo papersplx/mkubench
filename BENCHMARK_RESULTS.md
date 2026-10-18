@@ -136,14 +136,13 @@ The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each ro
 | `kimi` | kimi-k3 | 29/40 | 72.5% | 43.1% | 30.0% | 86.7% | ✓ Complete |
 | `zai` | glm-5.3-flash | 29/40 | 72.5% | 29.2% | 10.0% | 93.3% | ✓ Complete |
 | `grok` | grok-4.5 | 30/40 | 75.0% | 57.7% | 50.0% | 83.3% | ✓ Complete |
-| `tencent` | hy4-preview | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✗ Incomplete |
+| `tencent` | hy4-preview | 31/40 | 77.5% | 72.3% | 70.0% | 80.0% | ✓ Complete |
 | `google` | gemini-3.8-flash | 25/40 | 62.5% | 26.2% | 10.0% | 80.0% | ✓ Complete |
 | `copilot` | gpt-5.6 | 28/40 | 70.0% | 49.2% | 40.0% | 80.0% | ✓ Complete |
 
 **Key observations:**
 - **mistral-medium-3.5** (mistral) is the top performer (87.5% overall, 89.2% weighted, 35/40 correct)
 - Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models (mean 85.3% vs 46.0%)
-- Models with incomplete coverage (no answer recorded for every question at the time of this aggregation): tencent
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.
 

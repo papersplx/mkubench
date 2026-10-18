@@ -70,7 +70,6 @@ The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each ro
 **Key observations:**
 - **mistral-medium-3.5** (mistral) is the top performer (87.5% overall, 89.2% weighted, 35/40 correct)
 - Q1-Q30 accuracy is consistently higher than Q31-Q40 across all models (mean 85.3% vs 46.0%)
-- Models with incomplete coverage (no answer recorded for every question at the time of this aggregation): tencent
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.
 

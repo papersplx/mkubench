@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T12:09:26.437216",
+  "generated_at": "2026-10-18T12:39:37.049932",
   "summary": {
     "total_models_tested": 36,
-    "models_with_complete_results": 23,
-    "average_weighted_accuracy": 50.4,
-    "average_overall_accuracy": 68.0,
-    "average_user_generated_accuracy": 42.6,
-    "average_original_accuracy": 76.5,
+    "models_with_complete_results": 24,
+    "average_weighted_accuracy": 51.3,
+    "average_overall_accuracy": 68.4,
+    "average_user_generated_accuracy": 43.8,
+    "average_original_accuracy": 76.7,
     "best_model": "mistral-medium-3.5",
     "best_weighted_accuracy": 89.2
   },
@@ -62,7 +62,7 @@
       "original_accuracy": 80.0,
       "original_score": "24/30",
       "failures": 0,
-      "status": "partial",
+      "status": "complete",
       "rank": 3
     },
     {
