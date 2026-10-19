@@ -16,10 +16,13 @@ export SBSLLM_BROWSER_LOCK_TIMEOUT=3000
 # Fresh tabs need a settle window before they accept input, else NO_MARKED_INPUT.
 export SETTLE_AFTER_RESTART="${SETTLE_AFTER_RESTART:-90}"
 
-# Kill any previous gateway (bracketed regex so this script never self-matches).
-for pat in 'sbsllm_serve[r]' 'restart_gatewa[y]' 'sbsllm_serve[r].py' 'recover.p[y]' 'recover_su[p]'; do
-  pkill -f "$pat" 2>/dev/null
-done
+# Kill any previous gateway WITHOUT self-matching. `pkill -f` matches the full
+# cmdline, and this script's own cmdline is "bash .../restart_gateway.sh", so a
+# pattern containing the literal "restart_gateway" would SIGTERM the script
+# itself before it ever reached the launch below (the bracket trick only stops
+# pkill matching its own pkill process, not the parent script). Kill by the
+# server's script name only.
+pkill -f 'sbsllm_serve[r]' 2>/dev/null
 sleep 2
 
 nohup setsid /usr/bin/python3 "$HERE/sbsllm_server.py" >> "$LOG" 2>&1 &

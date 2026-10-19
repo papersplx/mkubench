@@ -59,10 +59,11 @@ BLOCKED_REASONS = {
                "submit; requires a human solve",
     "kimi": "site rate-limited ('too many people are chatting'); throttling window",
     "mistral": "account message-limit window (~19h remaining after 2026-10-18 21:30)",
-    "zai": "extractors match the user bubble, so captured 'answers' are the question "
-            "text; needs a reply that looks like an assistant turn",
+    "tencent": "site answers only after a long deep-thinking pass; the tab wedges "
+              "mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete "
+              "40-question run could be produced",
     "grok": "site 'under heavy usage' rate-limit bubble; ~19h message limit after "
-             "2026-10-18 22:51, so no further attempts possible tonight",
+            "2026-10-18 22:51, so no further attempts possible tonight",
 }
 
 AUTHORS = {
@@ -130,7 +131,19 @@ def main():
     v2_ids = set()
     for _path in sorted(glob.glob(os.path.join(RESULTS_DIR, "results_*.json"))):
         _m = _fname_re.match(os.path.basename(_path))
-        if _m and _m.group("det"):
+        if not (_m and _m.group("det")):
+            continue
+        # Only a fully-answered run counts as a v2.0 re-run. A run whose rows
+        # are all blank means the site itself refused (rate-limit, dead tab,
+        # signed out), so the endpoint keeps its v1.0 row and stays on the
+        # blocked list. Publishing it would fabricate a 0.0% score.
+        try:
+            _res = json.load(open(_path)).get("results") or []
+        except Exception:
+            continue
+        if len(_res) >= len(questions) and all(
+            r.get("model_response") for r in _res
+        ):
             v2_ids.add(_m.group("model"))
 
     non_hosten = [
@@ -163,6 +176,20 @@ def main():
         results = data.get("results") or []
         if not results:
             skipped.append(f"{model_id}: no per-question results")
+            continue
+        # A hosten run is only publishable when every question was answered.
+        # A blocked site writes 40 blank rows, which would otherwise publish a
+        # false 0.0% row and displace the endpoint's v1.0 score; same rule as
+        # v2_valid.py. Non-hosten files keep the permissive path.
+        if model_id in hosten_ids and (
+            len(results) < len(questions)
+            or not all(r.get("model_response") for r in results)
+        ):
+            blank = sum(1 for r in results if not r.get("model_response"))
+            skipped.append(
+                f"{model_id}: {len(results)}/{len(questions)} questions, "
+                f"{blank} blank responses - treated as not re-run"
+            )
             continue
         by_res_id = {r["id"]: r for r in results}
         answered = [r for r in results if r.get("parsed_answer") is not None or r.get("model_response")]
@@ -380,24 +407,22 @@ def refresh_docs(out, hosten, questions):
             key=lambda x: x["weighted_accuracy"],
             default=None,
         )
-        hosten_lead = best_external_v1 is None or (
-            best["weighted_accuracy"] > best_external_v1["weighted_accuracy"]
+        ext_best = (
+            best_external_v1["weighted_accuracy"] if best_external_v1 else None
         )
-        if len(top3) >= 3 and hosten_lead:
+        # The top-3 claim must hold for EVERY one of those rows, not just the
+        # leader: comparing a single 3-endpoint list against the best external
+        # row hides that the other two sit far below it.
+        top3_lead = ext_best is None or all(
+            e["weighted_accuracy"] > ext_best for e in top3
+        )
+        if len(top3) >= 3 and top3_lead:
             obs.append(
                 "- The top 3 weighted hosten endpoints are "
                 + ", ".join(f"`{e['endpoint_id']}`" for e in top3)
                 + " - all ahead of every external API model (whose rows are v1.0-scored)"
             )
-        elif best_external_v1 is not None:
-            obs.append(
-                f"- The best dataset {DATASET_VERSION} hosten row (`{best['endpoint_id']}`, "
-                f"{best['weighted_accuracy']}% weighted) is below the best v1.0 external API "
-                f"row (`{best_external_v1['model']}`, "
-                f"{best_external_v1['weighted_accuracy']}% weighted); the two are scored on "
-                "different dataset versions and are not directly comparable"
-            )
-        else:
+        elif ext_best is None:
             obs.append(
                 f"- {len(hosten_complete)} hosten endpoint(s) scored so far on dataset "
                 f"{DATASET_VERSION}: "
@@ -406,6 +431,27 @@ def refresh_docs(out, hosten, questions):
                     for e in hosten_complete
                 )
                 + "; external rows are v1.0-scored and not directly comparable"
+            )
+        elif best["weighted_accuracy"] > ext_best:
+            # The leader is ahead of every external row but the rest of the top 3
+            # are not: say exactly that instead of claiming all three lead.
+            not_ahead = [e for e in top3 if e["weighted_accuracy"] <= ext_best]
+            obs.append(
+                f"- `{best['endpoint_id']}` ({best['weighted_accuracy']}% weighted) is ahead "
+                f"of the best v1.0 external API row (`{best_external_v1['model']}`, "
+                f"{ext_best}%), but the other top-3 hosten rows ("
+                + ", ".join(
+                    f"`{e['endpoint_id']}` {e['weighted_accuracy']}%" for e in not_ahead
+                )
+                + ") are not; the two are scored on different dataset versions and are not "
+                "directly comparable"
+            )
+        else:
+            obs.append(
+                f"- The best dataset {DATASET_VERSION} hosten row (`{best['endpoint_id']}`, "
+                f"{best['weighted_accuracy']}% weighted) is below the best v1.0 external API "
+                f"row (`{best_external_v1['model']}`, {ext_best}% weighted); the two are scored "
+                "on different dataset versions and are not directly comparable"
             )
     obs.append(
         f"- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models "
@@ -511,6 +557,64 @@ def refresh_docs(out, hosten, questions):
         "Per-question answers are in `results/hosten_v2/results_<endpoint>_<timestamp>_detailed.json` "
         "(dataset v2.0); the v1.0 extraction remains in `results/hosten/recovered_answers.jsonl`.",
     )
+
+    # ---------------------------------------------------- NOT RE-RUN SECTION
+    # This prose and its table are hand-written outside the generated regions
+    # above, so they drifted out of sync (they once said "Seven of the ten" and
+    # still listed the now-fixed `zai` extractor problem as a block). Derive
+    # them from `blocked`/`blocked_detail` so they track the real run set.
+    blocked = list(s["hosten_endpoints_not_rerun"])
+    blocked_detail = out["dataset_versions"]["not_rerun_hosten_endpoints"]
+    if blocked:
+        det_rows = [
+            (b, blocked_detail.get(b, {}))
+            for b in blocked
+            if blocked_detail.get(b)
+        ]
+        not_rerun_body = (
+            f"{len(det_rows)} of the {len(hosten)} Hosten endpoints could not be re-run: "
+            "the sites blocked automated access. Their v1.0 rows are retained in the "
+            "leaderboard (marked **(v1.0)** and `v1_only`) for continuity only and must "
+            "not be read as v2.0 performance.\n\n"
+            "| Endpoint | Model | Why not re-run |\n"
+            "|----------|-------|----------------|\n"
+            + "\n".join(
+                f"| `{b}` | {det.get('model', '?')} | {det.get('reason', '')} |"
+                for b, det in det_rows
+            )
+        )
+    else:
+        not_rerun_body = (
+            f"All {len(hosten)} Hosten endpoints were re-run on dataset "
+            f"{DATASET_VERSION}, so no v1.0 rows are carried forward."
+        )
+    brd = replace_between(
+        brd,
+        "### Endpoints NOT re-run on dataset v2.0",
+        "## Providers Tested",
+        "### Endpoints NOT re-run on dataset v2.0\n\n" + not_rerun_body + "\n\n",
+    )
+
+    # ------------------------------------------------------- PROVIDERS TESTED
+    # Same drift problem for the Hosten Gateway bullet ("3 complete ... 7
+    # blocked" was stale). Rebuild it from the run set.
+    complete_hosten = list(hosten_complete)
+    authors = len({e.get("author", "") for e in hosten if e.get("author")})
+    hosten_bullet = (
+        "- **Hosten Gateway** (`http://localhost:8079/v1`) - access path for "
+        f"{len(hosten)} endpoint IDs from {authors} different model authors; "
+        f"**{len(complete_hosten)} complete on dataset {DATASET_VERSION}** "
+        f"({', '.join(sorted(e['endpoint_id'] for e in complete_hosten))})"
+        + (f", {len(blocked)} blocked by the sites (see table above)"
+           if blocked else ", none blocked")
+    )
+    brd = replace_between(
+        brd,
+        "- **Hosten Gateway**",
+        "- **KiloCode API**",
+        hosten_bullet + "\n",
+    )
+
     open("BENCHMARK_RESULTS.md", "w").write(brd)
     print("docs refreshed: README.md, BENCHMARK_RESULTS.md")
 
