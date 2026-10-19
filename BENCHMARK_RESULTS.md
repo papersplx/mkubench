@@ -6,10 +6,10 @@
 |--------|-------|
 | Total models tested | 36 (3 hosten on dataset 2.0, 14 external on v1.0) |
 | Hosten endpoints complete (dataset 2.0) | 3/10 |
-| Hosten average weighted accuracy | **28.2%** |
-| Hosten average overall accuracy | 69.2% |
+| Hosten average weighted accuracy | **28.0%** |
+| Hosten average overall accuracy | 68.3% |
 | Hosten average on user-generated questions (Q31-Q40) | 10.0% |
-| Hosten average on original questions (Q1-Q30) | 88.9% |
+| Hosten average on original questions (Q1-Q30) | 87.8% |
 | External providers average weighted accuracy (dataset v1.0) | 48.7% |
 | External providers average user-gen / original (v1.0) | 42.1% / 70.5% |
 | Best hosten weighted score (dataset 2.0) | qwen-3.8-max (34.6%) |
@@ -44,7 +44,7 @@
 | 19 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
 | 20 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
 | 21 | glm-5.3-flash (`zai`) | Z.ai (v1.0) | 29/40 | 72.5% | **29.2%** | 10.0% | 93.3% | ✓ Complete |
-| 22 | muse-spark-1.1 (`meta`) | Meta | 29/40 | 72.5% | **29.2%** | 10.0% | 93.3% | ✓ Complete |
+| 22 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
 | 23 | gemini-3.8-flash (`google`) | Google (v1.0) | 25/40 | 62.5% | **26.2%** | 10.0% | 80.0% | ✓ Complete |
 | 24 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
 | 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
@@ -75,7 +75,7 @@ dots-studio/dots-3-note: ██████████████████�
 nvidia/nemotron-3-super: ███████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  38.5%
 qwen-3.8-max             █████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  34.6%
 glm-5.3-flash            ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  29.2%
-muse-spark-1.1           ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  29.2%
+muse-spark-1.1           ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  28.5%
 gemini-3.8-flash         █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  26.2%
 claude-sonnet-5          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20.8%
 deepseek-ai/deepseek-v4: ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  16.2%
@@ -116,9 +116,9 @@ Excluded from the leaderboard; kept here for reproducibility of the gaps.
 
 ## Key Findings
 
-- **Dataset v2.0 hardening worked as intended.** On the v2.0 rewrite of Q31-Q40 (style-matched distractors, Q37 key fixed, no self-answering options), accuracy on Q31-Q40 collapsed from 43.8% (v1.0, 36 models) to **10.0%**; only 3 of the 10 questions were answered correctly across the three re-run Hosten endpoints (3/30 combined).
-- **Q1-Q30 accuracy held up**: v2.0 Hosten endpoints average **88.9%** on the original set (vs 76.7% on v1.0), so the drop is specific to the user-generated block, not a general model failure.
-- **Only 3 of 10 Hosten endpoints could be re-run on v2.0.** `qwen` (34.6% weighted, 2/10 on Q31-Q40), `meta` (21.5%, 0/10) and `claude` (20.8%, 0/10) completed; the other 7 were blocked by the sites (see Hosten Gateway Results below).
+- **Dataset v2.0 hardening worked as intended.** On the v2.0 rewrite of Q31-Q40 (style-matched distractors, Q37 key fixed, no self-answering options), accuracy on Q31-Q40 collapsed from 43.8% (v1.0, 36 models) to **10.0%**; only 3 of 30 question-instances across the three re-run Hosten endpoints were answered correctly, covering just 2 distinct questions (Q32 and Q39).
+- **Q1-Q30 accuracy held up**: v2.0 Hosten endpoints average **87.8%** on the original set, unchanged from the 87.8% those same three endpoints scored on v1.0 (reconstructed from `results/hosten/recovered_answers.jsonl`), so the drop is specific to the user-generated block, not a general model failure.
+- **Only 3 of 10 Hosten endpoints could be re-run on v2.0.** `qwen` (34.6% weighted, 2/10 on Q31-Q40), `meta` (28.5%, 1/10) and `claude` (20.8%, 0/10) completed; the other 7 were blocked by the sites (see Hosten Gateway Results below).
 - The best v2.0 Hosten row (`qwen`, 34.6% weighted) is below the best v1.0 external API row (`inclusionai/ling-3.0-flash-vl:free`, 62.3% weighted). The two are scored on **different dataset versions** and are not directly comparable; the v1.0 rows are kept for continuity only.
 - **The Hosten rows above marked (v1.0) are v1.0 scores.** They are the wrong reference for Q31-Q40: distractors, the Q37 key and therefore question difficulty have all changed.
 - No Hosten endpoint reached Q31-Q40 through option-craft detection on v2.0, which is the point of the rewrite.
