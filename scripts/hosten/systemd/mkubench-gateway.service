@@ -1,0 +1,22 @@
+[Unit]
+Description=mkubench Hosten gateway (sbsllm wrapper with benchmark timeouts)
+After=graphical-session.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=PYTHONUNBUFFERED=1
+Environment=SBSLLM_FIRST_TOKEN_TIMEOUT=1800
+Environment=SBSLLM_BUSY_PATIENCE=600
+Environment=SBSLLM_BROWSER_TIMEOUT=3000
+Environment=SBSLLM_BROWSER_LOCK_TIMEOUT=3000
+Environment=SETTLE_AFTER_RESTART=90
+ExecStart=/usr/bin/python3 /var/home/fra/dev/mkubench/scripts/hosten/sbsllm_server.py
+Restart=no
+StandardOutput=append:/var/home/fra/dev/mkubench/results/logs/sbsllm.log
+StandardError=append:/var/home/fra/dev/mkubench/results/logs/sbsllm.log
+
+[Install]
+WantedBy=default.target

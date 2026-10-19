@@ -1,0 +1,17 @@
+[Unit]
+Description=mkubench V2 single-model run (%i)
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/home/fra/dev/mkubench
+Environment=DISPLAY=:0
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+ExecStart=/bin/bash /var/home/fra/dev/mkubench/scripts/hosten/run_one_v2.sh %i
+StandardOutput=append:/var/home/fra/dev/mkubench/results/logs/mkubench-run-%i.log
+StandardError=append:/var/home/fra/dev/mkubench/results/logs/mkubench-run-%i.log
+Restart=no
+
+[Install]
+WantedBy=default.target
