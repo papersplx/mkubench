@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T13:58:35.791896",
+  "generated_at": "2026-10-19T18:49:27.474392",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
@@ -724,7 +724,7 @@
         "status": "complete",
         "v1_weighted_accuracy": 89.2,
         "v1_user_generated_score": "9/10",
-        "reason": "account message-limit window (~19h remaining after 2026-10-18 21:30)"
+        "reason": "single-tab run started after the account message-limit window cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab cannot answer chat completions; session/login-gated), so no complete 40-question run could be produced"
       },
       "tencent": {
         "model": "hy4-preview",
@@ -738,7 +738,7 @@
         "status": "complete",
         "v1_weighted_accuracy": 57.7,
         "v1_user_generated_score": "5/10",
-        "reason": "site 'under heavy usage' rate-limit bubble; ~19h message limit after 2026-10-18 22:51, so no further attempts possible tonight"
+        "reason": "single-tab run started after the 'under heavy usage' rate-limit window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s with zero response (same session/login-gated wedge as mistral/tencent), so no complete 40-question run could be produced"
       },
       "copilot": {
         "model": "gpt-5.6",

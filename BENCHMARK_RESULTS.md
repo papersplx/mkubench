@@ -150,9 +150,9 @@ Per-question answers are in `results/hosten_v2/results_<endpoint>_<timestamp>_de
 |----------|-------|----------------|
 | `copilot` | gpt-5.6 | Cloudflare Turnstile 'Verification required' modal re-arms on every submit; requires a human solve |
 | `google` | gemini-3.8-flash | site signed the account out; requires an interactive Google login in the Chromium window (automation not possible) |
-| `grok` | grok-4.5 | site 'under heavy usage' rate-limit bubble; ~19h message limit after 2026-10-18 22:51, so no further attempts possible tonight |
+| `grok` | grok-4.5 | single-tab run started after the 'under heavy usage' rate-limit window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s with zero response (same session/login-gated wedge as mistral/tencent), so no complete 40-question run could be produced |
 | `kimi` | kimi-k3 | site rate-limited ('too many people are chatting'); throttling window |
-| `mistral` | mistral-medium-3.5 | account message-limit window (~19h remaining after 2026-10-18 21:30) |
+| `mistral` | mistral-medium-3.5 | single-tab run started after the account message-limit window cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab cannot answer chat completions; session/login-gated), so no complete 40-question run could be produced |
 | `tencent` | hy4-preview | site answers only after a long deep-thinking pass; the tab wedges mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete 40-question run could be produced |
 
 ## Providers Tested

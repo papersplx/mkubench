@@ -58,12 +58,17 @@ BLOCKED_REASONS = {
     "copilot": "Cloudflare Turnstile 'Verification required' modal re-arms on every "
                "submit; requires a human solve",
     "kimi": "site rate-limited ('too many people are chatting'); throttling window",
-    "mistral": "account message-limit window (~19h remaining after 2026-10-18 21:30)",
+    "mistral": "single-tab run started after the account message-limit window "
+              "cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab "
+              "cannot answer chat completions; session/login-gated), so no "
+              "complete 40-question run could be produced",
     "tencent": "site answers only after a long deep-thinking pass; the tab wedges "
               "mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete "
               "40-question run could be produced",
-    "grok": "site 'under heavy usage' rate-limit bubble; ~19h message limit after "
-            "2026-10-18 22:51, so no further attempts possible tonight",
+    "grok": "single-tab run started after the 'under heavy usage' rate-limit "
+            "window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s "
+            "with zero response (same session/login-gated wedge as mistral/"
+            "tencent), so no complete 40-question run could be produced",
 }
 
 AUTHORS = {
