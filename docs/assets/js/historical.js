@@ -64,8 +64,12 @@ function renderSummary(hist, currentVersion, entries) {
     var sum = complete.reduce(function(acc, e) { return acc + (e[key] || 0); }, 0);
     return pct(sum / complete.length);
   };
-  set('hist-avg-weighted', avg('weighted_accuracy'));
-  set('hist-avg-overall', avg('overall_accuracy'));
+  // Prefer the aggregator's numbers so the page and the published JSON agree;
+  // fall back to a local average when the block is missing.
+  set('hist-avg-weighted', hist.average_weighted_accuracy != null
+    ? pct(hist.average_weighted_accuracy) : avg('weighted_accuracy'));
+  set('hist-avg-overall', hist.average_overall_accuracy != null
+    ? pct(hist.average_overall_accuracy) : avg('overall_accuracy'));
 }
 
 function renderLeaderboard(entries) {

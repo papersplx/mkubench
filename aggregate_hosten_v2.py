@@ -22,6 +22,10 @@ from datetime import datetime
 
 DATASET_PATH = "dataset/mkultra_benchmark.jsonl"
 RESULTS_DIR = "results/hosten_v2"
+# External API models (KiloCode, NVIDIA NIM, Google AI Studio) re-run against
+# the current dataset. Their v1.0 rows are replaced when the re-run produced
+# answers, and kept when the provider could not answer at all.
+EXTERNAL_RESULTS_DIR = "results/all_models_benchmarks_v2"
 OUTPUT_PATH = "leaderboard.json"
 DOCS_PATH = "docs/assets/data/leaderboard.json"
 DATASET_VERSION = "2.0"
@@ -108,6 +112,140 @@ def histogram_row(name, value, width=52):
     return f"{label} {'█' * filled}{'░' * (width - filled)}  {value}%"
 
 
+def load_external_v2(questions, user_ids, orig_ids, weighted_possible, existing=None):
+    """Rebuild the leaderboard rows for the external API models that were
+    re-run on the current dataset.
+
+    A re-run that produced no answers at all is not a score: that model keeps
+    its v1.0 row (and stays on the historical page). A re-run with answers
+    replaces the v1.0 row, because the two are not comparable.
+
+    Returns (entries, not_rerun) where not_rerun describes the models whose
+    re-run came back empty - the free-tier catalogues rotate, so a model that
+    scored on v1.0 can simply no longer be served.
+    """
+    entries = []
+    not_rerun = []
+    v1_by_model = {}
+    for e in existing or []:
+        if e.get("endpoint_id") is None:
+            v1_by_model[(e["model"], e.get("provider"))] = e
+    for path in sorted(glob.glob(os.path.join(EXTERNAL_RESULTS_DIR, "*.json"))):
+        base = os.path.basename(path)
+        if base == "combined.json":
+            continue
+        try:
+            with open(path) as fh:
+                data = json.load(fh)
+        except Exception:
+            continue
+        results = data.get("results") or []
+        model = data.get("model")
+        provider = data.get("provider")
+        if not results or not model or not provider:
+            continue
+        answered = sum(1 for r in results if r.get("parsed_answer") is not None)
+        if answered == 0:
+            old = v1_by_model.get((model, provider))
+            not_rerun.append({
+                "endpoint": model,
+                "model": model,
+                "provider": provider,
+                "v1_weighted_accuracy": old.get("weighted_accuracy") if old else None,
+                "reason": "provider returned no answers on the re-run "
+                "(the free-tier catalogue may no longer serve this model)",
+            })
+            continue
+        correct = sum(1 for r in results if r.get("is_correct"))
+        weighted_correct = sum(
+            r.get("weight", 0.0) for r in results if r.get("is_correct")
+        )
+        user_total = sum(1 for r in results if r.get("id") in user_ids)
+        user_correct = sum(
+            1 for r in results if r.get("id") in user_ids and r.get("is_correct")
+        )
+        orig_total = sum(1 for r in results if r.get("id") in orig_ids)
+        orig_correct = sum(
+            1 for r in results if r.get("id") in orig_ids and r.get("is_correct")
+        )
+        total = len(results)
+        entries.append({
+            "model": model,
+            "provider": provider,
+            "dataset_version": DATASET_VERSION,
+            "weighted_accuracy": round(weighted_correct / weighted_possible * 100, 1),
+            "overall_accuracy": round(correct / total * 100, 1) if total else 0,
+            "correct": correct,
+            "total": total,
+            "weighted_score": round(weighted_correct, 3),
+            "weighted_possible": weighted_possible,
+            "user_generated_accuracy": round(user_correct / user_total * 100, 1)
+            if user_total
+            else 0,
+            "user_generated_score": f"{user_correct}/{user_total}",
+            "original_accuracy": round(orig_correct / orig_total * 100, 1)
+            if orig_total
+            else 0,
+            "original_score": f"{orig_correct}/{orig_total}",
+            "failures": sum(1 for r in results if r.get("parsed_answer") is None),
+            "status": "complete" if answered == total else (
+                "partial" if correct > 0 else "failed"
+            ),
+        })
+    return entries, not_rerun
+
+
+def _external_version_label(external_v2, existing):
+    """Describe which dataset versions the external rows were scored on."""
+    if not external_v2:
+        return "1.0"
+    older = [
+        e for e in existing
+        if e.get("endpoint_id") is None
+        and e.get("dataset_version") != DATASET_VERSION
+        and e["status"] != "failed"
+    ]
+    if older:
+        return f"{DATASET_VERSION} (partly still 1.0)"
+    return DATASET_VERSION
+
+
+def _version_note(external_v2, external_not_rerun, blocked, existing):
+    """Explain, in the data itself, which rows can be compared with which."""
+    parts = [
+        "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, "
+        "Q31-Q40 distractors hardened)."
+    ]
+    if external_v2:
+        parts.append(
+            "The external API models that the provider still serves were re-run "
+            "on the same v2.0 question set, so those rows are comparable."
+        )
+    if external_not_rerun:
+        parts.append(
+            f"{len(external_not_rerun)} external model(s) could not be re-run (see "
+            "not_rerun_external_models); their v1.0 row is kept for continuity only."
+        )
+    remaining_v1 = [
+        e for e in existing
+        if e.get("endpoint_id") is None
+        and e.get("dataset_version") != DATASET_VERSION
+        and e["status"] != "failed"
+    ]
+    if remaining_v1:
+        parts.append(
+            f"{len(remaining_v1)} external row(s) are still v1.0-scored and are not "
+            "directly comparable on Q31-Q40."
+        )
+    if blocked:
+        parts.append(
+            f"{len(blocked)} hosten endpoint(s) listed under "
+            "not_rerun_hosten_endpoints could not be re-run because the site blocked "
+            "automation; their v1.0 row is kept for continuity only."
+        )
+    return " ".join(parts)
+
+
 def main():
     questions = load_dataset(DATASET_PATH)
     by_id = {q["id"]: q for q in questions}
@@ -125,6 +263,30 @@ def main():
         except Exception:
             existing = []
     hosten_ids = set(MODEL_NAMES)
+
+    # External API models re-run on the current dataset replace their v1.0 row:
+    # the two were scored on different question sets and cannot be compared.
+    external_v2, external_not_rerun = load_external_v2(
+        questions, user_ids, orig_ids, weighted_possible, existing
+    )
+    if external_v2:
+        replaced = {(e["model"], e.get("provider")) for e in external_v2}
+        kept = []
+        for e in existing:
+            same = (e["model"], e.get("provider")) in replaced
+            if same and e.get("endpoint_id") not in hosten_ids:
+                # Keep the author label so the provider badge stays coloured.
+                author = e.get("author")
+                if author:
+                    for new in external_v2:
+                        if (new["model"], new.get("provider")) == (
+                            e["model"],
+                            e.get("provider"),
+                        ):
+                            new.setdefault("author", author)
+                continue
+            kept.append(e)
+        existing = kept + external_v2
 
     # Which hosten endpoints have a v2.0 run on disk? Refuse to silently drop the
     # v1.0 rows of endpoints we could NOT re-run (site-side blocks such as
@@ -255,13 +417,6 @@ def main():
 
     complete = [e for e in leaderboard if e["status"] == "complete"]
     hosten = [e for e in leaderboard if e.get("endpoint_id") in hosten_ids]
-    # Version split used by the docs site: rows scored on the current dataset are
-    # the primary leaderboard, everything scored on 1.0 is historical. They must
-    # not be ranked against each other - the question set differs, so the numbers
-    # are not comparable even for the same model.
-    v1_entries = [e for e in leaderboard if e.get("dataset_version") != DATASET_VERSION]
-    v1_complete = [e for e in v1_entries if e["status"] == "complete"]
-    v1_best = max(v1_complete, key=lambda x: x["weighted_accuracy"], default=None)
     # A carried-over v1.0 row is NOT a v2.0 run: the site could not be re-run, so
     # it must never drive the v2 summary (averages, best model) even though its
     # v1.0 status happens to be "complete".
@@ -299,6 +454,41 @@ def main():
         else None
     )
 
+    def _version_block(version, label, current=False):
+        """Per-version stats. The site renders one dataset version at a time, so
+        every number here has to describe exactly the rows of that version."""
+        entries = [e for e in leaderboard if e.get("dataset_version") == version]
+        v_complete = [e for e in entries if e["status"] == "complete"]
+        v_hosten = [e for e in entries if e.get("endpoint_id") in hosten_ids]
+        v_hosten_complete = [e for e in v_hosten if e["status"] == "complete"]
+        v_external = [
+            e for e in v_complete if e.get("endpoint_id") not in hosten_ids
+        ]
+        best = max(v_complete, key=lambda x: x["weighted_accuracy"], default=None)
+        block = {
+            "label": label,
+            "models_tested": len(entries),
+            "models_complete": len(v_complete),
+            "models_partial": sum(1 for e in entries if e["status"] == "partial"),
+            "models_failed": sum(1 for e in entries if e["status"] == "failed"),
+            "hosten_models_scored": len(v_hosten_complete),
+            "external_models_complete": len(v_external),
+            "average_weighted_accuracy": _avg(v_complete, "weighted_accuracy"),
+            "average_overall_accuracy": _avg(v_complete, "overall_accuracy"),
+            "average_user_generated_accuracy": _avg(
+                v_complete, "user_generated_accuracy"
+            ),
+            "average_original_accuracy": _avg(v_complete, "original_accuracy"),
+            "best_model": best["model"] if best else "-",
+            "best_weighted_accuracy": best["weighted_accuracy"] if best else 0,
+        }
+        if current:
+            # These describe the v2.0 attempt, not the rows: how many hosten
+            # endpoints were tried and how many the sites refused.
+            block["hosten_endpoints_attempted"] = len(hosten)
+            block["hosten_endpoints_blocked"] = len(blocked)
+        return block
+
     summary = {
         "total_models_tested": len(leaderboard),
         "models_with_complete_results": len(complete),
@@ -327,37 +517,12 @@ def main():
         # README generator; the site reads this block so the current dataset is
         # shown alone and the 1.0 rows are offered as history.
         "version_breakdown": {
-            DATASET_VERSION: {
-                "label": f"Dataset {DATASET_VERSION} (current)",
-                "hosten_endpoints_attempted": len(hosten),
-                "hosten_endpoints_scored": len(hosten_complete),
-                "hosten_endpoints_blocked": len(blocked),
-                "average_weighted_accuracy": _avg(hosten_complete, "weighted_accuracy"),
-                "average_overall_accuracy": _avg(hosten_complete, "overall_accuracy"),
-                "average_user_generated_accuracy": _avg(
-                    hosten_complete, "user_generated_accuracy"
-                ),
-                "average_original_accuracy": _avg(hosten_complete, "original_accuracy"),
-                "best_model": best_hosten["model"] if best_hosten else "-",
-                "best_weighted_accuracy": best_hosten["weighted_accuracy"]
-                if best_hosten
-                else 0,
-            },
-            "1.0": {
-                "label": "Dataset 1.0 (historical)",
-                "models_tested": len(v1_entries),
-                "models_complete": len(v1_complete),
-                "models_partial": sum(
-                    1 for e in v1_entries if e["status"] == "partial"
-                ),
-                "models_failed": sum(
-                    1 for e in v1_entries if e["status"] == "failed"
-                ),
-                "best_model": v1_best["model"] if v1_best else "-",
-                "best_weighted_accuracy": v1_best["weighted_accuracy"]
-                if v1_best
-                else 0,
-            },
+            DATASET_VERSION: _version_block(
+                DATASET_VERSION,
+                f"Dataset {DATASET_VERSION} (current)",
+                current=True,
+            ),
+            "1.0": _version_block("1.0", "Dataset 1.0 (historical)"),
         },
     }
 
@@ -372,21 +537,17 @@ def main():
         },
         "dataset_versions": {
             "hosten": DATASET_VERSION,
-            "external_providers": "1.0",
+            "external_providers": _external_version_label(external_v2, existing),
             "not_rerun_hosten_endpoints": blocked_detail,
-            "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, "
-            "Q31-Q40 distractors hardened). Entries from KiloCode/Google AI Studio/"
-            "NVIDIA NIM were scored on v1.0 and are not directly comparable on Q31-Q40. "
-            "Hosten endpoints listed under not_rerun_hosten_endpoints could not be "
-            "re-run because the site blocked automation; their v1.0 row is kept for "
-            "continuity only and is not comparable on Q31-Q40.",
+            "not_rerun_external_models": external_not_rerun,
+            "note": _version_note(external_v2, external_not_rerun, blocked, existing),
         },
     }
 
     if "--check" in sys.argv:
         print(json.dumps(summary, indent=1))
         print(f"{len(leaderboard)} entries ({len(hosten_complete)} hosten/{DATASET_VERSION} "
-              f"+ {len(blocked)} hosten v1.0 carried, {len(external_complete)} external/1.0)"
+              f"+ {len(blocked)} hosten v1.0 carried, {len(external_complete)} external"
               f"; skipped: {skipped}")
         return
 
@@ -448,19 +609,27 @@ def refresh_docs(out, hosten, questions):
             f"{best['correct']}/{best['total']} correct)"
         )
         top3 = hosten_complete[:3]
-        # Only claim the hosten rows beat the external API models when they
-        # actually do; with only a few endpoints re-run on v2.0 and the external
-        # rows still v1.0-scored, the honest statement is the comparison caveat.
-        best_external_v1 = max(
-            (e for e in lb_full
-             if e.get("endpoint_id") not in hosten_ids
-             and not e.get("v1_only")
-             and e["status"] == "complete"),
-            key=lambda x: x["weighted_accuracy"],
-            default=None,
+        # External rows split by dataset version: only the ones scored on the
+        # same version can be compared with the hosten rows. The rest are
+        # v1.0 leftovers and are called out separately instead of being mixed
+        # into a comparison they cannot support.
+        external_rows = [
+            e for e in lb_full
+            if e.get("endpoint_id") not in hosten_ids
+            and not e.get("v1_only")
+            and e["status"] == "complete"
+        ]
+        external_same = [
+            e for e in external_rows if e.get("dataset_version") == DATASET_VERSION
+        ]
+        external_older = [
+            e for e in external_rows if e.get("dataset_version") != DATASET_VERSION
+        ]
+        best_external_same = max(
+            external_same, key=lambda x: x["weighted_accuracy"], default=None
         )
         ext_best = (
-            best_external_v1["weighted_accuracy"] if best_external_v1 else None
+            best_external_same["weighted_accuracy"] if best_external_same else None
         )
         # The top-3 claim must hold for EVERY one of those rows, not just the
         # leader: comparing a single 3-endpoint list against the best external
@@ -468,11 +637,13 @@ def refresh_docs(out, hosten, questions):
         top3_lead = ext_best is None or all(
             e["weighted_accuracy"] > ext_best for e in top3
         )
-        if len(top3) >= 3 and top3_lead:
+        if len(top3) >= 3 and top3_lead and best_external_same:
             obs.append(
                 "- The top 3 weighted hosten endpoints are "
                 + ", ".join(f"`{e['endpoint_id']}`" for e in top3)
-                + " - all ahead of every external API model (whose rows are v1.0-scored)"
+                + f" - all ahead of every external API model scored on dataset "
+                f"{DATASET_VERSION} (best of them: "
+                f"`{best_external_same['model']}`, {ext_best}%)"
             )
         elif ext_best is None:
             obs.append(
@@ -482,7 +653,8 @@ def refresh_docs(out, hosten, questions):
                     f"`{e['endpoint_id']}` ({e['weighted_accuracy']}% weighted)"
                     for e in hosten_complete
                 )
-                + "; external rows are v1.0-scored and not directly comparable"
+                + ("; external rows are v1.0-scored and not directly comparable"
+                   if external_older else "")
             )
         elif best["weighted_accuracy"] > ext_best:
             # The leader is ahead of every external row but the rest of the top 3
@@ -490,20 +662,26 @@ def refresh_docs(out, hosten, questions):
             not_ahead = [e for e in top3 if e["weighted_accuracy"] <= ext_best]
             obs.append(
                 f"- `{best['endpoint_id']}` ({best['weighted_accuracy']}% weighted) is ahead "
-                f"of the best v1.0 external API row (`{best_external_v1['model']}`, "
+                f"of the best external API row scored on the same dataset "
+                f"(`{best_external_same['model']}`, "
                 f"{ext_best}%), but the other top-3 hosten rows ("
                 + ", ".join(
                     f"`{e['endpoint_id']}` {e['weighted_accuracy']}%" for e in not_ahead
                 )
-                + ") are not; the two are scored on different dataset versions and are not "
-                "directly comparable"
+                + ") are not"
             )
         else:
             obs.append(
                 f"- The best dataset {DATASET_VERSION} hosten row (`{best['endpoint_id']}`, "
-                f"{best['weighted_accuracy']}% weighted) is below the best v1.0 external API "
-                f"row (`{best_external_v1['model']}`, {ext_best}% weighted); the two are scored "
-                "on different dataset versions and are not directly comparable"
+                f"{best['weighted_accuracy']}% weighted) is below the best external API row "
+                f"scored on the same dataset (`{best_external_same['model']}`, "
+                f"{ext_best}% weighted)"
+            )
+        if external_older:
+            obs.append(
+                f"- {len(external_older)} external API row(s) are still v1.0-scored "
+                "(their provider could not be re-run on the current dataset); they are "
+                "not directly comparable and are kept on the historical results page"
             )
     obs.append(
         f"- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models "

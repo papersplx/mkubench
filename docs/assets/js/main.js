@@ -117,7 +117,10 @@ async function loadLeaderboard() {
     renderLeaderboard(entries);
     renderHistogram(entries);
     renderProviderBreakdown(entries);
-    renderBlocked(data.dataset_versions && data.dataset_versions.not_rerun_hosten_endpoints);
+    renderBlocked(
+      data.dataset_versions && data.dataset_versions.not_rerun_hosten_endpoints,
+      data.dataset_versions && data.dataset_versions.not_rerun_external_models
+    );
   } catch (e) {
     console.error('Failed to load leaderboard:', e);
     var body = document.querySelector('#leaderboard-table tbody');
@@ -133,7 +136,7 @@ function renderSummary(current, currentVersion, breakdown) {
     if (el) el.textContent = value;
   };
 
-  set('scored-models', current.hosten_endpoints_scored != null ? current.hosten_endpoints_scored : '-');
+  set('scored-models', current.models_complete != null ? current.models_complete : '-');
   set('attempted-models', current.hosten_endpoints_attempted != null ? current.hosten_endpoints_attempted : '-');
   set('blocked-models', current.hosten_endpoints_blocked != null ? current.hosten_endpoints_blocked : '-');
   set('best-score', current.best_weighted_accuracy != null ? pct(current.best_weighted_accuracy) : '-');
@@ -267,27 +270,45 @@ function renderProviderBreakdown(entries) {
   });
 }
 
-// Endpoints whose site refused to answer the automated re-run: they keep their
-// v1.0 score, which is shown here as history only.
-function renderBlocked(detail) {
+// Endpoints whose site refused to answer the automated re-run, and external
+// models the provider no longer serves: they keep their v1.0 score, which is
+// shown here as history only.
+function renderBlocked(detail, external) {
   var tbody = document.querySelector('#blocked-table tbody');
   if (!tbody) return;
   tbody.innerHTML = '';
 
-  var ids = Object.keys(detail || {}).sort();
-  if (!ids.length) {
+  var rows = [];
+  Object.keys(detail || {}).sort().forEach(function(id) {
+    var d = detail[id];
+    rows.push({
+      endpoint: id,
+      model: d.model || '-',
+      v1: d.v1_weighted_accuracy,
+      reason: d.reason || 'not re-run'
+    });
+  });
+  (external || []).forEach(function(d) {
+    rows.push({
+      endpoint: d.endpoint || d.model,
+      model: (d.provider ? d.provider + ' / ' : '') + (d.model || '-'),
+      v1: d.v1_weighted_accuracy,
+      reason: d.reason || 'not re-run'
+    });
+  });
+
+  if (!rows.length) {
     tbody.innerHTML = '<tr><td colspan="4" class="reason">Every endpoint was re-run.</td></tr>';
     return;
   }
 
-  ids.forEach(function(id) {
-    var d = detail[id];
+  rows.forEach(function(d) {
     var row = document.createElement('tr');
     row.innerHTML =
-      '<td><code>' + escapeHtml(id) + '</code></td>' +
-      '<td>' + escapeHtml(d.model || '-') + '</td>' +
-      '<td class="num">' + (d.v1_weighted_accuracy != null ? pct(d.v1_weighted_accuracy) : '-') + '</td>' +
-      '<td class="reason">' + escapeHtml(d.reason || 'not re-run') + '</td>';
+      '<td><code>' + escapeHtml(d.endpoint) + '</code></td>' +
+      '<td>' + escapeHtml(d.model) + '</td>' +
+      '<td class="num">' + (d.v1 != null ? pct(d.v1) : '-') + '</td>' +
+      '<td class="reason">' + escapeHtml(d.reason) + '</td>';
     tbody.appendChild(row);
   });
 }

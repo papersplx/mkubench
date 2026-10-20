@@ -63,7 +63,8 @@ Providers column: for the 10 models reached through the **Hosten gateway** (`htt
 
 **Key observations:**
 - **glm-5.3-flash** (Hosten endpoint `zai`) is the top Hosten performer on dataset 2.0 (82.5% overall, 66.9% weighted, 33/40 correct)
-- `zai` (66.9% weighted) is ahead of the best v1.0 external API row (`inclusionai/ling-3.0-flash-vl:free`, 62.3%), but the other top-3 hosten rows (`qwen` 34.6%, `meta` 28.5%) are not; the two are scored on different dataset versions and are not directly comparable
+- 4 hosten endpoint(s) scored so far on dataset 2.0: `zai` (66.9% weighted), `qwen` (34.6% weighted), `meta` (28.5% weighted), `claude` (20.8% weighted); external rows are v1.0-scored and not directly comparable
+- 14 external API row(s) are still v1.0-scored (their provider could not be re-run on the current dataset); they are not directly comparable and are kept on the historical results page
 - Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models (mean 88.3% vs 22.5%) on dataset 2.0
 - The same gateway spans the whole range: the best model hosts alongside `claude` (claude-sonnet-5, 20.8% weighted), the weakest complete endpoint
 

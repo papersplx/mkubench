@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T09:55:35.559066",
+  "generated_at": "2026-10-20T10:21:06.101971",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
@@ -28,15 +28,20 @@
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "hosten_endpoints_attempted": 10,
-        "hosten_endpoints_scored": 4,
-        "hosten_endpoints_blocked": 6,
+        "models_tested": 4,
+        "models_complete": 4,
+        "models_partial": 0,
+        "models_failed": 0,
+        "hosten_models_scored": 4,
+        "external_models_complete": 0,
         "average_weighted_accuracy": 37.7,
         "average_overall_accuracy": 71.9,
         "average_user_generated_accuracy": 22.5,
         "average_original_accuracy": 88.3,
         "best_model": "glm-5.3-flash",
-        "best_weighted_accuracy": 66.9
+        "best_weighted_accuracy": 66.9,
+        "hosten_endpoints_attempted": 10,
+        "hosten_endpoints_blocked": 6
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
@@ -44,6 +49,12 @@
         "models_complete": 20,
         "models_partial": 1,
         "models_failed": 11,
+        "hosten_models_scored": 6,
+        "external_models_complete": 14,
+        "average_weighted_accuracy": 51.0,
+        "average_overall_accuracy": 66.6,
+        "average_user_generated_accuracy": 44.0,
+        "average_original_accuracy": 74.2,
         "best_model": "mistral-medium-3.5",
         "best_weighted_accuracy": 89.2
       }
@@ -785,6 +796,15 @@
         "reason": "site signed the account out; requires an interactive Google login in the Chromium window (automation not possible)"
       }
     },
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). Entries from KiloCode/Google AI Studio/NVIDIA NIM were scored on v1.0 and are not directly comparable on Q31-Q40. Hosten endpoints listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only and is not comparable on Q31-Q40."
+    "not_rerun_external_models": [
+      {
+        "endpoint": "inclusionai/ling-3.0-flash-vl:free",
+        "model": "inclusionai/ling-3.0-flash-vl:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 62.3,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      }
+    ],
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). 1 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 15 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }

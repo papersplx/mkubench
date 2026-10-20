@@ -1,0 +1,18 @@
+# Extra external models re-run on dataset v2.0.
+#
+# The free-tier catalogues rotate: six of the eleven KiloCode models that carry
+# a v1.0 row are gone from the gateway (HTTP 404), so the v2.0 set would be
+# narrower than the v1.0 set without replacements. These are the models the
+# provider actually serves today.
+#
+# Format: model | provider
+
+cohere/north-mini-code:free                | kilocode
+minimax/minimax-m3.1-flash:free             | kilocode
+nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free | kilocode
+nvidia/nemotron-3-super-120b-a12b:free      | kilocode
+nvidia/nemotron-3.5-content-safety:free     | kilocode
+nvidia/nemotron-3.5-super-vl:free           | kilocode
+poolside/laguna-xs-2.1:free                 | kilocode
+thinkingmachines/inkling-small:free         | kilocode
+xingchen-agi/xing4.0-29b-a4b:free           | kilocode
