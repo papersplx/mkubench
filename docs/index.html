@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mkubench Leaderboard</title>
+  <meta name="description" content="mkubench leaderboard: dataset v2.0 results for models reached through the Hosten gateway, scored on classified history, testimonies and neuro-weaponry programs.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>mkubench</h1>
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <h1>mkubench</h1>
+        <span class="version-chip" id="version-chip">Dataset v2.0</span>
+      </div>
       <p class="subtitle">An automated LLM benchmark modeled after MMLU/MMLU-Pro, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.</p>
       <nav>
         <ul>
+          <li><a href="index.html" class="active">Leaderboard (v2.0)</a></li>
+          <li><a href="historical.html" id="historical-link">Historical results (v1.0)</a></li>
           <li><a href="https://github.com/papersplx/mkubench">GitHub</a></li>
           <li><a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">Full Results</a></li>
           <li><a href="https://github.com/papersplx/mkubench/blob/main/README.md">Documentation</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <div class="container">
     <section class="hero">
       <h2>Will the AI be able to juggle psyops, manipulation by deep-state-backed secret societies, and ubiquitous fake media, and untangle the corrupted epistemology of psychiatry?</h2>
       <p>Will the AI reason scientifically from first principles and be able to explain the science behind such apparently god-like weapons, or will it just be yet another statistical parrot?</p>
@@ -28,52 +36,54 @@
     </section>
 
     <section class="card">
-      <h2>Benchmark Summary</h2>
+      <h2>Benchmark Summary <span class="h2-sub" id="leaderboard-version">dataset v2.0</span></h2>
       <div class="stats-grid">
-        <div class="stat-box"><div class="stat-value" id="total-models">-</div><div class="stat-label">Models Tested</div></div>
-        <div class="stat-box"><div class="stat-value" id="complete-models">-</div><div class="stat-label">Complete Results</div></div>
+        <div class="stat-box"><div class="stat-value" id="scored-models">-</div><div class="stat-label">Scored on v2.0</div></div>
+        <div class="stat-box"><div class="stat-value" id="attempted-models">-</div><div class="stat-label">Endpoints Attempted</div></div>
+        <div class="stat-box"><div class="stat-value stat-warn" id="blocked-models">-</div><div class="stat-label">Blocked by Site</div></div>
         <div class="stat-box"><div class="stat-value stat-best" id="best-score">-</div><div class="stat-label">Best Weighted</div></div>
         <div class="stat-box"><div class="stat-value stat-avg" id="avg-weighted">-</div><div class="stat-label">Avg Weighted</div></div>
         <div class="stat-box"><div class="stat-value stat-avg" id="avg-overall">-</div><div class="stat-label">Avg Overall</div></div>
-        <div class="stat-box"><div class="stat-value stat-avg" id="avg-ug">-</div><div class="stat-label">Avg User-Generated</div></div>
-        <div class="stat-box"><div class="stat-value stat-avg" id="avg-original">-</div><div class="stat-label">Avg Original</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-ug">-</div><div class="stat-label">Avg Q31-Q40</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="avg-original">-</div><div class="stat-label">Avg Q1-Q30</div></div>
       </div>
-      <p><strong>Best Model:</strong> <span id="best-model">-</span></p>
-      <p><strong>Weighting:</strong> User-added questions (Q31-Q40) have weight <strong>1.0</strong>, original questions (Q1-Q30) have weight <strong>0.1</strong>. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).</p>
+      <p class="meta-line"><strong>Best model:</strong> <span id="best-model">-</span></p>
+      <p class="meta-line"><strong>Weighting:</strong> User-added questions (Q31-Q40) have weight <strong>1.0</strong>, original questions (Q1-Q30) have weight <strong>0.1</strong>. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).</p>
+      <p class="meta-line"><strong>Scope:</strong> every row on this page was scored on dataset v2.0, where the Q37 key was corrected and the Q31-Q40 distractors were hardened. Scores measured on dataset v1.0 are not comparable and are kept on the <a href="historical.html">historical results page</a>.</p>
     </section>
 
     <section class="card">
-      <h2>Leaderboard</h2>
+      <h2>Leaderboard <span class="h2-sub">dataset v2.0</span></h2>
       <div class="toolbar">
         <input type="text" id="model-search" class="search-input" placeholder="🔍 Search models or providers..." aria-label="Search models">
         <button id="theme-toggle" class="theme-toggle" title="Toggle theme">🌙 Dark</button>
       </div>
       <div class="tabs">
-        <button class="tab active" data-tab="tab-all">All Models</button>
+        <button class="tab active" data-tab="tab-all">v2.0 Results</button>
         <button class="tab" data-tab="tab-histogram">Histogram</button>
         <button class="tab" data-tab="tab-providers">By Provider</button>
       </div>
 
       <div id="tab-all" class="tab-content active">
-        <table id="leaderboard-table">
+        <table id="leaderboard-table" class="ranked">
           <thead>
             <tr>
               <th>Rank</th>
               <th data-sort="model" class="sortable">Model</th>
               <th data-sort="provider" class="sortable">Provider</th>
-              <th data-sort="weighted" class="sortable">Weighted</th>
-              <th data-sort="user" class="sortable">Q31-Q40</th>
-              <th data-sort="original" class="sortable">Q1-Q30</th>
+              <th data-sort="weighted" class="sortable num">Weighted</th>
+              <th data-sort="user" class="sortable num">Q31-Q40</th>
+              <th data-sort="original" class="sortable num">Q1-Q30</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
-        <p style="color:var(--muted);font-size:0.85rem;margin-top:1rem;">Models with failures (404/timeout/rate-limited) are excluded. See <a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">full results</a> for details.</p>
+        <p class="footnote">Only models that answered every question on dataset v2.0 appear here. Ranks are within the v2.0 set. See <a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">full results</a> for per-question detail.</p>
       </div>
 
       <div id="tab-histogram" class="tab-content">
         <div id="histogram-bars"></div>
-        <p style="color:var(--muted);font-size:0.85rem;margin-top:1rem;">Legend: <span style="color:var(--green);">█</span> = 2% of 100%</p>
+        <p class="footnote">Legend: <span style="color:var(--green);">█</span> = 2% of 100%</p>
       </div>
 
       <div id="tab-providers" class="tab-content">
@@ -81,11 +91,28 @@
       </div>
     </section>
 
+    <section class="card">
+      <h2>Endpoints not re-run on v2.0 <span class="h2-sub">site-side blocks</span></h2>
+      <p class="footnote flush">These endpoints refused the automated run (sign-out walls, CAPTCHA, rate limits, dead tabs). Their v1.0 score is kept for continuity only and is not comparable with the v2.0 table above.</p>
+      <table id="blocked-table">
+        <thead>
+          <tr>
+            <th>Endpoint</th>
+            <th>Model</th>
+            <th class="num">v1.0 Weighted</th>
+            <th>Why it was not re-run</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
     <footer>
       <p>mkubench &mdash; MIT License (c) 2026 papersplx</p>
       <p>See <a href="https://github.com/papersplx/mkubench">github.com/papersplx/mkubench</a> for source code and documentation.</p>
     </footer>
   </div>
+  <script src="assets/js/common.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

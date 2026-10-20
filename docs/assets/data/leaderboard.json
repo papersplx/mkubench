@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T18:49:27.474392",
+  "generated_at": "2026-10-20T09:55:35.559066",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
@@ -24,7 +24,30 @@
       "tencent"
     ],
     "hosten_endpoints_not_rerun_count": 6,
-    "dataset_version": "2.0"
+    "dataset_version": "2.0",
+    "version_breakdown": {
+      "2.0": {
+        "label": "Dataset 2.0 (current)",
+        "hosten_endpoints_attempted": 10,
+        "hosten_endpoints_scored": 4,
+        "hosten_endpoints_blocked": 6,
+        "average_weighted_accuracy": 37.7,
+        "average_overall_accuracy": 71.9,
+        "average_user_generated_accuracy": 22.5,
+        "average_original_accuracy": 88.3,
+        "best_model": "glm-5.3-flash",
+        "best_weighted_accuracy": 66.9
+      },
+      "1.0": {
+        "label": "Dataset 1.0 (historical)",
+        "models_tested": 32,
+        "models_complete": 20,
+        "models_partial": 1,
+        "models_failed": 11,
+        "best_model": "mistral-medium-3.5",
+        "best_weighted_accuracy": 89.2
+      }
+    }
   },
   "leaderboard": [
     {

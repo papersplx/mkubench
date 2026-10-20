@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mkubench Historical Results (v1.0)</title>
+  <meta name="description" content="mkubench historical leaderboard: results scored on dataset v1.0, kept for reference. Not comparable with the current dataset v2.0 results.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <h1>mkubench</h1>
+        <span class="version-chip legacy">Dataset v1.0 &mdash; historical</span>
+      </div>
+      <p class="subtitle">An automated LLM benchmark modeled after MMLU/MMLU-Pro, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Leaderboard (v2.0)</a></li>
+          <li><a href="historical.html" class="active">Historical results (v1.0)</a></li>
+          <li><a href="https://github.com/papersplx/mkubench">GitHub</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">Full Results</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/main/README.md">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Historical results &mdash; dataset v1.0</h2>
+      <p>These runs were scored on dataset <strong>v1.0</strong>. Dataset <strong>v2.0</strong> corrected the Q37 answer key and hardened the Q31-Q40 distractors, so a v1.0 score is <strong>not comparable</strong> with a v2.0 score &mdash; not even for the same model. This page is kept for reference and continuity only.</p>
+      <p>The current leaderboard lives on the <a href="index.html">v2.0 results page</a>.</p>
+      <span class="badge">Archive &mdash; superseded by dataset v2.0</span>
+    </section>
+
+    <section class="card">
+      <h2>Summary <span class="h2-sub">dataset v1.0</span></h2>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-value" id="hist-tested">-</div><div class="stat-label">Runs Recorded</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="hist-complete">-</div><div class="stat-label">Complete</div></div>
+        <div class="stat-box"><div class="stat-value stat-warn" id="hist-partial">-</div><div class="stat-label">Partial</div></div>
+        <div class="stat-box"><div class="stat-value" id="hist-failed">-</div><div class="stat-label">Failed</div></div>
+        <div class="stat-box"><div class="stat-value stat-best" id="hist-best-score">-</div><div class="stat-label">Best Weighted</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="hist-avg-weighted">-</div><div class="stat-label">Avg Weighted</div></div>
+        <div class="stat-box"><div class="stat-value stat-avg" id="hist-avg-overall">-</div><div class="stat-label">Avg Overall</div></div>
+        <div class="stat-box"><div class="stat-value stat-text" id="hist-best-model">-</div><div class="stat-label">Best Model</div></div>
+      </div>
+      <p class="meta-line"><strong>Weighting (v1.0):</strong> user-added questions (Q31-Q40) weight <strong>1.0</strong>, original questions (Q1-Q30) weight <strong>0.1</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Leaderboard <span class="h2-sub">dataset v1.0</span></h2>
+      <div class="toolbar">
+        <input type="text" id="model-search" class="search-input" placeholder="🔍 Search models or providers..." aria-label="Search models">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle theme">🌙 Dark</button>
+      </div>
+
+      <table id="historical-table" class="ranked">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Model</th>
+            <th>Provider</th>
+            <th class="num">Weighted</th>
+            <th class="num">Q31-Q40</th>
+            <th class="num">Q1-Q30</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="footnote">Ranks are within the v1.0 set only. Rows marked <em>carried over</em> are Hosten endpoints that could not be re-run on v2.0; their v1.0 score is the last known result.</p>
+    </section>
+
+    <section class="card">
+      <h2>Failed runs <span class="h2-sub">dataset v1.0</span></h2>
+      <table id="failed-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Provider</th>
+            <th class="num">Weighted</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="footnote">Failed runs are excluded from every ranking: a missing answer is not a zero. The one partial run appears in the table above with a <span class="status-partial">Partial</span> marker.</p>
+    </section>
+
+    <footer>
+      <p>mkubench &mdash; MIT License (c) 2026 papersplx</p>
+      <p>See <a href="https://github.com/papersplx/mkubench">github.com/papersplx/mkubench</a> for source code and documentation.</p>
+    </footer>
+  </div>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/historical.js"></script>
+</body>
+</html>

@@ -255,6 +255,13 @@ def main():
 
     complete = [e for e in leaderboard if e["status"] == "complete"]
     hosten = [e for e in leaderboard if e.get("endpoint_id") in hosten_ids]
+    # Version split used by the docs site: rows scored on the current dataset are
+    # the primary leaderboard, everything scored on 1.0 is historical. They must
+    # not be ranked against each other - the question set differs, so the numbers
+    # are not comparable even for the same model.
+    v1_entries = [e for e in leaderboard if e.get("dataset_version") != DATASET_VERSION]
+    v1_complete = [e for e in v1_entries if e["status"] == "complete"]
+    v1_best = max(v1_complete, key=lambda x: x["weighted_accuracy"], default=None)
     # A carried-over v1.0 row is NOT a v2.0 run: the site could not be re-run, so
     # it must never drive the v2 summary (averages, best model) even though its
     # v1.0 status happens to be "complete".
@@ -286,6 +293,12 @@ def main():
         vals = [e[key] for e in entries if key in e]
         return round(sum(vals) / len(vals), 1) if vals else 0
 
+    best_hosten = (
+        max(hosten_complete, key=lambda x: x["weighted_accuracy"])
+        if hosten_complete
+        else None
+    )
+
     summary = {
         "total_models_tested": len(leaderboard),
         "models_with_complete_results": len(complete),
@@ -303,15 +316,49 @@ def main():
         "external_v1_average_original_accuracy": _avg(
             external_complete, "original_accuracy"
         ),
-        "best_model": f"{max(hosten_complete, key=lambda x: x['weighted_accuracy'])['model']}"
-        if hosten_complete
-        else "-",
-        "best_weighted_accuracy": max(
-            (e["weighted_accuracy"] for e in hosten_complete), default=0
-        ),
+        "best_model": best_hosten["model"] if best_hosten else "-",
+        "best_weighted_accuracy": best_hosten["weighted_accuracy"]
+        if best_hosten
+        else 0,
         "hosten_endpoints_not_rerun": blocked,
         "hosten_endpoints_not_rerun_count": len(blocked),
         "dataset_version": DATASET_VERSION,
+        # Explicit per-version view. The mixed-count keys above are kept for the
+        # README generator; the site reads this block so the current dataset is
+        # shown alone and the 1.0 rows are offered as history.
+        "version_breakdown": {
+            DATASET_VERSION: {
+                "label": f"Dataset {DATASET_VERSION} (current)",
+                "hosten_endpoints_attempted": len(hosten),
+                "hosten_endpoints_scored": len(hosten_complete),
+                "hosten_endpoints_blocked": len(blocked),
+                "average_weighted_accuracy": _avg(hosten_complete, "weighted_accuracy"),
+                "average_overall_accuracy": _avg(hosten_complete, "overall_accuracy"),
+                "average_user_generated_accuracy": _avg(
+                    hosten_complete, "user_generated_accuracy"
+                ),
+                "average_original_accuracy": _avg(hosten_complete, "original_accuracy"),
+                "best_model": best_hosten["model"] if best_hosten else "-",
+                "best_weighted_accuracy": best_hosten["weighted_accuracy"]
+                if best_hosten
+                else 0,
+            },
+            "1.0": {
+                "label": "Dataset 1.0 (historical)",
+                "models_tested": len(v1_entries),
+                "models_complete": len(v1_complete),
+                "models_partial": sum(
+                    1 for e in v1_entries if e["status"] == "partial"
+                ),
+                "models_failed": sum(
+                    1 for e in v1_entries if e["status"] == "failed"
+                ),
+                "best_model": v1_best["model"] if v1_best else "-",
+                "best_weighted_accuracy": v1_best["weighted_accuracy"]
+                if v1_best
+                else 0,
+            },
+        },
     }
 
     out = {
