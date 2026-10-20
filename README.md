@@ -53,11 +53,13 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 | 19 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
 | 20 | gemini-3.8-flash (`google`) | Google (v1.0) | 25/40 | 62.5% | **26.2%** | 10.0% | 80.0% | ✓ Complete |
 | 21 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
-| 22 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
-| 23 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
-| 24 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
-| 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
-| 26 | gemini-3.8-flash | Google AI Studio | 5/40 | 12.5% | **3.8%** | 0.0% | 16.7% | ◐ Partial |
+| 22 | nvidia/nemotron-3.5-super-vl:free | KiloCode API | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
+| 23 | minimax/minimax-m3.1-flash:free | KiloCode API | 22/40 | 55.0% | **23.8%** | 10.0% | 70.0% | ✓ Complete |
+| 24 | cohere/north-mini-code:free | KiloCode API | 21/40 | 52.5% | **23.1%** | 10.0% | 66.7% | ✓ Complete |
+| 25 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
+| 26 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
+| 27 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
+| 28 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
 
 
 Providers column: for the 10 models reached through the **Hosten gateway** (`http://localhost:8079/v1` - endpoint IDs in the Model column) it shows the **model author**; for the rest it shows the API that served the run (**KiloCode API**, **Google AI Studio**, **NVIDIA NIM**). Models that failed (404/timeout/rate-limited) are excluded from this table; access-path details, failure breakdown and the weighted histogram are in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).

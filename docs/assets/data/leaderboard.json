@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-20T11:31:03.668310",
+  "generated_at": "2026-10-20T13:08:36.531142",
   "summary": {
-    "total_models_tested": 36,
-    "models_with_complete_results": 24,
+    "total_models_tested": 39,
+    "models_with_complete_results": 27,
     "hosten_models_complete": 4,
     "hosten_models_tested": 10,
     "average_weighted_accuracy": 37.7,
     "average_overall_accuracy": 71.9,
     "average_user_generated_accuracy": 22.5,
     "average_original_accuracy": 88.3,
-    "external_v1_models_complete": 14,
-    "external_v1_average_weighted_accuracy": 40.2,
-    "external_v1_average_user_generated_accuracy": 31.4,
-    "external_v1_average_original_accuracy": 69.5,
+    "external_v1_models_complete": 17,
+    "external_v1_average_weighted_accuracy": 37.4,
+    "external_v1_average_user_generated_accuracy": 27.6,
+    "external_v1_average_original_accuracy": 69.8,
     "best_model": "glm-5.3-flash",
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
@@ -28,16 +28,19 @@
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 10,
-        "models_complete": 9,
-        "models_partial": 1,
+        "models_tested": 12,
+        "models_complete": 12,
+        "models_partial": 0,
         "models_failed": 0,
         "hosten_models_scored": 4,
-        "external_models_complete": 5,
-        "average_weighted_accuracy": 30.9,
-        "average_overall_accuracy": 62.8,
-        "average_user_generated_accuracy": 16.7,
-        "average_original_accuracy": 78.1,
+        "external_models_complete": 8,
+        "external_average_weighted_accuracy": 24.9,
+        "external_average_user_generated_accuracy": 11.2,
+        "external_average_original_accuracy": 70.4,
+        "average_weighted_accuracy": 29.2,
+        "average_overall_accuracy": 61.0,
+        "average_user_generated_accuracy": 15.0,
+        "average_original_accuracy": 76.4,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
@@ -45,12 +48,15 @@
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
-        "models_tested": 26,
+        "models_tested": 27,
         "models_complete": 15,
         "models_partial": 1,
-        "models_failed": 10,
+        "models_failed": 11,
         "hosten_models_scored": 6,
         "external_models_complete": 9,
+        "external_average_weighted_accuracy": 48.5,
+        "external_average_user_generated_accuracy": 42.2,
+        "external_average_original_accuracy": 69.3,
         "average_weighted_accuracy": 51.6,
         "average_overall_accuracy": 67.2,
         "average_user_generated_accuracy": 44.7,
@@ -470,6 +476,60 @@
       "rank": 21
     },
     {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 25.4,
+      "overall_accuracy": 60.0,
+      "correct": 24,
+      "total": 40,
+      "weighted_score": 3.3,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 76.7,
+      "original_score": "23/30",
+      "failures": 3,
+      "status": "complete",
+      "rank": 22
+    },
+    {
+      "model": "minimax/minimax-m3.1-flash:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 23.8,
+      "overall_accuracy": 55.0,
+      "correct": 22,
+      "total": 40,
+      "weighted_score": 3.1,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 70.0,
+      "original_score": "21/30",
+      "failures": 4,
+      "status": "complete",
+      "rank": 23
+    },
+    {
+      "model": "cohere/north-mini-code:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 23.1,
+      "overall_accuracy": 52.5,
+      "correct": 21,
+      "total": 40,
+      "weighted_score": 3.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 66.7,
+      "original_score": "20/30",
+      "failures": 7,
+      "status": "complete",
+      "rank": 24
+    },
+    {
       "model": "nvidia/nemotron-3.5-lightning:free",
       "provider": "kilocode",
       "dataset_version": "2.0",
@@ -485,7 +545,7 @@
       "original_score": "19/30",
       "failures": 3,
       "status": "complete",
-      "rank": 22
+      "rank": 25
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -503,7 +563,7 @@
       "original_score": "18/30",
       "failures": 10,
       "status": "complete",
-      "rank": 23
+      "rank": 26
     },
     {
       "model": "claude-sonnet-5",
@@ -525,7 +585,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 24
+      "rank": 27
     },
     {
       "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -542,26 +602,8 @@
       "original_score": "21/30",
       "failures": 11,
       "status": "partial",
-      "rank": 25,
+      "rank": 28,
       "dataset_version": "1.0"
-    },
-    {
-      "model": "gemini-3.8-flash",
-      "provider": "google-ai-studio",
-      "dataset_version": "2.0",
-      "weighted_accuracy": 3.8,
-      "overall_accuracy": 12.5,
-      "correct": 5,
-      "total": 40,
-      "weighted_score": 0.5,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 16.7,
-      "original_score": "5/30",
-      "failures": 34,
-      "status": "partial",
-      "rank": 26
     },
     {
       "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
@@ -578,7 +620,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 27,
+      "rank": 29,
       "dataset_version": "1.0"
     },
     {
@@ -596,65 +638,29 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 28,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "google/gemma-4-31b-it",
-      "provider": "google-ai-studio",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 1,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0,
-      "user_generated_score": "0/0",
-      "original_accuracy": 0.0,
-      "original_score": "0/1",
-      "failures": 1,
-      "status": "failed",
-      "rank": 29,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "google/gemma-4-31b-it",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
-      "total": 40,
-      "weighted_score": 0.0,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
       "rank": 30,
       "dataset_version": "1.0"
     },
     {
-      "model": "ibm/granite-3.0-3b-a800m-instruct",
-      "provider": "nvidia-nim",
+      "model": "gemini-3.8-flash",
+      "provider": "google-ai-studio",
+      "dataset_version": "1.0",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
       "correct": 0,
       "total": 40,
-      "weighted_score": 0.0,
+      "weighted_score": 0,
       "weighted_possible": 13.0,
       "user_generated_accuracy": 0.0,
       "user_generated_score": "0/10",
       "original_accuracy": 0.0,
       "original_score": "0/30",
-      "failures": 40,
+      "failures": 2,
       "status": "failed",
-      "rank": 31,
-      "dataset_version": "1.0"
+      "rank": 31
     },
     {
-      "model": "ibm/granite-3.0-8b-instruct",
+      "model": "google/gemma-4-31b-it",
       "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
@@ -672,25 +678,25 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "meta/llama2-70b",
-      "provider": "nvidia-nim",
+      "model": "google/gemma-4-31b-it",
+      "provider": "google-ai-studio",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
       "correct": 0,
-      "total": 40,
+      "total": 1,
       "weighted_score": 0.0,
       "weighted_possible": 13.0,
-      "user_generated_accuracy": 0.0,
-      "user_generated_score": "0/10",
+      "user_generated_accuracy": 0,
+      "user_generated_score": "0/0",
       "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
+      "original_score": "0/1",
+      "failures": 1,
       "status": "failed",
       "rank": 33,
       "dataset_version": "1.0"
     },
     {
-      "model": "minimaxai/minimax-m3",
+      "model": "ibm/granite-3.0-3b-a800m-instruct",
       "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
@@ -708,7 +714,7 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "moonshotai/kimi-k2.6",
+      "model": "ibm/granite-3.0-8b-instruct",
       "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
@@ -726,7 +732,7 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "moonshotai/kimi-k3",
+      "model": "meta/llama2-70b",
       "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
@@ -741,6 +747,60 @@
       "failures": 40,
       "status": "failed",
       "rank": 36,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "minimaxai/minimax-m3",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 37,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "moonshotai/kimi-k2.6",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 38,
+      "dataset_version": "1.0"
+    },
+    {
+      "model": "moonshotai/kimi-k3",
+      "provider": "nvidia-nim",
+      "weighted_accuracy": 0.0,
+      "overall_accuracy": 0.0,
+      "correct": 0,
+      "total": 40,
+      "weighted_score": 0.0,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 0.0,
+      "original_score": "0/30",
+      "failures": 40,
+      "status": "failed",
+      "rank": 39,
       "dataset_version": "1.0"
     }
   ],
@@ -798,62 +858,104 @@
     },
     "not_rerun_external_models": [
       {
+        "endpoint": "gemini-3.8-flash",
+        "model": "gemini-3.8-flash",
+        "provider": "google-ai-studio",
+        "v1_weighted_accuracy": 0.0,
+        "reason": "only 5/40 questions were answered before the provider throttled the run"
+      },
+      {
         "endpoint": "google/gemma-4-31b-it",
         "model": "google/gemma-4-31b-it",
         "provider": "google-ai-studio",
         "v1_weighted_accuracy": 0.0,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
       },
       {
         "endpoint": "inclusionai/ling-3.0-flash-fin:free",
         "model": "inclusionai/ling-3.0-flash-fin:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 53.8,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
       },
       {
         "endpoint": "inclusionai/ling-3.0-flash-sante:free",
         "model": "inclusionai/ling-3.0-flash-sante:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 47.7,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
       },
       {
         "endpoint": "inclusionai/ling-3.0-flash-vl:free",
         "model": "inclusionai/ling-3.0-flash-vl:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 62.3,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
       },
       {
         "endpoint": "liquid/lfm-2.5-2.6b:free",
         "model": "liquid/lfm-2.5-2.6b:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 42.3,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "only 3/40 questions were answered before the provider throttled the run"
       },
       {
         "endpoint": "nex-agi/nex-n2.5-mini:free",
         "model": "nex-agi/nex-n2.5-mini:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 48.5,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
       },
       {
         "endpoint": "nex-agi/nex-n2.5-pro:free",
         "model": "nex-agi/nex-n2.5-pro:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 40.0,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
+      },
+      {
+        "endpoint": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": null,
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
+      },
+      {
+        "endpoint": "nvidia/nemotron-3-super-120b-a12b:free",
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": null,
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
+      },
+      {
+        "endpoint": "nvidia/nemotron-3.5-content-safety:free",
+        "model": "nvidia/nemotron-3.5-content-safety:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": null,
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
+      },
+      {
+        "endpoint": "poolside/laguna-xs-2.1:free",
+        "model": "poolside/laguna-xs-2.1:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": null,
+        "reason": "only 5/40 questions were answered before the provider throttled the run"
       },
       {
         "endpoint": "stepfun/step-3.7-flash:free",
         "model": "stepfun/step-3.7-flash:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 56.2,
-        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+        "reason": "provider returned no answers on the re-run (the model may no longer be served, or the request was throttled)"
+      },
+      {
+        "endpoint": "xingchen-agi/xing4.0-29b-a4b:free",
+        "model": "xingchen-agi/xing4.0-29b-a4b:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": null,
+        "reason": "only 1/40 questions were answered before the provider throttled the run"
       }
     ],
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 8 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }

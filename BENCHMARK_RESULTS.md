@@ -4,14 +4,16 @@
 
 | Metric | Value |
 |--------|-------|
-| Total models tested | 36 (4 hosten on dataset 2.0, 14 external on v1.0) |
+| Total models tested | 39 (12 scored on dataset 2.0, 27 recorded on dataset 1.0) |
 | Hosten endpoints complete (dataset 2.0) | 4/10 |
 | Hosten average weighted accuracy | **37.7%** |
 | Hosten average overall accuracy | 71.9% |
 | Hosten average on user-generated questions (Q31-Q40) | 22.5% |
 | Hosten average on original questions (Q1-Q30) | 88.3% |
-| External providers average weighted accuracy (dataset v1.0) | 40.2% |
-| External providers average user-gen / original (v1.0) | 31.4% / 69.5% |
+| External providers average weighted accuracy (dataset 2.0) | 24.9% |
+| External providers average user-gen / original (dataset 2.0) | 11.2% / 70.4% |
+| External providers average weighted accuracy (dataset v1.0) | 48.5% |
+| External providers average user-gen / original (v1.0) | 42.2% / 69.3% |
 | Best hosten weighted score (dataset 2.0) | glm-5.3-flash (66.9%) |
 | Best overall accuracy (any provider) | mistral-medium-3.5 (87.5%) |
 | Hosten endpoints NOT re-run on v2.0 | 6 (copilot, google, grok, kimi, mistral, tencent) - blocked by the site, see Providers Tested |
@@ -44,13 +46,15 @@
 | 19 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
 | 20 | gemini-3.8-flash (`google`) | Google (v1.0) | 25/40 | 62.5% | **26.2%** | 10.0% | 80.0% | ✓ Complete |
 | 21 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
-| 22 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
-| 23 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
-| 24 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
-| 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
-| 26 | gemini-3.8-flash | Google AI Studio | 5/40 | 12.5% | **3.8%** | 0.0% | 16.7% | ◐ Partial |
+| 22 | nvidia/nemotron-3.5-super-vl:free | KiloCode API | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
+| 23 | minimax/minimax-m3.1-flash:free | KiloCode API | 22/40 | 55.0% | **23.8%** | 10.0% | 70.0% | ✓ Complete |
+| 24 | cohere/north-mini-code:free | KiloCode API | 21/40 | 52.5% | **23.1%** | 10.0% | 66.7% | ✓ Complete |
+| 25 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
+| 26 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
+| 27 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
+| 28 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
 
-*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral, tencent). 2 entries are not fully complete; access-path details are in Providers Tested below.*
+*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral, tencent). 1 entry is not fully complete; access-path details are in Providers Tested below.*
 
 ## Accuracy Histogram (Weighted)
 
@@ -76,11 +80,13 @@ muse-spark-1.1           ██████████████░░░░�
 nvidia/nemotron-3-ultra: ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  27.7%
 gemini-3.8-flash         █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  26.2%
 gemini-3.5-flash-lite    █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25.4%
+nvidia/nemotron-3.5-sup: █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25.4%
+minimax/minimax-m3.1-fl: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  23.8%
+cohere/north-mini-code:: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  23.1%
 nvidia/nemotron-3.5-lig: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  22.3%
 dots-studio/dots-3-note: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  21.5%
 claude-sonnet-5          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20.8%
 deepseek-ai/deepseek-v4: ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  16.2%
-gemini-3.8-flash         ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  3.8%
 
                          0%  10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
                            ├┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼

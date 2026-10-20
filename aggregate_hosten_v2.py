@@ -28,6 +28,10 @@ RESULTS_DIR = "results/hosten_v2"
 EXTERNAL_RESULTS_DIR = "results/all_models_benchmarks_v2"
 OUTPUT_PATH = "leaderboard.json"
 DOCS_PATH = "docs/assets/data/leaderboard.json"
+# Legacy copy of the same file. It is not fetched by the site any more, but it
+# is still in the repository, so it is written from the same payload to keep it
+# from drifting away from the published numbers.
+DOCS_LEGACY_PATH = "docs/_data/leaderboard.json"
 DATASET_VERSION = "2.0"
 PROVIDER_LABEL = "hosten"
 
@@ -112,6 +116,98 @@ def histogram_row(name, value, width=52):
     return f"{label} {'█' * filled}{'░' * (width - filled)}  {value}%"
 
 
+# Dataset-v1.0 source of truth for the external rows. The current leaderboard.json
+# is NOT a safe source: every aggregation rewrites it, so once a v1.0 row has
+# been replaced by a v2.0 re-run it is gone and the historical page would lose
+# the model. Re-read the original file instead, so a model that falls back to
+# "not re-run" keeps the v1.0 score it was first published with.
+V1_EXTERNAL_SOURCE = os.path.join("results", "all_models_benchmarks", "combined.json")
+# The dataset-v1.0 weighting: Q1-Q30 weigh 0.1, Q31-Q40 weigh 1.0 -> 13.0.
+# It is a property of the question set, not of a run, so a row that only
+# answered one question still carries the full weighted_possible.
+V1_WEIGHTED_POSSIBLE = 13.0
+
+
+def _v1_external_baseline():
+    """Re-derive the dataset-v1.0 external rows from results/.../combined.json.
+
+    Keyed by (model, provider). combined.json can hold more than one run of the
+    same model (the free catalogue is re-run over time), so the best run wins -
+    that is what the published v1.0 leaderboard carried.
+    """
+    rows = {}
+    if not os.path.exists(V1_EXTERNAL_SOURCE):
+        return rows
+    try:
+        with open(V1_EXTERNAL_SOURCE) as fh:
+            data = json.load(fh)
+    except Exception:
+        return rows
+    for rec in data if isinstance(data, list) else []:
+        model = rec.get("model")
+        provider = rec.get("provider")
+        results = rec.get("results") or []
+        if not model or not provider or not results:
+            continue
+        correct = sum(1 for r in results if r.get("is_correct"))
+        weighted_correct = sum(
+            r.get("weight", 0.0) for r in results if r.get("is_correct")
+        )
+        total = len(results)
+        key = (model, provider)
+        if key in rows and rows[key]["weighted_accuracy"] >= round(
+            weighted_correct / V1_WEIGHTED_POSSIBLE * 100, 1
+        ):
+            continue
+        user_total = sum(1 for r in results if r.get("id") and r["id"] > 30)
+        user_correct = sum(
+            1
+            for r in results
+            if r.get("id") and r["id"] > 30 and r.get("is_correct")
+        )
+        orig_total = sum(1 for r in results if r.get("id") and r["id"] <= 30)
+        orig_correct = sum(
+            1
+            for r in results
+            if r.get("id") and r["id"] <= 30 and r.get("is_correct")
+        )
+        w_possible = V1_WEIGHTED_POSSIBLE
+        # "failures" in the v1.0 files counts requests that never came back.
+        # Unparsed-but-present answers are counted separately, so keep the
+        # recorded value: it is what the published v1.0 leaderboard showed.
+        failures = rec.get("failures")
+        if failures is None:
+            failures = sum(1 for r in results if r.get("parsed_answer") is None)
+        rows[key] = {
+            "model": model,
+            "provider": provider,
+            "dataset_version": "1.0",
+            "weighted_accuracy": rec.get("weighted_accuracy")
+            if rec.get("weighted_accuracy") is not None
+            else round(weighted_correct / V1_WEIGHTED_POSSIBLE * 100, 1),
+            "overall_accuracy": round(correct / total * 100, 1) if total else 0,
+            "correct": correct,
+            "total": total,
+            "weighted_score": round(weighted_correct, 3),
+            "weighted_possible": round(w_possible, 3),
+            "user_generated_accuracy": round(user_correct / user_total * 100, 1)
+            if user_total
+            else 0,
+            "user_generated_score": f"{user_correct}/{user_total}",
+            "original_accuracy": round(orig_correct / orig_total * 100, 1)
+            if orig_total
+            else 0,
+            "original_score": f"{orig_correct}/{orig_total}",
+            "failures": failures,
+            # Same three-state rule as the v2.0 external rows: a run counts as
+            # complete only when the provider answered every request.
+            "status": "complete" if failures == 0 and correct > 0 else (
+                "partial" if correct > 0 else "failed"
+            ),
+        }
+    return rows
+
+
 def load_external_v2(questions, user_ids, orig_ids, weighted_possible, existing=None):
     """Rebuild the leaderboard rows for the external API models that were
     re-run on the current dataset.
@@ -128,8 +224,12 @@ def load_external_v2(questions, user_ids, orig_ids, weighted_possible, existing=
     not_rerun = []
     v1_by_model = {}
     for e in existing or []:
-        if e.get("endpoint_id") is None:
+        if e.get("endpoint_id") is None and e.get("dataset_version") != DATASET_VERSION:
             v1_by_model[(e["model"], e.get("provider"))] = e
+    # The live leaderboard only holds the v1.0 rows that were not replaced, so
+    # the original result file is the fallback for a row that a previous
+    # aggregation already dropped.
+    baseline = _v1_external_baseline()
     for path in sorted(glob.glob(os.path.join(EXTERNAL_RESULTS_DIR, "*.json"))):
         base = os.path.basename(path)
         if base == "combined.json":
@@ -145,15 +245,37 @@ def load_external_v2(questions, user_ids, orig_ids, weighted_possible, existing=
         if not results or not model or not provider:
             continue
         answered = sum(1 for r in results if r.get("parsed_answer") is not None)
-        if answered == 0:
+        total = len(results)
+        if answered < total // 2:
+            # The provider did not really answer: the model is gone from the
+            # catalogue, the key is throttled, or the replies cannot be read.
+            # That is not a score, so the v1.0 row stays where it was.
             old = v1_by_model.get((model, provider))
+            if old is None:
+                old = baseline.get((model, provider))
+            if old is not None:
+                # Put the v1.0 row back on the board (and the historical page):
+                # the re-run said nothing about this model, so its published
+                # v1.0 score is still the only score it has.
+                restored = dict(old)
+                restored["dataset_version"] = "1.0"
+                entries.append(restored)
+            if answered == 0:
+                reason = (
+                    "provider returned no answers on the re-run (the model may no "
+                    "longer be served, or the request was throttled)"
+                )
+            else:
+                reason = (
+                    f"only {answered}/{total} questions were answered before the "
+                    "provider throttled the run"
+                )
             not_rerun.append({
                 "endpoint": model,
                 "model": model,
                 "provider": provider,
                 "v1_weighted_accuracy": old.get("weighted_accuracy") if old else None,
-                "reason": "provider returned no answers on the re-run "
-                "(the free-tier catalogue may no longer serve this model)",
+                "reason": reason,
             })
             continue
         correct = sum(1 for r in results if r.get("is_correct"))
@@ -476,6 +598,17 @@ def main():
             "models_failed": sum(1 for e in entries if e["status"] == "failed"),
             "hosten_models_scored": len(v_hosten_complete),
             "external_models_complete": len(v_external),
+            # External averages per version: the external rows of one version
+            # must never be averaged together with the rows of another.
+            "external_average_weighted_accuracy": _avg(
+                v_external, "weighted_accuracy"
+            ),
+            "external_average_user_generated_accuracy": _avg(
+                v_external, "user_generated_accuracy"
+            ),
+            "external_average_original_accuracy": _avg(
+                v_external, "original_accuracy"
+            ),
             "average_weighted_accuracy": _avg(v_complete, "weighted_accuracy"),
             "average_overall_accuracy": _avg(v_complete, "overall_accuracy"),
             "average_user_generated_accuracy": _avg(
@@ -554,7 +687,7 @@ def main():
               f"; skipped: {skipped}")
         return
 
-    for path in (OUTPUT_PATH, DOCS_PATH):
+    for path in (OUTPUT_PATH, DOCS_PATH, DOCS_LEGACY_PATH):
         os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
         with open(path, "w") as fh:
             json.dump(out, fh, indent=2)
@@ -710,11 +843,17 @@ def refresh_docs(out, hosten, questions):
         return text[:i] + payload + text[j:]
 
     best_overall = max(lb, key=lambda x: x["overall_accuracy"])
+    # Every number below describes exactly one dataset version. The external
+    # rows of v1.0 and v2.0 are scored on different question sets, so they are
+    # never averaged together.
+    breakdown = s["version_breakdown"]
+    cur = breakdown[DATASET_VERSION]
+    hist = breakdown["1.0"]
     summary_rows = (
         "| Metric | Value |\n|--------|-------|\n"
         f"| Total models tested | {s['total_models_tested']} "
-        f"({s['hosten_models_complete']} hosten on dataset {DATASET_VERSION}, "
-        f"{s['external_v1_models_complete']} external on v1.0) |\n"
+        f"({cur['models_tested']} scored on dataset {DATASET_VERSION}, "
+        f"{hist['models_tested']} recorded on dataset 1.0) |\n"
         f"| Hosten endpoints complete (dataset {DATASET_VERSION}) | "
         f"{s['hosten_models_complete']}/{s['hosten_models_tested']} |\n"
         f"| Hosten average weighted accuracy | **{s['average_weighted_accuracy']}%** |\n"
@@ -723,11 +862,18 @@ def refresh_docs(out, hosten, questions):
         f"{s['average_user_generated_accuracy']}% |\n"
         f"| Hosten average on original questions (Q1-Q30) | "
         f"{s['average_original_accuracy']}% |\n"
+        f"| External providers average weighted accuracy "
+        f"(dataset {DATASET_VERSION}) | "
+        f"{cur['external_average_weighted_accuracy']}% |\n"
+        f"| External providers average user-gen / original "
+        f"(dataset {DATASET_VERSION}) | "
+        f"{cur['external_average_user_generated_accuracy']}% / "
+        f"{cur['external_average_original_accuracy']}% |\n"
         f"| External providers average weighted accuracy (dataset v1.0) | "
-        f"{s['external_v1_average_weighted_accuracy']}% |\n"
+        f"{hist['external_average_weighted_accuracy']}% |\n"
         f"| External providers average user-gen / original (v1.0) | "
-        f"{s['external_v1_average_user_generated_accuracy']}% / "
-        f"{s['external_v1_average_original_accuracy']}% |\n"
+        f"{hist['external_average_user_generated_accuracy']}% / "
+        f"{hist['external_average_original_accuracy']}% |\n"
         f"| Best hosten weighted score (dataset {DATASET_VERSION}) | "
         f"{best['model']} ({best['weighted_accuracy']}%) |\n"
         f"| Best overall accuracy (any provider) | {best_overall['model']} "
