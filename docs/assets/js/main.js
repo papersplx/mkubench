@@ -290,8 +290,8 @@ function renderBlocked(detail, external) {
   });
   (external || []).forEach(function(d) {
     rows.push({
-      endpoint: d.endpoint || d.model,
-      model: (d.provider ? d.provider + ' / ' : '') + (d.model || '-'),
+      endpoint: d.provider || d.endpoint || d.model,
+      model: d.model || '-',
       v1: d.v1_weighted_accuracy,
       reason: d.reason || 'not re-run'
     });
