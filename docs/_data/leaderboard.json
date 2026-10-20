@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T10:21:06.101971",
+  "generated_at": "2026-10-20T11:31:03.668310",
   "summary": {
     "total_models_tested": 36,
     "models_with_complete_results": 24,
@@ -10,9 +10,9 @@
     "average_user_generated_accuracy": 22.5,
     "average_original_accuracy": 88.3,
     "external_v1_models_complete": 14,
-    "external_v1_average_weighted_accuracy": 48.7,
-    "external_v1_average_user_generated_accuracy": 42.1,
-    "external_v1_average_original_accuracy": 70.5,
+    "external_v1_average_weighted_accuracy": 40.2,
+    "external_v1_average_user_generated_accuracy": 31.4,
+    "external_v1_average_original_accuracy": 69.5,
     "best_model": "glm-5.3-flash",
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
@@ -28,16 +28,16 @@
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 4,
-        "models_complete": 4,
-        "models_partial": 0,
+        "models_tested": 10,
+        "models_complete": 9,
+        "models_partial": 1,
         "models_failed": 0,
         "hosten_models_scored": 4,
-        "external_models_complete": 0,
-        "average_weighted_accuracy": 37.7,
-        "average_overall_accuracy": 71.9,
-        "average_user_generated_accuracy": 22.5,
-        "average_original_accuracy": 88.3,
+        "external_models_complete": 5,
+        "average_weighted_accuracy": 30.9,
+        "average_overall_accuracy": 62.8,
+        "average_user_generated_accuracy": 16.7,
+        "average_original_accuracy": 78.1,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
@@ -45,16 +45,16 @@
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
-        "models_tested": 32,
-        "models_complete": 20,
+        "models_tested": 26,
+        "models_complete": 15,
         "models_partial": 1,
-        "models_failed": 11,
+        "models_failed": 10,
         "hosten_models_scored": 6,
-        "external_models_complete": 14,
-        "average_weighted_accuracy": 51.0,
-        "average_overall_accuracy": 66.6,
-        "average_user_generated_accuracy": 44.0,
-        "average_original_accuracy": 74.2,
+        "external_models_complete": 9,
+        "average_weighted_accuracy": 51.6,
+        "average_overall_accuracy": 67.2,
+        "average_user_generated_accuracy": 44.7,
+        "average_original_accuracy": 74.7,
         "best_model": "mistral-medium-3.5",
         "best_weighted_accuracy": 89.2
       }
@@ -144,24 +144,6 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "poolside/laguna-s-2.1:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 62.3,
-      "overall_accuracy": 67.5,
-      "correct": 27,
-      "total": 40,
-      "weighted_score": 8.1,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 60.0,
-      "user_generated_score": "6/10",
-      "original_accuracy": 70.0,
-      "original_score": "21/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 5,
-      "dataset_version": "1.0"
-    },
-    {
       "model": "grok-4.5",
       "endpoint_id": "grok",
       "provider": "hosten",
@@ -177,7 +159,7 @@
       "original_score": "25/30",
       "failures": 0,
       "status": "complete",
-      "rank": 6,
+      "rank": 5,
       "author": "xAI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -197,7 +179,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7,
+      "rank": 6,
       "dataset_version": "1.0"
     },
     {
@@ -215,25 +197,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 51.5,
-      "overall_accuracy": 77.5,
-      "correct": 31,
-      "total": 40,
-      "weighted_score": 6.7,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 90.0,
-      "original_score": "27/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 9,
+      "rank": 7,
       "dataset_version": "1.0"
     },
     {
@@ -252,7 +216,7 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10,
+      "rank": 8,
       "author": "OpenAI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -272,25 +236,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "gemini-3.5-flash-lite",
-      "provider": "google-ai-studio",
-      "weighted_accuracy": 47.7,
-      "overall_accuracy": 65.0,
-      "correct": 26,
-      "total": 40,
-      "weighted_score": 6.2,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 73.3,
-      "original_score": "22/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 12,
+      "rank": 9,
       "dataset_version": "1.0"
     },
     {
@@ -308,7 +254,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13,
+      "rank": 10,
       "dataset_version": "1.0"
     },
     {
@@ -326,25 +272,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 14,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 44.6,
-      "overall_accuracy": 55.0,
-      "correct": 22,
-      "total": 40,
-      "weighted_score": 5.8,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 60.0,
-      "original_score": "18/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 15,
+      "rank": 11,
       "dataset_version": "1.0"
     },
     {
@@ -363,7 +291,7 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 16,
+      "rank": 12,
       "author": "Moonshot AI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -383,7 +311,7 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 17,
+      "rank": 13,
       "dataset_version": "1.0"
     },
     {
@@ -401,25 +329,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 18,
-      "dataset_version": "1.0"
-    },
-    {
-      "model": "dots-studio/dots-3-note-preview:free",
-      "provider": "kilocode",
-      "weighted_accuracy": 39.2,
-      "overall_accuracy": 60.0,
-      "correct": 24,
-      "total": 40,
-      "weighted_score": 5.1,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 30.0,
-      "user_generated_score": "3/10",
-      "original_accuracy": 70.0,
-      "original_score": "21/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 19,
+      "rank": 14,
       "dataset_version": "1.0"
     },
     {
@@ -437,7 +347,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 20,
+      "rank": 15,
       "dataset_version": "1.0"
     },
     {
@@ -460,7 +370,25 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 21
+      "rank": 16
+    },
+    {
+      "model": "poolside/laguna-s-2.1:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 30.0,
+      "overall_accuracy": 52.5,
+      "correct": 21,
+      "total": 40,
+      "weighted_score": 3.9,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 20.0,
+      "user_generated_score": "2/10",
+      "original_accuracy": 63.3,
+      "original_score": "19/30",
+      "failures": 5,
+      "status": "complete",
+      "rank": 17
     },
     {
       "model": "muse-spark-1.1",
@@ -482,7 +410,25 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 22
+      "rank": 18
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 27.7,
+      "overall_accuracy": 67.5,
+      "correct": 27,
+      "total": 40,
+      "weighted_score": 3.6,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 86.7,
+      "original_score": "26/30",
+      "failures": 1,
+      "status": "complete",
+      "rank": 19
     },
     {
       "model": "gemini-3.8-flash",
@@ -500,10 +446,64 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 23,
+      "rank": 20,
       "author": "Google",
       "dataset_version": "1.0",
       "v1_only": true
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "provider": "google-ai-studio",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 25.4,
+      "overall_accuracy": 60.0,
+      "correct": 24,
+      "total": 40,
+      "weighted_score": 3.3,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 76.7,
+      "original_score": "23/30",
+      "failures": 4,
+      "status": "complete",
+      "rank": 21
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 22.3,
+      "overall_accuracy": 50.0,
+      "correct": 20,
+      "total": 40,
+      "weighted_score": 2.9,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 63.3,
+      "original_score": "19/30",
+      "failures": 3,
+      "status": "complete",
+      "rank": 22
+    },
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "provider": "kilocode",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 21.5,
+      "overall_accuracy": 47.5,
+      "correct": 19,
+      "total": 40,
+      "weighted_score": 2.8,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 60.0,
+      "original_score": "18/30",
+      "failures": 10,
+      "status": "complete",
+      "rank": 23
     },
     {
       "model": "claude-sonnet-5",
@@ -546,25 +546,25 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
-      "provider": "nvidia-nim",
-      "weighted_accuracy": 0.0,
-      "overall_accuracy": 0.0,
-      "correct": 0,
+      "model": "gemini-3.8-flash",
+      "provider": "google-ai-studio",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 3.8,
+      "overall_accuracy": 12.5,
+      "correct": 5,
       "total": 40,
-      "weighted_score": 0.0,
+      "weighted_score": 0.5,
       "weighted_possible": 13.0,
       "user_generated_accuracy": 0.0,
       "user_generated_score": "0/10",
-      "original_accuracy": 0.0,
-      "original_score": "0/30",
-      "failures": 40,
-      "status": "failed",
-      "rank": 26,
-      "dataset_version": "1.0"
+      "original_accuracy": 16.7,
+      "original_score": "5/30",
+      "failures": 34,
+      "status": "partial",
+      "rank": 26
     },
     {
-      "model": "deepseek-ai/deepseek-v4-pro-0813",
+      "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
       "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
@@ -582,8 +582,8 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "gemini-3.8-flash",
-      "provider": "google-ai-studio",
+      "model": "deepseek-ai/deepseek-v4-pro-0813",
+      "provider": "nvidia-nim",
       "weighted_accuracy": 0.0,
       "overall_accuracy": 0.0,
       "correct": 0,
@@ -594,7 +594,7 @@
       "user_generated_score": "0/10",
       "original_accuracy": 0.0,
       "original_score": "0/30",
-      "failures": 2,
+      "failures": 40,
       "status": "failed",
       "rank": 28,
       "dataset_version": "1.0"
@@ -751,7 +751,7 @@
   },
   "dataset_versions": {
     "hosten": "2.0",
-    "external_providers": "1.0",
+    "external_providers": "2.0 (partly still 1.0)",
     "not_rerun_hosten_endpoints": {
       "mistral": {
         "model": "mistral-medium-3.5",
@@ -798,13 +798,62 @@
     },
     "not_rerun_external_models": [
       {
+        "endpoint": "google/gemma-4-31b-it",
+        "model": "google/gemma-4-31b-it",
+        "provider": "google-ai-studio",
+        "v1_weighted_accuracy": 0.0,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "inclusionai/ling-3.0-flash-fin:free",
+        "model": "inclusionai/ling-3.0-flash-fin:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 53.8,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "inclusionai/ling-3.0-flash-sante:free",
+        "model": "inclusionai/ling-3.0-flash-sante:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 47.7,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
         "endpoint": "inclusionai/ling-3.0-flash-vl:free",
         "model": "inclusionai/ling-3.0-flash-vl:free",
         "provider": "kilocode",
         "v1_weighted_accuracy": 62.3,
         "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "liquid/lfm-2.5-2.6b:free",
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 42.3,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "nex-agi/nex-n2.5-mini:free",
+        "model": "nex-agi/nex-n2.5-mini:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 48.5,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "nex-agi/nex-n2.5-pro:free",
+        "model": "nex-agi/nex-n2.5-pro:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 40.0,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
+      },
+      {
+        "endpoint": "stepfun/step-3.7-flash:free",
+        "model": "stepfun/step-3.7-flash:free",
+        "provider": "kilocode",
+        "v1_weighted_accuracy": 56.2,
+        "reason": "provider returned no answers on the re-run (the free-tier catalogue may no longer serve this model)"
       }
     ],
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). 1 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 15 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 8 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }

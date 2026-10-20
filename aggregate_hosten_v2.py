@@ -188,7 +188,10 @@ def load_external_v2(questions, user_ids, orig_ids, weighted_possible, existing=
             else 0,
             "original_score": f"{orig_correct}/{orig_total}",
             "failures": sum(1 for r in results if r.get("parsed_answer") is None),
-            "status": "complete" if answered == total else (
+            # Same rule as the v1.0 external pipeline: a run is complete when
+            # the provider answered every request. An answer that could not be
+            # parsed counts as wrong, not as a missing response.
+            "status": "complete" if data.get("failures", 0) == 0 and correct > 0 else (
                 "partial" if correct > 0 else "failed"
             ),
         })

@@ -10,8 +10,8 @@
 | Hosten average overall accuracy | 71.9% |
 | Hosten average on user-generated questions (Q31-Q40) | 22.5% |
 | Hosten average on original questions (Q1-Q30) | 88.3% |
-| External providers average weighted accuracy (dataset v1.0) | 48.7% |
-| External providers average user-gen / original (v1.0) | 42.1% / 70.5% |
+| External providers average weighted accuracy (dataset v1.0) | 40.2% |
+| External providers average user-gen / original (v1.0) | 31.4% / 69.5% |
 | Best hosten weighted score (dataset 2.0) | glm-5.3-flash (66.9%) |
 | Best overall accuracy (any provider) | mistral-medium-3.5 (87.5%) |
 | Hosten endpoints NOT re-run on v2.0 | 6 (copilot, google, grok, kimi, mistral, tencent) - blocked by the site, see Providers Tested |
@@ -27,29 +27,30 @@
 | 2 | hy4-preview (`tencent`) | Tencent (v1.0) | 31/40 | 77.5% | **72.3%** | 70.0% | 80.0% | ✓ Complete |
 | 3 | glm-5.3-flash (`zai`) | Z.ai | 33/40 | 82.5% | **66.9%** | 60.0% | 90.0% | ✓ Complete |
 | 4 | inclusionai/ling-3.0-flash-vl:free | KiloCode API (v1.0) | 27/40 | 67.5% | **62.3%** | 60.0% | 70.0% | ✓ Complete |
-| 5 | poolside/laguna-s-2.1:free | KiloCode API (v1.0) | 27/40 | 67.5% | **62.3%** | 60.0% | 70.0% | ✓ Complete |
-| 6 | grok-4.5 (`grok`) | xAI (v1.0) | 30/40 | 75.0% | **57.7%** | 50.0% | 83.3% | ✓ Complete |
-| 7 | stepfun/step-3.7-flash:free | KiloCode API (v1.0) | 28/40 | 70.0% | **56.2%** | 50.0% | 76.7% | ✓ Complete |
-| 8 | inclusionai/ling-3.0-flash-fin:free | KiloCode API (v1.0) | 25/40 | 62.5% | **53.8%** | 50.0% | 66.7% | ✓ Complete |
-| 9 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API (v1.0) | 31/40 | 77.5% | **51.5%** | 40.0% | 90.0% | ✓ Complete |
-| 10 | gpt-5.6 (`copilot`) | OpenAI (v1.0) | 28/40 | 70.0% | **49.2%** | 40.0% | 80.0% | ✓ Complete |
-| 11 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
-| 12 | gemini-3.5-flash-lite | Google AI Studio (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
-| 13 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
-| 14 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
-| 15 | nvidia/nemotron-3.5-lightning:free | KiloCode API (v1.0) | 22/40 | 55.0% | **44.6%** | 40.0% | 60.0% | ✓ Complete |
-| 16 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
-| 17 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
-| 18 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
-| 19 | dots-studio/dots-3-note-preview:free | KiloCode API (v1.0) | 24/40 | 60.0% | **39.2%** | 30.0% | 70.0% | ✓ Complete |
-| 20 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
-| 21 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
-| 22 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
-| 23 | gemini-3.8-flash (`google`) | Google (v1.0) | 25/40 | 62.5% | **26.2%** | 10.0% | 80.0% | ✓ Complete |
+| 5 | grok-4.5 (`grok`) | xAI (v1.0) | 30/40 | 75.0% | **57.7%** | 50.0% | 83.3% | ✓ Complete |
+| 6 | stepfun/step-3.7-flash:free | KiloCode API (v1.0) | 28/40 | 70.0% | **56.2%** | 50.0% | 76.7% | ✓ Complete |
+| 7 | inclusionai/ling-3.0-flash-fin:free | KiloCode API (v1.0) | 25/40 | 62.5% | **53.8%** | 50.0% | 66.7% | ✓ Complete |
+| 8 | gpt-5.6 (`copilot`) | OpenAI (v1.0) | 28/40 | 70.0% | **49.2%** | 40.0% | 80.0% | ✓ Complete |
+| 9 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
+| 10 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
+| 11 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
+| 12 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
+| 13 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
+| 14 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
+| 15 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
+| 16 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
+| 17 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
+| 18 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
+| 19 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
+| 20 | gemini-3.8-flash (`google`) | Google (v1.0) | 25/40 | 62.5% | **26.2%** | 10.0% | 80.0% | ✓ Complete |
+| 21 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
+| 22 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
+| 23 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
 | 24 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
 | 25 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
+| 26 | gemini-3.8-flash | Google AI Studio | 5/40 | 12.5% | **3.8%** | 0.0% | 16.7% | ◐ Partial |
 
-*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral, tencent). 1 entry is not fully complete; access-path details are in Providers Tested below.*
+*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral, tencent). 2 entries are not fully complete; access-path details are in Providers Tested below.*
 
 ## Accuracy Histogram (Weighted)
 
@@ -58,27 +59,28 @@ mistral-medium-3.5       ██████████████████�
 hy4-preview              ████████████████████████████████████░░░░░░░░░░░░░░░░  72.3%
 glm-5.3-flash            █████████████████████████████████░░░░░░░░░░░░░░░░░░░  66.9%
 inclusionai/ling-3.0-fl: ███████████████████████████████░░░░░░░░░░░░░░░░░░░░░  62.3%
-poolside/laguna-s-2.1:f: ███████████████████████████████░░░░░░░░░░░░░░░░░░░░░  62.3%
 grok-4.5                 █████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░  57.7%
 stepfun/step-3.7-flash:: ████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░  56.2%
 inclusionai/ling-3.0-fl: ███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░  53.8%
-nvidia/nemotron-3-ultra: ██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░  51.5%
 gpt-5.6                  █████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  49.2%
 nex-agi/nex-n2.5-mini:f: ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  48.5%
-gemini-3.5-flash-lite    ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  47.7%
 inclusionai/ling-3.0-fl: ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  47.7%
 meta/muse-glimmer-30b    ███████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  46.9%
-nvidia/nemotron-3.5-lig: ██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  44.6%
 kimi-k3                  ██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  43.1%
 liquid/lfm-2.5-2.6b:fre: █████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  42.3%
 nex-agi/nex-n2.5-pro:fr: ████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  40.0%
-dots-studio/dots-3-note: ████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  39.2%
 nvidia/nemotron-3-super: ███████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  38.5%
 qwen-3.8-max             █████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  34.6%
+poolside/laguna-s-2.1:f: ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  30.0%
 muse-spark-1.1           ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  28.5%
+nvidia/nemotron-3-ultra: ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  27.7%
 gemini-3.8-flash         █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  26.2%
+gemini-3.5-flash-lite    █████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25.4%
+nvidia/nemotron-3.5-lig: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  22.3%
+dots-studio/dots-3-note: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  21.5%
 claude-sonnet-5          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20.8%
 deepseek-ai/deepseek-v4: ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  16.2%
+gemini-3.8-flash         ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  3.8%
 
                          0%  10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
                            ├┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼

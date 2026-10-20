@@ -109,9 +109,10 @@ def already_done(model, provider):
     except Exception:
         return False
     results = data.get("results") or []
-    # A run only counts when every question was answered, same rule as the
-    # hosten runs: a missing answer is not a zero score.
-    return len(results) >= 40 and all(r.get("parsed_answer") is not None for r in results)
+    # A run counts when the provider answered every request. An answer the
+    # parser could not read is a wrong answer, not a missing response, so it
+    # does not make the run incomplete.
+    return len(results) >= 40 and data.get("failures", 0) == 0
 
 
 def main():

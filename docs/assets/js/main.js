@@ -197,7 +197,9 @@ function renderLeaderboard(entries) {
         escapeHtml(entryProviderLabel(entry)) + '</span></td>' +
       '<td class="num"><strong>' + pct(entry.weighted_accuracy) + '</strong></td>' +
       '<td class="num">' + pct(entry.user_generated_accuracy) + '</td>' +
-      '<td class="num">' + pct(entry.original_accuracy) + '</td>';
+      '<td class="num">' + pct(entry.original_accuracy) + '</td>' +
+      '<td class="status-' + escapeHtml(entry.status) + '">' +
+        escapeHtml(statusLabel(entry.status)) + '</td>';
     tbody.appendChild(row);
   });
 }
