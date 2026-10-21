@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Report any visible modal dialogs on a gateway tab (tencent-style blocker)."""
+"""Report any visible modal dialogs on a gateway tab (a site-side blocker modal)."""
 import sys
 import urllib.parse
 import urllib.request

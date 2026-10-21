@@ -33,7 +33,6 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 | Rank | Model | Provider | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | mistral-medium-3.5 (`mistral`) | Mistral AI (v1.0) | 35/40 | 87.5% | **89.2%** | 90.0% | 86.7% | ✓ Complete |
-| 2 | hy4-preview (`tencent`) | Tencent (v1.0) | 31/40 | 77.5% | **72.3%** | 70.0% | 80.0% | ✓ Complete |
 | 3 | glm-5.3-flash (`zai`) | Z.ai | 33/40 | 82.5% | **66.9%** | 60.0% | 90.0% | ✓ Complete |
 | 4 | inclusionai/ling-3.0-flash-vl:free | KiloCode API (v1.0) | 27/40 | 67.5% | **62.3%** | 60.0% | 70.0% | ✓ Complete |
 | 5 | grok-4.5 (`grok`) | xAI (v1.0) | 30/40 | 75.0% | **57.7%** | 50.0% | 83.3% | ✓ Complete |
@@ -138,7 +137,6 @@ python run_benchmark.py --client openai --model claude \
 | `grok` | grok-4.5 |
 | `google` | gemini-3.8-flash |
 | `kimi` | kimi-k3 |
-| `tencent` | hy4-preview |
 | `copilot` | gpt-5.6 |
 | `deepseek` | NOT AVAILABLE |
 

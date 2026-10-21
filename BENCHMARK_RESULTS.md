@@ -16,7 +16,7 @@
 | External providers average user-gen / original (v1.0) | 42.2% / 69.3% |
 | Best hosten weighted score (dataset 2.0) | glm-5.3-flash (66.9%) |
 | Best overall accuracy (any provider) | mistral-medium-3.5 (87.5%) |
-| Hosten endpoints NOT re-run on v2.0 | 6 (copilot, google, grok, kimi, mistral, tencent) - blocked by the site, see Providers Tested |
+| Hosten endpoints NOT re-run on v2.0 | 5 (copilot, google, grok, kimi, mistral) - blocked by the site, see Providers Tested |
 
 
 **Weighting:** User-added questions (Q31-Q40) have weight **1.0**, original questions (Q1-Q30) have weight **0.1**. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).
@@ -26,7 +26,6 @@
 | Rank | Model | Provider | Correct | Overall | Weighted | Q31-Q40 | Q1-Q30 | Status |
 |---|---|---|---|---|---|---|---|---|
 | 1 | mistral-medium-3.5 (`mistral`) | Mistral AI (v1.0) | 35/40 | 87.5% | **89.2%** | 90.0% | 86.7% | ✓ Complete |
-| 2 | hy4-preview (`tencent`) | Tencent (v1.0) | 31/40 | 77.5% | **72.3%** | 70.0% | 80.0% | ✓ Complete |
 | 3 | glm-5.3-flash (`zai`) | Z.ai | 33/40 | 82.5% | **66.9%** | 60.0% | 90.0% | ✓ Complete |
 | 4 | inclusionai/ling-3.0-flash-vl:free | KiloCode API (v1.0) | 27/40 | 67.5% | **62.3%** | 60.0% | 70.0% | ✓ Complete |
 | 5 | grok-4.5 (`grok`) | xAI (v1.0) | 30/40 | 75.0% | **57.7%** | 50.0% | 83.3% | ✓ Complete |
@@ -54,7 +53,7 @@
 | 27 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
 | 28 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
 
-*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral, tencent). 1 entry is not fully complete; access-path details are in Providers Tested below.*
+*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, google, grok, kimi, mistral). 1 entry is not fully complete; access-path details are in Providers Tested below.*
 
 ## Accuracy Histogram (Weighted)
 
@@ -98,7 +97,7 @@ Legend: █ = 2% of 100%
 
 Every model with a usable answer is already ranked in the single leaderboard above, so per-access-path score tables would just duplicate it. Instead:
 
-- **Hosten gateway** (`http://localhost:8079/v1`) - 10 endpoint IDs tested, 10 complete, from 10 different model authors (Anthropic, Mistral AI, Z.ai, Meta, Alibaba, xAI, Google, Moonshot AI, Tencent, OpenAI - see the Provider column)
+- **Hosten gateway** (`http://localhost:8079/v1`) - 9 endpoint IDs tested, 9 complete, from 9 different model authors (Anthropic, Mistral AI, Z.ai, Meta, Alibaba, xAI, Google, Moonshot AI, OpenAI - see the Provider column)
 - **KiloCode API** - 11 tested, 11 complete
 - **Google AI Studio** - 3 tested, 1 complete
 - **NVIDIA NIM** - 12 tested, 3 complete
@@ -141,7 +140,6 @@ The Hosten gateway (`http://localhost:8079/v1`) exposes 10 endpoint IDs, each ro
 | `zai` | glm-5.3-flash | Z.ai |
 | `copilot` | gpt-5.6 | OpenAI |
 | `grok` | grok-4.5 | xAI |
-| `tencent` | hy4-preview | Tencent |
 | `kimi` | kimi-k3 | Moonshot AI |
 | `mistral` | mistral-medium-3.5 | Mistral AI |
 | `meta` | muse-spark-1.1 | Meta |
@@ -152,20 +150,19 @@ Per-question answers are in `results/hosten_v2/results_<endpoint>_<timestamp>_de
 
 ### Endpoints NOT re-run on dataset v2.0
 
-6 of the 10 Hosten endpoints could not be re-run: the sites blocked automated access. Their v1.0 rows are retained in the leaderboard (marked **(v1.0)** and `v1_only`) for continuity only and must not be read as v2.0 performance.
+5 of the 10 Hosten endpoints could not be re-run: the sites blocked automated access. Their v1.0 rows are retained in the leaderboard (marked **(v1.0)** and `v1_only`) for continuity only and must not be read as v2.0 performance.
 
 | Endpoint | Model | Why not re-run |
 |----------|-------|----------------|
 | `copilot` | gpt-5.6 | Cloudflare Turnstile 'Verification required' modal re-arms on every submit; requires a human solve |
 | `google` | gemini-3.8-flash | site signed the account out; requires an interactive Google login in the Chromium window (automation not possible) |
-| `grok` | grok-4.5 | single-tab run started after the 'under heavy usage' rate-limit window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s with zero response (same session/login-gated wedge as mistral/tencent), so no complete 40-question run could be produced |
+| `grok` | grok-4.5 | single-tab run started after the 'under heavy usage' rate-limit window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s with zero response (same session/login-gated wedge as mistral), so no complete 40-question run could be produced |
 | `kimi` | kimi-k3 | site rate-limited ('too many people are chatting'); throttling window |
 | `mistral` | mistral-medium-3.5 | single-tab run started after the account message-limit window cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab cannot answer chat completions; session/login-gated), so no complete 40-question run could be produced |
-| `tencent` | hy4-preview | site answers only after a long deep-thinking pass; the tab wedges mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete 40-question run could be produced |
 
 ## Providers Tested
 
-- **Hosten Gateway** (`http://localhost:8079/v1`) - access path for 10 endpoint IDs from 10 different model authors; **4 complete on dataset 2.0** (claude, meta, qwen, zai), 6 blocked by the sites (see table above)
+- **Hosten Gateway** (`http://localhost:8079/v1`) - access path for 10 endpoint IDs from 10 different model authors; **4 complete on dataset 2.0** (claude, meta, qwen, zai), 5 blocked by the sites (see table above)
 - **KiloCode API** (`https://api.kilo.ai/api/gateway/v1`) - 11 models from various providers (NVIDIA, StepFun, Poolside, InclusionAI, NexAGI, Liquid, Dots Studio), all complete
 - **Google AI Studio** (`https://generativelanguage.googleapis.com/v1beta/openai/chat/completions`) - 3 tested, 1 complete, 2 unavailable
 - **NVIDIA NIM / NGC** (`https://integrate.api.nvidia.com/v1`) - 12 tested, 3 complete, 9 unavailable or timed out
