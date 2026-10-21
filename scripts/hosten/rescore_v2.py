@@ -29,7 +29,7 @@ def latest(model: str) -> str:
 
 
 def main() -> None:
-    models = sys.argv[1:] or ["claude", "meta", "qwen", "grok", "kimi", "mistral", "tencent", "zai"]
+    models = sys.argv[1:] or ["claude", "meta", "qwen", "grok", "kimi", "mistral", "zai"]
     ev = BenchmarkEvaluator(os.path.join(PROJECT, "dataset", "mkultra_benchmark.jsonl"))
     by_id = {q["id"]: q for q in ev.dataset}
 

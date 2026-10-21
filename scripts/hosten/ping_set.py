@@ -7,7 +7,7 @@ import urllib.request
 
 MODELS = sys.argv[1:] or [
     "claude", "mistral", "zai", "meta", "qwen", "grok",
-    "google", "kimi", "tencent", "copilot",
+    "google", "kimi", "copilot",
 ]
 OUT = "/tmp/ping_set.txt"
 lock = threading.Lock()

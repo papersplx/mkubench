@@ -4,7 +4,7 @@ import json
 import sys
 import urllib.request
 
-MODELS = ["claude", "mistral", "zai", "meta", "qwen", "grok", "google", "kimi", "tencent", "copilot"]
+MODELS = ["claude", "mistral", "zai", "meta", "qwen", "grok", "google", "kimi", "copilot"]
 OUT = "/tmp/ping_results.txt"
 
 with open(OUT, "w") as fh:

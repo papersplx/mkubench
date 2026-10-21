@@ -21,10 +21,9 @@ MAP[qwen]="qwen-3.8-max"
 MAP[grok]="grok-4.5"
 MAP[google]="gemini-3.8-flash"
 MAP[kimi]="kimi-k3"
-MAP[tencent]="hy4-preview"
 MAP[copilot]="gpt-5.6"
 
-MODELS=(${MODELS_OVERRIDE:-claude mistral zai meta qwen grok google kimi tencent copilot})
+MODELS=(${MODELS_OVERRIDE:-claude mistral zai meta qwen grok google kimi copilot})
 
 for m in "${MODELS[@]}"; do
   # Resume-safe: skip a model that already produced a short summary file.

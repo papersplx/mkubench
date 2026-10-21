@@ -17,11 +17,10 @@ MAP[qwen]="qwen-3.8-max"
 MAP[grok]="grok-4.5"
 MAP[google]="gemini-3.8-flash"
 MAP[kimi]="kimi-k3"
-MAP[tencent]="hy4-preview"
 MAP[copilot]="gpt-5.6"
 # deepseek: NOT AVAILABLE
 
-MODELS=(claude mistral zai meta qwen grok google kimi tencent copilot)
+MODELS=(claude mistral zai meta qwen grok google kimi copilot)
 
 for m in "${MODELS[@]}"; do
   echo "=== START $m (${MAP[$m]}) ==="

@@ -26,7 +26,7 @@ is_complete() {
 }
 
 MODELS=${*}
-[ -z "$MODELS" ] && MODELS="mistral kimi zai grok tencent"
+[ -z "$MODELS" ] && MODELS="mistral kimi zai grok"
 
 : > "$LOG"
 log "finisher starting; models: $MODELS; deadline $(date -d @"$DEADLINE" '+%H:%M:%S')"

@@ -17,7 +17,6 @@ MAP[qwen]="qwen-3.8-max"
 MAP[grok]="grok-4.5"
 MAP[google]="gemini-3.8-flash"
 MAP[kimi]="kimi-k3"
-MAP[tencent]="hy4-preview"
 MAP[copilot]="gpt-5.6"
 
 for m in "$@"; do

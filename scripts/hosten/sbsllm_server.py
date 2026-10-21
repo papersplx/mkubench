@@ -39,7 +39,7 @@ from sbsllm.sites import get_site  # noqa: E402
 
 MODELS = [m.strip() for m in os.environ.get(
     "GATEWAY_MODELS",
-    "claude,mistral,zai,meta,qwen,grok,google,kimi,tencent,copilot",
+    "claude,mistral,zai,meta,qwen,grok,google,kimi,copilot",
 ).split(",") if m.strip()]
 
 HOST = os.environ.get("GATEWAY_HOST", "127.0.0.1")

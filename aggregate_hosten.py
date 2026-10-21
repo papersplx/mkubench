@@ -25,7 +25,6 @@ MODEL_NAMES = {
     "grok": "grok-4.5",
     "google": "gemini-3.8-flash",
     "kimi": "kimi-k3",
-    "tencent": "hy4-preview",
     "copilot": "gpt-5.6",
 }
 PROVIDER = "hosten"
