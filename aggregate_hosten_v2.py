@@ -44,6 +44,7 @@ MODEL_NAMES = {
     "grok": "grok-4.5",
     "google": "gemini-3.8-flash",
     "kimi": "kimi-k3",
+    "tencent": "hy4-preview",
     "copilot": "gpt-5.6",
 }
 PROVIDER_DISPLAY = {
@@ -69,10 +70,13 @@ BLOCKED_REASONS = {
               "cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab "
               "cannot answer chat completions; session/login-gated), so no "
               "complete 40-question run could be produced",
+    "tencent": "site answers only after a long deep-thinking pass; the tab wedges "
+              "mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete "
+              "40-question run could be produced",
     "grok": "single-tab run started after the 'under heavy usage' rate-limit "
             "window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s "
-            "with zero response (same session/login-gated wedge as mistral), "
-            "so no complete 40-question run could be produced",
+            "with zero response (same session/login-gated wedge as mistral/"
+            "tencent), so no complete 40-question run could be produced",
 }
 
 AUTHORS = {
@@ -84,6 +88,7 @@ AUTHORS = {
     "grok": "xAI",
     "google": "Google",
     "kimi": "Moonshot AI",
+    "tencent": "Tencent",
     "copilot": "OpenAI",
 }
 
@@ -464,13 +469,11 @@ def main():
         if not results:
             skipped.append(f"{model_id}: no per-question results")
             continue
-        # A hosten run is only publishable when every question was answered.
-        # A blocked site writes 40 blank rows, which would otherwise publish a
-        # false 0.0% row and displace the endpoint's v1.0 score; same rule as
-        # v2_valid.py. Non-hosten files keep the permissive path.
-        if model_id in hosten_ids and (
-            len(results) < len(questions)
-            or not all(r.get("model_response") for r in results)
+        # RESULTS_DIR holds only hosten gateway runs: any run whose site wrote
+        # blank answers must not publish a false 0.0% row (same rule as
+        # v2_valid.py); keep the endpoint's v1.0 row instead.
+        if len(results) < len(questions) or not all(
+            r.get("model_response") for r in results
         ):
             blank = sum(1 for r in results if not r.get("model_response"))
             skipped.append(
