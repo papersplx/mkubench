@@ -65,7 +65,9 @@ BLOCKED_REASONS = {
               "in the Chromium window (automation not possible)",
     "copilot": "Cloudflare Turnstile 'Verification required' modal re-arms on every "
                "submit; requires a human solve",
-    "kimi": "site rate-limited ('too many people are chatting'); throttling window",
+    "kimi": "site produces no answer within the gateway's 60s response budget "
+            "(plain-CLI sbsllm timeout) - a trivial prompt returns a 504, so the "
+            "tab is not answering at all",
     "mistral": "single-tab run started after the account message-limit window "
               "cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab "
               "cannot answer chat completions; session/login-gated), so no "
@@ -73,10 +75,10 @@ BLOCKED_REASONS = {
     "tencent": "site answers only after a long deep-thinking pass; the tab wedges "
               "mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete "
               "40-question run could be produced",
-    "grok": "single-tab run started after the 'under heavy usage' rate-limit "
-            "window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s "
-            "with zero response (same session/login-gated wedge as mistral/"
-            "tencent), so no complete 40-question run could be produced",
+    "grok": "site produced no answer within the gateway's 60s response budget on "
+            "every 2026-10-22 attempt, including on freshly relaunched tabs (a "
+            "trivial prompt returns a 504), so the remaining 9 questions (Q32-40) "
+            "could not be filled",
 }
 
 AUTHORS = {

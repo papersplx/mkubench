@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-21T13:50:26.592447",
+  "generated_at": "2026-10-22T02:26:41.534684",
   "summary": {
     "total_models_tested": 39,
     "models_with_complete_results": 27,
-    "hosten_models_complete": 4,
+    "hosten_models_complete": 7,
     "hosten_models_tested": 10,
-    "average_weighted_accuracy": 37.7,
-    "average_overall_accuracy": 71.9,
-    "average_user_generated_accuracy": 22.5,
-    "average_original_accuracy": 88.3,
+    "average_weighted_accuracy": 39.6,
+    "average_overall_accuracy": 70.7,
+    "average_user_generated_accuracy": 25.7,
+    "average_original_accuracy": 85.7,
     "external_v1_models_complete": 17,
     "external_v1_average_weighted_accuracy": 37.4,
     "external_v1_average_user_generated_accuracy": 27.6,
@@ -17,98 +17,53 @@
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
       "copilot",
-      "google",
       "grok",
-      "kimi",
-      "mistral",
-      "tencent"
+      "kimi"
     ],
-    "hosten_endpoints_not_rerun_count": 6,
+    "hosten_endpoints_not_rerun_count": 3,
     "dataset_version": "2.0",
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 12,
-        "models_complete": 12,
+        "models_tested": 15,
+        "models_complete": 15,
         "models_partial": 0,
         "models_failed": 0,
-        "hosten_models_scored": 4,
+        "hosten_models_scored": 7,
         "external_models_complete": 8,
         "external_average_weighted_accuracy": 24.9,
         "external_average_user_generated_accuracy": 11.2,
         "external_average_original_accuracy": 70.4,
-        "average_weighted_accuracy": 29.2,
-        "average_overall_accuracy": 61.0,
-        "average_user_generated_accuracy": 15.0,
-        "average_original_accuracy": 76.4,
+        "average_weighted_accuracy": 31.7,
+        "average_overall_accuracy": 62.7,
+        "average_user_generated_accuracy": 18.0,
+        "average_original_accuracy": 77.6,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
-        "hosten_endpoints_blocked": 6
+        "hosten_endpoints_blocked": 3
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
-        "models_tested": 27,
-        "models_complete": 15,
+        "models_tested": 24,
+        "models_complete": 12,
         "models_partial": 1,
         "models_failed": 11,
-        "hosten_models_scored": 6,
+        "hosten_models_scored": 3,
         "external_models_complete": 9,
         "external_average_weighted_accuracy": 48.5,
         "external_average_user_generated_accuracy": 42.2,
         "external_average_original_accuracy": 69.3,
-        "average_weighted_accuracy": 51.6,
-        "average_overall_accuracy": 67.2,
-        "average_user_generated_accuracy": 44.7,
-        "average_original_accuracy": 74.7,
-        "best_model": "mistral-medium-3.5",
-        "best_weighted_accuracy": 89.2
+        "average_weighted_accuracy": 48.9,
+        "average_overall_accuracy": 65.0,
+        "average_user_generated_accuracy": 41.7,
+        "average_original_accuracy": 72.8,
+        "best_model": "inclusionai/ling-3.0-flash-vl:free",
+        "best_weighted_accuracy": 62.3
       }
     }
   },
   "leaderboard": [
-    {
-      "model": "mistral-medium-3.5",
-      "endpoint_id": "mistral",
-      "provider": "hosten",
-      "weighted_accuracy": 89.2,
-      "overall_accuracy": 87.5,
-      "correct": 35,
-      "total": 40,
-      "weighted_score": 11.6,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 90.0,
-      "user_generated_score": "9/10",
-      "original_accuracy": 86.7,
-      "original_score": "26/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 1,
-      "author": "Mistral AI",
-      "dataset_version": "1.0",
-      "v1_only": true
-    },
-    {
-      "model": "hy4-preview",
-      "endpoint_id": "tencent",
-      "provider": "hosten",
-      "weighted_accuracy": 72.3,
-      "overall_accuracy": 77.5,
-      "correct": 31,
-      "total": 40,
-      "weighted_score": 9.4,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 70.0,
-      "user_generated_score": "7/10",
-      "original_accuracy": 80.0,
-      "original_score": "24/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 2,
-      "author": "Tencent",
-      "dataset_version": "1.0",
-      "v1_only": true
-    },
     {
       "model": "glm-5.3-flash",
       "endpoint_id": "zai",
@@ -129,7 +84,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 3
+      "rank": 1
     },
     {
       "model": "inclusionai/ling-3.0-flash-vl:free",
@@ -146,7 +101,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 4,
+      "rank": 2,
       "dataset_version": "1.0"
     },
     {
@@ -165,7 +120,7 @@
       "original_score": "25/30",
       "failures": 0,
       "status": "complete",
-      "rank": 5,
+      "rank": 3,
       "author": "xAI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -185,7 +140,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 6,
+      "rank": 4,
       "dataset_version": "1.0"
     },
     {
@@ -203,8 +158,30 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7,
+      "rank": 5,
       "dataset_version": "1.0"
+    },
+    {
+      "model": "mistral-medium-3.5",
+      "endpoint_id": "mistral",
+      "provider": "hosten",
+      "author": "Mistral AI",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 52.3,
+      "overall_accuracy": 80.0,
+      "correct": 32,
+      "total": 40,
+      "weighted_score": 6.8,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 40.0,
+      "user_generated_score": "4/10",
+      "original_accuracy": 93.3,
+      "original_score": "28/30",
+      "unparsed": 0,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 6
     },
     {
       "model": "gpt-5.6",
@@ -222,7 +199,7 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8,
+      "rank": 7,
       "author": "OpenAI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -242,7 +219,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 9,
+      "rank": 8,
       "dataset_version": "1.0"
     },
     {
@@ -260,7 +237,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10,
+      "rank": 9,
       "dataset_version": "1.0"
     },
     {
@@ -278,7 +255,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11,
+      "rank": 10,
       "dataset_version": "1.0"
     },
     {
@@ -297,7 +274,7 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 12,
+      "rank": 11,
       "author": "Moonshot AI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -317,8 +294,30 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13,
+      "rank": 12,
       "dataset_version": "1.0"
+    },
+    {
+      "model": "hy4-preview",
+      "endpoint_id": "tencent",
+      "provider": "hosten",
+      "author": "Tencent",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 41.5,
+      "overall_accuracy": 67.5,
+      "correct": 27,
+      "total": 40,
+      "weighted_score": 5.4,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 30.0,
+      "user_generated_score": "3/10",
+      "original_accuracy": 80.0,
+      "original_score": "24/30",
+      "unparsed": 3,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 13
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -379,6 +378,28 @@
       "rank": 16
     },
     {
+      "model": "gemini-3.8-flash",
+      "endpoint_id": "google",
+      "provider": "hosten",
+      "author": "Google",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 32.3,
+      "overall_accuracy": 60.0,
+      "correct": 24,
+      "total": 40,
+      "weighted_score": 4.2,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 20.0,
+      "user_generated_score": "2/10",
+      "original_accuracy": 73.3,
+      "original_score": "22/30",
+      "unparsed": 5,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 17
+    },
+    {
       "model": "poolside/laguna-s-2.1:free",
       "provider": "kilocode",
       "dataset_version": "2.0",
@@ -394,7 +415,7 @@
       "original_score": "19/30",
       "failures": 5,
       "status": "complete",
-      "rank": 17
+      "rank": 18
     },
     {
       "model": "muse-spark-1.1",
@@ -416,7 +437,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 18
+      "rank": 19
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -434,28 +455,7 @@
       "original_score": "26/30",
       "failures": 1,
       "status": "complete",
-      "rank": 19
-    },
-    {
-      "model": "gemini-3.8-flash",
-      "endpoint_id": "google",
-      "provider": "hosten",
-      "weighted_accuracy": 26.2,
-      "overall_accuracy": 62.5,
-      "correct": 25,
-      "total": 40,
-      "weighted_score": 3.4,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 10.0,
-      "user_generated_score": "1/10",
-      "original_accuracy": 80.0,
-      "original_score": "24/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 20,
-      "author": "Google",
-      "dataset_version": "1.0",
-      "v1_only": true
+      "rank": 20
     },
     {
       "model": "gemini-3.5-flash-lite",
@@ -813,26 +813,12 @@
     "hosten": "2.0",
     "external_providers": "2.0 (partly still 1.0)",
     "not_rerun_hosten_endpoints": {
-      "mistral": {
-        "model": "mistral-medium-3.5",
-        "status": "complete",
-        "v1_weighted_accuracy": 89.2,
-        "v1_user_generated_score": "9/10",
-        "reason": "single-tab run started after the account message-limit window cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab cannot answer chat completions; session/login-gated), so no complete 40-question run could be produced"
-      },
-      "tencent": {
-        "model": "hy4-preview",
-        "status": "complete",
-        "v1_weighted_accuracy": 72.3,
-        "v1_user_generated_score": "7/10",
-        "reason": "site answers only after a long deep-thinking pass; the tab wedges mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete 40-question run could be produced"
-      },
       "grok": {
         "model": "grok-4.5",
         "status": "complete",
         "v1_weighted_accuracy": 57.7,
         "v1_user_generated_score": "5/10",
-        "reason": "single-tab run started after the 'under heavy usage' rate-limit window cleared (~17:51 2026-10-19) but Q1 read timed out at 2400s with zero response (same session/login-gated wedge as mistral/tencent), so no complete 40-question run could be produced"
+        "reason": "site produced no answer within the gateway's 60s response budget on every 2026-10-22 attempt, including on freshly relaunched tabs (a trivial prompt returns a 504), so the remaining 9 questions (Q32-40) could not be filled"
       },
       "copilot": {
         "model": "gpt-5.6",
@@ -846,14 +832,7 @@
         "status": "complete",
         "v1_weighted_accuracy": 43.1,
         "v1_user_generated_score": "3/10",
-        "reason": "site rate-limited ('too many people are chatting'); throttling window"
-      },
-      "google": {
-        "model": "gemini-3.8-flash",
-        "status": "complete",
-        "v1_weighted_accuracy": 26.2,
-        "v1_user_generated_score": "1/10",
-        "reason": "site signed the account out; requires an interactive Google login in the Chromium window (automation not possible)"
+        "reason": "site produces no answer within the gateway's 60s response budget (plain-CLI sbsllm timeout) - a trivial prompt returns a 504, so the tab is not answering at all"
       }
     },
     "not_rerun_external_models": [
@@ -956,6 +935,6 @@
         "reason": "only 1/40 questions were answered before the provider throttled the run"
       }
     ],
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 6 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 3 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }
