@@ -156,9 +156,9 @@ Per-question answers are in `results/hosten_v2/results_<endpoint>_<timestamp>_de
 
 | Endpoint | Model | Why not re-run |
 |----------|-------|----------------|
-| `copilot` | gpt-5.6 | Cloudflare Turnstile 'Verification required' modal re-arms on every submit; requires a human solve |
+| `copilot` | gpt-5.6 | gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); copilot answers early questions but Q30-40 exceed it, leaving 11/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish. |
 | `grok` | grok-4.5 | site produced no answer within the gateway's 60s response budget on every 2026-10-22 attempt, including on freshly relaunched tabs (a trivial prompt returns a 504), so the remaining 9 questions (Q32-40) could not be filled |
-| `kimi` | kimi-k3 | site produces no answer within the gateway's 60s response budget (plain-CLI sbsllm timeout) - a trivial prompt returns a 504, so the tab is not answering at all |
+| `kimi` | kimi-k3 | gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); pong answers in ~7s but deep questions exceed it, leaving 24/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish. |
 
 ## Providers Tested
 

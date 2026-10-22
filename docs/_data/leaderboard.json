@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T09:17:30.038357",
+  "generated_at": "2026-10-22T09:50:32.693784",
   "summary": {
     "total_models_tested": 39,
     "models_with_complete_results": 27,
@@ -825,14 +825,14 @@
         "status": "complete",
         "v1_weighted_accuracy": 49.2,
         "v1_user_generated_score": "4/10",
-        "reason": "Cloudflare Turnstile 'Verification required' modal re-arms on every submit; requires a human solve"
+        "reason": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); copilot answers early questions but Q30-40 exceed it, leaving 11/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish."
       },
       "kimi": {
         "model": "kimi-k3",
         "status": "complete",
         "v1_weighted_accuracy": 43.1,
         "v1_user_generated_score": "3/10",
-        "reason": "site produces no answer within the gateway's 60s response budget (plain-CLI sbsllm timeout) - a trivial prompt returns a 504, so the tab is not answering at all"
+        "reason": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); pong answers in ~7s but deep questions exceed it, leaving 24/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish."
       }
     },
     "not_rerun_external_models": [

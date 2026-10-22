@@ -114,18 +114,23 @@ PY
     PAUSE="${PAUSE:-0}"
     echo "$(date '+%F %H:%M:%S') attempt $try: ask $NQ question(s) (pause ${PAUSE}s)" \
       | tee -a "$LOG"
+    # Unique temp file so concurrent fill_gaps_v2.sh runs for the same model do
+    # not clobber each other's per-question dataset (which produced "Extra data"
+    # JSON parse errors and duplicate/blank rows). Cleaned up on exit.
+    ONEDS="$(mktemp dataset/one_${MODEL}.XXXXXX.jsonl)"
+    trap 'rm -f "$ONEDS"' EXIT
     if [ "$PAUSE" -gt 0 ] && [ "$NQ" -gt 1 ]; then
       n=0
       while IFS= read -r line; do
+        printf '%s\n' "$line" > "$ONEDS"
         qid=$(/usr/bin/python3 -c "import json,sys;print(json.loads(sys.argv[1])['id'])" "$line")
-        echo "$line" > "dataset/one_${MODEL}.jsonl"
         echo "$(date '+%F %H:%M:%S') ask Q$qid alone" >>"$LOG"
         python run_benchmark.py \
           --client openai \
           --model "$MODEL" \
           --api-base "$BASE" \
           --api-key dummy \
-          --dataset "dataset/one_${MODEL}.jsonl" \
+          --dataset "$ONEDS" \
           --output results/hosten_v2 \
           --timeout 2400 \
           --max-retries 1 \
