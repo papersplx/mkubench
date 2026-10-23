@@ -19,6 +19,7 @@ src/__pycache__/
 # Transient gap-fill working files, regenerated on every run
 dataset/mkultra_missing_*.jsonl
 dataset/one_*.jsonl
+dataset/recover_*.jsonl
 
 # Large PDFs that cannot be committed to GitHub
 dataset/raw/
