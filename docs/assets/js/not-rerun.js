@@ -36,21 +36,19 @@ function renderNotRerun(detail, external) {
     rows.push({
       endpoint: id,
       model: d.model || '-',
-      v1: d.v1_weighted_accuracy,
-      reason: d.reason || 'not re-run'
+      v1: d.v1_weighted_accuracy
     });
   });
   (external || []).forEach(function(d) {
     rows.push({
       endpoint: d.provider || d.endpoint || d.model,
       model: d.model || '-',
-      v1: d.v1_weighted_accuracy,
-      reason: d.reason || 'not re-run'
+      v1: d.v1_weighted_accuracy
     });
   });
 
   if (!rows.length) {
-    tbody.innerHTML = '<tr><td colspan="4" class="reason">Every endpoint was re-run.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="3" class="reason">Every endpoint was re-run.</td></tr>';
     return;
   }
 
@@ -59,8 +57,7 @@ function renderNotRerun(detail, external) {
     row.innerHTML =
       '<td><code>' + escapeHtml(d.endpoint) + '</code></td>' +
       '<td>' + escapeHtml(d.model) + '</td>' +
-      '<td class="num">' + (d.v1 != null ? pct(d.v1) : '-') + '</td>' +
-      '<td class="reason">' + escapeHtml(d.reason) + '</td>';
+      '<td class="num">' + (d.v1 != null ? pct(d.v1) : '-') + '</td>';
     tbody.appendChild(row);
   });
 }
