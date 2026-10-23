@@ -18,7 +18,7 @@ import os
 import sys
 from pathlib import Path
 
-sys.path.insert(0, "/home/fra/dev/sbsllm")
+sys.path.insert(0, "/var/home/fra/dev/sbsllm")
 
 # Playwright does not forward our display variables; browser.py (commit 83c5a94)
 # copies DISPLAY/WAYLAND_DISPLAY/XAUTHORITY/XDG_RUNTIME_DIR/XDG_SESSION_TYPE, so
@@ -39,7 +39,7 @@ from sbsllm.sites import get_site  # noqa: E402
 
 MODELS = [m.strip() for m in os.environ.get(
     "GATEWAY_MODELS",
-    "claude,mistral,zai,meta,qwen,grok,google,kimi,copilot",
+    "claude,mistral,zai,meta,qwen,grok,google,kimi,tencent,copilot",
 ).split(",") if m.strip()]
 
 HOST = os.environ.get("GATEWAY_HOST", "127.0.0.1")
@@ -57,7 +57,7 @@ def _env_float(name: str, default: float) -> float:
 
 
 def main() -> int:
-    cfg = Path("/home/fra/dev/sbsllm/config.yaml")
+    cfg = Path("/var/home/fra/dev/sbsllm/config.yaml")
     config = load_config(cfg if cfg.exists() else None)
     browser_bin = config.chrome_bin
     user_data_dir = config.user_data_dir
@@ -114,6 +114,10 @@ def main() -> int:
         duplicate_prompt_cooldown=config.duplicate_prompt_cooldown,
         busy_patience=busy_patience,
         first_token_timeout=first_token_timeout,
+        # fill_gaps_v2.sh resets the tab to a fresh conversation through
+        # /debug/navigate before asking the missing questions; without this the
+        # reset 404s and the fill runs against the wedged conversation.
+        debug_endpoints=config.debug_endpoints,
     )
     print(
         "[sbsllm_server] timeouts: "
