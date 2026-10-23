@@ -14,6 +14,16 @@ set -u
 cd /var/home/fra/dev/mkubench || exit 1
 LOGDIR="results/logs"
 mkdir -p "$LOGDIR"
+# Prevent two fill_gaps_v2.sh instances (or two concurrent calls in one
+# session) from touching the gateway's shared Chromium tab at once. The lock
+# is fd-based and released automatically if this process dies.
+LOCKFILE="$LOGDIR/fill.lock"
+exec 9>"$LOCKFILE"
+if ! flock -n 9; then
+  echo "$(date '+%F %H:%M:%S') another fill is already running ($LOCKFILE held); skipping" \
+    | tee -a "$LOGDIR/fill_gaps.log"
+  exit 0
+fi
 ATTEMPTS="${ATTEMPTS:-3}"
 BASE="http://localhost:8079/v1"
 export DISPLAY="${DISPLAY:-:0}"
