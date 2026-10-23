@@ -16,6 +16,7 @@ Without --apply the script only reports what it would do.
 """
 from __future__ import annotations
 
+import fcntl
 import glob
 import json
 import os
@@ -25,6 +26,20 @@ from datetime import datetime
 PROJECT = "/var/home/fra/dev/mkubench"
 OUTDIR = os.path.join(PROJECT, "results", "hosten_v2")
 DS = os.path.join(PROJECT, "dataset", "mkultra_benchmark.jsonl")
+LOCKFILE = os.path.join(PROJECT, "results", "logs", "merge.lock")
+
+
+def lock_results_file():
+    """Serialize result-file writes with the other writers.
+
+    The fill runner and the publisher both merge/rescore the same
+    results_<model>_*_detailed.json files.  A concurrent write can truncate a
+    file the aggregator is about to read, so both take this lock.
+    """
+    os.makedirs(os.path.dirname(LOCKFILE), exist_ok=True)
+    handle = open(LOCKFILE, "w")
+    fcntl.flock(handle, fcntl.LOCK_EX)
+    return handle
 
 # The aggregator's filename regex: results_<model>_<YYYYmmdd_HHMMSS>[_detailed].json
 PREFIX = "results_"
@@ -57,6 +72,7 @@ def same_dataset(row, q):
 def main():
     model = sys.argv[1]
     apply = "--apply" in sys.argv
+    _lock = lock_results_file()
 
     dataset = {}
     for line in open(DS):

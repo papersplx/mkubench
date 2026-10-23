@@ -8,6 +8,7 @@ is safe to run while the gateway/idle machine does nothing.
 """
 from __future__ import annotations
 
+import fcntl
 import glob
 import json
 import os
@@ -18,6 +19,21 @@ sys.path.insert(0, PROJECT)
 
 from src.evaluator import BenchmarkEvaluator  # noqa: E402
 from src.parser import normalize_answer, parse_answer  # noqa: E402
+
+LOCKFILE = os.path.join(PROJECT, "results", "logs", "merge.lock")
+
+
+def lock_results_file():
+    """Serialize result-file writes with the other writers.
+
+    The fill runner and the publisher both re-score the same
+    results_<model>_*_detailed.json files.  A concurrent write can truncate a
+    file the aggregator is about to read, so both take this lock.
+    """
+    os.makedirs(os.path.dirname(LOCKFILE), exist_ok=True)
+    handle = open(LOCKFILE, "w")
+    fcntl.flock(handle, fcntl.LOCK_EX)
+    return handle
 
 
 def latest(model: str) -> str:
@@ -30,6 +46,7 @@ def latest(model: str) -> str:
 
 def main() -> None:
     models = sys.argv[1:] or ["claude", "meta", "qwen", "grok", "kimi", "mistral", "zai"]
+    _lock = lock_results_file()
     ev = BenchmarkEvaluator(os.path.join(PROJECT, "dataset", "mkultra_benchmark.jsonl"))
     by_id = {q["id"]: q for q in ev.dataset}
 
