@@ -63,16 +63,21 @@ def scoreable(e):
 BLOCKED_REASONS = {
     "google": "site signed the account out; requires an interactive Google login "
               "in the Chromium window (automation not possible)",
-    "copilot": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards "
-               "first_token_timeout/busy_patience to create_server); copilot answers "
-               "early questions but Q30-40 exceed it, leaving 11/40 unanswered on "
-               "v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py "
-               "(SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish.",
-    "kimi": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards "
-            "first_token_timeout/busy_patience to create_server); pong answers in "
-            "~7s but deep questions exceed it, leaving 24/40 unanswered on v2.0. "
-            "Restart sbsllm via scripts/hosten/sbsllm_server.py "
-            "(SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish.",
+    "copilot": "the gateway in use during filling ran the stock plain-CLI "
+                "first_token_timeout=60s (cli.py did not forward first_token_timeout/"
+                "busy_patience to create_server), so Q30-40 exceeded it and "
+                "11/40 stayed unanswered on v2.0. The copilot tab also surfaces a "
+                "Cloudflare 'Verification required' modal that needs a manual solve "
+                "in the Chromium window. sbsllm now forwards first_token_timeout/"
+                "busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/"
+                "SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout.",
+    "kimi": "the gateway in use during filling ran the stock plain-CLI "
+             "first_token_timeout=60s (cli.py did not forward first_token_timeout/"
+             "busy_patience to create_server); a `pong` prompt answers in ~7s, but "
+             "deep questions exceed the 60s budget so 24/40 stayed unanswered on v2.0. "
+             "sbsllm now forwards first_token_timeout/busy_patience (config.yaml or "
+             "SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted "
+             "gateway clears the timeout.",
     "mistral": "single-tab run started after the account message-limit window "
               "cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab "
               "cannot answer chat completions; session/login-gated), so no "
@@ -80,10 +85,6 @@ BLOCKED_REASONS = {
     "tencent": "site answers only after a long deep-thinking pass; the tab wedges "
               "mid-run (Q2 stalled >15 min after Q1 took ~4 min), so no complete "
               "40-question run could be produced",
-    "grok": "site produced no answer within the gateway's 60s response budget on "
-            "every 2026-10-22 attempt, including on freshly relaunched tabs (a "
-            "trivial prompt returns a 504), so the remaining 9 questions (Q32-40) "
-            "could not be filled",
 }
 
 AUTHORS = {

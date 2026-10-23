@@ -34,21 +34,21 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 |---|---|---|---|---|---|---|---|---|
 | 1 | glm-5.3-flash (`zai`) | Z.ai | 33/40 | 82.5% | **66.9%** | 60.0% | 90.0% | ✓ Complete |
 | 2 | inclusionai/ling-3.0-flash-vl:free | KiloCode API (v1.0) | 27/40 | 67.5% | **62.3%** | 60.0% | 70.0% | ✓ Complete |
-| 3 | grok-4.5 (`grok`) | xAI (v1.0) | 30/40 | 75.0% | **57.7%** | 50.0% | 83.3% | ✓ Complete |
-| 4 | stepfun/step-3.7-flash:free | KiloCode API (v1.0) | 28/40 | 70.0% | **56.2%** | 50.0% | 76.7% | ✓ Complete |
-| 5 | inclusionai/ling-3.0-flash-fin:free | KiloCode API (v1.0) | 25/40 | 62.5% | **53.8%** | 50.0% | 66.7% | ✓ Complete |
-| 6 | mistral-medium-3.5 (`mistral`) | Mistral AI | 32/40 | 80.0% | **52.3%** | 40.0% | 93.3% | ✓ Complete |
-| 7 | gpt-5.6 (`copilot`) | OpenAI (v1.0) | 28/40 | 70.0% | **49.2%** | 40.0% | 80.0% | ✓ Complete |
-| 8 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
-| 9 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
-| 10 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
-| 11 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
-| 12 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
-| 13 | hy4-preview (`tencent`) | Tencent | 27/40 | 67.5% | **41.5%** | 30.0% | 80.0% | ✓ Complete |
-| 14 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
-| 15 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
-| 16 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
-| 17 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
+| 3 | stepfun/step-3.7-flash:free | KiloCode API (v1.0) | 28/40 | 70.0% | **56.2%** | 50.0% | 76.7% | ✓ Complete |
+| 4 | inclusionai/ling-3.0-flash-fin:free | KiloCode API (v1.0) | 25/40 | 62.5% | **53.8%** | 50.0% | 66.7% | ✓ Complete |
+| 5 | mistral-medium-3.5 (`mistral`) | Mistral AI | 32/40 | 80.0% | **52.3%** | 40.0% | 93.3% | ✓ Complete |
+| 6 | gpt-5.6 (`copilot`) | OpenAI (v1.0) | 28/40 | 70.0% | **49.2%** | 40.0% | 80.0% | ✓ Complete |
+| 7 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
+| 8 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
+| 9 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
+| 10 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
+| 11 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
+| 12 | hy4-preview (`tencent`) | Tencent | 27/40 | 67.5% | **41.5%** | 30.0% | 80.0% | ✓ Complete |
+| 13 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
+| 14 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
+| 15 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
+| 16 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
+| 17 | grok-4.5 (`grok`) | xAI | 23/40 | 57.5% | **31.5%** | 20.0% | 70.0% | ✓ Complete |
 | 18 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
 | 19 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
 | 20 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
@@ -68,7 +68,7 @@ Providers column: for the 10 models reached through the **Hosten gateway** (`htt
 - **glm-5.3-flash** (Hosten endpoint `zai`) is the top Hosten performer on dataset 2.0 (82.5% overall, 66.9% weighted, 33/40 correct)
 - The top 3 weighted hosten endpoints are `zai`, `mistral`, `tencent` - all ahead of every external API model scored on dataset 2.0 (best of them: `poolside/laguna-s-2.1:free`, 30.0%)
 - 9 external API row(s) are still v1.0-scored (their provider could not be re-run on the current dataset); they are not directly comparable and are kept on the historical results page
-- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models (mean 85.7% vs 25.7%) on dataset 2.0
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models (mean 83.7% vs 25.0%) on dataset 2.0
 - The same gateway spans the whole range: the best model hosts alongside `claude` (claude-sonnet-5, 20.8% weighted), the weakest complete endpoint
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-22T09:50:32.693784",
+  "generated_at": "2026-10-23T09:23:33.210468",
   "summary": {
     "total_models_tested": 39,
     "models_with_complete_results": 27,
-    "hosten_models_complete": 7,
+    "hosten_models_complete": 8,
     "hosten_models_tested": 10,
-    "average_weighted_accuracy": 39.6,
-    "average_overall_accuracy": 70.7,
-    "average_user_generated_accuracy": 25.7,
-    "average_original_accuracy": 85.7,
+    "average_weighted_accuracy": 38.5,
+    "average_overall_accuracy": 69.1,
+    "average_user_generated_accuracy": 25.0,
+    "average_original_accuracy": 83.7,
     "external_v1_models_complete": 17,
     "external_v1_average_weighted_accuracy": 37.4,
     "external_v1_average_user_generated_accuracy": 27.6,
@@ -17,47 +17,46 @@
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
       "copilot",
-      "grok",
       "kimi"
     ],
-    "hosten_endpoints_not_rerun_count": 3,
+    "hosten_endpoints_not_rerun_count": 2,
     "dataset_version": "2.0",
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 15,
-        "models_complete": 15,
+        "models_tested": 16,
+        "models_complete": 16,
         "models_partial": 0,
         "models_failed": 0,
-        "hosten_models_scored": 7,
+        "hosten_models_scored": 8,
         "external_models_complete": 8,
         "external_average_weighted_accuracy": 24.9,
         "external_average_user_generated_accuracy": 11.2,
         "external_average_original_accuracy": 70.4,
         "average_weighted_accuracy": 31.7,
-        "average_overall_accuracy": 62.7,
-        "average_user_generated_accuracy": 18.0,
-        "average_original_accuracy": 77.6,
+        "average_overall_accuracy": 62.3,
+        "average_user_generated_accuracy": 18.1,
+        "average_original_accuracy": 77.1,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
-        "hosten_endpoints_blocked": 3
+        "hosten_endpoints_blocked": 2
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
-        "models_tested": 24,
-        "models_complete": 12,
+        "models_tested": 23,
+        "models_complete": 11,
         "models_partial": 1,
         "models_failed": 11,
-        "hosten_models_scored": 3,
+        "hosten_models_scored": 2,
         "external_models_complete": 9,
         "external_average_weighted_accuracy": 48.5,
         "external_average_user_generated_accuracy": 42.2,
         "external_average_original_accuracy": 69.3,
-        "average_weighted_accuracy": 48.9,
-        "average_overall_accuracy": 65.0,
-        "average_user_generated_accuracy": 41.7,
-        "average_original_accuracy": 72.8,
+        "average_weighted_accuracy": 48.0,
+        "average_overall_accuracy": 64.1,
+        "average_user_generated_accuracy": 40.9,
+        "average_original_accuracy": 71.8,
         "best_model": "inclusionai/ling-3.0-flash-vl:free",
         "best_weighted_accuracy": 62.3
       }
@@ -105,27 +104,6 @@
       "dataset_version": "1.0"
     },
     {
-      "model": "grok-4.5",
-      "endpoint_id": "grok",
-      "provider": "hosten",
-      "weighted_accuracy": 57.7,
-      "overall_accuracy": 75.0,
-      "correct": 30,
-      "total": 40,
-      "weighted_score": 7.5,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 50.0,
-      "user_generated_score": "5/10",
-      "original_accuracy": 83.3,
-      "original_score": "25/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 3,
-      "author": "xAI",
-      "dataset_version": "1.0",
-      "v1_only": true
-    },
-    {
       "model": "stepfun/step-3.7-flash:free",
       "provider": "kilocode",
       "weighted_accuracy": 56.2,
@@ -140,7 +118,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 4,
+      "rank": 3,
       "dataset_version": "1.0"
     },
     {
@@ -158,7 +136,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 5,
+      "rank": 4,
       "dataset_version": "1.0"
     },
     {
@@ -181,7 +159,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 6
+      "rank": 5
     },
     {
       "model": "gpt-5.6",
@@ -199,7 +177,7 @@
       "original_score": "24/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7,
+      "rank": 6,
       "author": "OpenAI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -219,7 +197,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8,
+      "rank": 7,
       "dataset_version": "1.0"
     },
     {
@@ -237,7 +215,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 9,
+      "rank": 8,
       "dataset_version": "1.0"
     },
     {
@@ -255,7 +233,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10,
+      "rank": 9,
       "dataset_version": "1.0"
     },
     {
@@ -274,7 +252,7 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11,
+      "rank": 10,
       "author": "Moonshot AI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -294,7 +272,7 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 12,
+      "rank": 11,
       "dataset_version": "1.0"
     },
     {
@@ -317,7 +295,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 13
+      "rank": 12
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -334,7 +312,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 14,
+      "rank": 13,
       "dataset_version": "1.0"
     },
     {
@@ -352,7 +330,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 15,
+      "rank": 14,
       "dataset_version": "1.0"
     },
     {
@@ -375,7 +353,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 16
+      "rank": 15
     },
     {
       "model": "gemini-3.8-flash",
@@ -394,6 +372,28 @@
       "original_accuracy": 73.3,
       "original_score": "22/30",
       "unparsed": 5,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 16
+    },
+    {
+      "model": "grok-4.5",
+      "endpoint_id": "grok",
+      "provider": "hosten",
+      "author": "xAI",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 31.5,
+      "overall_accuracy": 57.5,
+      "correct": 23,
+      "total": 40,
+      "weighted_score": 4.1,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 20.0,
+      "user_generated_score": "2/10",
+      "original_accuracy": 70.0,
+      "original_score": "21/30",
+      "unparsed": 8,
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
@@ -813,26 +813,19 @@
     "hosten": "2.0",
     "external_providers": "2.0 (partly still 1.0)",
     "not_rerun_hosten_endpoints": {
-      "grok": {
-        "model": "grok-4.5",
-        "status": "complete",
-        "v1_weighted_accuracy": 57.7,
-        "v1_user_generated_score": "5/10",
-        "reason": "site produced no answer within the gateway's 60s response budget on every 2026-10-22 attempt, including on freshly relaunched tabs (a trivial prompt returns a 504), so the remaining 9 questions (Q32-40) could not be filled"
-      },
       "copilot": {
         "model": "gpt-5.6",
         "status": "complete",
         "v1_weighted_accuracy": 49.2,
         "v1_user_generated_score": "4/10",
-        "reason": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); copilot answers early questions but Q30-40 exceed it, leaving 11/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish."
+        "reason": "the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server), so Q30-40 exceeded it and 11/40 stayed unanswered on v2.0. The copilot tab also surfaces a Cloudflare 'Verification required' modal that needs a manual solve in the Chromium window. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout."
       },
       "kimi": {
         "model": "kimi-k3",
         "status": "complete",
         "v1_weighted_accuracy": 43.1,
         "v1_user_generated_score": "3/10",
-        "reason": "gateway plain-CLI first_token_timeout is 60s (cli.py never forwards first_token_timeout/busy_patience to create_server); pong answers in ~7s but deep questions exceed it, leaving 24/40 unanswered on v2.0. Restart sbsllm via scripts/hosten/sbsllm_server.py (SBSLLM_FIRST_TOKEN_TIMEOUT=1800, SBSLLM_BUSY_PATIENCE=600) to finish."
+        "reason": "the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server); a `pong` prompt answers in ~7s, but deep questions exceed the 60s budget so 24/40 stayed unanswered on v2.0. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout."
       }
     },
     "not_rerun_external_models": [
@@ -935,6 +928,6 @@
         "reason": "only 1/40 questions were answered before the provider throttled the run"
       }
     ],
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 3 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 2 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }
