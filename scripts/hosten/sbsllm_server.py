@@ -99,8 +99,8 @@ def main() -> int:
 
     browser_timeout = _env_float("SBSLLM_BROWSER_TIMEOUT", config.browser_timeout)
     browser_lock_timeout = _env_float("SBSLLM_BROWSER_LOCK_TIMEOUT", config.browser_lock_timeout)
-    first_token_timeout = _env_float("SBSLLM_FIRST_TOKEN_TIMEOUT", 1800.0)
-    busy_patience = _env_float("SBSLLM_BUSY_PATIENCE", 600.0)
+    first_token_timeout = _env_float("SBSLLM_FIRST_TOKEN_TIMEOUT", config.first_token_timeout)
+    busy_patience = _env_float("SBSLLM_BUSY_PATIENCE", config.busy_patience)
 
     server = create_server(
         model_map={chat: chat for chat in successful},
