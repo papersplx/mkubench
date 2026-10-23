@@ -19,9 +19,10 @@
         <ul>
           <li><a href="index.html" class="active">Leaderboard (v2.0)</a></li>
           <li><a href="historical.html" id="historical-link">Historical results (v1.0)</a></li>
+          <li><a href="not-rerun.html">Not re-run on v2.0</a></li>
           <li><a href="https://github.com/papersplx/mkubench">GitHub</a></li>
-          <li><a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">Full Results</a></li>
-          <li><a href="https://github.com/papersplx/mkubench/blob/main/README.md">Documentation</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/master/BENCHMARK_RESULTS.md">Full Results</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/master/README.md">Documentation</a></li>
         </ul>
       </nav>
     </div>
@@ -50,6 +51,7 @@
       <p class="meta-line"><strong>Best model:</strong> <span id="best-model">-</span></p>
       <p class="meta-line"><strong>Weighting:</strong> User-added questions (Q31-Q40) have weight <strong>1.0</strong>, original questions (Q1-Q30) have weight <strong>0.1</strong>. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).</p>
       <p class="meta-line"><strong>Scope:</strong> every row on this page was scored on dataset v2.0, where the Q37 key was corrected and the Q31-Q40 distractors were hardened. Scores measured on dataset v1.0 are not comparable and are kept on the <a href="historical.html">historical results page</a>.</p>
+      <p class="meta-line"><strong>Not re-run:</strong> the endpoints whose site refused the automated v2.0 run are listed, with the reason for each, on the <a href="not-rerun.html">not re-run page</a>.</p>
     </section>
 
     <section class="card">
@@ -79,7 +81,7 @@
           </thead>
           <tbody></tbody>
         </table>
-        <p class="footnote">Only models that answered every question on dataset v2.0 appear here. Ranks are within the v2.0 set. See <a href="https://github.com/papersplx/mkubench/blob/main/BENCHMARK_RESULTS.md">full results</a> for per-question detail.</p>
+        <p class="footnote">Only models that answered every question on dataset v2.0 appear here. Ranks are within the v2.0 set. See <a href="https://github.com/papersplx/mkubench/blob/master/BENCHMARK_RESULTS.md">full results</a> for per-question detail.</p>
       </div>
 
       <div id="tab-histogram" class="tab-content">
@@ -90,22 +92,6 @@
       <div id="tab-providers" class="tab-content">
         <div id="provider-breakdown"></div>
       </div>
-    </section>
-
-    <section class="card">
-      <h2>Endpoints not re-run on v2.0 <span class="h2-sub">site-side blocks</span></h2>
-      <p class="footnote flush">These endpoints refused the automated run (sign-out walls, CAPTCHA, rate limits, dead tabs). Their v1.0 score is kept for continuity only and is not comparable with the v2.0 table above.</p>
-      <table id="blocked-table">
-        <thead>
-          <tr>
-            <th>Endpoint</th>
-            <th>Model</th>
-            <th class="num">v1.0 Weighted</th>
-            <th>Why it was not re-run</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
     </section>
 
     <footer>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mkubench — Endpoints not re-run on v2.0</title>
+  <meta name="description" content="mkubench: endpoints and external models that could not be re-run on dataset v2.0, with the reason recorded for each.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <h1>mkubench</h1>
+        <span class="version-chip legacy">Dataset v2.0 &mdash; not re-run</span>
+      </div>
+      <p class="subtitle">An automated LLM benchmark modeled after MMLU/MMLU-Pro, designed to evaluate large language models on their understanding of the classified history, testimonies, and technological evolution of government-sponsored mind-control, behavioral modification, and neuro-weaponry programs.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Leaderboard (v2.0)</a></li>
+          <li><a href="historical.html">Historical results (v1.0)</a></li>
+          <li><a href="not-rerun.html" class="active">Not re-run on v2.0</a></li>
+          <li><a href="https://github.com/papersplx/mkubench">GitHub</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/master/BENCHMARK_RESULTS.md">Full Results</a></li>
+          <li><a href="https://github.com/papersplx/mkubench/blob/master/README.md">Documentation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Endpoints not re-run on v2.0</h2>
+      <p>The <a href="index.html">v2.0 leaderboard</a> lists the runs that produced a score. The entries below are the endpoints and external models that could <strong>not</strong> be re-run on the v2.0 question set &mdash; sign-out walls, CAPTCHA challenges, rate limits, dead tabs, exhausted site credits.</p>
+      <p>Their v1.0 score is kept for continuity only and is <strong>not comparable</strong> with the v2.0 table: dataset v2.0 corrected the Q37 answer key and hardened the Q31-Q40 distractors.</p>
+    </section>
+
+    <section class="card">
+      <h2>Not re-run <span class="h2-sub">why each one is missing from v2.0</span></h2>
+      <table id="blocked-table">
+        <thead>
+          <tr>
+            <th>Endpoint</th>
+            <th>Model</th>
+            <th class="num">v1.0 Weighted</th>
+            <th>Why it was not re-run</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="footnote">Hosten endpoints appear first, then the external API models the provider no longer serves. A missing answer is never counted as a zero: these rows are excluded from every ranking.</p>
+    </section>
+
+    <footer>
+      <p>mkubench &mdash; MIT License (c) 2026 papersplx</p>
+      <p>See <a href="https://github.com/papersplx/mkubench">github.com/papersplx/mkubench</a> for source code and documentation.</p>
+    </footer>
+  </div>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/not-rerun.js"></script>
+</body>
+</html>
