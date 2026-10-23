@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23T09:23:33.210468",
+  "generated_at": "2026-10-23T16:24:32.136922",
   "summary": {
     "total_models_tested": 39,
     "models_with_complete_results": 27,
-    "hosten_models_complete": 8,
+    "hosten_models_complete": 9,
     "hosten_models_tested": 10,
-    "average_weighted_accuracy": 38.5,
-    "average_overall_accuracy": 69.1,
-    "average_user_generated_accuracy": 25.0,
-    "average_original_accuracy": 83.7,
+    "average_weighted_accuracy": 36.5,
+    "average_overall_accuracy": 68.6,
+    "average_user_generated_accuracy": 22.2,
+    "average_original_accuracy": 84.1,
     "external_v1_models_complete": 17,
     "external_v1_average_weighted_accuracy": 37.4,
     "external_v1_average_user_generated_accuracy": 27.6,
@@ -16,47 +16,46 @@
     "best_model": "glm-5.3-flash",
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
-      "copilot",
       "kimi"
     ],
-    "hosten_endpoints_not_rerun_count": 2,
+    "hosten_endpoints_not_rerun_count": 1,
     "dataset_version": "2.0",
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 16,
-        "models_complete": 16,
+        "models_tested": 17,
+        "models_complete": 17,
         "models_partial": 0,
         "models_failed": 0,
-        "hosten_models_scored": 8,
+        "hosten_models_scored": 9,
         "external_models_complete": 8,
         "external_average_weighted_accuracy": 24.9,
         "external_average_user_generated_accuracy": 11.2,
         "external_average_original_accuracy": 70.4,
-        "average_weighted_accuracy": 31.7,
-        "average_overall_accuracy": 62.3,
-        "average_user_generated_accuracy": 18.1,
-        "average_original_accuracy": 77.1,
+        "average_weighted_accuracy": 31.0,
+        "average_overall_accuracy": 62.5,
+        "average_user_generated_accuracy": 17.1,
+        "average_original_accuracy": 77.6,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
-        "hosten_endpoints_blocked": 2
+        "hosten_endpoints_blocked": 1
       },
       "1.0": {
         "label": "Dataset 1.0 (historical)",
-        "models_tested": 23,
-        "models_complete": 11,
+        "models_tested": 22,
+        "models_complete": 10,
         "models_partial": 1,
         "models_failed": 11,
-        "hosten_models_scored": 2,
+        "hosten_models_scored": 1,
         "external_models_complete": 9,
         "external_average_weighted_accuracy": 48.5,
         "external_average_user_generated_accuracy": 42.2,
         "external_average_original_accuracy": 69.3,
-        "average_weighted_accuracy": 48.0,
-        "average_overall_accuracy": 64.1,
-        "average_user_generated_accuracy": 40.9,
-        "average_original_accuracy": 71.8,
+        "average_weighted_accuracy": 47.9,
+        "average_overall_accuracy": 63.5,
+        "average_user_generated_accuracy": 41.0,
+        "average_original_accuracy": 71.0,
         "best_model": "inclusionai/ling-3.0-flash-vl:free",
         "best_weighted_accuracy": 62.3
       }
@@ -162,27 +161,6 @@
       "rank": 5
     },
     {
-      "model": "gpt-5.6",
-      "endpoint_id": "copilot",
-      "provider": "hosten",
-      "weighted_accuracy": 49.2,
-      "overall_accuracy": 70.0,
-      "correct": 28,
-      "total": 40,
-      "weighted_score": 6.4,
-      "weighted_possible": 13.0,
-      "user_generated_accuracy": 40.0,
-      "user_generated_score": "4/10",
-      "original_accuracy": 80.0,
-      "original_score": "24/30",
-      "failures": 0,
-      "status": "complete",
-      "rank": 6,
-      "author": "OpenAI",
-      "dataset_version": "1.0",
-      "v1_only": true
-    },
-    {
       "model": "nex-agi/nex-n2.5-mini:free",
       "provider": "kilocode",
       "weighted_accuracy": 48.5,
@@ -197,7 +175,7 @@
       "original_score": "23/30",
       "failures": 0,
       "status": "complete",
-      "rank": 7,
+      "rank": 6,
       "dataset_version": "1.0"
     },
     {
@@ -215,7 +193,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 8,
+      "rank": 7,
       "dataset_version": "1.0"
     },
     {
@@ -233,7 +211,7 @@
       "original_score": "21/30",
       "failures": 0,
       "status": "complete",
-      "rank": 9,
+      "rank": 8,
       "dataset_version": "1.0"
     },
     {
@@ -252,7 +230,7 @@
       "original_score": "26/30",
       "failures": 0,
       "status": "complete",
-      "rank": 10,
+      "rank": 9,
       "author": "Moonshot AI",
       "dataset_version": "1.0",
       "v1_only": true
@@ -272,7 +250,7 @@
       "original_score": "15/30",
       "failures": 0,
       "status": "complete",
-      "rank": 11,
+      "rank": 10,
       "dataset_version": "1.0"
     },
     {
@@ -295,7 +273,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 12
+      "rank": 11
     },
     {
       "model": "nex-agi/nex-n2.5-pro:free",
@@ -312,7 +290,7 @@
       "original_score": "22/30",
       "failures": 0,
       "status": "complete",
-      "rank": 13,
+      "rank": 12,
       "dataset_version": "1.0"
     },
     {
@@ -330,7 +308,7 @@
       "original_score": "20/30",
       "failures": 0,
       "status": "complete",
-      "rank": 14,
+      "rank": 13,
       "dataset_version": "1.0"
     },
     {
@@ -353,7 +331,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 15
+      "rank": 14
     },
     {
       "model": "gemini-3.8-flash",
@@ -375,7 +353,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 16
+      "rank": 15
     },
     {
       "model": "grok-4.5",
@@ -397,7 +375,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 17
+      "rank": 16
     },
     {
       "model": "poolside/laguna-s-2.1:free",
@@ -415,7 +393,7 @@
       "original_score": "19/30",
       "failures": 5,
       "status": "complete",
-      "rank": 18
+      "rank": 17
     },
     {
       "model": "muse-spark-1.1",
@@ -437,7 +415,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 19
+      "rank": 18
     },
     {
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -455,7 +433,7 @@
       "original_score": "26/30",
       "failures": 1,
       "status": "complete",
-      "rank": 20
+      "rank": 19
     },
     {
       "model": "gemini-3.5-flash-lite",
@@ -473,7 +451,7 @@
       "original_score": "23/30",
       "failures": 4,
       "status": "complete",
-      "rank": 21
+      "rank": 20
     },
     {
       "model": "nvidia/nemotron-3.5-super-vl:free",
@@ -491,7 +469,7 @@
       "original_score": "23/30",
       "failures": 3,
       "status": "complete",
-      "rank": 22
+      "rank": 21
     },
     {
       "model": "minimax/minimax-m3.1-flash:free",
@@ -509,7 +487,7 @@
       "original_score": "21/30",
       "failures": 4,
       "status": "complete",
-      "rank": 23
+      "rank": 22
     },
     {
       "model": "cohere/north-mini-code:free",
@@ -527,7 +505,7 @@
       "original_score": "20/30",
       "failures": 7,
       "status": "complete",
-      "rank": 24
+      "rank": 23
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -545,7 +523,7 @@
       "original_score": "19/30",
       "failures": 3,
       "status": "complete",
-      "rank": 25
+      "rank": 24
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -563,7 +541,7 @@
       "original_score": "18/30",
       "failures": 10,
       "status": "complete",
-      "rank": 26
+      "rank": 25
     },
     {
       "model": "claude-sonnet-5",
@@ -582,6 +560,28 @@
       "original_accuracy": 90.0,
       "original_score": "27/30",
       "unparsed": 2,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 26
+    },
+    {
+      "model": "gpt-5.6",
+      "endpoint_id": "copilot",
+      "provider": "hosten",
+      "author": "OpenAI",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 20.0,
+      "overall_accuracy": 65.0,
+      "correct": 26,
+      "total": 40,
+      "weighted_score": 2.6,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 0.0,
+      "user_generated_score": "0/10",
+      "original_accuracy": 86.7,
+      "original_score": "26/30",
+      "unparsed": 0,
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
@@ -813,19 +813,12 @@
     "hosten": "2.0",
     "external_providers": "2.0 (partly still 1.0)",
     "not_rerun_hosten_endpoints": {
-      "copilot": {
-        "model": "gpt-5.6",
-        "status": "complete",
-        "v1_weighted_accuracy": 49.2,
-        "v1_user_generated_score": "4/10",
-        "reason": "the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server), so Q30-40 exceeded it and 11/40 stayed unanswered on v2.0. The copilot tab also surfaces a Cloudflare 'Verification required' modal that needs a manual solve in the Chromium window. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout."
-      },
       "kimi": {
         "model": "kimi-k3",
         "status": "complete",
         "v1_weighted_accuracy": 43.1,
         "v1_user_generated_score": "3/10",
-        "reason": "the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server); a `pong` prompt answers in ~7s, but deep questions exceed the 60s budget so 24/40 stayed unanswered on v2.0. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout."
+        "reason": "could not be re-run on v2.0: the site's account has no credits until 2026-11-15, so kimi keeps its dataset-1.0 row and is listed as not re-run."
       }
     },
     "not_rerun_external_models": [
@@ -928,6 +921,6 @@
         "reason": "only 1/40 questions were answered before the provider throttled the run"
       }
     ],
-    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 2 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
+    "note": "Hosten endpoints were re-run on dataset v2.0 (Q37 key corrected, Q31-Q40 distractors hardened). The external API models that the provider still serves were re-run on the same v2.0 question set, so those rows are comparable. 14 external model(s) could not be re-run (see not_rerun_external_models); their v1.0 row is kept for continuity only. 10 external row(s) are still v1.0-scored and are not directly comparable on Q31-Q40. 1 hosten endpoint(s) listed under not_rerun_hosten_endpoints could not be re-run because the site blocked automation; their v1.0 row is kept for continuity only."
   }
 }

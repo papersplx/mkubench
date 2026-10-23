@@ -63,21 +63,7 @@ def scoreable(e):
 BLOCKED_REASONS = {
     "google": "site signed the account out; requires an interactive Google login "
               "in the Chromium window (automation not possible)",
-    "copilot": "the gateway in use during filling ran the stock plain-CLI "
-                "first_token_timeout=60s (cli.py did not forward first_token_timeout/"
-                "busy_patience to create_server), so Q30-40 exceeded it and "
-                "11/40 stayed unanswered on v2.0. The copilot tab also surfaces a "
-                "Cloudflare 'Verification required' modal that needs a manual solve "
-                "in the Chromium window. sbsllm now forwards first_token_timeout/"
-                "busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/"
-                "SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout.",
-    "kimi": "the gateway in use during filling ran the stock plain-CLI "
-             "first_token_timeout=60s (cli.py did not forward first_token_timeout/"
-             "busy_patience to create_server); a `pong` prompt answers in ~7s, but "
-             "deep questions exceed the 60s budget so 24/40 stayed unanswered on v2.0. "
-             "sbsllm now forwards first_token_timeout/busy_patience (config.yaml or "
-             "SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted "
-             "gateway clears the timeout.",
+    "kimi": "could not be re-run on v2.0: the site's account has no credits until 2026-11-15, so kimi keeps its dataset-1.0 row and is listed as not re-run.",
     "mistral": "single-tab run started after the account message-limit window "
               "cleared (~16:30 2026-10-19) but Q1 never completed (fresh tab "
               "cannot answer chat completions; session/login-gated), so no "

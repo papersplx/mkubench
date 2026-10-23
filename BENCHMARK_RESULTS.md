@@ -4,19 +4,19 @@
 
 | Metric | Value |
 |--------|-------|
-| Total models tested | 39 (16 scored on dataset 2.0, 23 recorded on dataset 1.0) |
-| Hosten endpoints complete (dataset 2.0) | 8/10 |
-| Hosten average weighted accuracy | **38.5%** |
-| Hosten average overall accuracy | 69.1% |
-| Hosten average on user-generated questions (Q31-Q40) | 25.0% |
-| Hosten average on original questions (Q1-Q30) | 83.7% |
+| Total models tested | 39 (17 scored on dataset 2.0, 22 recorded on dataset 1.0) |
+| Hosten endpoints complete (dataset 2.0) | 9/10 |
+| Hosten average weighted accuracy | **36.5%** |
+| Hosten average overall accuracy | 68.6% |
+| Hosten average on user-generated questions (Q31-Q40) | 22.2% |
+| Hosten average on original questions (Q1-Q30) | 84.1% |
 | External providers average weighted accuracy (dataset 2.0) | 24.9% |
 | External providers average user-gen / original (dataset 2.0) | 11.2% / 70.4% |
 | External providers average weighted accuracy (dataset v1.0) | 48.5% |
 | External providers average user-gen / original (v1.0) | 42.2% / 69.3% |
 | Best hosten weighted score (dataset 2.0) | glm-5.3-flash (66.9%) |
 | Best overall accuracy (any provider) | glm-5.3-flash (82.5%) |
-| Hosten endpoints NOT re-run on v2.0 | 2 (copilot, kimi) - blocked by the site, see Providers Tested |
+| Hosten endpoints NOT re-run on v2.0 | 1 (kimi) - blocked by the site, see Providers Tested |
 
 
 **Weighting:** User-added questions (Q31-Q40) have weight **1.0**, original questions (Q1-Q30) have weight **0.1**. Total weighted possible: 13.0 points (10.0 from user-generated + 3.0 from original).
@@ -30,31 +30,31 @@
 | 3 | stepfun/step-3.7-flash:free | KiloCode API (v1.0) | 28/40 | 70.0% | **56.2%** | 50.0% | 76.7% | ✓ Complete |
 | 4 | inclusionai/ling-3.0-flash-fin:free | KiloCode API (v1.0) | 25/40 | 62.5% | **53.8%** | 50.0% | 66.7% | ✓ Complete |
 | 5 | mistral-medium-3.5 (`mistral`) | Mistral AI | 32/40 | 80.0% | **52.3%** | 40.0% | 93.3% | ✓ Complete |
-| 6 | gpt-5.6 (`copilot`) | OpenAI (v1.0) | 28/40 | 70.0% | **49.2%** | 40.0% | 80.0% | ✓ Complete |
-| 7 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
-| 8 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
-| 9 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
-| 10 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
-| 11 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
-| 12 | hy4-preview (`tencent`) | Tencent | 27/40 | 67.5% | **41.5%** | 30.0% | 80.0% | ✓ Complete |
-| 13 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
-| 14 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
-| 15 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
-| 16 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
-| 17 | grok-4.5 (`grok`) | xAI | 23/40 | 57.5% | **31.5%** | 20.0% | 70.0% | ✓ Complete |
-| 18 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
-| 19 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
-| 20 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
-| 21 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
-| 22 | nvidia/nemotron-3.5-super-vl:free | KiloCode API | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
-| 23 | minimax/minimax-m3.1-flash:free | KiloCode API | 22/40 | 55.0% | **23.8%** | 10.0% | 70.0% | ✓ Complete |
-| 24 | cohere/north-mini-code:free | KiloCode API | 21/40 | 52.5% | **23.1%** | 10.0% | 66.7% | ✓ Complete |
-| 25 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
-| 26 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
-| 27 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
+| 6 | nex-agi/nex-n2.5-mini:free | KiloCode API (v1.0) | 27/40 | 67.5% | **48.5%** | 40.0% | 76.7% | ✓ Complete |
+| 7 | inclusionai/ling-3.0-flash-sante:free | KiloCode API (v1.0) | 26/40 | 65.0% | **47.7%** | 40.0% | 73.3% | ✓ Complete |
+| 8 | meta/muse-glimmer-30b | NVIDIA NIM (v1.0) | 25/40 | 62.5% | **46.9%** | 40.0% | 70.0% | ✓ Complete |
+| 9 | kimi-k3 (`kimi`) | Moonshot AI (v1.0) | 29/40 | 72.5% | **43.1%** | 30.0% | 86.7% | ✓ Complete |
+| 10 | liquid/lfm-2.5-2.6b:free | KiloCode API (v1.0) | 19/40 | 47.5% | **42.3%** | 40.0% | 50.0% | ✓ Complete |
+| 11 | hy4-preview (`tencent`) | Tencent | 27/40 | 67.5% | **41.5%** | 30.0% | 80.0% | ✓ Complete |
+| 12 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
+| 13 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
+| 14 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
+| 15 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
+| 16 | grok-4.5 (`grok`) | xAI | 23/40 | 57.5% | **31.5%** | 20.0% | 70.0% | ✓ Complete |
+| 17 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
+| 18 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
+| 19 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
+| 20 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
+| 21 | nvidia/nemotron-3.5-super-vl:free | KiloCode API | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
+| 22 | minimax/minimax-m3.1-flash:free | KiloCode API | 22/40 | 55.0% | **23.8%** | 10.0% | 70.0% | ✓ Complete |
+| 23 | cohere/north-mini-code:free | KiloCode API | 21/40 | 52.5% | **23.1%** | 10.0% | 66.7% | ✓ Complete |
+| 24 | nvidia/nemotron-3.5-lightning:free | KiloCode API | 20/40 | 50.0% | **22.3%** | 10.0% | 63.3% | ✓ Complete |
+| 25 | dots-studio/dots-3-note-preview:free | KiloCode API | 19/40 | 47.5% | **21.5%** | 10.0% | 60.0% | ✓ Complete |
+| 26 | claude-sonnet-5 (`claude`) | Anthropic | 27/40 | 67.5% | **20.8%** | 0.0% | 90.0% | ✓ Complete |
+| 27 | gpt-5.6 (`copilot`) | OpenAI | 26/40 | 65.0% | **20.0%** | 0.0% | 86.7% | ✓ Complete |
 | 28 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
 
-*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (copilot, kimi). 1 entry is not fully complete; access-path details are in Providers Tested below.*
+*Rows for hosten endpoints are dataset 2.0 re-runs. Rows tagged (v1.0) were scored on dataset v1.0 and are shown for continuity only, not direct comparison on Q31-Q40; that includes the external providers (KiloCode / Google AI Studio / NVIDIA NIM) and any hosten endpoint the site itself blocked from being re-run (kimi). 1 entry is not fully complete; access-path details are in Providers Tested below.*
 
 ## Accuracy Histogram (Weighted)
 
@@ -64,7 +64,6 @@ inclusionai/ling-3.0-fl: ██████████████████�
 stepfun/step-3.7-flash:: ████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░  56.2%
 inclusionai/ling-3.0-fl: ███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░  53.8%
 mistral-medium-3.5       ██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░  52.3%
-gpt-5.6                  █████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  49.2%
 nex-agi/nex-n2.5-mini:f: ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  48.5%
 inclusionai/ling-3.0-fl: ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  47.7%
 meta/muse-glimmer-30b    ███████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  46.9%
@@ -86,6 +85,7 @@ cohere/north-mini-code:: ████████████░░░░░░�
 nvidia/nemotron-3.5-lig: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  22.3%
 dots-studio/dots-3-note: ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  21.5%
 claude-sonnet-5          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20.8%
+gpt-5.6                  ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20.0%
 deepseek-ai/deepseek-v4: ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  16.2%
 
                          0%  10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
@@ -124,10 +124,10 @@ Excluded from the leaderboard; kept here for reproducibility of the gaps.
 
 ## Key Findings
 
-- **Dataset v2.0 hardening largely held, with one clear exception.** The eight re-run Hosten endpoints average **25.0%** (20 of 80 question-instances) on the rewritten Q31-Q40, against the **42.1%** external providers averaged on those same questions under v1.0. `zai` is the exception at **6/10** (Q31, Q32, Q34, Q35, Q39, Q40) - the style-matched distractors are not uniformly defeating detection.
-- **Q1-Q30 accuracy held up**: the eight v2.0 Hosten endpoints average **83.8%** on the original set (201/240), so the drop is specific to the user-generated block rather than a general model failure.
-- **8 of 10 Hosten endpoints could be re-run on v2.0.** `zai` (66.9% weighted, 6/10 on Q31-Q40), `mistral` (52.3%, 4/10), `tencent` (41.5%, 3/10), `qwen` (34.6%, 2/10), `google` (32.3%, 2/10), `grok` (31.5%, 2/10), `meta` (28.5%, 1/10) and `claude` (20.8%, 0/10) completed; the other 2 (`copilot`, `kimi`) were blocked by the sites (see Hosten Gateway Results below).
-- **`zai` needed a tooling fix before it could be scored at all.** The gateway's `zai` response extractor matched the user's own message bubble, so every captured "answer" was the question text and the endpoint looked unusable. Scoping extraction to the newest assistant turn reveals its real v2.0 result: **66.9% weighted**, now the strongest Hosten row on v2.0 and above the best v1.0 external API row (`inclusionai/ling-3.0-flash-vl:free`, 62.3%). The two are scored on different dataset versions and are not directly comparable.
+- **Dataset v2.0 hardening largely held, with one clear exception.** The nine re-run Hosten endpoints average **22.2%** (20 of 90 question-instances) on the rewritten Q31-Q40, against the **42.2%** external providers averaged on those same questions under v1.0. `zai` is the strongest on that block at **6/10** - the style-matched distractors are not uniformly defeating detection.
+- **Q1-Q30 accuracy held up**: the nine v2.0 Hosten endpoints average **84.1%** on the original set, so the drop is specific to the user-generated block rather than a general model failure.
+- **9 of 10 Hosten endpoints could be re-run on v2.0.** `zai` (66.9% weighted, 6/10 on Q31-Q40), `mistral` (52.3% weighted, 4/10 on Q31-Q40), `tencent` (41.5% weighted, 3/10 on Q31-Q40), `qwen` (34.6% weighted, 2/10 on Q31-Q40), `google` (32.3% weighted, 2/10 on Q31-Q40), `grok` (31.5% weighted, 2/10 on Q31-Q40), `meta` (28.5% weighted, 1/10 on Q31-Q40), `claude` (20.8% weighted, 0/10 on Q31-Q40) and `copilot` (20.0% weighted, 0/10 on Q31-Q40) completed; the other 1 (`kimi`) could not be re-run on v2.0: the site's account has no credits until 2026-11-15, so it keeps its dataset-1.0 row and is listed as not re-run (see Hosten Gateway Results below).
+- **`zai` needed a tooling fix before it could be scored at all.** The gateway's `zai` response extractor matched the user's own message bubble, so every captured "answer" was the question text and the endpoint looked unusable. Scoping extraction to the newest assistant turn reveals its real v2.0 result: **66.9% weighted** (33/40 correct), now the strongest Hosten row on v2.0 and above the best v1.0 external API row (`inclusionai/ling-3.0-flash-vl:free`, 62.3%). The two are scored on different dataset versions and are not directly comparable.
 - **The Hosten rows marked (v1.0) are v1.0 scores.** They are the wrong reference for Q31-Q40: distractors, the Q37 key and therefore question difficulty have all changed, and they are kept for continuity only.
 
 ## Hosten Gateway Results
@@ -152,16 +152,15 @@ Per-question answers are in `results/hosten_v2/results_<endpoint>_<timestamp>_de
 
 ### Endpoints NOT re-run on dataset v2.0
 
-2 of the 10 Hosten endpoints could not be re-run: the sites blocked automated access. Their v1.0 rows are retained in the leaderboard (marked **(v1.0)** and `v1_only`) for continuity only and must not be read as v2.0 performance.
+1 of the 10 Hosten endpoints could not be re-run: the sites blocked automated access. Their v1.0 rows are retained in the leaderboard (marked **(v1.0)** and `v1_only`) for continuity only and must not be read as v2.0 performance.
 
 | Endpoint | Model | Why not re-run |
 |----------|-------|----------------|
-| `copilot` | gpt-5.6 | the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server), so Q30-40 exceeded it and 11/40 stayed unanswered on v2.0. The copilot tab also surfaces a Cloudflare 'Verification required' modal that needs a manual solve in the Chromium window. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout. |
-| `kimi` | kimi-k3 | the gateway in use during filling ran the stock plain-CLI first_token_timeout=60s (cli.py did not forward first_token_timeout/busy_patience to create_server); a `pong` prompt answers in ~7s, but deep questions exceed the 60s budget so 24/40 stayed unanswered on v2.0. sbsllm now forwards first_token_timeout/busy_patience (config.yaml or SBSLLM_FIRST_TOKEN_TIMEOUT/SBSLLM_BUSY_PATIENCE), so a restarted gateway clears the timeout. |
+| `kimi` | kimi-k3 | could not be re-run on v2.0: the site's account has no credits until 2026-11-15, so kimi keeps its dataset-1.0 row and is listed as not re-run. |
 
 ## Providers Tested
 
-- **Hosten Gateway** (`http://localhost:8079/v1`) - access path for 10 endpoint IDs from 10 different model authors; **8 complete on dataset 2.0** (claude, google, grok, meta, mistral, qwen, tencent, zai), 2 blocked by the sites (see table above)
+- **Hosten Gateway** (`http://localhost:8079/v1`) - access path for 10 endpoint IDs from 10 different model authors; **9 complete on dataset 2.0** (claude, copilot, google, grok, meta, mistral, qwen, tencent, zai), 1 blocked by the sites (see table above)
 - **KiloCode API** (`https://api.kilo.ai/api/gateway/v1`) - 11 models from various providers (NVIDIA, StepFun, Poolside, InclusionAI, NexAGI, Liquid, Dots Studio), all complete
 - **Google AI Studio** (`https://generativelanguage.googleapis.com/v1beta/openai/chat/completions`) - 3 tested, 1 complete, 2 unavailable
 - **NVIDIA NIM / NGC** (`https://integrate.api.nvidia.com/v1`) - 12 tested, 3 complete, 9 unavailable or timed out
