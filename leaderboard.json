@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-23T17:36:43.989300",
+  "generated_at": "2026-10-24T11:33:03.149583",
   "summary": {
-    "total_models_tested": 39,
-    "models_with_complete_results": 27,
+    "total_models_tested": 40,
+    "models_with_complete_results": 28,
     "hosten_models_complete": 9,
     "hosten_models_tested": 10,
     "average_weighted_accuracy": 36.5,
     "average_overall_accuracy": 68.6,
     "average_user_generated_accuracy": 22.2,
     "average_original_accuracy": 84.1,
-    "external_v1_models_complete": 17,
-    "external_v1_average_weighted_accuracy": 37.4,
-    "external_v1_average_user_generated_accuracy": 27.6,
-    "external_v1_average_original_accuracy": 69.8,
+    "external_v1_models_complete": 18,
+    "external_v1_average_weighted_accuracy": 36.8,
+    "external_v1_average_user_generated_accuracy": 26.7,
+    "external_v1_average_original_accuracy": 70.6,
     "best_model": "glm-5.3-flash",
     "best_weighted_accuracy": 66.9,
     "hosten_endpoints_not_rerun": [
@@ -23,19 +23,19 @@
     "version_breakdown": {
       "2.0": {
         "label": "Dataset 2.0 (current)",
-        "models_tested": 17,
-        "models_complete": 17,
+        "models_tested": 18,
+        "models_complete": 18,
         "models_partial": 0,
         "models_failed": 0,
         "hosten_models_scored": 9,
-        "external_models_complete": 8,
-        "external_average_weighted_accuracy": 24.9,
-        "external_average_user_generated_accuracy": 11.2,
-        "external_average_original_accuracy": 70.4,
-        "average_weighted_accuracy": 31.0,
-        "average_overall_accuracy": 62.5,
-        "average_user_generated_accuracy": 17.1,
-        "average_original_accuracy": 77.6,
+        "external_models_complete": 9,
+        "external_average_weighted_accuracy": 25.1,
+        "external_average_user_generated_accuracy": 11.1,
+        "external_average_original_accuracy": 71.9,
+        "average_weighted_accuracy": 30.8,
+        "average_overall_accuracy": 62.6,
+        "average_user_generated_accuracy": 16.7,
+        "average_original_accuracy": 78.0,
         "best_model": "glm-5.3-flash",
         "best_weighted_accuracy": 66.9,
         "hosten_endpoints_attempted": 10,
@@ -436,6 +436,28 @@
       "rank": 19
     },
     {
+      "model": "deepseek",
+      "endpoint_id": "deepseek",
+      "provider": "hosten",
+      "author": "",
+      "dataset_version": "2.0",
+      "weighted_accuracy": 26.9,
+      "overall_accuracy": 65.0,
+      "correct": 26,
+      "total": 40,
+      "weighted_score": 3.5,
+      "weighted_possible": 13.0,
+      "user_generated_accuracy": 10.0,
+      "user_generated_score": "1/10",
+      "original_accuracy": 83.3,
+      "original_score": "25/30",
+      "unparsed": 1,
+      "no_answer": 0,
+      "failures": 0,
+      "status": "complete",
+      "rank": 20
+    },
+    {
       "model": "gemini-3.5-flash-lite",
       "provider": "google-ai-studio",
       "dataset_version": "2.0",
@@ -451,7 +473,7 @@
       "original_score": "23/30",
       "failures": 4,
       "status": "complete",
-      "rank": 20
+      "rank": 21
     },
     {
       "model": "nvidia/nemotron-3.5-super-vl:free",
@@ -469,7 +491,7 @@
       "original_score": "23/30",
       "failures": 3,
       "status": "complete",
-      "rank": 21
+      "rank": 22
     },
     {
       "model": "minimax/minimax-m3.1-flash:free",
@@ -487,7 +509,7 @@
       "original_score": "21/30",
       "failures": 4,
       "status": "complete",
-      "rank": 22
+      "rank": 23
     },
     {
       "model": "cohere/north-mini-code:free",
@@ -505,7 +527,7 @@
       "original_score": "20/30",
       "failures": 7,
       "status": "complete",
-      "rank": 23
+      "rank": 24
     },
     {
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -523,7 +545,7 @@
       "original_score": "19/30",
       "failures": 3,
       "status": "complete",
-      "rank": 24
+      "rank": 25
     },
     {
       "model": "dots-studio/dots-3-note-preview:free",
@@ -541,7 +563,7 @@
       "original_score": "18/30",
       "failures": 10,
       "status": "complete",
-      "rank": 25
+      "rank": 26
     },
     {
       "model": "claude-sonnet-5",
@@ -563,7 +585,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 26
+      "rank": 27
     },
     {
       "model": "gpt-5.6",
@@ -585,7 +607,7 @@
       "no_answer": 0,
       "failures": 0,
       "status": "complete",
-      "rank": 27
+      "rank": 28
     },
     {
       "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -602,7 +624,7 @@
       "original_score": "21/30",
       "failures": 11,
       "status": "partial",
-      "rank": 28,
+      "rank": 29,
       "dataset_version": "1.0"
     },
     {
@@ -620,7 +642,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 29,
+      "rank": 30,
       "dataset_version": "1.0"
     },
     {
@@ -638,7 +660,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 30,
+      "rank": 31,
       "dataset_version": "1.0"
     },
     {
@@ -657,7 +679,7 @@
       "original_score": "0/30",
       "failures": 2,
       "status": "failed",
-      "rank": 31
+      "rank": 32
     },
     {
       "model": "google/gemma-4-31b-it",
@@ -674,7 +696,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 32,
+      "rank": 33,
       "dataset_version": "1.0"
     },
     {
@@ -692,7 +714,7 @@
       "original_score": "0/1",
       "failures": 1,
       "status": "failed",
-      "rank": 33,
+      "rank": 34,
       "dataset_version": "1.0"
     },
     {
@@ -710,7 +732,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 34,
+      "rank": 35,
       "dataset_version": "1.0"
     },
     {
@@ -728,7 +750,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 35,
+      "rank": 36,
       "dataset_version": "1.0"
     },
     {
@@ -746,7 +768,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 36,
+      "rank": 37,
       "dataset_version": "1.0"
     },
     {
@@ -764,7 +786,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 37,
+      "rank": 38,
       "dataset_version": "1.0"
     },
     {
@@ -782,7 +804,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 38,
+      "rank": 39,
       "dataset_version": "1.0"
     },
     {
@@ -800,7 +822,7 @@
       "original_score": "0/30",
       "failures": 40,
       "status": "failed",
-      "rank": 39,
+      "rank": 40,
       "dataset_version": "1.0"
     }
   ],
