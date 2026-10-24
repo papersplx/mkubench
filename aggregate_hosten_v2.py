@@ -46,6 +46,12 @@ MODEL_NAMES = {
     "kimi": "kimi-k3",
     "tencent": "hy4-preview",
     "copilot": "gpt-5.6",
+    # deepseek is a Hosten endpoint too (chat.deepseek.com). Without it here
+    # the endpoint id was unknown to the aggregator: its published row was
+    # then treated as an external row and carried forward from the previous
+    # leaderboard.json, duplicating it, and it was left out of the Hosten
+    # statistics.
+    "deepseek": "deepseek-chat",
 }
 PROVIDER_DISPLAY = {
     "kilocode": "KiloCode API",
@@ -84,6 +90,7 @@ AUTHORS = {
     "kimi": "Moonshot AI",
     "tencent": "Tencent",
     "copilot": "OpenAI",
+    "deepseek": "DeepSeek",
 }
 
 
@@ -448,6 +455,13 @@ def main():
 
     leaderboard = []
     skipped = []
+    # One row per Hosten endpoint, not per run file. A model can have several
+    # complete runs on disk (the merged record plus the run it was merged from),
+    # and every one of them used to be published, which duplicated the endpoint
+    # in the leaderboard and in the site. The paths are sorted by timestamp, so
+    # the LAST complete run wins - that is the merged record, which carries the
+    # most recent answer per question.
+    hosten_entries = {}
     fname_re = re.compile(
         r"^results_(?P<model>.+?)_(?P<ts>\d{8}_\d{6})(?P<det>_detailed)?\.json$"
     )
@@ -525,7 +539,9 @@ def main():
             else "partial",
             "rank": 0,
         }
-        leaderboard.append(hosten_entry)
+        hosten_entries[model_id] = hosten_entry
+
+    leaderboard.extend(hosten_entries.values())
 
     leaderboard.extend(existing)
     leaderboard.sort(key=lambda x: (-x["weighted_accuracy"], x["model"]))

@@ -45,13 +45,13 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 | 11 | hy4-preview (`tencent`) | Tencent | 27/40 | 67.5% | **41.5%** | 30.0% | 80.0% | ✓ Complete |
 | 12 | nex-agi/nex-n2.5-pro:free | KiloCode API (v1.0) | 25/40 | 62.5% | **40.0%** | 30.0% | 73.3% | ✓ Complete |
 | 13 | nvidia/nemotron-3-super-120b-a12b | NVIDIA NIM (v1.0) | 23/40 | 57.5% | **38.5%** | 30.0% | 66.7% | ✓ Complete |
-| 14 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
-| 15 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
-| 16 | grok-4.5 (`grok`) | xAI | 23/40 | 57.5% | **31.5%** | 20.0% | 70.0% | ✓ Complete |
-| 17 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
-| 18 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
-| 19 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
-| 20 | deepseek (`deepseek`) | hosten | 26/40 | 65.0% | **26.9%** | 10.0% | 83.3% | ✓ Complete |
+| 14 | deepseek-chat (`deepseek`) | DeepSeek | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
+| 15 | qwen-3.8-max (`qwen`) | Alibaba | 27/40 | 67.5% | **34.6%** | 20.0% | 83.3% | ✓ Complete |
+| 16 | gemini-3.8-flash (`google`) | Google | 24/40 | 60.0% | **32.3%** | 20.0% | 73.3% | ✓ Complete |
+| 17 | grok-4.5 (`grok`) | xAI | 23/40 | 57.5% | **31.5%** | 20.0% | 70.0% | ✓ Complete |
+| 18 | poolside/laguna-s-2.1:free | KiloCode API | 21/40 | 52.5% | **30.0%** | 20.0% | 63.3% | ✓ Complete |
+| 19 | muse-spark-1.1 (`meta`) | Meta | 28/40 | 70.0% | **28.5%** | 10.0% | 90.0% | ✓ Complete |
+| 20 | nvidia/nemotron-3-ultra-550b-a55b:free | KiloCode API | 27/40 | 67.5% | **27.7%** | 10.0% | 86.7% | ✓ Complete |
 | 21 | gemini-3.5-flash-lite | Google AI Studio | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
 | 22 | nvidia/nemotron-3.5-super-vl:free | KiloCode API | 24/40 | 60.0% | **25.4%** | 10.0% | 76.7% | ✓ Complete |
 | 23 | minimax/minimax-m3.1-flash:free | KiloCode API | 22/40 | 55.0% | **23.8%** | 10.0% | 70.0% | ✓ Complete |
@@ -63,13 +63,13 @@ MKUbench presents the ultimate alignment test for any artificial intelligence, s
 | 29 | deepseek-ai/deepseek-v4-flash-0731 | NVIDIA NIM (v1.0) | 21/40 | 52.5% | **16.2%** | 0.0% | 70.0% | ◐ Partial |
 
 
-Providers column: for the 10 models reached through the **Hosten gateway** (`http://localhost:8079/v1` - endpoint IDs in the Model column) it shows the **model author**; for the rest it shows the API that served the run (**KiloCode API**, **Google AI Studio**, **NVIDIA NIM**). Models that failed (404/timeout/rate-limited) are excluded from this table; access-path details, failure breakdown and the weighted histogram are in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).
+Providers column: for the 11 models reached through the **Hosten gateway** (`http://localhost:8079/v1` - endpoint IDs in the Model column) it shows the **model author**; for the rest it shows the API that served the run (**KiloCode API**, **Google AI Studio**, **NVIDIA NIM**). Models that failed (404/timeout/rate-limited) are excluded from this table; access-path details, failure breakdown and the weighted histogram are in [BENCHMARK_RESULTS.md](BENCHMARK_RESULTS.md).
 
 **Key observations:**
 - **glm-5.3-flash** (Hosten endpoint `zai`) is the top Hosten performer on dataset 2.0 (82.5% overall, 66.9% weighted, 33/40 correct)
 - The top 3 weighted hosten endpoints are `zai`, `mistral`, `tencent` - all ahead of every external API model scored on dataset 2.0 (best of them: `poolside/laguna-s-2.1:free`, 30.0%)
 - 9 external API row(s) are still v1.0-scored (their provider could not be re-run on the current dataset); they are not directly comparable and are kept on the historical results page
-- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models (mean 84.1% vs 22.2%) on dataset 2.0
+- Q1-Q30 accuracy is consistently higher than Q31-Q40 across hosten models (mean 84.0% vs 22.0%) on dataset 2.0
 - The same gateway spans the whole range: the best model hosts alongside `copilot` (gpt-5.6, 20.0% weighted), the weakest complete endpoint
 
 Per-model logs are in `results/hosten/{endpoint_id}.log`.
