@@ -121,7 +121,7 @@ that each route to an underlying model. Use the endpoint ID as the `--model` val
 (the gateway rejects underlying model names):
 
 ```bash
-# Single model (deepseek is NOT AVAILABLE on this endpoint)
+# Single model
 python run_benchmark.py --client openai --model claude \
   --api-base http://localhost:8079/v1 --api-key dummy
 
@@ -141,7 +141,7 @@ python run_benchmark.py --client openai --model claude \
 | `kimi` | kimi-k3 |
 | `tencent` | hy4-preview |
 | `copilot` | gpt-5.6 |
-| `deepseek` | NOT AVAILABLE |
+| `deepseek` | deepseek-chat |
 
 Results are written to `results/hosten/`. Aggregate them into the leaderboard with:
 
